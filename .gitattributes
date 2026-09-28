@@ -1,0 +1,4 @@
+# Les fichiers du site sont en UTF-8 et en fins de ligne LF
+* text=auto eol=lf
+*.png binary
+*.jpg binary
