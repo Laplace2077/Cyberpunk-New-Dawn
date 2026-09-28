@@ -1,0 +1,703 @@
+[
+ {
+  "nom": "AMBIDEXTRE",
+  "type": "avantage",
+  "couts": [
+   6
+  ],
+  "cout_texte": "6 PA(s)",
+  "desc": "Le personnage peut utiliser indifféremment l’une ou l’autre de ses mains, de plus le personnage ne subit plus le malus de -3 applicable à l’attaque sur chaque arme lors de l’utilisation d’une arme dans chaque main, mais les pénalités pour actions multiples ou l’utilisation de deux armes continuent de s’appliquer.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "AMI",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Pour chaque Ami acheté, le personnage a un Ami comme avec le tirage «Vous vous faites un ami» des évènements de la vie. Au contraire des Contacts, qui ne fourniront que des informations, des services ou des biens, les Amis pourront risquer leur vie pour vous. Évidemment ils s’attendront à ce que vous fassiez de même... Les Amis sont considéré comme étant équivalent en caractéristiques et compétences à un PJ débutant.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "APTITUDE SCIENTIFIQUE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage est un scientifique né et gagne un bonus de +2 lorsqu’il utilise des compétences comme Anthropologie, Biologie, Botanique, Chimie, Géologie, Mathématiques, Physique et Zoologie.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "APTITUDE TECHNIQUE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage est doué pour réparer les choses et gagne un bonus de +2 lorsqu’il utilise des compétences comme Aérotech, AV Tech, Gentech, Cybertech, ou Gyrotech. Notez que ce N’EST PAS un bonus au niveau de compétence, et que cela n’a aucun effet sur les compétences médicales.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "ARTISTE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Le personnage est naturellement porté sur les arts, que ce soit la peinture, le dessin, la sculpture ou un autre support d’expression. Même si leurs oeuvres ne plaisent pas toujours à tous, il est évident qu’elles sont de grande qualité. Un personnage Artiste reçoit un bonus de +2 à ses jets de création artistique, mais aussi à la compétence Contrefaçon.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "AS DU VOLANT",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage a une affinité naturelle pour le pilotage et gagne un +2 à tous ses jets de pilotage et aux jets d’initiatives pendant qu’il pilote.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "ATHLETIQUE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Un personnage Athlétique est particulièrement à l’aise avec son corps. Ceci lui donne un bonus de +2 sur les compétences Athlétisme, Danse et Esquive. Ce bonus s’applique aussi aux manoeuvres d’arts martiaux Esquive et Dégagement.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "BILINGUE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage a grandi en parlant deux langues. Ceci lui accorde une langue supplémentaire à 8.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "BLINDÉ",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Le personnage peut affronter le sang, la tripaille et autres visions peu ragoûtantes sans risque de rendre son quatre heures. De plus il gagne un +2 à ses sauvegardes contre les produits chimiques du genre gaz vomitif.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "BOURREAU DES COEURS",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "C’est une forme spécialisée de l’avantage Empathie qui reflète le talent incroyable du personnage à séduire les représentants du sexe opposé (ou du même sexe, suivant son orientation). Cet avantage peut être pris par les deux sexes. Il donne au personnage un +2 à tous ses jets de Séduction et un +1 à toutes les autres compétences d’Empathie lorsque le sujet est du sexe approprié.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "CALCULATEUR PRODIGE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage peut effectuer des opérations mathématiques complexes de tête. Ceci lui donne un bonus de +2 à ses jets de Gestion, Jeu, Mathématiques et Programmation.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "CHANCEUX",
+  "type": "avantage",
+  "couts": [
+   2,
+   4,
+   6
+  ],
+  "cout_texte": "2, 4, 6 PA(s)",
+  "desc": "Un personnage Chanceux obtient des points de Chance supplémentaires à chaque partie, qui peuvent être utilisés comme des points de chance ordinaires. Notez que cet avantage ne modifie pas la caractéristique Chance. Le personnage a un point de Chance supplémentaire par 2 points dépensés dans cet avantage, avec un maximum de +3.",
+  "paliers": [
+   {
+    "cout": 2,
+    "effet": "+1 point de Chance supplémentaire par partie."
+   },
+   {
+    "cout": 4,
+    "effet": "+2 points de Chance supplémentaires par partie."
+   },
+   {
+    "cout": 6,
+    "effet": "+3 points de Chance supplémentaires par partie (maximum)."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "CHEF NATUREL",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Un personnage qui est un Chef Naturel est capable de diriger et d’inspirer les gens par son charisme et sa force de volonté. Ceci donne un bonus de +2 pour tous les jets de Commandement et d’Éloquence.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "COMPETENT",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Un personnage Compétent se plante rarement. Si un personnage avec cet avantage tire un «1» sur un test de compétence, il lance deux D10 pour la table «d’échec critique» et conserve le résultat de son choix pour déterminer le résultat.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "CONFRERIE",
+  "type": "avantage",
+  "couts": [
+   4,
+   6,
+   8
+  ],
+  "cout_texte": "4, 6, 8 PA(s)",
+  "desc": "Vous faites partie ou vous êtes proche d’un groupe soudé. De tels groupes comprennent les bandes de nomades, les gangs, les équipes de travail, les pirates et bien d’autres. Confrérie définit votre niveau, votre influence et votre capacité à faire appel aux ressources du groupe. Il y a trois types de Confréries distincts : Famille (nomades), Rang (gangs) et Équipe (pour les groupes de travailleurs orbitaux ou sous-marins). (Voir Annexe 1)\n\nA 4, le personnage dispose de 8 points à répartir pour sa Confrérie.\nA 6, le personnage dispose de 10 points à répartir pour sa Confrérie.\nA 8, le personnage dispose de 12 points à répartir pour sa Confrérie.",
+  "paliers": [
+   {
+    "cout": 4,
+    "effet": "Le personnage dispose de 8 points à répartir pour sa Confrérie."
+   },
+   {
+    "cout": 6,
+    "effet": "Le personnage dispose de 10 points à répartir pour sa Confrérie."
+   },
+   {
+    "cout": 8,
+    "effet": "Le personnage dispose de 12 points à répartir pour sa Confrérie."
+   }
+  ],
+  "table": "confrerie"
+ },
+ {
+  "nom": "CONNAISSEUR",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Un personnage Connaisseur connaît et apprécie les meilleures choses de l’existence. Il est familier des plus grands crus, de la grande cuisine, des drogues les plus branchées et des meilleurs maquillages, bijoux et haute couture. Son savoir étendu lui donne un +2 en Social pour impressionner des gens de la haute, ainsi qu’un +2 à ses jets de Connaissance de la Rue pour se procurer ce genre d’articles au marché gris ou noir.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "CONTACT",
+  "type": "avantage",
+  "couts": [
+   2,
+   4,
+   6,
+   8,
+   10
+  ],
+  "cout_texte": "2, 4, 6, 8, 10 PA(s)",
+  "desc": "Les Contacts sont des gens que le personnage peut utiliser comme sources d’information ou pour se procurer des biens et des services. Le nombre de points investis dans un contact reflètent son Influence et sa Loyauté, Les Contacts peuvent s’irriter d’être sollicités trop souvent, et peuvent demander en retour des informations ou des services au personnage. Un personnage avec cet avantage se voit allouer une somme d’argent pour s’acheter des contacts. Cette somme sert Uniquement à cela, s’il vient à rester de l’argent apres l’investissement en contact, c’est perdu. (Voir Annexe 3)\n\nA 2, le personnage débute avec 2000€$\nA 4, le personnage débute avec 9000€$\nA 6, le personnage débute avec 20 000€$\nA 8 le personnage débute avec 40 000€$\nA 10, le personnage débute avec 60 000€$",
+  "paliers": [
+   {
+    "cout": 2,
+    "effet": "Le personnage débute avec 2000 €$ à dépenser en contacts."
+   },
+   {
+    "cout": 4,
+    "effet": "Le personnage débute avec 9000 €$ à dépenser en contacts."
+   },
+   {
+    "cout": 6,
+    "effet": "Le personnage débute avec 20 000 €$ à dépenser en contacts."
+   },
+   {
+    "cout": 8,
+    "effet": "Le personnage débute avec 40 000 €$ à dépenser en contacts."
+   },
+   {
+    "cout": 10,
+    "effet": "Le personnage débute avec 60 000 €$ à dépenser en contacts."
+   }
+  ],
+  "table": "contacts"
+ },
+ {
+  "nom": "CORIACE",
+  "type": "avantage",
+  "couts": [
+   6
+  ],
+  "cout_texte": "6 PA(s)",
+  "desc": "Un personnage avec cet avantage fonctionne comme si son MC était du niveau supérieur. Par exemple un personnage d’une constitution Moyenne avec cet avantage sera considéré comme ayant un MC de -3 et pas de -2.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "CYBER-AFFINITE",
+  "type": "avantage",
+  "couts": [
+   12
+  ],
+  "cout_texte": "12 PA(s)",
+  "desc": "Cet avantage rare et extrêmement précieux donne au personnage 12 points d’Humanité par point d’Empathie au lieu des 10 normaux. Ceci lui permet de se charger en cybermatériel au delà de ce que supporterait un humain normal. C’est un avantage puissant qui ne devrait pas être autorisé sans une sérieuse réflexion du MJ.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DESARTICULE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Le corps du personnage est plus souple que la moyenne. Ceci donne un bonus de +4 à tous les jets de Dégagement, et peut aider toute activité physique qui nécessite de se contorsionner (se glisser par une ouverture étroite, rentrer dans une petite caisse...).",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DON POUR LES LANGUES",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage apprend les langues rapidement et divise par deux le multiplicateur de PC. Par exemple il pourrait augmenter son Japonais (PC x2) de +4 à +5 pour seulement 40 points au lieu des 80 que devrait payer un personnage sans cet avantage.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DON POUR L’INFORMATIQUE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Cet avantage confère au personnage une aisance incroyable pour se servir des ordinateurs, aussi bien dans le Réseau qu’en dehors. Ceci donne un bonus de +2 pour l’utilisation des compétences Concevoir cyberdeck, Interface, Bibliothèque (informatique uniquement), Programmation et Connaissance des Systèmes.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DOUÉ",
+  "type": "avantage",
+  "couts": [
+   8
+  ],
+  "cout_texte": "8 PA(s)",
+  "desc": "Lorsque cet avantage est sélectionné le joueur doit choisir une compétence. Cette compétence (et seulement elle) peut être augmentée par expérience jusqu’à un maximum de 12 au lieu de 10. Bien que n’offrant aucun avantage immédiat à un personnage débutant (surtout si le MJ limite le niveau des compétences de départ), cela reste un avantage puissant.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DUR A CUIR",
+  "type": "avantage",
+  "couts": [
+   6
+  ],
+  "cout_texte": "6 PA(s)",
+  "desc": "Telle la star de film d’action de votre choix, le personnage avec cet avantage est difficile à tuer. Il gagne un +1 à tous les jets contre la mort qu’il devra faire.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "EMPATHIE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage sait bien lire les émotions et comprendre les gens. Ceci lui donne un +2 automatique à ses jets de Perception humaine et un +1 aux autres compétences d’Empathie.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "EQUILIBRE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage est insensible à la désorientation due à un changement d’orientation brutal ainsi qu’au vertige. Ceci se traduit par un bonus de +2 sur les tests pour résister au mal de l’espace, un +1 automatique à la compétence Manoeuvre en apesanteur et un +2 sur tout test d’Athlétisme impliquant le sens de l’équilibre.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "FAVEUR",
+  "type": "avantage",
+  "couts": [
+   2,
+   4,
+   6
+  ],
+  "cout_texte": "2, 4, 6 PA(s)",
+  "desc": "Quelqu’un doit une faveur au personnage. L’impact de cette faveur dépend du niveau de l’avantage. Cette faveur ne peut servir qu’une fois, une fois utilisée la dette est soldée. Suivant l’éthique de celui qui doit la faveur et l’état des relations entre les deux parties, cet avantage peut représenter une réelle opportunité de roleplay. Notez que le personnage qui doit la faveur doit être relativement anonyme (par exemple un cadre intermédiaire de Militech pourrait vous devoir une faveur, mais pas un membre du conseil d’administration). Si le MJ le souhaite il peut augmenter le prix de la faveur de 2 à 4 points suivant qui a une obligation envers le personnage.",
+  "paliers": [
+   {
+    "cout": 2,
+    "effet": "A 2 points la faveur est relativement mineure et la personne en dette ne va pas risquer sa vie ou sa position pour la rendre (un policier laissant passer une infraction mineure, une prostituée faisant une passe à l’oeil, un ami qui vous laisse squatter son canapé pour quelques semaines...). La valeur financière d’une telle faveur ne dépasserait pas 200 ou 300 eurodollars."
+   },
+   {
+    "cout": 4,
+    "effet": "A 4 points la faveur a déjà plus de poids. La personne en dette pourra risquer sa position/son travail, mais pas forcément sa vie, pour s’acquitter de sa dette (un policier qui ferme les yeux ou fait un faux rapport, un mécanicien qui sabote une réparation sur la voiture d’un ennemi, une secrétaire ou un fonctionnaire faisant une copie de documents sensibles...). La valeur financière d’une telle faveur ne devrait pas dépasser 1 000 eurodollars."
+   },
+   {
+    "cout": 6,
+    "effet": "A 6 points la personne vous doit la vie. Elle se sent obligée de risquer sa vie et sa position pour vous aider. La valeur financière de ce niveau est difficile à estimer."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "GUERISON RAPIDE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Un personnage avec cet avantage guérit un point de dégâts supplémentaire par jour, c’est à dire deux points au lieu d’un, en plus des effets de nanochirurgie et drogues de guérisons.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "GUERISSEUR",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage a un don naturel pour guérir les malades et les blessés. Ceci lui donne un bonus de +2 lorsqu’il utilise des compétences comme Premier soins, Technique médicale ou Diagnostic.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "IMPOSANT",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Un personnage Imposant a une allure qui proclame «dangereux». Qu’il le soit ou pas est un choix du joueur. Ceci est reflété par un bonus de +2 à tous les jets d’Intimidation, ainsi qu’un +2 à tout jet de Réputation fait dans un face à face.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "JEUNESSE CHIMIQUE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Un personnage avec cet avantage, que ce soit grâce à une physiologie ou une psychologie particulière, est moins susceptible de devenir dépendant à une drogue ou à l’alcool. Il gagne un +2 sur toutes les sauvegardes de dépendance qu’il tire.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "MAIN LOURDE",
+  "type": "avantage",
+  "couts": [
+   4,
+   6
+  ],
+  "cout_texte": "4, 6 PA(s)",
+  "desc": "Le personnage qui a cet avantage sait taper là où ça fait mal en combat à mains nues ou en mêlée (choisissez). Ceci a pour effet d’augmenter le bonus aux dégâts de +1. Pour 6 points ce bonus s’applique à la fois aux attaques à mains nues et en mêlée.",
+  "paliers": [
+   {
+    "cout": 4,
+    "effet": "+1 aux dégâts en combat à mains nues OU en mêlée (au choix)."
+   },
+   {
+    "cout": 6,
+    "effet": "+1 aux dégâts à la fois aux attaques à mains nues et en mêlée."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "MÉMOIRE EIDETIQUE",
+  "type": "avantage",
+  "couts": [
+   6
+  ],
+  "cout_texte": "6 PA(s)",
+  "desc": "Le personnage a une mémoire exceptionnelle. Il peut se rappeler tout ce qu’il a vu, appris ou entendu en réussissant un jet de Perception difficulté 15.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "MUSCLE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage sait comment employer au mieux ses muscles pour lever et porter. La capacité de charge d’un personnage Musclé est calculée comme s’il avait 2 points de plus dans sa caractéristique CON. Cet avantage donne aussi un +2 à tous les jets de la compétence Force.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "OREILLE MUSICALE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Le personnage est un musicien né et peut jouer «à l’oreille». Ceci se traduit par un bonus de +2 sur tous les jets de compétences relatifs à la musique, comme Musique ou Composition (instrumentale, pas vocale). Notez que cet avantage n’affecte pas le chant, pour cela vous devrez prendre l’avantage «Voix».",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "PHYSIONOMISTE",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Le personnage a une excellente mémoire des noms et des visages et/ou des voix qui vont avec. Lorsqu’il rencontre quelqu’un qu’il connaît (ou croit connaître), il peut faire un jet de Perception à +6 pour se rappeler de qui il s’agit. La difficulté peut varier suivant l’étendue et la qualité d’un déguisement, etc.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "QUELCONQUE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Un personnage Quelconque a une apparence banale et peu de traits distinctifs. Il peut ainsi passer inaperçu bien plus facilement que quelqu’un dont l’apparence sort de l’ordinaire. Ceci se traduit par un bonus de +2 sur tous les jets de Déguisement et de Suivre/Pister et à tous les jets de Se cacher/Semer qui sont faits «en vue» (par exemple dans la foule). Un personnage avec cet avantage ne peut pas avoir un score de BT de plus de 6 ou moins de 5 (moyen donc). Si sa BT sort de cet intervalle (qu’elle monte ou qu’elle baisse), cet avantage ne donne plus aucun bonus.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "RAPIDE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Un personnage Rapide ajoute 5 mètres à sa distance de Course. Par contre sa distance de Saut n’est pas affectée et se calcule normalement.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "REFLEXE DE COMBAT",
+  "type": "avantage",
+  "couts": [
+   2,
+   4,
+   6
+  ],
+  "cout_texte": "2, 4, 6 PA(s)",
+  "desc": "Pour chaque niveau de Réflexes de combat acheté, le personnage gagne un +1 à ses jets d’Initiative (jusqu’à un maximum de +3). Ceci fonctionne comme la capacité spéciale «Sens du combat» mais uniquement pour l’initiative.",
+  "paliers": [
+   {
+    "cout": 2,
+    "effet": "+1 aux jets d’Initiative."
+   },
+   {
+    "cout": 4,
+    "effet": "+2 aux jets d’Initiative."
+   },
+   {
+    "cout": 6,
+    "effet": "+3 aux jets d’Initiative (maximum)."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "RÉFLEXE D’INTERFACE",
+  "type": "avantage",
+  "couts": [
+   2,
+   4,
+   6
+  ],
+  "cout_texte": "2, 4, 6 PA(s)",
+  "desc": "Pour chaque niveau acheté, le personnage gagne un +1 à ses jets d’Initiative dans le Réseau (jusqu’à un maximum de +3).",
+  "paliers": [
+   {
+    "cout": 2,
+    "effet": "+1 aux jets d’Initiative dans le Réseau."
+   },
+   {
+    "cout": 4,
+    "effet": "+2 aux jets d’Initiative dans le Réseau."
+   },
+   {
+    "cout": 6,
+    "effet": "+3 aux jets d’Initiative dans le Réseau (maximum)."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "RÉSISTANT A LA DOULEUR",
+  "type": "avantage",
+  "couts": [
+   6
+  ],
+  "cout_texte": "6 PA(s)",
+  "desc": "Le personnage supporte la douleur mieux que la plupart des gens. Après avoir subi des dommages il a un +1 à son jet de Sauvegarde contre l’Évanouissement et le Choc. Il gagne aussi un +2 à ses jets de Résister Torture/Drogues lorsque la douleur est impliquée (ça l’aidera contre la torture, mais pas contre un sérum de vérité).",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "RESSOURCES",
+  "type": "avantage",
+  "couts": [
+   4,
+   6,
+   8
+  ],
+  "cout_texte": "4, 6, 8 PA(s)",
+  "desc": "Vous êtes employé par une grosse entreprise ou corporation. Ressource définit votre place dans la hiérarchie, votre influence et votre capacité à faire appel aux ressources de l’entreprise. La valeur de l’avantage déterminera le nombre de points de création à allouer pour votre entreprise. (Voir Annexe 2)\n\nNote : Cette Avantage oblige le joueur à prendre le Défaut Travail de jour à la même valeur que Ressources. Le personnage touchera donc à la création son salaire annuel/12.\n\nA 4, le personnage dispose de 8 points à répartir pour sa Ressource.\nA 6, le personnage dispose de 12 points à répartir pour sa Ressource.\nA 8, le personnage dispose de 14 points à répartir pour sa Ressource.",
+  "paliers": [
+   {
+    "cout": 4,
+    "effet": "Le personnage dispose de 8 points à répartir pour sa Ressource."
+   },
+   {
+    "cout": 6,
+    "effet": "Le personnage dispose de 12 points à répartir pour sa Ressource."
+   },
+   {
+    "cout": 8,
+    "effet": "Le personnage dispose de 14 points à répartir pour sa Ressource."
+   }
+  ],
+  "table": "ressources"
+ },
+ {
+  "nom": "SENS AIGUISE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Lorsqu’un joueur choisi cet avantage, il sélectionne également l’un de ses cinq sens (vue, ouïe, odorat, toucher ou goût). Les jets de perception qui impliquent l’un de ces types de stimulus reçoivent un bonus de +2. N’importe quelle option cybernétique qui altère ou remplace l’organe sensitif (remplacé ses yeux par des cyberoptiques, par exemple) annule cet avantage en fonction du sens choisi. Si un seul oeil est remplacé, le bonus est réduit à +1; si un membre est remplacé par une pièce cybernétique, le bonus aux jets basés sur le toucher ne s’applique plus à celui çi. Les organes sensitifs modifiés par augmentation nanotech ne sont affectés négativement que 10% du temps. Cet avantage peut être choisi cinq fois, une fois par sens.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SENS DE L’ORIENTATION",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "C’est l’équivalent d’une boussole interne. A tout moment le personnage peut faire un jet de Perception à difficulté 15 pour déterminer dans quelle direction il va.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SENS DU DANGER",
+  "type": "avantage",
+  "couts": [
+   2,
+   4,
+   6
+  ],
+  "cout_texte": "2, 4, 6 PA(s)",
+  "desc": "Pour chaque niveau de Sens du danger acheté le personnage gagne un +1 sur ses jets de Perception lorsque sa vie peut être menacée (jusqu’à un maximum de +3). Ceci fonctionne comme la capacité spéciale «Sens du combat» mais uniquement pour la perception.",
+  "paliers": [
+   {
+    "cout": 2,
+    "effet": "+1 aux jets de Perception lorsque sa vie peut être menacée."
+   },
+   {
+    "cout": 4,
+    "effet": "+2 aux jets de Perception lorsque sa vie peut être menacée."
+   },
+   {
+    "cout": 6,
+    "effet": "+3 aux jets de Perception lorsque sa vie peut être menacée (maximum)."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "SOMMEIL LEGER",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Avec cet avantage un personnage peut faire des jets de Perception pendant qu’il dort (à la discrétion du MJ).",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "TÊTE FROIDE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Un personnage qui a la Tête froide ne subit pas de malus (de +3 ou +4) lorsqu’il est sous l’emprise du stress ou sous attaque adverse.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "TIREUR D’ELITE",
+  "type": "avantage",
+  "couts": [
+   6
+  ],
+  "cout_texte": "6 PA(s)",
+  "desc": "Un personnage avec l’avantage Tireur d’Élite est naturellement doué avec un type d’arme à distance (Tir à l’Arc, Pistolet, Armes Lourdes, Fusil, Armes automatiques) fixé au moment de l’achat de l’avantage. Le personnage n’a qu’un malus de -1 pour un Tir Rapide (au lieu de -3), viser donne un bonus de +2 par round passé à viser (au lieu de +1), et la difficulté des tirs pour atteindre une localisation spécifique est diminuée de 1. Les MJs peuvent souhaiter limiter la disponibilité de cet avantage.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "VENDEUR",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "Un personnage avec l’avantage Vendeur a un don pour le commerce. Lorsqu’il tente de vendre ou d’acheter quelque chose, le personnage a un bonus de +2 à ses jets de Perception Humaine, Baratin et Persuasion et Connaissance de la Rue (si applicables).",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "VICTIME DE LA MODE",
+  "type": "avantage",
+  "couts": [
+   2
+  ],
+  "cout_texte": "2 PA(s)",
+  "desc": "Un personnage avec cet avantage a le talent de rendre classe et branché à peu près n’importe quoi. Ceci lui donne un bonus de +2 sur tous ses jets de Look et Habillement et Style.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "VOIX",
+  "type": "avantage",
+  "couts": [
+   4
+  ],
+  "cout_texte": "4 PA(s)",
+  "desc": "La voix du personnage est naturellement plaisante à entendre. Ceci lui donne un bonus de +2 pour les jets de compétences telles que Performance, Baratin et Persuasion, Éloquence, Commandement, Séduction et Social.",
+  "paliers": [],
+  "table": null
+ }
+]

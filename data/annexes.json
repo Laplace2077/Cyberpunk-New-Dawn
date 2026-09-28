@@ -1,0 +1,692 @@
+{
+ "confrerie": {
+  "titre": "ANNEXE 1 — Table de coût pour l’avantage «Confrérie»",
+  "intro": "Lorsque vous créez un personnage avec l’avantage «Confrérie», vous devez d’abord décider d’un type (Famille, Gang ou Workganger). Chaque type de Confrérie a quatre aspects différents, évalués de 0 à 4. Choisissez le niveau que vous voulez dans chaque aspect, et additionnez les. Ceci vous donnera un coût en une valeur entre 8 et 16.\n\nSuivant le degré d’affiliation du personnage avec le groupe et la puissance de celui-ci, ce nombre peut être plutôt bas ou très élevé. Le niveau des différents aspects devrait être noté, et ne peut changer que par roleplay, il est impossible de dépenser des points d’expérience pour les améliorer. S’ils ne sont pas correctement entretenus, certains niveaux peuvent baisser au fil des scénarios. Les augmentations devraient être négociées entre le MJ et le joueur, mais, comme toujours, le MJ aura le dernier mot en cas de désaccord.\n\nSuivent les trois différentes «Confrérie» et leurs aspects.",
+  "groupes": [
+   {
+    "nom": "FAMILLE (Nomades)",
+    "colonnes": [
+     "Rang (Autorité)",
+     "Coût",
+     "Estime (Nb de personnes aidant)",
+     "Coût",
+     "Taille (Nb de membres)",
+     "Coût",
+     "Ressource (La richesse du clan)",
+     "Coût"
+    ],
+    "lignes": [
+     {
+      "rang": "Soldat",
+      "cout_rang": 0,
+      "estime": "Personne ne vous apprécie",
+      "cout_estime": 0,
+      "taille": "10-100 membres",
+      "cout_taille": 0,
+      "ressource": "Minable - le clan n’a aucune ressource",
+      "cout_ressource": 0
+     },
+     {
+      "rang": "Sergent",
+      "cout_rang": 1,
+      "estime": "Vous avez quelques amis dans le clan",
+      "cout_estime": 1,
+      "taille": "101-200 membres",
+      "cout_taille": 1,
+      "ressource": "Fauché - le clan n’a presque pas de ressources",
+      "cout_ressource": 1
+     },
+     {
+      "rang": "Lieutenant",
+      "cout_rang": 2,
+      "estime": "Vous êtes respecté",
+      "cout_estime": 2,
+      "taille": "201-300 membres",
+      "cout_taille": 2,
+      "ressource": "Pauvre - le clan a quelques ressources",
+      "cout_ressource": 2
+     },
+     {
+      "rang": "Capitaine",
+      "cout_rang": 3,
+      "estime": "Vous n’avez peu d’ennemis dans le clan",
+      "cout_estime": 3,
+      "taille": "301-400 membres",
+      "cout_taille": 3,
+      "ressource": "Aisé - le clan peut mettre des choses de côté",
+      "cout_ressource": 3
+     },
+     {
+      "rang": "Commandant",
+      "cout_rang": 4,
+      "estime": "Tout le monde vous apprécie",
+      "cout_estime": 4,
+      "taille": "401-500+ membres",
+      "cout_taille": 4,
+      "ressource": "Riche - le clan n’a aucun besoin pressant",
+      "cout_ressource": 4
+     }
+    ]
+   },
+   {
+    "nom": "GANG (Gang des Rues)",
+    "colonnes": [
+     "Rang (Autorité)",
+     "Coût",
+     "Estime (Nb de personnes aidant)",
+     "Coût",
+     "Taille (Nb de membres)",
+     "Coût",
+     "Ressource (La richesse du clan)",
+     "Coût"
+    ],
+    "lignes": [
+     {
+      "rang": "Recrue",
+      "cout_rang": 0,
+      "estime": "Personne ne peut vous sentir",
+      "cout_estime": 0,
+      "taille": "Minuscule (1-5 membres)",
+      "cout_taille": 0,
+      "ressource": "Pas de territoire",
+      "cout_ressource": 0
+     },
+     {
+      "rang": "Punk",
+      "cout_rang": 1,
+      "estime": "Vous avez peu d’amis dans le gang",
+      "cout_estime": 1,
+      "taille": "Petit (6-10 membres)",
+      "cout_taille": 1,
+      "ressource": "Une paire de bâtiments",
+      "cout_ressource": 1
+     },
+     {
+      "rang": "Homeboy",
+      "cout_rang": 2,
+      "estime": "Vous êtes respecté",
+      "cout_estime": 2,
+      "taille": "Moyen (11-25 membres)",
+      "cout_taille": 2,
+      "ressource": "Un pâté de maisons",
+      "cout_ressource": 2
+     },
+     {
+      "rang": "BloodBoy",
+      "cout_rang": 3,
+      "estime": "Vous avez peu d’ennemis dans le gang",
+      "cout_estime": 3,
+      "taille": "Grand (26-50 membres)",
+      "cout_taille": 3,
+      "ressource": "Deux ou tois pâtés de maisons",
+      "cout_ressource": 3
+     },
+     {
+      "rang": "Ganf Lord",
+      "cout_rang": 4,
+      "estime": "Tout le monde vous trouve cool",
+      "cout_estime": 4,
+      "taille": "Enorme (51-100 membres)",
+      "cout_taille": 4,
+      "ressource": "Quatre à sis pâtés de maisons",
+      "cout_ressource": 4
+     }
+    ]
+   },
+   {
+    "nom": "WORKGANGERS (Gang à but Lucratif)",
+    "colonnes": [
+     "Rang (Autorité)",
+     "Coût",
+     "Estime (Nb de personnes aidant)",
+     "Coût",
+     "Taille (Nb de membres)",
+     "Coût",
+     "Ressource (La richesse du clan)",
+     "Coût"
+    ],
+    "lignes": [
+     {
+      "rang": "Membre du clan",
+      "cout_rang": 0,
+      "estime": "Personne ne vous apprécie",
+      "cout_estime": 0,
+      "taille": "Minuscule (1-5 membres)",
+      "cout_taille": 0,
+      "ressource": "Minable - Le clan n’a pas de ressources",
+      "cout_ressource": 0
+     },
+     {
+      "rang": "Sergent",
+      "cout_rang": 1,
+      "estime": "Vous avez quelques amis dans le clan",
+      "cout_estime": 1,
+      "taille": "Petit (6-10 membres)",
+      "cout_taille": 1,
+      "ressource": "Fauché - Le clan n’a presque pas de ressources",
+      "cout_ressource": 1
+     },
+     {
+      "rang": "Lientenant",
+      "cout_rang": 2,
+      "estime": "Vous êtes respecté",
+      "cout_estime": 2,
+      "taille": "Moyen (11-25 membres)",
+      "cout_taille": 2,
+      "ressource": "Pauvre - le clan à quelques ressources",
+      "cout_ressource": 2
+     },
+     {
+      "rang": "Capitaine",
+      "cout_rang": 3,
+      "estime": "Vous n’avez peu d’ennemis dans le Clan",
+      "cout_estime": 3,
+      "taille": "Grand (26-50 membres)",
+      "cout_taille": 3,
+      "ressource": "Aisé - le clan peu mette des choses de coté",
+      "cout_ressource": 3
+     },
+     {
+      "rang": "Ancien du Clan",
+      "cout_rang": 4,
+      "estime": "Tout le monde vous apprécie",
+      "cout_estime": 4,
+      "taille": "Enorme (51-100 membres)",
+      "cout_taille": 4,
+      "ressource": "Riche - le clan n’a aucun besoin préssant",
+      "cout_ressource": 4
+     }
+    ]
+   }
+  ]
+ },
+ "ressources": {
+  "titre": "ANNEXE 2 — Table de coût pour l’avantage «Ressources»",
+  "intro": "Lorsque vous créez un personnage avec l’avantage Ressources, vous devez d’abord décider quelle corporation l’emploie ou quel corporation vous créé. Ressources se décompose en quatre aspects. La plupart ont cinq niveaux, de 0 à 4. Lors du choix de votre avantage vous avez acquis un certain nombre de points de création (PC) à répartir dans les différents tableaux.\n\nSuivant la position du personnage dans la hiérarchie de l’entreprise et la puissance de celle-ci, ce nombre peut être plutôt élevé ou au contraire très faible. Le niveau de chaque aspect devrait être noté; et ne peut changer qu’en roleplay, on ne peut pas dépenser de points d’expérience pour les modifier. S’ils ne sont pas correctement entretenus certains niveaux peuvent baisser en cours de jeu. Les augmentations devraient être négociées entre le MJ et le joueur, mais le MJ aura le dernier mot en cas de désaccord.\n\nLe Respect mesure l’opinion que les autres employés de l’entreprise ont de vous. Plus les gens vous apprécient, moins ils risquent de vous faire des crasses, et plus ils seront enclins à vous aider et à soutenir vos projets. Mais aussi apprécié que vous puissiez être, il se trouvera toujours quelqu’un pour vous planter un poignard dans le dos...\n\nLa Taille de l’entreprise vous donne une idée approximative du nombre de personnes qu’elle emploie. Ce chiffre comprend les employés sur toute la planète, y compris les troupes, la sécurité et les agents pour opérations secrètes.\n\nLe Statut financier indique comment l’entreprise se débrouille d’un point de vue financier. Une entreprise En faillite ou En difficulté sera probablement plus encline à débaucher du personnel qu’une qui est Stable. Une entreprise Stable génère assez de revenu pour payer tous ses employés, avec un peu d’excédent. Une entreprise Prospère ou Florissante sera davantage susceptible d’ouvrir de nouveaux bureaux, d’étendre ses lignes de produits et d’engager de nouveaux employés. Chaque niveau donne également un multiplicateur à appliquer au revenu annuel du corporate pour obtenir sa paye annuelle effective. Par exemple un cadre travaillant pour une entreprise Florissante gagnera un peu plus de 90 000 €$ par an, mais son homologue dans une entreprise en faillite gagnera péniblement 20 000 €$ par an.\n\nLe personnage touchera donc à la création son salaire annuel/12.",
+  "colonnes": [
+   "Rang (Autorité)",
+   "Coût",
+   "Respect (ce que vos collègues pensent de vous)",
+   "Coût",
+   "Taille (l’influence de l’entreprise)",
+   "Coût",
+   "Statut Financier (réussite de l’entreprise)",
+   "Coût"
+  ],
+  "lignes": [
+   {
+    "rang": "Salarié (Wage Slave) - Vous partagez un «cube», 20 000 €$/an",
+    "cout_rang": 0,
+    "respect": "Personne ne vous apprécie",
+    "cout_respect": 0,
+    "taille": "PME (10+ employés)",
+    "cout_taille": 0,
+    "statut_financier": "Au bord de la faillite (salaire x 1/3)",
+    "cout_statut_financier": 0
+   },
+   {
+    "rang": "Assistant - Vous avez votre propre «cube», 30 000 €$/an",
+    "cout_rang": 1,
+    "respect": "Vous avez quelques amis.",
+    "cout_respect": 1,
+    "taille": "Petite Corporation Nationale/Grosse entreprise locale (500+ )",
+    "cout_taille": 1,
+    "statut_financier": "En difficulté (salaire x 1/2)",
+    "cout_statut_financier": 1
+   },
+   {
+    "rang": "Chef de service - Vous avez un «cube» plus grand, 45 000 €$/an",
+    "cout_rang": 2,
+    "respect": "La plupart vous apprécient",
+    "cout_respect": 2,
+    "taille": "Grosse Corporation nationale (10 000+ employés)",
+    "cout_taille": 2,
+    "statut_financier": "Stable (salaire x1)",
+    "cout_statut_financier": 2
+   },
+   {
+    "rang": "Cadre - Vous partagez un bureau avec quelqu’un, 55 000 €$/an",
+    "cout_rang": 3,
+    "respect": "Vous n’avez que quelques ennemis",
+    "cout_respect": 3,
+    "taille": "Petite Corporation Internationale (100 000+ employés)",
+    "cout_taille": 3,
+    "statut_financier": "Florissante (salaire x1,5)",
+    "cout_statut_financier": 3
+   },
+   {
+    "rang": "Cadre supérieur - Vous avez votre propre bureau, 65 000 €$/an",
+    "cout_rang": 4,
+    "respect": "Tout le monde vous apprécie",
+    "cout_respect": 4,
+    "taille": "Grande Corporation Internationale (500 000+ employés)",
+    "cout_taille": 4,
+    "statut_financier": "Prospère (salaire x2)",
+    "cout_statut_financier": 4
+   }
+  ]
+ },
+ "contacts": {
+  "titre": "ANNEXE 3 — Table de coût pour l’avantage «Contact»",
+  "intro": "Pour acquérir des contacts, il faut les «acheter» avec des €$, vous devez donc avoir acquis l’avantage contact pour celà ou utiliser les quelques €$ qui vous reste en poche. Chaque contact a un indice d’Influence qui détermine le pouvoir ainsi que l’ascendance du contact et un indice de loyauté qui détermine à quel niveau le personnage peut faire confiance au contact.\n\nChaque niveau d’influence et de loyauté a un coup en €$ :",
+  "note": "Tel qu’imprimé dans le livre, les indices 2 à 6 de la table «Loyauté» reprennent mot pour mot les libellés de la table «Influence» (erreur de mise en page du livre) ; le texte est reproduit fidèlement.",
+  "colonnes": [
+   "Indice",
+   "Influence",
+   "Coût Influence",
+   "Loyauté",
+   "Coût Loyauté"
+  ],
+  "lignes": [
+   {
+    "indice": 1,
+    "influence": "Ne connaît que très peu de monde et n’a quasiment aucune influence dans la société. Est utile pour ses compétences de connaissances.",
+    "cout_influence": "100 €$",
+    "loyaute": "Les affaires sont les affaires : Le personnage et le contact ou des relations purement professionnelles. Les interactions sont basées sur l’argent. Il se peut même qu’ils ne s’apprécient pas entre eux, et ils ne s’offriront aucun traitement de faveur.",
+    "cout_loyaute": "100 €$"
+   },
+   {
+    "indice": 2,
+    "influence": "Connaît certaines personnes mais n’a pas beaucoup d’influence.",
+    "cout_influence": "200 €$",
+    "loyaute": "Connaît certaines personnes mais n’a pas beaucoup d’influence.",
+    "cout_loyaute": "200 €$"
+   },
+   {
+    "indice": 3,
+    "influence": "Rencontre régulièrement les personnes et dispose d’une certaine influence.",
+    "cout_influence": "300 €$",
+    "loyaute": "Rencontre régulièrement les personnes et dispose d’une certaine influence.",
+    "cout_loyaute": "300 €$"
+   },
+   {
+    "indice": 4,
+    "influence": "Connaît nombre de personnes ou est en position de force.",
+    "cout_influence": "400 €$",
+    "loyaute": "Connaît nombre de personnes ou est en position de force.",
+    "cout_loyaute": "400 €$"
+   },
+   {
+    "indice": 5,
+    "influence": "A de nombreuses relations dans de nombreux domaines, ou position de chef.",
+    "cout_influence": "500 €$",
+    "loyaute": "A de nombreuses relations dans de nombreux domaines, ou position de chef.",
+    "cout_loyaute": "500 €$"
+   },
+   {
+    "indice": 6,
+    "influence": "Individu aux nombreuses relations connaissant des gens partout dans le monde, ou disposant d’une place de décideur final.",
+    "cout_influence": "600 €$",
+    "loyaute": "Individu aux nombreuses relations connaissant des gens partout dans le monde, ou disposant d’une place de décideur final.",
+    "cout_loyaute": "600 €$"
+   }
+  ],
+  "exemples_titre": "Exemple de contacts",
+  "exemples": [
+   "Agent Corporatiste",
+   "Agent Gouvernemental",
+   "Agent S.W.A.T",
+   "Arrangeuse",
+   "Armurier",
+   "Auxiliaire médicale du Trauma-Team",
+   "Avocat",
+   "Barman",
+   "Cadre Corporatiste",
+   "Chauffeur de taxi",
+   "Chef de Gang",
+   "Detective",
+   "Doc des rues",
+   "Docker",
+   "Egoutier",
+   "Elu municipale",
+   "Epicier",
+   "Fan",
+   "Fixer",
+   "Flic",
+   "Gangster",
+   "Garde de sécurite Corporatiste",
+   "Gosses des rues",
+   "Habituee des boites",
+   "Journaliste/Manipulatrice des médias",
+   "Mecanicienne",
+   "Membre Psycho-Squad",
+   "Militaire",
+   "Mouchard",
+   "Netrunner",
+   "Netrunner Corporatiste",
+   "Parrain de la Mafia",
+   "Pompier",
+   "Pretre",
+   "Proprietaire d’un club",
+   "Productrice",
+   "Prostituée",
+   "Reporter",
+   "Rockeur(euse)",
+   "Salariée Corporatiste",
+   "Scientifique Corporatiste",
+   "Secretaire Corporatiste",
+   "Star du Roller Ball",
+   "Star du Porno",
+   "Solo",
+   "Squater",
+   "Technicien",
+   "Terroriste",
+   "Videur de Boite"
+  ]
+ },
+ "blessures": [
+  {
+   "nom": "BRÛLURES MINEURES",
+   "texte": "Le personnage a subi des brûlures mineures sur une localisation à tirer. Les brûlures se sont bien guéries et n’ont laissé que peu de cicatrices. Si le tirage de localisation indique des brûlures à la tête/au visage, diminuez la BT du personnage de -2."
+  },
+  {
+   "nom": "BRÛLURES SÉRIEUSES",
+   "texte": "Le personnage a été brûlé sur une grande partie de son corps. Tirez 3 localisations, ces localisations sont couvertes de cicatrices. Si un tirage de localisation indique des brûlures à la tête/au visage, diminuez la BT du personnage de -2.\n\nSi une localisation est tirée plus d’une fois, appliquez les règles suivantes :\n\nSi la localisation est un membre, une grande partie des muscles et des tendons a été brûlée, laissant le membre inutilisable. N’importe quel médecin un tant soit peu compétent recommandera l’amputation. Si la localisation est le torse ou l’abdomen, des cicatrices profondes réduisent CON et REF de -2 chacun. Si la localisation est la tête/le visage, réduisez la BT de -5 (jusqu’à un minimum de 1), et le personnage ne peut plus avoir de cheveux."
+  },
+  {
+   "nom": "PERFORATION(S)",
+   "texte": "Le personnage a été poignardé ou coupé par une arme tranchante. La blessure n’a pas d’autre effet en jeu qu’une cicatrice impressionnante, mais purement cosmétique (voir «Cicatrice Impressionnante»)."
+  },
+  {
+   "nom": "BLESSURE PAR BALLE : A TRAVERSÉ PROPREMENT",
+   "texte": "Le personnage a reçu une balle dans une localisation aléatoire, mais elle est ressortie avec très peu de lésions. Le personnage conserve une cicatrice (voir «Cicatrice Impressionnante»)."
+  },
+  {
+   "nom": "BLESSURE PAR BALLE : PROJECTILE RETIRÉ",
+   "texte": "Le personnage a reçu une balle qui est restée dans son corps. Les chirurgiens ont par la suite pu retirer le projectile. Le personnage a conservé les cicatrices de la blessure et de la chirurgie qui a suivi sur une localisation aléatoire."
+  },
+  {
+   "nom": "BLESSURE PAR BALLE : PROJECTILE RESTÉ DANS LA PLAIE",
+   "texte": "Le personnage a pris une balle qui est resté logée dans une localisation aléatoire. Cependant pour une raison quelconque (blessure mal placée, soins minables...) le projectile n’a jamais été retiré. La balle est visible aux rayons X et peut déclencher un détecteur de métal."
+  },
+  {
+   "nom": "BLESSURE PAR BALLE : FRAGMENTÉE, GROSSE BLESSURE DE SORTIE",
+   "texte": "Le personnage s’est une fois de plus fait tirer dessus. Mais cette fois la balle a laissé un énorme trou quand elle est ressortie en faisant des culbutes, ou la munition utilisée contre le personnage était d’une nature particulière (explosive, pointe creuse, glaser, plombs à courte portée...) qui a emporté un gros morceau de viande. Quelle qu’en soit la cause exacte, le personnage a une méchante cicatrice. Si la localisation est un membre, il est inutilisable. Si la localisation est le torse ou l’abdomen, réduisez la caractéristique CON du personnage de -1."
+  },
+  {
+   "nom": "FRACTURE MAL RÉTABLIE",
+   "texte": "Le personnage s’est brisé un os dans un bras ou une jambe et il ne s’est pas rétabli correctement. Tous les jets de compétence effectués en utilisant ce membre sont à -2. Si le membre est une jambe, réduisez également le MV de -2."
+  },
+  {
+   "nom": "LÉSIONS INTERNES",
+   "texte": "Au cours d’une de ses mésaventures le personnage a endommagé et/ou perdu tout ou partie d’un organe interne. Dans le cas d’un organe manquant ou partiellement manquant, le personnage a pu perdre un rein ou un poumon, ou encore une portion sévèrement endommagée d’intestins, du foie, de l’estomac ou autre. Les pénalités exactes sont laissées à l’appréciation du MJ, mais la perte de points de CON est déjà un bon point de départ.\n\nPar exemple un personnage avec une vessie rétrécie peut avoir besoin d’uriner fréquemment, voire dans les cas extrêmes de porter un cathéter en permanence, tandis qu’une personne avec un seul rein pourra fonctionner normalement, et qu’un personnage avec un seul poumon risque de voir son MV et sa CON significativement réduits. Des organes endommagés représentent des organes déficients qui pourraient ne plus durer très longtemps et devront être remplacés s’ils continuent de se détériorer."
+  },
+  {
+   "nom": "FRACTURE DU CRÂNE - DÉGÂTS NEUROLOGIQUES MINEURS",
+   "texte": "Le personnage s’est cogné la tête dans un truc plus dur que son crâne, entraînant des lésions neurologiques mineures (INT -1 tout de même)."
+  },
+  {
+   "nom": "FRACTURE DU CRÂNE - DÉGÂTS NEUROLOGIQUES SEVERES",
+   "texte": "Le personnage s’est pris un sacré coup sur le crâne, entraînant des dégâts neurologiques sévères (INT -2) et de temps en temps des migraines épouvantables (5% de chance par jour, non cumulatif)."
+  },
+  {
+   "nom": "ÉCLATS NON RETIRÉS",
+   "texte": "Le personnage, pour une raison quelconque, se promène avec des petits morceaux dans son corps. Cela peut être n’importe quoi, les éclats de métal d’une bombe artisanale, des plombs, des débris de verre... Rien de sérieux (pour le moment), mais cela pourrait lui poser des problèmes plus tard, mais aussi déclencher des détecteurs de métaux."
+  },
+  {
+   "nom": "DENTS EN MOINS",
+   "texte": "On a fait sauter quelques dents au personnage. Tirez 1D10 pour voir combien de dents manquent :\n\n1-3 : une dent\n4-5 : deux dents\n6-7 : trois dents\n8 : quatre dents\n9 : cinq dents\n10 : six dents.\n\nLe personnage peut avoir du mal à mâcher des aliments coriaces."
+  },
+  {
+   "nom": "DOIGTS OU ORTEILS EN MOINS",
+   "texte": "Le personnage, suite à un accident ou une attaque, a perdu 1D6 doigts ou orteils à tirer aléatoirement. Des doigts manquants peuvent réduire le REF quand une manipulation précise est nécessaire, et avoir perdu plus de la moitié des orteils d’un pied peut réduire le MV de -1."
+  },
+  {
+   "nom": "PERTE D’UN OEIL",
+   "texte": "Le personnage a perdu la vision d’un de ses yeux, comme avec le Défaut «Cécité» à -4."
+  },
+  {
+   "nom": "PERTE D’UNE OREILLE",
+   "texte": "Le personnage a perdu une oreille ou endommagé son oreille interne assez sévèrement pour provoquer des dégâts irréversibles. Il souffre du Défaut «Malentendant/Sourd» à -4."
+  },
+  {
+   "nom": "PERTE DU NEZ",
+   "texte": "Le personnage a soit physiquement perdu son nez (arraché par une balle, mordu...) ou sérieusement endommagé son odorat. Dans les deux cas il perd son sens de l’odorat, et dans le cas d’une perte physique du nez, il subit également un malus de -2 à sa BT."
+  },
+  {
+   "nom": "MAIN/PIED/MEMBRE TRANCHÉ",
+   "texte": "Par malchance, maladie ou blessure, le personnage a perdu une main, un pied, un bras ou une jambe. Les effets sont les mêmes que le Défaut «Membre Manquant»."
+  },
+  {
+   "nom": "BLESSURE AU DOS",
+   "texte": "Pour une raison ou une autre le personnage a écopé d’une blessure grave au dos. Il ne peut pas porter de charges lourdes, et de nouvelles blessures peuvent aggraver l’ancienne. En termes de jeu le personnage n’utilise que la moitié de sa CON pour déterminer sa capacité de charge."
+  },
+  {
+   "nom": "BALAFRE MINEURE",
+   "texte": "Le personnage a reçu une balafre mineure sur le visage. Cela reste dans le cadre estétique. Pas de malus particulier."
+  },
+  {
+   "nom": "CICATRICE IMPRESSIONNANTE",
+   "texte": "Le personnage a reçu une cicatrice impressionnante quelque part sur son corps. Même si la blessure à l’origine de la cicatrice n’a que peu d’effets permanents voire aucun, la cicatrice est considérée comme un «Signe Particulier», comme le Défaut du même nom."
+  }
+ ],
+ "blessures_table": {
+  "titre": "TABLE DES BLESSURES",
+  "des": "1D100",
+  "intro": "ANNEXE 4 — Informations détaillées sur les blessures spécifiques et leurs effets. Les blessures tirées qui reproduisent les effets de certains désavantages n’ont pas à être rachetés avec des points d’expérience avant de pouvoir être soignées. Elles peuvent être «traitées» pendant la création du personnage, avant de commencer à jouer, mais cela peut coûter au personnage une somme que le MJ devra déterminer d’après l’étendue des dégâts à réparer.",
+  "colonnes": [
+   "Jet",
+   "Vieille Blessure"
+  ],
+  "lignes": [
+   {
+    "plage": "01-04",
+    "resultat": "Balafre mineure"
+   },
+   {
+    "plage": "05-09",
+    "resultat": "Brûlures mineures"
+   },
+   {
+    "plage": "10-14",
+    "resultat": "Brûlures sérieuses"
+   },
+   {
+    "plage": "15-19",
+    "resultat": "Perforation(s)"
+   },
+   {
+    "plage": "20-24",
+    "resultat": "Blessure par balle : A traversé proprement"
+   },
+   {
+    "plage": "25-29",
+    "resultat": "Blessure par balle : Projectile retiré"
+   },
+   {
+    "plage": "30-34",
+    "resultat": "Blessure par balle : Projectile resté dans la plaie"
+   },
+   {
+    "plage": "35-39",
+    "resultat": "Blessure par balle : Fragmentée, blessure de sortie"
+   },
+   {
+    "plage": "40-44",
+    "resultat": "Fracture mal rétablie"
+   },
+   {
+    "plage": "45-49",
+    "resultat": "Lésions internes"
+   },
+   {
+    "plage": "50-54",
+    "resultat": "Fracture du crâne - Dégâts neurologiques mineurs"
+   },
+   {
+    "plage": "55-59",
+    "resultat": "Fracture du crâne - Dégâts neurologiques sévères"
+   },
+   {
+    "plage": "60-64",
+    "resultat": "Éclats non retirés"
+   },
+   {
+    "plage": "65-69",
+    "resultat": "Dents en moins"
+   },
+   {
+    "plage": "70-74",
+    "resultat": "Doigts ou orteils en moins"
+   },
+   {
+    "plage": "75-79",
+    "resultat": "Perte d’un oeil"
+   },
+   {
+    "plage": "80-84",
+    "resultat": "Perte d’une oreille"
+   },
+   {
+    "plage": "85-89",
+    "resultat": "Perte du nez"
+   },
+   {
+    "plage": "90-94",
+    "resultat": "Main/pied/membre tranché"
+   },
+   {
+    "plage": "91-95",
+    "resultat": "Blessure au dos"
+   },
+   {
+    "plage": "96-100",
+    "resultat": "Cicatrice impressionnante"
+   }
+  ],
+  "note": "Tel qu’imprimé : les plages «90-94» (Main/pied/membre tranché) et «91-95» (Blessure au dos) se chevauchent dans le livre."
+ },
+ "prison": {
+  "intro": "ANNEXE 5 — Évènements de la vie en prison. Lancez 1D10 pour chaque année passée en prison :",
+  "tables": [
+   {
+    "titre": "Évènement de l’année",
+    "des": "1D10",
+    "colonnes": [
+     "Jet",
+     "Résultat"
+    ],
+    "lignes": [
+     {
+      "plage": "1",
+      "resultat": "Rien de spécial"
+     },
+     {
+      "plage": "2-4",
+      "resultat": "Coup de Chance"
+     },
+     {
+      "plage": "5-7",
+      "resultat": "Coup Dur"
+     },
+     {
+      "plage": "8-0",
+      "resultat": "Se faire un ami ou un ennemi (à créer sur la table AE&C)"
+     }
+    ]
+   },
+   {
+    "titre": "Coup de Chance",
+    "des": "1D8",
+    "colonnes": [
+     "Jet",
+     "Effet",
+     "Gain"
+    ],
+    "lignes": [
+     {
+      "plage": "1",
+      "resultat": "Vous faites partie d’un programme d’entraînement par braindance : +2 niveaux dans une compétence d’Intelligence (INT) ou de Technique (TECH).",
+      "gain": "-"
+     },
+     {
+      "plage": "2",
+      "resultat": "Vous faites partie d’un programme d’éducation pour les criminels : +2 niveaux en Éducation / Culture générale ou dans une compétence Expert appropriée.",
+      "gain": "-"
+     },
+     {
+      "plage": "3",
+      "resultat": "Vous suivez un programme physique intensif : +2 niveaux dans une des compétences parmi Endurance, Force, Athlétisme, Natation, etc.",
+      "gain": "-"
+     },
+     {
+      "plage": "4",
+      "resultat": "Travaux forcés. Vous cassez des cailloux pendant un an : +1 en compétence Endurance",
+      "gain": "-"
+     },
+     {
+      "plage": "5",
+      "resultat": "Vous améliorez vos compétences de criminel : +2 dans une compétence parmi Connaissance de la rue, Pharmacologie, Crochetage, Pickpocket, Jeu, Résister torture/drogues, Intimider.",
+      "gain": "-"
+     },
+     {
+      "plage": "6",
+      "resultat": "Quelqu’un vous doit une faveur (prenez l’avantage gratuitement). Il est maintenant hors de prison.",
+      "gain": "-"
+     },
+     {
+      "plage": "7",
+      "resultat": "Vous apprenez l’emplacement d’une cache d’arme ou d’équipement d’un autre criminel. Vous pouvez les collecter à votre sortie (valeur max : D10 x 200 eb).",
+      "gain": "D10 x 200 €$"
+     },
+     {
+      "plage": "8",
+      "resultat": "Libération anticipée, retourner aux Évènements de la vie normaux, et relancez pour cette année.",
+      "gain": "-"
+     }
+    ]
+   },
+   {
+    "titre": "Coup Dur",
+    "des": "1D8",
+    "colonnes": [
+     "Jet",
+     "Effet",
+     "Perte"
+    ],
+    "lignes": [
+     {
+      "plage": "1",
+      "resultat": "Horriblement balafré/brûlé pendant une bagarre ou un interrogatoire. Séquelle : -1 Beauté (BT)",
+      "perte": "-"
+     },
+     {
+      "plage": "2",
+      "resultat": "Cerveau cuit : on vous a conditionné pour ne plus être capable de faire le genre d’action qui vous a conduit en prison (vol, meurtre, etc...). Faire un jet de Sang-Froid à -2 chaque fois que vous tentez de faire ce genre d’actions. Si le jet est raté, le conditionnement vous empêche de l’effectuer.",
+      "perte": "-"
+     },
+     {
+      "plage": "3",
+      "resultat": "Haine de l’autorité. Faire un jet de Sang-Froid à -2 chaque fois que vous devez interagir avec une source d’autorité pour ne pas péter les plombs",
+      "perte": "-"
+     },
+     {
+      "plage": "4",
+      "resultat": "Hospitalisé (pour une blessure grave ou un problème mental) pendant 1D10 mois.",
+      "perte": "-"
+     },
+     {
+      "plage": "5",
+      "resultat": "Accro à une drogue : vous êtes accro à une substance obtenue clandestinement, et votre addiction vous suit dans le monde extérieur. Vous gagner le Défaut Dépendance",
+      "perte": "-"
+     },
+     {
+      "plage": "6",
+      "resultat": "Vous êtes le cobaye d’une expérience chimique ou l’étude d’une maladie (sans votre connaissance ni approbation). Les séquelles : -1 Constitution (CON) ou -1 Réflexe (REF)",
+      "perte": "-"
+     },
+     {
+      "plage": "7",
+      "resultat": "Blessure majeure lors d’un accident : vous perdez un membre. Si vous en avez les moyens avec vos économies de départ, vous pouvez le remplacer par un membre cloné ou cybermembre, sinon on vous en a greffé mais la couleur ou la taille ne sont pas parfaites.",
+      "perte": "-"
+     },
+     {
+      "plage": "8",
+      "resultat": "Vous avez une sacré dette (envers un garde, un autre malfrat, pour des cigarettes ou autre petit extra). Vous devez cette somme a quelqu’un qui va la collecter à l’extérieur...",
+      "perte": "D10x 300 €$"
+     }
+    ]
+   }
+  ]
+ }
+}

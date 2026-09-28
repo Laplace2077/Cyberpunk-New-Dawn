@@ -1,0 +1,923 @@
+[
+ {
+  "nom": "Abonnement téléphonique",
+  "categorie": "Communication",
+  "prix": 50,
+  "prix_texte": "50 €$ / mois",
+  "desc": "Abonnement classique avec Sms / Internet / Appel Illimités",
+  "notes": ""
+ },
+ {
+  "nom": "Abonnement téléphonique",
+  "categorie": "Communication",
+  "prix": 5,
+  "prix_texte": "5 €$ / mois",
+  "desc": "Réception d’appels uniquement",
+  "notes": "Seconde entrée « Abonnement téléphonique » du tableau (version limitée)"
+ },
+ {
+  "nom": "Commo de poche",
+  "categorie": "Communication",
+  "prix": 50,
+  "prix_texte": "50 €$",
+  "desc": "Emetteur/récepteur radio. Portée : 15 km, fréquences réglables",
+  "notes": ""
+ },
+ {
+  "nom": "Commo Mastoidien",
+  "categorie": "Communication",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "Collé à la mâchoire et aux tempes. Portée : 15 km",
+  "notes": ""
+ },
+ {
+  "nom": "Mini téléphone cellulaire",
+  "categorie": "Communication",
+  "prix": 400,
+  "prix_texte": "400 €$",
+  "desc": "",
+  "notes": ""
+ },
+ {
+  "nom": "Téléphone cellulaire",
+  "categorie": "Communication",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "",
+  "notes": ""
+ },
+ {
+  "nom": "Puce de modulation",
+  "categorie": "Communication",
+  "prix": 20,
+  "prix_texte": "20 €$",
+  "desc": "Rend les communications par commo indétectables",
+  "notes": ""
+ },
+ {
+  "nom": "Radio Toshiba PRC-10",
+  "categorie": "Communication",
+  "prix": 300,
+  "prix_texte": "300 €$",
+  "desc": "Radio militaire. Encryptage, portée : 50 km",
+  "notes": ""
+ },
+ {
+  "nom": "Carte d’identitée",
+  "categorie": "Divers",
+  "prix": 0,
+  "prix_texte": "Gratuit",
+  "desc": "",
+  "notes": ""
+ },
+ {
+  "nom": "Carte bancaire",
+  "categorie": "Divers",
+  "prix": 0,
+  "prix_texte": "Gratuit",
+  "desc": "Nécessite des papiers en règle",
+  "notes": ""
+ },
+ {
+  "nom": "Passeport",
+  "categorie": "Divers",
+  "prix": 250,
+  "prix_texte": "250 €$",
+  "desc": "Nécessaire pour tout vol Intercontinentale",
+  "notes": ""
+ },
+ {
+  "nom": "Permis port d’arme",
+  "categorie": "Divers",
+  "prix": null,
+  "prix_texte": "Prix €$ / an",
+  "desc": "1/10 eme du prix de l’arme",
+  "notes": "Coût annuel = 1/10 du prix de l’arme concernée"
+ },
+ {
+  "nom": "Défaut Permis Arme",
+  "categorie": "Divers",
+  "prix": 2500,
+  "prix_texte": "2500 €$",
+  "desc": "Amende et si c’est une récidive 1D6 mois de prison au caution de 5000 €$",
+  "notes": "Amende ; récidive : 1D6 mois de prison, caution 5000 €$"
+ },
+ {
+  "nom": "Appareil photo digital",
+  "categorie": "Électronique personnelle",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "A puce. 500 photos haute définition",
+  "notes": ""
+ },
+ {
+  "nom": "Caméras holographiques",
+  "categorie": "Électronique personnelle",
+  "prix": null,
+  "prix_texte": "2 x coût de base",
+  "desc": "Simulent la profondeur dans une image",
+  "notes": "Option : double le coût de base de l’appareil"
+ },
+ {
+  "nom": "Caméscope",
+  "categorie": "Électronique personnelle",
+  "prix": 500,
+  "prix_texte": "500 €$",
+  "desc": "Sur carte mémoire 1 ou 2 Terra (Non Livré)",
+  "notes": "Carte mémoire non fournie"
+ },
+ {
+  "nom": "Carte mémoire",
+  "categorie": "Électronique personnelle",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "Capacitée de carte 1 Terra et 200 €$ pour 2T",
+  "notes": "200 €$ pour la version 2 Terra"
+ },
+ {
+  "nom": "Clé FireWire 12X",
+  "categorie": "Électronique personnelle",
+  "prix": 50,
+  "prix_texte": "50 €$ / Capacité",
+  "desc": "Clé pour sauvegarde de données (Capacité de 1 à 20 Terra) 50 €$ le Terra",
+  "notes": "50 €$ par Terra, capacité de 1 à 20 Terra"
+ },
+ {
+  "nom": "Enviroscanner Geotech",
+  "categorie": "Électronique personnelle",
+  "prix": 400,
+  "prix_texte": "400 €$",
+  "desc": "Test la radioactivité et les émanations toxiques",
+  "notes": ""
+ },
+ {
+  "nom": "Lecteur de puces",
+  "categorie": "Électronique personnelle",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "Lit les puces audio, vidéo et data",
+  "notes": ""
+ },
+ {
+  "nom": "Logcompas",
+  "categorie": "Électronique personnelle",
+  "prix": 50,
+  "prix_texte": "50 €$",
+  "desc": "Garde la trace d’un déplacement.",
+  "notes": ""
+ },
+ {
+  "nom": "Newsviewer",
+  "categorie": "Électronique personnelle",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "Affiche les informations récentes",
+  "notes": ""
+ },
+ {
+  "nom": "Ordinateur de poche-GPS",
+  "categorie": "Électronique personnelle",
+  "prix": 1000,
+  "prix_texte": "1000 €$",
+  "desc": "Donne le plan des environs. Précision : 4 mètres.",
+  "notes": ""
+ },
+ {
+  "nom": "Mini Web Surf",
+  "categorie": "Électronique personnelle",
+  "prix": 500,
+  "prix_texte": "500 €$",
+  "desc": "Mini Ordinateur permettant uniquement de surfer sur le net",
+  "notes": ""
+ },
+ {
+  "nom": "Ordinateur Portable",
+  "categorie": "Électronique personnelle",
+  "prix": 1000,
+  "prix_texte": "1000 €$",
+  "desc": "Micro Ordinateur portable performant",
+  "notes": ""
+ },
+ {
+  "nom": "Ordinateur de Poche",
+  "categorie": "Électronique personnelle",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "Agenda, Organiseur, Liste téléphone",
+  "notes": ""
+ },
+ {
+  "nom": "Cerceuil",
+  "categorie": "Logement",
+  "prix": 30,
+  "prix_texte": "30 €$ / Nuit",
+  "desc": "Centre de Sommeil commun dans les grandes villes",
+  "notes": ""
+ },
+ {
+  "nom": "Achat",
+  "categorie": "Logement",
+  "prix": 5000,
+  "prix_texte": "5000 €$ / pièce",
+  "desc": "Base",
+  "notes": "Prix d’achat de base, par pièce"
+ },
+ {
+  "nom": "Bonus Sanitaire",
+  "categorie": "Logement",
+  "prix": 50,
+  "prix_texte": "50 €$ / mois",
+  "desc": "Tarif de base pour un sanitaire personnel en plus",
+  "notes": "Sous-tableau « Location / Tarif de base »"
+ },
+ {
+  "nom": "Location zone malfamée",
+  "categorie": "Logement",
+  "prix": null,
+  "prix_texte": "Coût normal",
+  "desc": "Zones chaudes proches des zones de combat",
+  "notes": "Sous-tableau « Location » : coût de base x 1"
+ },
+ {
+  "nom": "Location zone modérée",
+  "categorie": "Logement",
+  "prix": null,
+  "prix_texte": "Coût x 2",
+  "desc": "Zones régulièrement patrouillées par la police",
+  "notes": "Sous-tableau « Location » : coût de base x 2"
+ },
+ {
+  "nom": "Location centre ville",
+  "categorie": "Logement",
+  "prix": null,
+  "prix_texte": "Coût x 3",
+  "desc": "Quartiers sous étroite surveillance",
+  "notes": "Sous-tableau « Location » : coût de base x 3"
+ },
+ {
+  "nom": "Location zone corporatiste",
+  "categorie": "Logement",
+  "prix": null,
+  "prix_texte": "Coût x 4",
+  "desc": "Banlieue calme surveillée par des milices",
+  "notes": "Sous-tableau « Location » : coût de base x 4"
+ },
+ {
+  "nom": "Location zone cadres supérieurs",
+  "categorie": "Logement",
+  "prix": null,
+  "prix_texte": "Coût x 5",
+  "desc": "Quartiers bouclés, immeubles gardés 24h/24",
+  "notes": "Sous-tableau « Location » : coût de base x 5"
+ },
+ {
+  "nom": "Bande flash",
+  "categorie": "Outils",
+  "prix": 30,
+  "prix_texte": "30 €$ / mètre",
+  "desc": "Bande émettant de la lumière. Durée : 4h",
+  "notes": "Prix au mètre"
+ },
+ {
+  "nom": "Boîte à outils",
+  "categorie": "Outils",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "10x40x10 cm. Outils communs de mécanique",
+  "notes": ""
+ },
+ {
+  "nom": "Chalumeau",
+  "categorie": "Outils",
+  "prix": 40,
+  "prix_texte": "40 €$",
+  "desc": "A acétylène. 30 cm de long",
+  "notes": ""
+ },
+ {
+  "nom": "Chalumeau à plasma",
+  "categorie": "Outils",
+  "prix": 250,
+  "prix_texte": "250 €$",
+  "desc": "Découpe 5 mm d’acier par seconde pendant 30 sec",
+  "notes": ""
+ },
+ {
+  "nom": "Corde Nylon 500 kg",
+  "categorie": "Outils",
+  "prix": 5,
+  "prix_texte": "5 €$ / mètre",
+  "desc": "",
+  "notes": "Prix au mètre"
+ },
+ {
+  "nom": "Lampe torche",
+  "categorie": "Outils",
+  "prix": 20,
+  "prix_texte": "20 €$",
+  "desc": "Portée : 40 mètres",
+  "notes": ""
+ },
+ {
+  "nom": "Lampe torche US Army",
+  "categorie": "Outils",
+  "prix": 40,
+  "prix_texte": "40 €$",
+  "desc": "A faisceau variable, autonomie : 24 heures",
+  "notes": ""
+ },
+ {
+  "nom": "Magic Tub",
+  "categorie": "Outils",
+  "prix": 20,
+  "prix_texte": "20 €$",
+  "desc": "Baton Bleu chimique, autonomie : 5 heures",
+  "notes": ""
+ },
+ {
+  "nom": "Masque de protection",
+  "categorie": "Outils",
+  "prix": 30,
+  "prix_texte": "30 €$",
+  "desc": "Couvre le nez et la bouche. Filtre les gaz",
+  "notes": ""
+ },
+ {
+  "nom": "Micromanipulateur",
+  "categorie": "Outils",
+  "prix": 3000,
+  "prix_texte": "3000 €$",
+  "desc": "Ajoutez +1 à différentes compétences techniques",
+  "notes": ""
+ },
+ {
+  "nom": "Microwaldo Araignée",
+  "categorie": "Outils",
+  "prix": 700,
+  "prix_texte": "700 €$",
+  "desc": "Bracelet d’outils interfacés, +1 en TECH (Nécessite un interface)",
+  "notes": ""
+ },
+ {
+  "nom": "Moniteur interface",
+  "categorie": "Outils",
+  "prix": 800,
+  "prix_texte": "800 €$",
+  "desc": "Ajoutez +2 en cybertech",
+  "notes": ""
+ },
+ {
+  "nom": "Outils Buchsterhude",
+  "categorie": "Outils",
+  "prix": 1500,
+  "prix_texte": "1500 €$",
+  "desc": "Outils faits sur mesure, +1 en technique",
+  "notes": ""
+ },
+ {
+  "nom": "Outils d’électronicien",
+  "categorie": "Outils",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "10x40x10 cm. Outils communs d’électronique",
+  "notes": ""
+ },
+ {
+  "nom": "Peinture fluo",
+  "categorie": "Outils",
+  "prix": 30,
+  "prix_texte": "30 €$ / litre",
+  "desc": "Peinture émettant de la lumière. Durée : 4h",
+  "notes": "Prix au litre"
+ },
+ {
+  "nom": "Techscanner",
+  "categorie": "Outils",
+  "prix": 600,
+  "prix_texte": "600 €$",
+  "desc": "Testeur de circuits électroniques",
+  "notes": ""
+ },
+ {
+  "nom": "Techscanner Francesca",
+  "categorie": "Outils",
+  "prix": 1200,
+  "prix_texte": "1200 €$",
+  "desc": "Techscanner de luxe, +1 aux jets",
+  "notes": ""
+ },
+ {
+  "nom": "Techscanner Pembroke",
+  "categorie": "Outils",
+  "prix": 1500,
+  "prix_texte": "1500 €$",
+  "desc": "Ajoutez +2 en réparation sur tous les appareils de plus d’un an",
+  "notes": ""
+ },
+ {
+  "nom": "Trousse de technicien",
+  "categorie": "Outils",
+  "prix": 350,
+  "prix_texte": "350 €$",
+  "desc": "Boîte à outils d’électricien",
+  "notes": ""
+ },
+ {
+  "nom": "Appareil de pistage",
+  "categorie": "Surveillance",
+  "prix": 1000,
+  "prix_texte": "1000 €$",
+  "desc": "Permet de suivre des mouchards. Portée : 1,5 km",
+  "notes": ""
+ },
+ {
+  "nom": "Mouchard pisteur",
+  "categorie": "Surveillance",
+  "prix": 50,
+  "prix_texte": "50 €$",
+  "desc": "A utiliser avec un Appareil de pistage",
+  "notes": ""
+ },
+ {
+  "nom": "Collier de détention",
+  "categorie": "Surveillance",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "Collier de sécurité sur une zone donnée ou inflige des chocs électrique",
+  "notes": ""
+ },
+ {
+  "nom": "Détecteur Spioner",
+  "categorie": "Surveillance",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "Contrôle si une ligne téléphonique est surveillée",
+  "notes": ""
+ },
+ {
+  "nom": "Kit de surveillance",
+  "categorie": "Surveillance",
+  "prix": 3500,
+  "prix_texte": "3500 €$",
+  "desc": "Pisteurs, micros, micro directionnel, téléobjectif",
+  "notes": ""
+ },
+ {
+  "nom": "Micro émetteur",
+  "categorie": "Surveillance",
+  "prix": 50,
+  "prix_texte": "50 €$ à 100 €$",
+  "desc": "Tailles et puissances variables. Emet vers un commo",
+  "notes": "Fourchette de prix : 50 à 100 €$ selon taille et puissance"
+ },
+ {
+  "nom": "Taxi’ Beeper",
+  "categorie": "Transport",
+  "prix": 10,
+  "prix_texte": "10 €$ / mois",
+  "desc": "Appelle le taxi le plus proche, facture automatique",
+  "notes": ""
+ },
+ {
+  "nom": "Ticket de métro/bus",
+  "categorie": "Transport",
+  "prix": 2,
+  "prix_texte": "2 €$",
+  "desc": "",
+  "notes": ""
+ },
+ {
+  "nom": "Traversée du continent en avion",
+  "categorie": "Transport",
+  "prix": 500,
+  "prix_texte": "500 €$ / 1000 €$",
+  "desc": "Seconde et Première Classe",
+  "notes": "500 €$ en seconde classe, 1000 €$ en première classe"
+ },
+ {
+  "nom": "Traversée du continent en maglev (Train)",
+  "categorie": "Transport",
+  "prix": 300,
+  "prix_texte": "300 €$ / 700 €$",
+  "desc": "Seconde et Première Classe",
+  "notes": "300 €$ en seconde classe, 700 €$ en première classe"
+ },
+ {
+  "nom": "Vol Orbital géostationnaire intercontinentale",
+  "categorie": "Transport",
+  "prix": 2500,
+  "prix_texte": "2500 €$",
+  "desc": "Vol Ultra rapide Orbital de continent à continent",
+  "notes": ""
+ },
+ {
+  "nom": "Kit de voyage",
+  "categorie": "Vêtements spéciaux et sacs",
+  "prix": 150,
+  "prix_texte": "150 €$",
+  "desc": "Sac de couchage, sac à dos, pyjama …",
+  "notes": ""
+ },
+ {
+  "nom": "Valise ignifugée Médicale (Sécure)",
+  "categorie": "Vêtements spéciaux et sacs",
+  "prix": 500,
+  "prix_texte": "500 €$",
+  "desc": "Valise pour le transport de médicaments, eprouvettes, sang … ( 20 x 10 x 5 cm )",
+  "notes": ""
+ },
+ {
+  "nom": "Valise ignifugée Tech (Sécurisée)",
+  "categorie": "Vêtements spéciaux et sacs",
+  "prix": 250,
+  "prix_texte": "250 €$",
+  "desc": "Valise pour le transport de puces, composants électronique ( 10 x 5 x 2 cm )",
+  "notes": ""
+ },
+ {
+  "nom": "Manteau grands froids",
+  "categorie": "Vêtements spéciaux et sacs",
+  "prix": 250,
+  "prix_texte": "250 €$",
+  "desc": "PA : 7. Pour des températures allant jusqu’à -20°",
+  "notes": ""
+ },
+ {
+  "nom": "Poncho anti-IR",
+  "categorie": "Vêtements spéciaux et sacs",
+  "prix": 300,
+  "prix_texte": "300 €$",
+  "desc": "Militaire. Disperse la signature IR et protège des températures extrêmes",
+  "notes": ""
+ },
+ {
+  "nom": "Speedholster",
+  "categorie": "Vêtements spéciaux et sacs",
+  "prix": 150,
+  "prix_texte": "150 €$",
+  "desc": "Ajoutez +1 initiative pour dégainer",
+  "notes": ""
+ },
+ {
+  "nom": "Vêtement ignifugé",
+  "categorie": "Vêtements spéciaux et sacs",
+  "prix": null,
+  "prix_texte": "3 x coût",
+  "desc": "20 PA contre les dégâts par le feu",
+  "notes": "Option : triple le coût du vêtement de base"
+ },
+ {
+  "nom": "Abonnement Trauma Team",
+  "categorie": "Médical",
+  "prix": 500,
+  "prix_texte": "500 €$ / mois",
+  "desc": "Déductibles de la première intervention",
+  "notes": ""
+ },
+ {
+  "nom": "Abonnement Trauma Team Gold",
+  "categorie": "Médical",
+  "prix": 1000,
+  "prix_texte": "1000 €$ / mois",
+  "desc": "Avec 4 Solo pour venir vous chercher même en zone de combat",
+  "notes": ""
+ },
+ {
+  "nom": "Abonnement Trauma Team Premium",
+  "categorie": "Médical",
+  "prix": 10000,
+  "prix_texte": "10000 €$ / mois",
+  "desc": "Même version que Gold mais Interventions Mondiales",
+  "notes": ""
+ },
+ {
+  "nom": "Agrafe dermique",
+  "categorie": "Médical",
+  "prix": 50,
+  "prix_texte": "50 €$",
+  "desc": "Ferme et recoud une plaie",
+  "notes": ""
+ },
+ {
+  "nom": "Airhypo",
+  "categorie": "Médical",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "Pistolet à injections",
+  "notes": ""
+ },
+ {
+  "nom": "Serinque Dermique",
+  "categorie": "Médical",
+  "prix": 5,
+  "prix_texte": "5 €$",
+  "desc": "Serinque usage unique",
+  "notes": ""
+ },
+ {
+  "nom": "Analyseur de drogues",
+  "categorie": "Médical",
+  "prix": 750,
+  "prix_texte": "750 €$",
+  "desc": "Analyseur de Substances",
+  "notes": ""
+ },
+ {
+  "nom": "Bombe de peau",
+  "categorie": "Médical",
+  "prix": 50,
+  "prix_texte": "50 €$",
+  "desc": "Soulager et calmer les brûlures",
+  "notes": ""
+ },
+ {
+  "nom": "Clonage d’un membre",
+  "categorie": "Médical",
+  "prix": 1500,
+  "prix_texte": "1500 €$",
+  "desc": "Opération : 20 jours - Opération type Critique",
+  "notes": ""
+ },
+ {
+  "nom": "Cryocuve",
+  "categorie": "Médical",
+  "prix": 5000,
+  "prix_texte": "5000 €$",
+  "desc": "Permet de conservé un bléssé stabilisé",
+  "notes": ""
+ },
+ {
+  "nom": "Dispositif interne portatif",
+  "categorie": "Médical",
+  "prix": 1200,
+  "prix_texte": "1200 €$",
+  "desc": "Appareil de diagnostique portable, +2 en diagnostique",
+  "notes": ""
+ },
+ {
+  "nom": "Douche à boîte",
+  "categorie": "Médical",
+  "prix": 3,
+  "prix_texte": "3 €$",
+  "desc": "Déodorant/désinfectant en aérosol",
+  "notes": "Le livre imprime « aéroso » (texte tronqué)"
+ },
+ {
+  "nom": "Medkit",
+  "categorie": "Médical",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "Trousse de Medecin Medtech",
+  "notes": ""
+ },
+ {
+  "nom": "Module de conservation",
+  "categorie": "Médical",
+  "prix": 500,
+  "prix_texte": "500 €$",
+  "desc": "Permet de garder un membre amputé 12 heures",
+  "notes": ""
+ },
+ {
+  "nom": "Opération mineure",
+  "categorie": "Médical",
+  "prix": 500,
+  "prix_texte": "500 €$",
+  "desc": "Durée 2h, 1D6+1 points de dégâts",
+  "notes": ""
+ },
+ {
+  "nom": "Opération avancée ou majeure",
+  "categorie": "Médical",
+  "prix": 1500,
+  "prix_texte": "1500 €$",
+  "desc": "Durée : 4h, 2D6+1 points de dégâts",
+  "notes": ""
+ },
+ {
+  "nom": "Opération critique",
+  "categorie": "Médical",
+  "prix": 2500,
+  "prix_texte": "2500 €$",
+  "desc": "Durée : 6 heures et plus, 3D6+1 points de dégâts",
+  "notes": ""
+ },
+ {
+  "nom": "Organe/membre à greffer",
+  "categorie": "Médical",
+  "prix": 500,
+  "prix_texte": "500 €$ à 1500 €$",
+  "desc": "Suivant le membre ou organe",
+  "notes": "Fourchette de prix : 500 à 1500 €$ selon le membre ou l’organe"
+ },
+ {
+  "nom": "Rapidesintox",
+  "categorie": "Médical",
+  "prix": 1000,
+  "prix_texte": "1000 €$",
+  "desc": "Contre-agent à injecter pour éviter les overdoses",
+  "notes": ""
+ },
+ {
+  "nom": "Sang de synthèse",
+  "categorie": "Médical",
+  "prix": 150,
+  "prix_texte": "150 €$ / poche",
+  "desc": "Jet à +1 pour stabiliser un blessé",
+  "notes": "Prix à la poche"
+ },
+ {
+  "nom": "Traitement guérivite",
+  "categorie": "Médical",
+  "prix": 1500,
+  "prix_texte": "1500 €$ / injection",
+  "desc": "Ajoute +1 point de guérison par jour pendant 5 jours",
+  "notes": "Prix par injection"
+ },
+ {
+  "nom": "Valise cryogénique",
+  "categorie": "Médical",
+  "prix": 250,
+  "prix_texte": "250 €$",
+  "desc": "Conserve des tissus humains 12h. 61 x 61 x 30,5 cm",
+  "notes": ""
+ },
+ {
+  "nom": "Camsonde Amerika",
+  "categorie": "Optique",
+  "prix": 1000,
+  "prix_texte": "1000 €$",
+  "desc": "Caméra d’épaule, avec lunette de visée. PA : 8",
+  "notes": ""
+ },
+ {
+  "nom": "Casque Gianni",
+  "categorie": "Optique",
+  "prix": 800,
+  "prix_texte": "800 €$",
+  "desc": "Casque de travail avec smartgoggles et filtre à gaz",
+  "notes": ""
+ },
+ {
+  "nom": "Cybercam EX-1",
+  "categorie": "Optique",
+  "prix": 1200,
+  "prix_texte": "1200 €$",
+  "desc": "Casque-caméra de reportage",
+  "notes": "Le livre imprime « asque-caméra » (coquille)"
+ },
+ {
+  "nom": "Electroverre",
+  "categorie": "Optique",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "Jumelles avec laser pour mesurer les distances",
+  "notes": ""
+ },
+ {
+  "nom": "Indicateur de distance",
+  "categorie": "Optique",
+  "prix": 50,
+  "prix_texte": "50 €$",
+  "desc": "A faisceau laser. Taille d’un briquet",
+  "notes": ""
+ },
+ {
+  "nom": "Jumelles",
+  "categorie": "Optique",
+  "prix": 20,
+  "prix_texte": "20 €$",
+  "desc": "",
+  "notes": ""
+ },
+ {
+  "nom": "Lunettes AL",
+  "categorie": "Optique",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "Vision de nuit",
+  "notes": ""
+ },
+ {
+  "nom": "Lunettes IR ou UV",
+  "categorie": "Optique",
+  "prix": 250,
+  "prix_texte": "250 €$",
+  "desc": "Vision des températures ou des UV",
+  "notes": ""
+ },
+ {
+  "nom": "Magviseur",
+  "categorie": "Optique",
+  "prix": 400,
+  "prix_texte": "400 €$",
+  "desc": "Jumelles autofocus, indicateur de distance",
+  "notes": ""
+ },
+ {
+  "nom": "Refractix Binoculars",
+  "categorie": "Optique",
+  "prix": 100,
+  "prix_texte": "100 €$",
+  "desc": "Téléoptique x 10. Options : zoom, indicateur de distance laser, compas, AL ou infrarouges",
+  "notes": ""
+ },
+ {
+  "nom": "Smartgoggles",
+  "categorie": "Optique",
+  "prix": 200,
+  "prix_texte": "200 €$",
+  "desc": "Lunettes acceptant les options cyberoptiques",
+  "notes": ""
+ },
+ {
+  "nom": "Torche UV",
+  "categorie": "Optique",
+  "prix": 50,
+  "prix_texte": "50 €$",
+  "desc": "Associé à des lunettes UV, permet de voir la nuit",
+  "notes": "Le livre imprime « voir la nui » (texte tronqué)"
+ },
+ {
+  "nom": "Synthécoke",
+  "categorie": "Drogues",
+  "prix": 1000,
+  "prix_texte": "1 000",
+  "desc": "Drogue de rue courante, seconde génération des ersatz synthétiques de la cocaïne. Elle en reproduit les effets stimulants, mais aussi les effets secondaires dangereux. · Effet : Stimulant. Difficulté 20, Puissance +1. Ersatz synthétique de cocaïne de seconde génération. · Durée : 1D6+1 minutes · Dépendance : Effets secondaires dangereux : paranoïa et intoxication (accoutumance) psychologique, comme pour la cocaïne véritable. · Cyberpunk 2020 — Les Années Noires, p. 112 (page imprimée ; PDF p. 116)",
+  "notes": "",
+  "source2020": true
+ },
+ {
+  "nom": "Stim",
+  "categorie": "Drogues",
+  "prix": 500,
+  "prix_texte": "500",
+  "desc": "Stimulant de rue très répandu, utilisé pour tenir éveillé sur de longues durées. Le prix à payer est l'apparition d'illusions mentales. · Effet : Stimulant. Difficulté 10, Puissance +3. Augmente l'endurance et permet de rester éveillé pendant de très longues périodes. · Durée : 1D6+1 minutes · Dépendance : Effets secondaires : illusions mentales. · Cyberpunk 2020 — Les Années Noires, p. 112 (page imprimée ; PDF p. 116)",
+  "notes": "",
+  "source2020": true
+ },
+ {
+  "nom": "Syncomp",
+  "categorie": "Drogues",
+  "prix": 650,
+  "prix_texte": "650",
+  "desc": "Antidote à large spectre employé dans le traitement des agents nerveux et des biotoxines. Chaque dose coûte 1 point de REF. · Effet : Antidote. Difficulté 13, Puissance +3. Contre une large gamme de poisons, en particulier les toxiques nerveux et les biotoxines. · Durée : 1D6+1 tours · Dépendance : Le REF est réduit de 1 point par dose. · Cyberpunk 2020 — Les Années Noires, p. 112 (page imprimée ; PDF p. 116)",
+  "notes": "",
+  "source2020": true
+ },
+ {
+  "nom": "Guérivite",
+  "categorie": "Drogues",
+  "prix": 1650,
+  "prix_texte": "1650 (1 650 Eb par traitement)",
+  "desc": "Drogue accélératrice de guérison utilisée par les équipes médicales. Elle fait récupérer un point de dégâts de plus par jour, mais ampute temporairement les réflexes du patient. · Effet : Drogue de soins. Difficulté 33, Puissance +2. Accélère la guérison naturelle de 1 point de dégâts supplémentaire par jour. · Durée : 1D6+1 heure · Dépendance : Effets secondaires nerveux : REF réduit de 1D6/3 points pendant une semaine après l'utilisation. · Cyberpunk 2020 — Les Années Noires, p. 107 et 113 (pages imprimées ; PDF p. 111 et 117)",
+  "notes": "Chère et souvent prohibée.",
+  "source2020": true
+ },
+ {
+  "nom": "Turbo",
+  "categorie": "Drogues",
+  "prix": 600,
+  "prix_texte": "600",
+  "desc": "Dopant intellectuel qui augmente temporairement l'Intelligence. L'accoutumance retourne complètement l'effet : plus aucun gain, et un manque violent. · Effet : INT accrue. Difficulté 12, Puissance +4. Augmente l'INT de 1 point pendant 2 à 7 heures. · Durée : 1D6+1 heures · Dépendance : Forte accoutumance : une personne accoutumée ne gagne plus d'INT et doit absorber du Turbo toutes les 12 heures, sous peine d'hallucinations et de crises d'hurlements. · Cyberpunk 2020 — Les Années Noires, p. 113 (page imprimée ; PDF p. 117)",
+  "notes": "",
+  "source2020": true
+ },
+ {
+  "nom": "Verre bleu",
+  "categorie": "Drogues",
+  "prix": 900,
+  "prix_texte": "900",
+  "desc": "Hallucinogène développé à l'origine comme arme biologique. Sous stress, l'utilisateur risque de décrocher complètement du monde réel. · Effet : Hallucinogène. Difficulté 18, Puissance +1. Réduit l'INT de 1 point par dose. · Durée : 1D6+1 minutes · Dépendance : En période de stress, 3 chances sur 10 (jet de 1D10) de craquer et de rester à contempler béatement les couleurs dans sa tête. · Cyberpunk 2020 — Les Années Noires, p. 113 (page imprimée ; PDF p. 117)",
+  "notes": "",
+  "source2020": true
+ },
+ {
+  "nom": "Smash",
+  "categorie": "Drogues",
+  "prix": 100,
+  "prix_texte": "100 pour 6 injections",
+  "desc": "L'alcool des années 2013 : un liquide jaune et moussant vendu en ampoules. Bon marché et massivement consommé, avec une descente franchement mauvaise. · Effet : Euphorisant. Difficulté 2, Puissance +1. Rend cool, détaché et prêt à faire la fête. · Durée : 1D6+1 minutes · Dépendance : Accoutumance psychologique : après disparition des effets, état dépressif suicidaire. Un jet de sauvegarde à l'accoutumance raté plonge le personnage en catatonie. · Cyberpunk 2020 — Les Années Noires, p. 113 (page imprimée ; PDF p. 117)",
+  "notes": "",
+  "source2020": true
+ },
+ {
+  "nom": "Dorph",
+  "categorie": "Drogues",
+  "prix": 250,
+  "prix_texte": "250",
+  "desc": "Endorphine de synthèse employée comme drogue de combat pour supprimer la douleur. Chaque prise use un peu plus le système nerveux. · Effet : Analgésique. Difficulté 5, Puissance +2. Endorphine de synthèse : supprime la douleur et les effets du stress, réduit les effets des étourdissements et des chocs. · Durée : 1D6+1 tours · Dépendance : Effet dévastateur sur le système nerveux : après chaque utilisation, jetez 1D10 ; sur un 1, perte définitive de 1 point de REF. · Cyberpunk 2020 — Les Années Noires, p. 113 (page imprimée ; PDF p. 117)",
+  "notes": "",
+  "source2020": true
+ },
+ {
+  "nom": "Lien noir",
+  "categorie": "Drogues",
+  "prix": 650,
+  "prix_texte": "650",
+  "desc": "Version militaire renforcée du Dorph, conçue pour fabriquer des machines à tuer froides et sans peur. Ses utilisateurs deviennent exactement ce que ses créateurs recherchaient — et n'en reviennent généralement pas. · Effet : Analgésique. Difficulté 13, Puissance +3. Euphorie, montée d'adrénaline et invulnérabilité à la douleur : SF augmenté de 2 points, résistance aux étourdissements et aux chocs. · Durée : 1D6+1 heures · Dépendance : Mortelle. Sur un jet de sauvegarde raté (1D10 sous CON), jetez 1D6 supplémentaire et soustrayez le résultat à l'EMP, traité comme une Cyberpsychose ; au-delà de la limite, le personnage est perdu. · Cyberpunk 2020 — Les Années Noires, p. 113 (page imprimée ; PDF p. 117)",
+  "notes": "",
+  "source2020": true
+ }
+]

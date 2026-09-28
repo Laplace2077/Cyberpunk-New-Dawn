@@ -1,0 +1,2222 @@
+{
+ "sections": [
+  {
+   "id": "caracteristiques",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Caractéristiques",
+   "pages": "11",
+   "texte": "Chaque personnage de Cyberpunk : New Dawn possède neuf caractéristiques qui sont des valeurs représentant le niveau d'aptitude inné du personnage pour certains types spécifiques d'activités. Ces caractéristiques ont une valeur comprise entre 2 et 10, deux représentant le niveau le plus bas concevable pour le personnage, et dix le niveau le plus haut. La moyenne est de l'ordre de 5 à 6. Vous dépenserez vos points de personnages dans ces 9 caractéristiques en ajustant le nombre de points que vous allouerez à chaque caractéristique en fonction du type de personnage que vous désirez créer. Aucune caractéristique ne peut être inférieure à 2 et supérieure à 10 à la création de personnage.\n\nPour la création de votre personnage vous allez disposer d'un panel de **60 points de personnage** à distribuer dans vos 9 caractéristiques :\n\n**INT | EMP | REF | TECH | MV | BT | CON | SF | CH**\n\n## Intelligence (INT)\nCette caractéristique mesure votre aptitude à cerner et résoudre divers problèmes, à détecter les détails, à retenir les informations. La majorité des personnages auront besoin d'une Intelligence **(INT)** élevée.\n\n## Empathie (EMP)\nCette caractéristique définit la qualité de vos relations avec les autres êtres vivants, mesurant votre charisme et votre aptitude à éprouver des émotions de sympathie. Dans un monde aliéné subissant le futur, se comporter en « être humain » n'est plus à la portée de tout le monde. L'Empathie **(EMP)** est critique lorsque vous devez commander, convaincre, séduire ou percevoir des réactions émotionnelles. L'Empathie mesure également ce qui vous sépare de la limite entre se sentir humain et agir froidement comme un Cyber-Psyco.\n\n## Réflexe (REF)\nCette valeur est en fait une combinaison, non seulement de votre dextérité mais également de la façon dont votre coordination physique influera lors des hauts faits de conduite, de pilotage, de combat et d'athlétisme. Une valeur décente de Réflexe **(REF)** est importante dans un monde tel que Cyberpunk.\n\n## Technique (TECH)\nCette valeur indique votre familiarisation avec le matériel cybernétique ou techniquement similaire. À Cyberpunk, l'aptitude à utiliser la technologie et à réparer est d'importance primordiale ; Technique **(TECH)** sera la caractéristique utilisée pour acquérir, réparer et essayer d'utiliser des équipements auxquels vous n'êtes pas habitué(e). Tous les personnages se doivent d'avoir une caractéristique de Technique **(TECH)** décente.\n\n## Mouvement (MV)\nCette valeur indique la rapidité à laquelle votre personnage peut courir (important lors des combats). Plus votre Mouvement **(MV)** est élevé, plus grande est la distance (en mètres) que vous pouvez couvrir en une phase de combat.\n\n- **Courir** : pour déterminer cette distance, multipliez votre caractéristique par 5. Le résultat obtenu est la distance en mètres parcourue par le personnage en courant en un seul tour.\n- **Saut** : pour déterminer à quelle distance peut sauter votre personnage (avec élan), divisez votre MV par trois. Arrondissez au supérieur.\n\n## Beauté (BT)\nCette caractéristique décrit votre aspect extérieur. À Cyberpunk, être bon tireur ne suffit pas. Vous devez faire impression lorsque vous agissez (tout est dans l'attitude). La Beauté **(BT)** est importante dans les relations sociales.\n\n## Constitution (CON)\nCette caractéristique est une combinaison complexe de la force, de l'endurance et de la morphologie du personnage. La Constitution **(CON)** détermine les dommages que vous pouvez supporter, les charges que vous pouvez soulever ou transporter, à quelle distance vous pouvez lancer des objets, comment vous vous remettez des chocs et détermine les dommages additionnels que vous causez lors d'attaques physiques. La Constitution est importante pour tous les personnages dans Cyberpunk.\n\n## Sang-froid (SF)\nCette caractéristique indique la résistance du personnage au stress, à la peur, à la pression, à la douleur physique et/ou à la torture. Le Sang-froid **(SF)** est essentiel pour déterminer votre détermination à continuer le combat en dépit des blessures ou de votre capacité de combat sous le feu adverse. Il indique également l'état psychologique du personnage et son aptitude à en imposer aux autres.\n\n## Chance (CH)\nC'est ce « On ne sait pas quoi » intangible qui fait basculer les évènements en votre faveur. Cette caractéristique chiffre le nombre de points que vous pourrez utiliser à chaque partie pour influencer les conséquences d'un évènement critique. Pour utiliser votre Chance **(CH)**, vous pouvez utiliser un point pour relancer un jet de dé désastreux. Ces points reviennent au maximum à la fin de chaque scénario ou à chaque « Chapitre » important fini dans une campagne.\n\n## Points & Constitution\nVous pouvez soulever et porter sans inconvénients jusqu'à **5 x votre CON en kg**. Vous pouvez aussi déplacer un poids maximum égal à **10 x CON en kg**.",
+   "tables": [
+    {
+     "titre": "Points & Constitution",
+     "colonnes": [
+      "CON",
+      "Définition"
+     ],
+     "lignes": [
+      [
+       "2 pts",
+       "Très faible"
+      ],
+      [
+       "3-4 pts",
+       "Faible"
+      ],
+      [
+       "5-6 pts",
+       "Moyenne"
+      ],
+      [
+       "7-9 pts",
+       "Forte"
+      ],
+      [
+       "10 pts",
+       "Très forte"
+      ],
+      [
+       "13 pts",
+       "Surhumaine"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "humanite",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Humanité",
+   "pages": "11",
+   "texte": "C'est la mesure de ce que supprime la cybernétique à votre capacité d'être en relation avec les autres choses vivantes. Multipliez votre **(EMP) x 10** pour déterminer le nombre de points d'humanité que vous avez. Notez ce résultat sur la feuille de personnage. Souvenez-vous : pour chaque tranche de 10 points d'humanité perdus, vous perdez 1 point en **(EMP)**. Cela peut avoir de sérieuses répercussions sur les compétences en relation avec l'Empathie, voire même vous amener au bord d'une psychose cybernétique-induite.",
+   "tables": []
+  },
+  {
+   "id": "modificateur-constitution",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Modificateur de constitution",
+   "pages": "11-12",
+   "texte": "Tous les gens ne subissent pas les dégâts de la même manière. Par exemple il faut faire beaucoup plus de dégâts pour stopper Arnold le Terminator que Arnold le Minable. Ceci est reflété par un modificateur de Constitution, un bonus spécial utilisé par votre personnage pour encaisser ses blessures. Le modificateur de constitution est à ajouter aux bases des seuils d'amputation et de fractures.\n\nTrouvez la case correspondant au modificateur de constitution sur votre feuille de personnage et remplissez-la. Souvenez-vous : peu importe l'équipement cyber que vous portez, soyez sûr de conserver des os en dessous.",
+   "tables": [
+    {
+     "titre": "Table des modificateurs de constitution",
+     "colonnes": [
+      "CON",
+      "Définition",
+      "MC"
+     ],
+     "lignes": [
+      [
+       "2 pts",
+       "Très faible",
+       "0"
+      ],
+      [
+       "3-4 pts",
+       "Faible",
+       "+1"
+      ],
+      [
+       "5-7 pts",
+       "Moyenne",
+       "+2"
+      ],
+      [
+       "7-9 pts",
+       "Forte",
+       "+3"
+      ],
+      [
+       "10 pts",
+       "Très forte",
+       "+4"
+      ],
+      [
+       "13 pts",
+       "Surhumaine",
+       "+5"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sauvegarde",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Sauvegarde",
+   "pages": "12",
+   "texte": "La sauvegarde de votre personnage est une valeur égale à votre Constitution. Pour réussir un jet de sauvegarde, le résultat du lancer de 1D10 doit être inférieur ou égal à ce chiffre. Dans Cyberpunk il existe deux types de sauvegardes.\n\n## La sauvegarde contre l'évanouissement\nLorsque dans Cyberpunk vous avez subi des dégâts ou avez pris des drogues assommantes, vous devez faire un jet de sauvegarde contre l'évanouissement. Si vous échouez, vous serez immédiatement mis hors combat et ne reprendrez vos esprits que lorsque vous réussirez un jet contre l'évanouissement durant les tours suivants. Vous ne pouvez faire qu'un jet par tour jusqu'à ce que vous réussissiez.\n\n## Jet contre la mort\nLorsque vous avez été mortellement blessé (voir La Fusillade du Vendredi Soir) ou lorsque vous avez absorbé certains types de poisons vous devez faire un jet contre la mort. Si vous échouez, vous êtes un heureux donneur d'organes.\n\n## Sauvegarde de caractéristiques\nLes Sauvegardes de Caractéristiques sont des jets faits lorsque les circonstances n'imposent pas un test de compétence. Ils sont faits en choisissant la caractéristique appropriée et en tirant 1D10 qui doit être inférieur ou égal à la caractéristique. Si le jet est plus grand, c'est raté. La difficulté du jet peut varier, comme indiqué dans le tableau suivant. Ces modificateurs sont retirés de la caractéristique utilisée.",
+   "tables": [
+    {
+     "titre": "Table de difficulté des jets",
+     "colonnes": [
+      "Difficulté",
+      "Modificateur"
+     ],
+     "lignes": [
+      [
+       "Facile",
+       "+2"
+      ],
+      [
+       "Moyen",
+       "+0"
+      ],
+      [
+       "Difficile",
+       "-2"
+      ],
+      [
+       "Très Difficile",
+       "-4"
+      ],
+      [
+       "Pratiquement Impossible",
+       "-6"
+      ],
+      [
+       "Impossible",
+       "-8"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "competences",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Compétences",
+   "pages": "12",
+   "texte": "Dans Cyberpunk : New Dawn, le système de compétences a subi de profonds changements. Dans Cyberpunk 2020 les personnages recevaient 40 points de compétence (PCs) à répartir dans 10 compétences de carrière et leur total (INT+REF) à dépenser en compétences choisies.\n\nDans ce système modifié, les personnages reçoivent toujours leurs 40 points de base, mais ils ne sont pas obligés de les dépenser dans une liste de « compétences de carrière », puisqu'il n'y a plus de rôles. Les points peuvent être dépensés dans n'importe quelle compétence souhaitée. Le nombre de points est basé sur l'âge de votre personnage en plus de **(INT+REF)**, et comme des personnages plus âgés devraient être bien plus expérimentés que des petits jeunes le nombre de points augmente avec l'âge. Ces points peuvent eux aussi être utilisés dans n'importe quelle compétence.\n\nChaque personnage de Cyberpunk : New Dawn possède un panel de compétences permettant de personnaliser un maximum votre personnage : que vous désiriez jouer l'équivalent d'un Solo, un Politicien ou un Technicien, vous devriez trouver votre bonheur. Ces compétences ont une valeur comprise entre 0 et 10 :\n\n- **0** représente le niveau le plus bas qui signifie que vous n'êtes en aucun cas compétent dans la matière (notez d'ailleurs qu'il ne sera pas autorisé de jet dans une compétence d'Intelligence (INT) si vous n'avez pas au moins 1).\n- **10** est le niveau le plus haut, ce qui signifie une grande maîtrise et cela devrait rester exceptionnel.\n\nVoir le chapitre « Actions & Compétences » pour vous donner une idée de chaque compétence. À la création de personnage vous avez droit à une compétence à 5 qui représentera votre « spécialité » et toutes vos autres compétences ne pourront dépasser 3.",
+   "tables": []
+  },
+  {
+   "id": "age-kilometrage",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Ce ne sont pas les années, mais le kilométrage",
+   "pages": "13",
+   "texte": "Des personnages de plus de 28 ans sont sur le déclin. Ils ne sont plus très jeunes et les réflexes, l'endurance et la vitesse de leurs 20 ans commencent à être un peu écornés. À partir de 30 ans, le joueur choisit REF, MV ou CON et tire 1D10. Si le résultat est inférieur ou égal à la caractéristique choisie, le personnage y perd 1 point. Plus la caractéristique est basse, plus il sera difficile d'y perdre des points. Cela se reproduira tous les 2 ans jusqu'à 40 ans. Au-delà, tirez une fois par an jusqu'à 55 ans. Après 55 ans, tirez deux fois par an. Le joueur ne peut pas choisir la même caractéristique deux fois de suite. Si une caractéristique tombe à 1, le personnage est handicapé. Si elle tombe à 0, il meurt.",
+   "tables": [
+    {
+     "titre": "Table des points de compétence par âge",
+     "colonnes": [
+      "Âge",
+      "PC(s) / An",
+      "TPc(s)",
+      "Niv. Comp. Max"
+     ],
+     "lignes": [
+      [
+       "14",
+       "4",
+       "4",
+       "4"
+      ],
+      [
+       "15",
+       "4",
+       "8",
+       "4"
+      ],
+      [
+       "16",
+       "3",
+       "11",
+       "5"
+      ],
+      [
+       "17",
+       "3",
+       "14",
+       "5"
+      ],
+      [
+       "18",
+       "3",
+       "17",
+       "6"
+      ],
+      [
+       "19",
+       "3",
+       "20",
+       "6"
+      ],
+      [
+       "20",
+       "2",
+       "22",
+       "6"
+      ],
+      [
+       "21",
+       "2",
+       "24",
+       "7"
+      ],
+      [
+       "22",
+       "2",
+       "26",
+       "7"
+      ],
+      [
+       "23",
+       "2",
+       "28",
+       "7"
+      ],
+      [
+       "24",
+       "1",
+       "29",
+       "7"
+      ],
+      [
+       "25",
+       "1",
+       "30",
+       "8"
+      ],
+      [
+       "26",
+       "1",
+       "31",
+       "8"
+      ],
+      [
+       "27",
+       "1",
+       "32",
+       "8"
+      ],
+      [
+       "28",
+       "1",
+       "33",
+       "8"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "competences-de-depart",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Compétences de départ",
+   "pages": "13",
+   "texte": "Chaque personnage commence avec un score de :\n\n**40 points + [INT+REF] + TPc(s) de l'âge**\n\nCe qui veut aussi dire qu'un personnage vieillissant en jeu pourra bénéficier des nouveaux points de compétences dus à sa nouvelle tranche d'âge.",
+   "tables": []
+  },
+  {
+   "id": "capacite-speciale-adrenaline",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Capacité spéciale",
+   "pages": "13",
+   "texte": "Pour ce qui est des capacités spéciales, il n'en reste plus qu'une : Adrénaline. L'objectif global était de s'écarter d'un système à « classes de personnages », et comme les capacités spéciales reposaient sur ces classes, la plupart ont été supprimées. Ceci comprend Autorité, Commandement Charismatique, Sens du Combat, Crédibilité, Famille, Système D, Ressources et Indic, ainsi que les variantes introduites dans divers suppléments.\n\nUne nouvelle fait donc son apparition :\n\n**Adrénaline** : l'Adrénaline est la capacité de votre personnage à gérer son état de stress et de s'en servir à son avantage lors d'actions physiques. Elle peut être utilisée pour modifier votre initiative et vos compétences de façon temporaire pour les familles suivantes à raison maximum d'un point par valeur dans la compétence :\n\n- Initiative\n- RÉFLEXE (Combat) (REF)\n- CONSTITUTION (CON)\n- RÉFLEXE (REF)\n- SANG-FROID (SF)\n\nAttention, la compétence Adrénaline ne peut pas dépasser **2** à la création du personnage quel que soit votre âge.\n\nDeux d'entre elles ont été conservées :\n\n- Interface\n- Medtech\n\nElles sont irremplaçables. Medtech sera donc la compétence pour tous les soins qui seront faits à une victime. C'est devenu une compétence d'Intelligence (INT) que tout le monde peut apprendre en y investissant des points. Interface était aussi une compétence importante, car rien d'autre ne couvrait cet aspect du genre. N'importe qui peut se brancher sur le réseau avec la formation adéquate.\n\nInterface représente simplement le talent que l'on y déploie. Comme Medtech, Interface peut être développée par quiconque est prêt à dépenser les points nécessaires. C'est une compétence (INT) d'Intelligence. Certaines capacités spéciales sont également accessibles à tous les personnages sous la forme d'avantages achetables à la création, mais ces avantages sont moins puissants que la capacité spéciale dont ils sont inspirés.",
+   "tables": []
+  },
+  {
+   "id": "argent-et-materiel",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Argent et matériel",
+   "pages": "13",
+   "texte": "Comment déterminer l'argent de départ d'un personnage maintenant qu'il n'y a plus de capacités spéciales ? Faites la somme **(INT+BT)** et multipliez par **1000**.\n\nCe sont les €urodollars que le personnage a mis de côté pour se payer des armes, des implants etc. Ça devrait faire réfléchir les joueurs dont les personnages ont toujours des scores d'Intelligence (INT) et de Charisme (BT) très bas.\n\nPar exemple : un personnage avec 7 en INT et 4 en Chance aura 11 000 €$ (7+4=11, 11 x 1000 = 11 000).\n\nIl y a encore une option pour l'argent... les joueurs sont autorisés à sacrifier des points de caractéristiques pour mieux s'équiper. En d'autres termes, si un joueur veut plus d'argent, il peut se l'offrir en retirant des points à ses caractéristiques. Chaque point sacrifié donne 1000 €$ supplémentaires. Il est conseillé de ne pas dépasser 5 points de caractéristiques. Ceci donne un personnage mieux équipé, mais plus faible en termes de caractéristiques, ce qui peut être un bon calcul dans certains cas.\n\nPar exemple vous voulez que votre personnage de l'exemple précédent possède une bonne voiture plutôt qu'une Honda Metrocar. Vous savez qu'avec 5 500 €$ ça ne va pas le faire, donc vous diminuez votre MV et votre CON de deux points chacun, récoltant ainsi 4 000 €$ de plus à dépenser. Ça vous donne un honnête 9 500 €$ à claquer pour la voiture de vos rêves.",
+   "tables": []
+  },
+  {
+   "id": "creation-pas-a-pas",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Résumé création d'un personnage : pas à pas en 9 étapes",
+   "pages": "14",
+   "texte": "## - ETAPE 1 - CONCEPT\nDans un premier temps faites-vous une idée générale de votre personnage en choisissant un concept le caractérisant. Et annotez-le sur votre feuille.\n\n## - ETAPE 2 - NATURE - ATTITUDE\nDéfinir une Nature et une Attitude pour votre personnage.\n\nLa Nature représente le comportement (original) du personnage et sera utilisée lors de panique, frayeurs, perte de moyens.\nL'Attitude est la (Face Roleplay) du personnage, c'est cette attitude que les personnages joueurs et PNJ connaîtront.\n\n## - ETAPE 3 - CARACTERISTIQUES\nComme cité précédemment votre personnage dispose pour sa création de 60 points à allouer à ses 9 caractéristiques. Vous ne pouvez dépasser 10 dans une caractéristique, et celle-ci ne doit pas non plus être inférieure à 2.\n\n## - ETAPE 4 - COMPETENCES\nAvant d'aller plus loin, il faut définir l'âge de votre personnage. Pourquoi l'âge ? Car l'âge va nous servir à déterminer les points de compétences supplémentaires que peut avoir votre personnage. (Compétence Adrénaline limitée à 2 à la création.)\n\n**40 points de base + [INT+REF] + TPc(s)**\n\nVoici comment ça marche :\n\n## - ETAPE 5 - EVENEMENTS DE LA VIE\nDans le souci d'étoffer un peu le Background de votre personnage, nous allons maintenant procéder au tirage des différents évènements de sa vie passée.\n\nChose fort simple : pour chaque année au-delà de la quatorzième, effectuez un jet sur les tables des évènements de la vie pour connaître son passé. Un personnage de quatorze ans fera aussi un jet.\n\n## - ETAPE 6 - AVANTAGES / DEFAUTS\nVous pouvez maintenant finaliser votre personnage en lui assignant des Avantages ou/et des Défauts.\n\nLes Avantages et Désavantages sont achetés avec des points d'atouts (PAs) à la création du personnage.\n\nPrendre un Avantage vous coûte des points, un Désavantage vous en rapporte.\n\nVous disposez de **2 PA(s)** à la création du personnage.\n\nLe joueur est limité à 3 Défauts pour un maximum total de points ne pouvant dépasser 15 points.\n\n## - ETAPE 7 - ARGENT DE DEPART\nNous rappelons la formule de calcul de l'argent de départ :\n\n**Argent de départ : (INT + BT x 1000)**\n\n## - ETAPE 8 - ARGENT DE DEPART\nPensez maintenant à investir dans 3 choses :\n\n- Une armure\n- Une arme\n- Un peu de Cyber.\n\nPour les armes ne pas oublier d'acheter les permis ; pour le Cyber bien penser à réduire votre Empathie **(EMP)** pour chaque tranche de 10 points d'humanité perdus.\n\nBien noter les valeurs de défenses des armures et pensez à prendre des munitions.\n\n## - ETAPE 9 - DERNIERE TOUCHE\nÉtablissez une description de votre personnage à l'avance pour les autres joueurs. Et lance-toi Chomba !",
+   "tables": [
+    {
+     "titre": "Table des points de compétence par âge",
+     "colonnes": [
+      "Âge",
+      "PC(s) / An",
+      "TPc(s)",
+      "Niv. Comp. Max"
+     ],
+     "lignes": [
+      [
+       "14",
+       "4",
+       "4",
+       "4"
+      ],
+      [
+       "15",
+       "4",
+       "8",
+       "4"
+      ],
+      [
+       "16",
+       "3",
+       "11",
+       "5"
+      ],
+      [
+       "17",
+       "3",
+       "14",
+       "5"
+      ],
+      [
+       "18",
+       "3",
+       "17",
+       "6"
+      ],
+      [
+       "19",
+       "3",
+       "20",
+       "6"
+      ],
+      [
+       "20",
+       "2",
+       "22",
+       "6"
+      ],
+      [
+       "21",
+       "2",
+       "24",
+       "7"
+      ],
+      [
+       "22",
+       "2",
+       "26",
+       "7"
+      ],
+      [
+       "23",
+       "2",
+       "28",
+       "7"
+      ],
+      [
+       "24",
+       "1",
+       "29",
+       "7"
+      ],
+      [
+       "25",
+       "1",
+       "30",
+       "8"
+      ],
+      [
+       "26",
+       "1",
+       "31",
+       "8"
+      ],
+      [
+       "27",
+       "1",
+       "32",
+       "8"
+      ],
+      [
+       "28",
+       "1",
+       "33",
+       "8"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exemple-de-creation",
+   "chapitre": "Devenir Cyberpunk",
+   "titre": "Exemple de création",
+   "pages": "15",
+   "texte": "Nous allons donc prendre pour notre exemple une jeune adolescente de 18 ans pratiquant le Motor Ball, un sport assez violent mais qui peut rapporter gros.\n\n- **NOM** : Gally — **AGE** : 18 ans\n- **CONCEPT** : Joueuse Pro de Motor Ball\n- **NATURE** : Survivante — **ATTITUDE** : Battante\n\n## Caractéristiques\nCON 8 | MV 6 | REF 10 | INT 6 | EMP 6 | BT 4 | TECH 6 | CH 7 | SF 7\n\n## Compétences (18 ans) - 73 pts\n- Adrénaline (2)\n- Armurier (4)\n- Athlétisme (3)\n- Conduire (Roller) (6)\n- Connaissance de la Rue (3)\n- Electronique (3)\n- Endurance (5)\n- Esquive (4)\n- Force (4)\n- Fusil (3)\n- GenTech (3)\n- Mêlée (4)\n- Perception Humaine (3)\n- Performance (3)\n- Perception (4)\n- Pistolet (3)\n\n## Evènements de la vie\n- Amis / Homme de Main / Vente de Matos\n- Ennemi / Militaire / Navy Engagé / Connais Pas / Lui la faute / Fausse Accusation\n- Désastre / Quelqu'un veut ma peau\n- Ami / Contact / Ouvrier du bâtiment\n\n## Avantages / Défauts\n- Rapide (2)\n- Sens Aiguisé (2)\n- Reflexe de Combat (2)\n- Trop sûr de soi (-4)\n\n## Argent de départ\n10000 €$",
+   "tables": [
+    {
+     "titre": "Caractéristiques de Gally",
+     "colonnes": [
+      "CON",
+      "MV",
+      "REF",
+      "INT",
+      "EMP",
+      "BT",
+      "TECH",
+      "CH",
+      "SF"
+     ],
+     "lignes": [
+      [
+       "8",
+       "6",
+       "10",
+       "6",
+       "6",
+       "4",
+       "6",
+       "7",
+       "7"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gestion-combat-tour-initiative",
+   "chapitre": "Système de jeu",
+   "titre": "Gestion du combat : tour et initiative",
+   "pages": "65",
+   "texte": "## Tour et séquence du tour\nLes combats dans Cyberpunk sont divisés en tours, chaque tour représentant 10 secondes de temps. À chaque tour, un joueur peut décider d'accomplir une action. La séquence du tour est déterminée par un jet d'initiative d'1D10 plus la caractéristique de REF du personnage, le résultat le plus haut désignant qui agit en premier et le plus bas agit le dernier.\n\n**INITIATIVE = LANCER 1D10 + REF**\n*(Le score le plus haut agit en premier)*\n\n## Attendre son tour\nVous pouvez choisir d'agir plus tard dans le tour, à n'importe quel moment. Si vous décidez d'attendre le tour d'un autre joueur, vous pouvez agir dès la fin de son tour.\n\n## Initiative de groupe\nVous pouvez avoir l'envie d'accélérer le rythme de la partie en désignant un membre du groupe comme chef et en lui faisant effectuer un jet d'initiative pour le groupe entier. Son jet est additionné au REF de chaque membre pour déterminer dans quel ordre chaque personnage va agir.\n\n## Le tir rapide\nEn annonçant un tir rapide au début du tour, vous ajoutez automatiquement un +3 à votre initiative, mais vous êtes pénalisé d'un -3 pour toucher (vous vous ruez au combat sans vous préparer avec précaution). Vous ne pouvez pas non plus utiliser de lunette, une vision particulière ou tout autre avantage de visée. La version corps à corps ou art martial de cette technique s'appelle « coup éclair » ou iai-jutsu.\n\n**TIR RAPIDE = +3 à l'initiative / -3 aux chances de toucher**",
+   "tables": []
+  },
+  {
+   "id": "actions",
+   "chapitre": "Système de jeu",
+   "titre": "Actions",
+   "pages": "65",
+   "texte": "Pendant votre part du tour, vous pouvez mener à bien une action sans pénalité. Cette action peut être de :\n\n- Vous déplacer (5 x la caractéristique de Mouvement en mètres par tour).\n- Tirer à la cadence de tir max. de votre arme ou porter une attaque de mêlée.\n- Esquiver (pour être plus difficile à toucher en prévision d'une attaque).\n- Parer (pour dévier des dégâts en prévision d'une attaque de Cac. ou autre).\n- Vous libérer d'une étreinte ou d'un piège.\n- Viser (en gagnant +1 au toucher à l'attaque, avec un max. de 3 tours de visée).\n- Recharger ou changer d'arme.\n- Monter ou descendre d'un véhicule.\n- Parer ou soigner.\n- Accomplir une action ne relevant pas du combat.\n\n## Plusieurs actions par tour\nVous pouvez accomplir plus d'une action pendant votre tour avec une pénalité de -3 pour chaque action supplémentaire. Mais les malus cumulés pour des actions supplémentaires ne peuvent pas réduire la compétence utilisée en dessous de 0.\n\n## Attaque avec 2 armes\nOn peut combattre avec deux armes avec une pénalité de -3 au toucher aux deux armes.\n\n## Rappel\nLe niveau I du processeur cybernétique ambidextrie, de la puce ambidextrie ou de l'implant neural ou de l'avantage permet de réduire le malus de -3 des deux armes et de porter deux attaques au corps à corps ou effectuer deux tirs pendant le tour, mais cela sur la même cible. Pour attaquer au corps à corps ou tirer sur deux cibles différentes, il est nécessaire d'avoir le niveau II en processeur cybernétique avec le matériel cyber complémentaire demandé.",
+   "tables": []
+  },
+  {
+   "id": "embuscades",
+   "chapitre": "Système de jeu",
+   "titre": "Embuscades et attaques de dos",
+   "pages": "65",
+   "texte": "Parfois le meilleur moyen de négocier un adversaire très puissant est de lui tomber dessus par derrière ; en bref, en lui tendant une embuscade. L'embuscade donne un bonus de +5 à vos chances de toucher. Vous pouvez tendre une embuscade ou une attaque dans le dos en annonçant que vous vous cachez en tendant une embuscade à votre cible.\n\nTendre une embuscade n'est pas forcément une réussite automatique. Votre adversaire a droit à un jet de Perception + INT + 1D10 contre votre Discrétion + INT + 1D10 + Bonus éventuel suivant l'environnement.\n\nSi votre adversaire ne surpasse pas votre résultat, l'embuscade est possible et vous bénéficiez d'un +5 au toucher sur votre prochaine attaque.\n\n**DEFENSEUR : Perception + INT + 1D10**\n**VS**\n**ATTAQUANT : Discrétion + INT + 1D10 + Bonus**\n\nLe fait de tendre une embuscade ne veut pas dire que vous agissez le premier, cela vous donne uniquement un bonus au toucher. Par contre la marge de réussite de votre embuscade vous permet de la déduire de la différence de votre initiative entre vous et votre cible pour éventuellement porter malgré tout votre attaque si vous ne l'aviez pas. Dans le cas contraire votre victime agira et cela sera votre tour à votre propre initiative. Le +5 au toucher n'est valable que pour la première attaque.",
+   "tables": []
+  },
+  {
+   "id": "localisation-des-coups",
+   "chapitre": "Système de jeu",
+   "titre": "Localisation des coups",
+   "pages": "66",
+   "texte": "La première chose à faire pour appliquer les dégâts est de voir où ils blessent. La plupart des attaques en combat sont faites à peu près au hasard ; vous cherchez l'ouverture, votre adversaire commet une erreur et vous en profitez. Cela veut dire que sauf dans le cas d'une tentative de visée d'un endroit spécifique (et après avoir subi les pénalités correspondantes), vous devrez déterminer d'une manière aléatoire l'endroit où vous avez touché votre cible.\n\nLa section **Localisation** de votre feuille de personnage dresse la liste de toutes les parties du corps. La localisation d'un coup ou d'une balle se fait en lançant 1D10 et en consultant le tableau. Les lettres B, F, A donnent le statut de dégâts sur le membre.\n\n- **B** : le membre est légèrement Blessé.\n- **F** : le membre est Fracturé, donc inutilisable pour une longue période.\n- **A** : le membre est temporairement « hors-service », suite à plusieurs blessures sans gravité, ou carrément mis en bouillie suite à un coup particulièrement violent. De toute façon le résultat est le même : il est Amputé.",
+   "tables": [
+    {
+     "titre": "Table de localisation",
+     "colonnes": [
+      "D10",
+      "Localisation"
+     ],
+     "lignes": [
+      [
+       "1",
+       "Tête"
+      ],
+      [
+       "2-4",
+       "Torse"
+      ],
+      [
+       "5",
+       "Bras Droit"
+      ],
+      [
+       "6",
+       "Bras Gauche"
+      ],
+      [
+       "7-8",
+       "Jambe Droite"
+      ],
+      [
+       "9-10",
+       "Jambe Gauche"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "seuils-fracture-amputation",
+   "chapitre": "Système de jeu",
+   "titre": "Seuil de fracture et seuil d'amputation",
+   "pages": "66",
+   "texte": "## Seuil de fracture\nLe seuil de Fracture décrit le nombre minimum de points de dégâts que doit encaisser un membre en une fois pour être brisé.\n\nIl est égal à : **(4 + Modificateur de Constitution)**\n\n## Seuil d'amputation\nLe seuil d'Amputation décrit le nombre minimum de points de dégâts que doit encaisser un membre pour être tranché ou mis en bouillie de manière définitive. Cette valeur détermine également un seuil au-delà duquel le personnage recevant une blessure doit réussir un jet de résistance contre la mort pour ne pas faire un arrêt cardiaque.\n\nIl est égal à : **(8 + Modificateur de Constitution)**",
+   "tables": []
+  },
+  {
+   "id": "encaissement-degats",
+   "chapitre": "Système de jeu",
+   "titre": "Je reçois des dégâts : encaissement",
+   "pages": "66",
+   "texte": "Quelle délicate attention ! Il ne fallait pas !\n\nVoici la procédure pour comptabiliser les dégâts. Apprenez par cœur ces lignes et tout vous semblera simple.\n\n- Tirez la localisation avec 1D10 et appliquez les dégâts en déduisant les armures sans la MC.\n- Si le seuil de fracture **est atteint** (après déduction des armures) c'est la fracture, faire un jet de résistance contre le choc (jet inférieur ou égal à la CON). Cocher la case « F » du membre correspondant. Si le jet est raté vous tombez dans le coma. Et devez réussir un jet d'endurance de la difficulté des dégâts subis pour en sortir. Si la cible est la tête, faire un jet sur la table « LES COUPS DURS LÀ OÙ ÇA FAIT MAL ».\n- Si le seuil d'amputation est **égalé ou dépassé** (après déduction des armures), faire un jet de résistance contre la mort (jet inférieur ou égal à la CON). En cas d'échec, et même si le personnage n'est pas dans un état de blessure mortel, c'est l'arrêt cardiaque par le fait du choc et de la douleur. Dans le cas contraire, cochez la case correspondante (A) ; si la cible est le torse, faire un jet sur la table « LES COUPS DURS LÀ OÙ ÇA FAIT MAL ». Si cela touche la tête, pas de chance Choomba, ton aventure se termine ici !\n- Plusieurs blessures légères peuvent avec le temps devenir fatales. À chaque passage d'un palier de Mortel 1 à 2… ; faire un jet de résistance contre la mort (jet inférieur ou égal à la CON).",
+   "tables": [
+    {
+     "titre": "Les coups durs là où ça fait mal — Blessures au torse",
+     "colonnes": [
+      "D10",
+      "Effet"
+     ],
+     "lignes": [
+      [
+       "1",
+       "Tétraplégie"
+      ],
+      [
+       "2",
+       "Colonne vertébrale touchée"
+      ],
+      [
+       "3",
+       "Côtes cassées"
+      ],
+      [
+       "4",
+       "Mise hors service du foie"
+      ],
+      [
+       "5",
+       "Artère vitale (Hémorragie)"
+      ],
+      [
+       "6",
+       "Mise hors service d'un poumon"
+      ],
+      [
+       "7",
+       "Mise hors service d'un rein"
+      ],
+      [
+       "8",
+       "Mise hors service du foie"
+      ],
+      [
+       "9",
+       "Organes génitaux H.S (Hémorragie)"
+      ],
+      [
+       "10",
+       "Paraplégie"
+      ]
+     ]
+    },
+    {
+     "titre": "Les coups durs là où ça fait mal — Blessures à la tête",
+     "colonnes": [
+      "D10",
+      "Effet"
+     ],
+     "lignes": [
+      [
+       "1",
+       "Artère vitale (Hémorragie)"
+      ],
+      [
+       "2",
+       "Vertèbres fêlées ou cassées"
+      ],
+      [
+       "3",
+       "Perte d'un œil (ou des deux)"
+      ],
+      [
+       "4",
+       "Perte de la mémoire"
+      ],
+      [
+       "5",
+       "Mâchoire brisée"
+      ],
+      [
+       "6",
+       "Nez cassé"
+      ],
+      [
+       "7",
+       "Dents cassées"
+      ],
+      [
+       "8",
+       "Visage défiguré"
+      ],
+      [
+       "9",
+       "Cuir chevelu arraché"
+      ],
+      [
+       "10",
+       "Fracture du crâne (Coma)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sauvegarde-evanouissement",
+   "chapitre": "Système de jeu",
+   "titre": "Sauvegarde contre l'évanouissement",
+   "pages": "68",
+   "texte": "Le coma peut survenir dans certains cas :\n\n- Après chaque membre qui est Fracturé (F).\n- À chaque fois que le personnage subit des dégâts, il doit faire un jet de choc.\n\nLa compétence « Endurance » peut aider à échapper au coma, ou à en sortir.\n\n**JET CONTRE L'EVANOUISSEMENT**\nValeur de CON sur laquelle on déduit le malus de la blessure. On lance 1D10 qui doit être inférieur à cette valeur.\n\n**CON - Pénalité de BLESSURE > 1D10**",
+   "tables": [
+    {
+     "titre": "Modificateur du jet contre l'évanouissement",
+     "colonnes": [
+      "État de la blessure",
+      "Pénalité"
+     ],
+     "lignes": [
+      [
+       "Léger",
+       "0"
+      ],
+      [
+       "Sérieux",
+       "-1"
+      ],
+      [
+       "Critique",
+       "-2"
+      ],
+      [
+       "Mortel 0",
+       "-3"
+      ],
+      [
+       "Mortel 1",
+       "-4"
+      ],
+      [
+       "Mortel 2",
+       "-5"
+      ],
+      [
+       "Mortel 3",
+       "-6"
+      ],
+      [
+       "Mortel 4",
+       "-7"
+      ],
+      [
+       "Mortel 5",
+       "-8"
+      ],
+      [
+       "Mortel 6",
+       "-9"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sauvegarde-mort",
+   "chapitre": "Système de jeu",
+   "titre": "Sauvegarde contre la mort",
+   "pages": "68",
+   "texte": "La mort est quelque chose qui arrive souvent très vite :\n\n- La mort est quelque chose qui arrive souvent très vite :\n- Chaque membre qui est sous l'effet d'Amputation (A).\n- À chaque tour en étant en mortel sans stabilisation.\n\n**JET CONTRE LA MORT**\nValeur de CON sur laquelle on déduit le malus de mortel. On lance 1D10 qui doit être inférieur à cette valeur.\n\n**CON - Pénalité de MORTEL > 1D10**",
+   "tables": [
+    {
+     "titre": "Modificateur du jet contre la mort",
+     "colonnes": [
+      "État de la blessure",
+      "Pénalité"
+     ],
+     "lignes": [
+      [
+       "Léger",
+       "0"
+      ],
+      [
+       "Sérieux",
+       "0"
+      ],
+      [
+       "Critique",
+       "0"
+      ],
+      [
+       "Mortel 0",
+       "0"
+      ],
+      [
+       "Mortel 1",
+       "-1"
+      ],
+      [
+       "Mortel 2",
+       "-2"
+      ],
+      [
+       "Mortel 3",
+       "-3"
+      ],
+      [
+       "Mortel 4",
+       "-4"
+      ],
+      [
+       "Mortel 5",
+       "-5"
+      ],
+      [
+       "Mortel 6",
+       "-6"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stabilisation",
+   "chapitre": "Système de jeu",
+   "titre": "Stabilisation",
+   "pages": "68",
+   "texte": "Quelqu'un qui subit une hémorragie ou qui passe en Mortel est sous l'effet d'une hémorragie. Celle-ci doit être stabilisée ou le patient continuera de prendre une encoche par tour, jusqu'à la dernière en Mortel 6, ce qui lui sera fatal.\n\n**JET DE STABILISATION**\nPour réaliser une stabilisation, il faut avoir premiers soins, être compétent en TECH et 1D10.\n\n**Premiers Soins + TECH + 1D10 > Total de dégâts encaissés**",
+   "tables": [
+    {
+     "titre": "Table des modificateurs du jet de stabilisation",
+     "colonnes": [
+      "Situation",
+      "Bonus / Malus"
+     ],
+     "lignes": [
+      [
+       "Hospitalisation",
+       "+5"
+      ],
+      [
+       "Ambulance Trauma Team",
+       "+3"
+      ],
+      [
+       "Caisson de Léthargie",
+       "+3"
+      ],
+      [
+       "Sans matériel adéquat",
+       "-1"
+      ],
+      [
+       "Sur Soi Même",
+       "-2"
+      ],
+      [
+       "En combat",
+       "-3"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "recuperation-et-soins",
+   "chapitre": "Système de jeu",
+   "titre": "Récupération et soins",
+   "pages": "68",
+   "texte": "Une fois soigné, un personnage récupère un point de santé tous les deux jours de manière naturelle. Noter qu'une blessure sérieuse nécessite des soins journaliers, qu'une blessure critique nécessite un alitement la moitié de la journée, et qu'un état mortel cloue le personnage dans un lit d'hôpital.\n\nUne fracture doit pour guérir correctement être réduite ou remise en place et plâtrée (jet normal en premiers soins).\n\nLes effets handicapants des blessures aux membres, fractures, etc. se font ressentir plus longtemps qu'il ne faut au corps pour récupérer sur le plan strictement médical. En terme de jeu, un personnage peut encore ressentir les effets d'un membre blessé (ou a fortiori cassé) même si son état de santé est revenu au maximum.\n\n## Accélérateurs de guérison\n- Soins intensifs en milieu hospitalier : l'état général augmente de un point tous les jours.\n- Traitement à la guérivite : +1 point de guérison par jour.\n- Nanochirurgiens : vitesse de guérison doublée.\n- Anticorps améliorés : +1 point de guérison par jour.\n\nEn cas d'arrêt cardiaque une unité Trauma Team ou tout centre de réanimation doté d'équipements modernes peut sauver le patient si un jet d'un D10 strictement supérieur au niveau de mort actuel est effectué. Un médecin sans équipement perfectionné doit réussir un jet en premiers soins égal au total des points de blessure du patient +3, pour réanimer un homme ayant fait un arrêt cardiaque, et le maintenir en vie.",
+   "tables": []
+  },
+  {
+   "id": "armes-a-distance",
+   "chapitre": "Friday Night Firefight",
+   "titre": "Utilisation des armes à distance et modificateurs",
+   "pages": "71",
+   "texte": "Cette section couvre les bases à connaître pour faire une attaque. Elle est séparée en deux parties : les armes à distance et le combat de mêlée.\n\n## Armes à distance\nLes armes à distance sont tout ce qui est tiré ou lancé à distance vers une cible. Pour effectuer une attaque à distance (révolvers, arcs, objets lancés, etc.) vous devez faire un jet combinant.\n\n**REF + Compétence de l'arme + 1D10**\n\nsupérieur ou égal à une variable de toucher spécifique, en fonction de la distance vous séparant de votre cible.\n\n## Modificateurs\nEn faisant votre jet, vous devez tenir compte de tout modificateur correspondant à la situation de combat. Il existe des modificateurs de cible, de visée, d'arme de tir, de position et de déplacement.",
+   "tables": [
+    {
+     "titre": "Tables des modificateurs de difficultés de base",
+     "colonnes": [
+      "Situation",
+      "Modificateur"
+     ],
+     "lignes": [
+      [
+       "Chaque action d'attaque ou défense supplémentaire",
+       "-3"
+      ],
+      [
+       "Cible immobile",
+       "+4"
+      ],
+      [
+       "Cible esquivant (en mêlée seulement)",
+       "-2"
+      ],
+      [
+       "Cible mouvante (REF>10)",
+       "-3"
+      ],
+      [
+       "Cible mouvante (REF>12)",
+       "-4"
+      ],
+      [
+       "Cible mouvante (REF>14)",
+       "-5"
+      ],
+      [
+       "Tir réflexe",
+       "-3"
+      ],
+      [
+       "Embuscade",
+       "+5"
+      ],
+      [
+       "Localisation spécifique visée",
+       "-4"
+      ],
+      [
+       "Ricochet ou tir indirect",
+       "-5"
+      ],
+      [
+       "Aveuglé par la lumière ou la poussière",
+       "-3"
+      ],
+      [
+       "Cible se silhouettant",
+       "+2"
+      ],
+      [
+       "Tourner pour faire face à la cible",
+       "-2"
+      ],
+      [
+       "Utiliser 2 armes en même temps",
+       "-3 chaque"
+      ],
+      [
+       "Tirer en courant",
+       "-3"
+      ],
+      [
+       "Tirer au fusil sans épauler",
+       "-2"
+      ],
+      [
+       "Arme montée en tourelle",
+       "+2"
+      ],
+      [
+       "Arme montée sur véhicule",
+       "-4"
+      ],
+      [
+       "Cible de grande taille",
+       "+4"
+      ],
+      [
+       "Cible de petite taille",
+       "-4"
+      ],
+      [
+       "Cible minuscule",
+       "-6"
+      ],
+      [
+       "Viser (Max 3 tours)",
+       "+1/tour"
+      ],
+      [
+       "Visée laser",
+       "+1"
+      ],
+      [
+       "Visée télescopique (Ext/Med)",
+       "+2/+1"
+      ],
+      [
+       "Système de visée cyberoptique",
+       "+4"
+      ],
+      [
+       "Superarme",
+       "+2"
+      ],
+      [
+       "Smartgoogles",
+       "+2"
+      ],
+      [
+       "Rafale de 3 coups (Portée courte et moyenne)",
+       "+3"
+      ]
+     ]
+    },
+    {
+     "titre": "Tables des modificateurs de portées",
+     "colonnes": [
+      "Portée",
+      "Difficulté",
+      "Distance"
+     ],
+     "lignes": [
+      [
+       "Bout portant",
+       "0",
+       "Arme de contact"
+      ],
+      [
+       "Courte portée",
+       "15",
+       "1/4 de la portée"
+      ],
+      [
+       "Moyenne portée",
+       "20",
+       "1/2 de la portée"
+      ],
+      [
+       "Longue portée",
+       "25",
+       "Portée"
+      ],
+      [
+       "Portée extrême",
+       "30",
+       "2 fois la portée"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "succes-echecs-critiques",
+   "chapitre": "Friday Night Firefight",
+   "titre": "Succès critique, échec critique et enrayement",
+   "pages": "71",
+   "texte": "## Succès critique\nSur un 10 naturel, vous obtenez un succès critique. Relancez 1D10 et additionnez le résultat à votre premier jet.\n\n## Echec critique\nSur un 1 naturel, vous pouvez obtenir un échec critique. Relancez 1D10 et soustrayez le résultat à votre Chance **(CH)**. Si le résultat final est inférieur à 1, vérifiez les conséquences sur la table des échecs critiques suivante.\n\n## Enrayement des armes\nLes armes automatiques sont plus susceptibles d'entraîner un échec critique et s'enrayeront automatiquement suivant la gravité de l'échec et la fiabilité de l'arme.\n\n**RÉPARER UNE ARME ENRAYÉE PREND 1D6 TOURS**",
+   "tables": [
+    {
+     "titre": "Table des échecs critiques de combat arme à feu",
+     "colonnes": [
+      "Valeur",
+      "Effet"
+     ],
+     "lignes": [
+      [
+       "1 à 3",
+       "Pas d'échec critique cela a été juste."
+      ],
+      [
+       "4",
+       "Vous lâchez votre arme."
+      ],
+      [
+       "5",
+       "L'arme se décharge."
+      ],
+      [
+       "6",
+       "Touche quelque chose sans importance."
+      ],
+      [
+       "7",
+       "L'arme s'enraye."
+      ],
+      [
+       "8",
+       "Vous parvenez à vous blesser, lancez 1D10 pour la localisation."
+      ],
+      [
+       "9",
+       "Vous parvenez à blesser un membre de votre équipe, lancez 1D10 pour la localisation."
+      ],
+      [
+       "10",
+       "Le canon se bouche et votre arme explose, appliquez-vous les dégâts sur les bras."
+      ]
+     ]
+    },
+    {
+     "titre": "Table des échecs critiques de combat corps à corps",
+     "colonnes": [
+      "Valeur",
+      "Effet"
+     ],
+     "lignes": [
+      [
+       "1 à 3",
+       "Pas d'échec critique cela a été juste."
+      ],
+      [
+       "4",
+       "Vous lâchez votre arme."
+      ],
+      [
+       "5 à 6",
+       "Touche quelque chose sans importance."
+      ],
+      [
+       "7 à 8",
+       "Vous parvenez à vous blesser, lancez 1D10 pour la localisation."
+      ],
+      [
+       "9 à 10",
+       "Vous parvenez à blesser un membre de votre équipe, lancez 1D10 pour la localisation."
+      ]
+     ]
+    },
+    {
+     "titre": "Enrayement des armes",
+     "colonnes": [
+      "Arme",
+      "Enrayement à"
+     ],
+     "lignes": [
+      [
+       "Très bonne",
+       "-5 ou moins"
+      ],
+      [
+       "Standard",
+       "-3 ou moins"
+      ],
+      [
+       "Faible",
+       "-1 ou moins"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "modes-de-tir",
+   "chapitre": "Friday Night Firefight",
+   "titre": "Les 3 modes différents des armes à feu",
+   "pages": "72",
+   "texte": "Il y a trois façons d'utiliser les armes à feu automatiques. La **Rafale** est utilisée pour tirer plusieurs fois sur la même cible à n'importe quelle distance. Le **Mode Automatique** est utilisé pour vider un chargeur à portée courte sur une ou plusieurs cibles. Et le **Tir de Suppression** qui est utilisé pour forcer l'opposant à rester à couvert sous peine d'en prendre une mal placée. En combat, chacune de ces méthodes de tir a ses avantages ou ses défauts, mais le bon guerrier de la rue connaîtra les moments opportuns pour chacune d'elles.\n\n## La rafale\nLa **Rafale** est la fonction la plus souvent utilisée des armes automatiques, car elle permet précision et préservation des munitions. La Rafale vous donne systématiquement un +3 à l'attaque à portée courte ou moyenne. L'attaque se résout en une seule action. Si celle-ci est un succès, lancez un 1D6/2 ce qui vous donnera le nombre de balles ayant touché la cible. Ce mode de tir ne peut être utilisé que sur une cible unique.\n\n**JET A RÉALISER POUR TIRER EN MODE RAFALE**\nPour tirer en mode Rafale, un +3 sur un jet d'attaque, uniquement sur un tir de portée courte ou moyenne.\nSi jet réussi, lancez 1D6/2 pour le nombre de balles qui touchent.\n\n## Mode automatique\nLe **Mode Automatique** est le mode le plus utilisé contre plusieurs cibles simultanément ou alors contre une cible pour être sûr qu'elle soit bien morte, je voulais dire raide morte ! Une arme utilisée en Mode Automatique fera un bruit épouvantable et sera dur à tenir sur une cible qui est à plus de quelques mètres. Utiliser une lunette ou viser est impossible dans ce mode de tir. La portée de tir sera aussi un facteur important sur ce mode de tir.\n\nLe Mode Automatique est basé sur la Cad (Cadence de Tir) de votre arme. Si vous attaquez plusieurs cibles, vous devez diviser la Cad par le nombre de personnes (arrondi à l'inférieur), puis lancez les dés pour chaque cible individuellement.\n\nChaque réussite au-dessus de la difficulté nécessaire pour toucher la cible est une balle qui l'impacte, avec pour limite la (Cad) de votre arme pour cette cible.\n\n**JET A RÉALISER POUR TIRER EN MODE AUTOMATIQUE**\n- Portée Courte : par tranche de 10 balles, ajoutez +1 à votre jet d'attaque.\n- Portée Moyenne / Longue / Extrême : par tranche de 10 balles, soustrayez -1 à votre jet d'attaque.\n- Impacts = (Nombre de Réussites > Difficulté de toucher de la cible)\n\n## Tir de suppression\nLe **Tir de Suppression** est utilisé pour couvrir toute une zone (zone de feu), rendant sa traversée hasardeuse, mortelle, suicidaire. Toute cible entrant dans cette zone ou la traversant pendant l'attaque doit faire une « Sauvegarde » contre les balles en additionnant Athlétisme + REF + 1D10. Le résultat de ce jet devra être supérieur au **Jet Sauveur**. Un échec signifie que la cible subit les impacts de 1D6 balles localisées chacune aléatoirement.\n\nLe **Jet Sauveur** est déterminé en divisant le nombre de balles tirées par la largeur de la zone de feu.\n\nVous pouvez superposer les zones de feu de plusieurs armes, le **Jet Sauveur** sera calculé en divisant le nombre de balles total des armes par la largeur de la zone de feu. Un échec signifie que la cible subit les impacts de 1D6 balles (+1 par arme en plus), et chacune sera localisée aléatoirement.\n\n**JET A REALISER POUR TIRER EN MODE SUPPRESSION**\n- Chaque tireur tire à sa Cad Maximum. Ils effectuent un jet d'attaque pour vérifier que ce n'est pas un échec critique.\n- La cible fait son jet de « Sauvegarde » : Athlétisme + REF + 1D10 qui doit être supérieur à : Nbr balles totales / largeur de la zone\n- Sinon 1D6 balles touchent ou 1D6 (+1 par arme supplémentaire)",
+   "tables": []
+  },
+  {
+   "id": "armes-inhabituelles",
+   "chapitre": "Friday Night Firefight",
+   "titre": "Armes à distance inhabituelles",
+   "pages": "73",
+   "texte": "Il existe des armes anti-émeute ou utilisées pour des missions discrètes ou d'autres situations où tuer n'est pas la seule alternative ou lorsque vous voulez descendre un nombre limité de personnes.\n\n## Air comprimé\nCe sont des versions sophistiquées des Paintball des années 1990. Les armes à air comprimé peuvent être chargées avec du poison, des marqueurs de peinture, différentes drogues ou de l'acide.\n\n### Peinture\nDommages de vaporisation uniquement. Les coups à la tête ont 5 chances sur 10 d'aveugler la cible pour 3 rounds avec de la peinture dans les yeux. Les capsules pénétrant directement dans les yeux ont 4 chances sur 10 d'endommager l'œil irrémédiablement.\n\n### Poisons & drogues\nFaire un jet de résistance aux drogues avec comme seuil de réussite **(12 + (puissance x 2))**. Sur un jet réussi, la victime ne subit que les effets de la colonne dégâts.\n\n### Acide\nL'acide cause 1D6 points de dommages par capsule. Bien que l'armure puisse absorber ses dommages, l'acide va s'attaquer à l'armure et en réduisant la PA par le résultat du D6 chaque tour. L'effet de l'acide agit 3 tours.\n\n### Taser\nUne charge de Taser implique que la cible réalise un jet contre l'évanouissement. Le jet est réduit de -2 pour chaque coup touchant sur une période de 3 tours. Le temps de recharge d'un Taser est d'une heure complète.\n\n## Incapacitants\nLes incapacitants exigent de la cible qu'elle fasse un jet de sauvegarde contre l'évanouissement. Ce jet de sauvegarde est réduit de -2 pour chaque coup touchant dans une période de 3 tours.\n\n## Fléchettes et armes hypodermiques\nLes armes hypodermiques peuvent être chargées avec des drogues ou des toxines. Chaque coup au but cause 1D6/2 points de dommages plus les effets de la drogue. (Voir Poisons & Drogues.)\n\n## Armes à liquides\nLes armes à liquides peuvent être chargées avec des drogues ou des acides. Les effets sont similaires à ceux des armes à Air Comprimé, chaque « giclée » étant égale à deux capsules.\n\n## Arcs, arbalètes, lances et shurikens\nBien que peu fréquentes, les armes archaïques, telles que les arcs, les arbalètes, les lances et les shurikens, sont disponibles dans les années 2020. Ces armes sont soit lancées (utilisant la compétence de Lancer), pour les shurikens, couteaux et lances, soit tirées (utilisant la compétence Tir à l'Arc / Arbalète) pour les arcs et arbalètes.",
+   "tables": [
+    {
+     "titre": "Effets des poisons et des drogues",
+     "colonnes": [
+      "Type",
+      "Puissance / Effet",
+      "Dégâts"
+     ],
+     "lignes": [
+      [
+       "Hallucinogène",
+       "(1) / Contusion",
+       "-4 INT"
+      ],
+      [
+       "Poison",
+       "(2) ou Var. / Empoisonné",
+       "-4 REF"
+      ],
+      [
+       "Soporifique",
+       "(2) / Sommeil",
+       "Aucun"
+      ],
+      [
+       "Biotoxine I",
+       "(4) / Mort",
+       "4D6"
+      ],
+      [
+       "Biotoxine II",
+       "(6) / Mort",
+       "5D6"
+      ],
+      [
+       "Gaz Neuroleptique",
+       "(10) / Mort",
+       "8D10"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "armes-rayonnement",
+   "chapitre": "Friday Night Firefight",
+   "titre": "Armes à rayonnement",
+   "pages": "73",
+   "texte": "Les armes à rayonnement comprennent les lasers et les armes micro-ondes. Les armes à rayonnement sont si puissantes qu'elles sont rares à Cyberpunk et illégales. Seulement 1 chance sur 10 de disponibilité dans les grandes Corporations et/ou pour le gouvernement.\n\n## Laser\nLes lasers sont munis d'alimentations rechargeables, causant des dégâts pour chaque charge utilisée. Un seul tir suivant la cadence de l'arme peut décharger jusqu'à parfois 5 ou 10D6 suivant le réglage. Une fois que les charges sont utilisées, l'arme doit être remise en charge. (Voir la description de l'arme pour le temps de recharge.) Si vous ne rechargez pas une arme laser sur une connexion électrique appropriée (disponible seulement en Corporation la plupart du temps), doublez le temps de charge, et croisez les doigts pour que votre ligne tienne. Ces armes restent encore aujourd'hui des armes illégales.",
+   "tables": []
+  },
+  {
+   "id": "armes-aire-effet",
+   "chapitre": "Friday Night Firefight",
+   "titre": "Armes à aire d'effets",
+   "pages": "73-74",
+   "texte": "Les armes à aire d'effets arrosent plusieurs cibles d'une gerbe de balles, de flammes, de déflagration ou de gaz. Les armes à aire d'effets incluent les fusils à pompe, les grenades, les explosifs et les mines.\n\nLes attaques sont effectuées normalement, avec l'aire d'effet centrée sur la cible désignée. Tout ce qui se trouve dans la limite de l'aire d'effet subit les dommages également. Si la cible est manquée, le point d'impact précis du centre de l'attaque doit être déterminé en utilisant la table des grenades.\n\nChaque carré de cette table représente une zone de 1 mètre carré. Lancez un D10 et placez l'impact à l'intérieur de la zone de 1 m x 1 m déterminée par le résultat du dé. Une fois l'impact localisé, toute cible se trouvant dans l'aire d'effet subit des dommages. Une grenade peut se lancer à une distance maximum égale à la constitution (CON) du lanceur x 10 mètres.\n\n## Fusils à pompe\nLes fusils à pompe sont considérés comme des armes à aire d'effet, propulsant une nuée de grains de plomb appelée gerbe. La largeur de la gerbe est basée sur la distance séparant l'attaquant du défenseur. Toute cible située dans la trajectoire entre l'attaquant et la cible sélectionnée est considérée comme incluse dans l'aire d'effet.\n\nNote : si quelque chose se trouve entre le fusil et la cible visée, les endroits situés derrière cet objet sont considérés comme non affectés par les effets du coup de feu.\n\nLes fusils à pompe sont très efficaces quand la visée a peu d'importance. Par exemple dans un couloir de 1,80 m la cible n'aura aucune chance d'échapper aux dommages, quels que soient ses réflexes. Cependant les fusils à pompe sont limités à des portées relativement courtes et ne font pas de gros dégâts par plombs isolés.\n\n## Les fusils à pompe automatiques\nUne des armes les plus vicieuses dans cette famille d'armes à feu est le fusil à pompe automatique. Au combat, vous pouvez effectuer autant d'attaques que l'indique la cadence de tir de l'arme (Cad.) en mode automatique. Chaque tir doit être distant d'un mètre du précédent. Chaque attaque subit un malus de -2 pour chaque tir suivant le premier. Les fusils à plomb automatiques sont lents, encombrants et peu précis, mais sont diaboliquement meurtriers dans des combats de courte portée.\n\n## Grenades\nLes grenades se présentent sous différentes variétés :\n\n- fragmentation\n- incendiaires\n- étourdissantes\n- aveuglantes\n- sonores\n- gaz\n\nLes grenades du monde de Cyberpunk vont du très dangereux à l'inoffensif. À de rares exceptions près, elles sont évidemment illégales. Il faudra donc vous adresser à votre fixer préféré pour en dénicher. Les prix indiqués sont ceux pratiqués par les marchands d'armes légaux. Le prix sur le marché noir est évidemment supérieur.\n\nLes grenades sont de multiples modèles : les plus classiques sont à lancer à la main. Les modèles plus évolués se fixent sur le canon d'une arme et sont propulsés par l'impact de la balle. Le fin du fin est la grenade auto-propulsée, qui se présente comme une grosse cartouche, et doit être utilisée avec un lance-grenades.",
+   "tables": [
+    {
+     "titre": "Table des grenades — grille de dispersion (1D10, cases de 1 m x 1 m)",
+     "colonnes": [
+      "D10",
+      "Case de la grille (repérée par rapport à la case « Cible »)"
+     ],
+     "lignes": [
+      [
+       "1",
+       "2 rangées avant la cible, colonne centrale"
+      ],
+      [
+       "2",
+       "1 rangée avant la cible, colonne gauche"
+      ],
+      [
+       "3",
+       "1 rangée avant la cible, colonne centrale"
+      ],
+      [
+       "4",
+       "1 rangée avant la cible, colonne droite"
+      ],
+      [
+       "5",
+       "Rangée de la cible, colonne gauche"
+      ],
+      [
+       "6",
+       "Rangée de la cible, colonne droite"
+      ],
+      [
+       "7",
+       "1 rangée après la cible, colonne gauche"
+      ],
+      [
+       "8",
+       "1 rangée après la cible, colonne centrale"
+      ],
+      [
+       "9",
+       "1 rangée après la cible, colonne droite"
+      ],
+      [
+       "10",
+       "2 rangées après la cible, colonne centrale"
+      ]
+     ]
+    },
+    {
+     "titre": "Portée des fusils à pompe",
+     "colonnes": [
+      "Portée",
+      "Gerbe"
+     ],
+     "lignes": [
+      [
+       "Courte",
+       "1 mètre"
+      ],
+      [
+       "Moyenne",
+       "2 mètres"
+      ],
+      [
+       "Longue",
+       "3 mètres"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legislation-armes-2020",
+   "chapitre": "Équipement",
+   "titre": "La législation sur les armes en 2020",
+   "pages": "99",
+   "texte": "La nomenclature suivante est le résultat de la loi fédérale sur les armes de 1999, décrétée sous la loi martiale, aux États-Unis, pour tenter d'enrayer la criminalité et les risques de coup d'état lors de cette période très agitée. Elle marque la fin d'une longue période de laxisme de la part de la législation américaine vis-à-vis de la possession et du port d'armes à feu et d'armes de guerre. Les lobbies pro-armement personnels avaient pour le moment permis, au nom de l'amendement permettant à tout citoyen américain de détenir un armement suffisant pour assurer sa propre protection (cette protection incluant, le cas éventuel, la lutte contre le gouvernement fédéral si celui-ci venait à manquer à ses obligations). Ce potentiel guerrier incluait, dans la plupart des états, la possession d'armes de guerre lourdes, comme des mitrailleuses, fusils d'assaut lourds, lance-roquettes ou autre mortier. En 1999, l'armée décida que tout ce qui pouvait réellement l'inquiéter (en particulier les armes précédemment citées) étaient à proscrire aux civils. Le droit au port d'arme, quant à lui, bénéficia des dernières avancées technologiques afin de le rendre plus contrôlé : les seules armes autorisées à circuler dans la rue sont maintenant enregistrées, répertoriées et leur signature balistique est connue des fichiers de la police.\n\nCes mesures ont effectivement fait baisser la criminalité. Les armes illégales sont devenues un fardeau pour les délinquants, qui doivent les acquérir pour au moins le double de leur prix réel au marché noir et les dissimuler sans cesse lors des fréquents contrôles de police. Par contre rien n'empêche ceux qui vivent en dehors de toute légalité d'amasser un arsenal tout aussi répréhensible que destructeur. C'est entre autre pour cette raison que les honnêtes gens (ou du moins ceux qui veulent paraître comme tel) doivent se plier à une loi qui, sans les désarmer complètement et ainsi les rendre vulnérables, leur impose un carcan judiciaire étroit.\n\n## Classification des armes\nCette classification établit des barrières strictes entre les armes légalement portables, légalement achetables et celles interdites à la circulation dans un cadre civil.\n\n### Classe A\nArmes non mortelles. Vente aux mineurs avec une autorisation parentale. Tasers, bombes anti-agressions, armes à munitions non létales, armes blanches de longueur inférieure à 15 centimètres, certains lance-fléchettes légers, armes de jet à la main (shuriken, couteaux de lancer), arcs et arbalètes.\n\nNote : même si un arc est une arme mortelle, il a été classé dans cette catégorie pour des raisons de cohérence. On pouvait difficilement contrôler le trafic et la circulation des arcs et couteaux.\n\n### Classe B\nArmes légalement transportables. Il s'agit des pistolets à munitions classiques de puissance de feu inférieure ou égale à la balle standard de 12 mm. Les pistolets à grenaille de petit calibre ou les pistolets à fléchettes non-automatiques ou les armes blanches de longueur inférieure à 46 cm rentrent également dans cette catégorie.\n\n### Classe C\nArmes proposables à la vente, mais non autorisées au port : fusils d'assaut d'une puissance de feu inférieure à la cartouche standard de 7,62 à douille combustible, pistolets à grenaille lourds, fusils à pompe, pistolets de calibre supérieurs à 12 mm, toutes les armes blanches de longueur supérieure à 46 cm.\n\n### Classe D\nArmes à usage strictement militaire : lance-grenades, fusils d'assaut lourds ou très grosses armes de poing de puissance équivalente, lasers, fusils d'affût lourds, mitrailleuses, lance-missiles, armes anti-blindés, armes indécelables aux senseurs de métaux. Tout équipement non-installé lors de l'achat visant à augmenter la puissance de feu d'une arme, à masquer sa signature balistique ou dangereux pour l'utilisateur est interdit. En cas de modification majeure (changement de calibre, de canon), l'arme doit faire l'objet d'un nouvel enregistrement par les services de police.",
+   "tables": [
+    {
+     "titre": "Classification des armes",
+     "colonnes": [
+      "Classe",
+      "Description"
+     ],
+     "lignes": [
+      [
+       "Classe A",
+       "Armes non mortelles. Vente aux mineurs avec une autorisation parentale. Tasers, bombes anti-agressions, armes à munitions non létales, armes blanches de longueur inférieure à 15 centimètres, certains lance-fléchettes légers, armes de jet à la main (shuriken, couteaux de lancer), arcs et arbalètes."
+      ],
+      [
+       "Classe B",
+       "Armes légalement transportables : pistolets à munitions classiques de puissance de feu inférieure ou égale à la balle standard de 12 mm, pistolets à grenaille de petit calibre, pistolets à fléchettes non-automatiques, armes blanches de longueur inférieure à 46 cm."
+      ],
+      [
+       "Classe C",
+       "Armes proposables à la vente, mais non autorisées au port : fusils d'assaut d'une puissance de feu inférieure à la cartouche standard de 7,62 à douille combustible, pistolets à grenaille lourds, fusils à pompe, pistolets de calibre supérieurs à 12 mm, toutes les armes blanches de longueur supérieure à 46 cm."
+      ],
+      [
+       "Classe D",
+       "Armes à usage strictement militaire : lance-grenades, fusils d'assaut lourds ou très grosses armes de poing de puissance équivalente, lasers, fusils d'affût lourds, mitrailleuses, lance-missiles, armes anti-blindés, armes indécelables aux senseurs de métaux."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "loi-federale-1999",
+   "chapitre": "Équipement",
+   "titre": "La loi fédérale sur les armes de 1999",
+   "pages": "100",
+   "texte": "## Article 1. Vente et acquisition des armes\nLes armes de classe A sont en vente libre. Les mineurs peuvent en obtenir avec l'accord de leurs parents ou tuteur légal. La vente des armes de classe B et C est limitée aux magasins bénéficiant d'une autorisation de la municipalité.\n\nTout individu achetant une arme de ces deux catégories doit présenter ses papiers d'identité et recevra un formulaire de déclaration de possession d'arme. Son achat sera de toute façon communiqué par le commerçant aux services de police. Toute arme vendue de particulier à particulier doit faire l'objet d'une déclaration au commissariat de police où un formulaire sera remis à l'acheteur.\n\nSera puni d'un emprisonnement de 3 à 12 ans de prison dans un Quartier de Haute Surveillance ou sera expulsé tout individu ayant vendu une arme sans autorisation des services de police, qui aura omis ou falsifié sa déclaration de possession d'arme, ou qui aura vendu ou possédé du matériel de Classe D. (Priorité 2)\n\nSera puni d'un emprisonnement de 1 mois à deux ans en Quartier de Faible surveillance et/ou d'une amende de 500 à 1000 $ tout individu ne pouvant présenter les armes censées être en sa possession. (Priorité 5)\n\n## Article 2. Port d'arme sur la voie publique ou dans des véhicules\nLe port d'arme sur la voie publique est limité aux armes de Classe A et B. Pour les armes de catégorie B, la demande est à déposer au commissariat de police dans les deux jours suivant la date d'achat de l'arme. Les frais de dossier pour une demande de port d'arme sont fixés à 25 $.\n\nL'enregistrement d'une arme consiste à stocker dans les fichiers des services de police l'identité du propriétaire d'une arme, son type, son numéro de série et son empreinte balistique (sauf dans le cas des pistolets à grenaille). Un numéro d'identification est gravé au laser sur l'arme à cette occasion. Ces données sont confidentielles et toute modification de l'arme influant sur elles doit être déclarée.\n\nLes services de police n'accorderont pas de permis de port d'arme à toute personne ayant été condamnée pour un délit de priorité 5 ou plus depuis une durée inférieure à 12 mois, à toute personne soignée pour troubles mentaux graves.\n\nLe transport des armes de Classe C doit se faire exclusivement du magasin au domicile de l'acheteur. Elle doit être à cette occasion dans son emballage d'origine.\n\nLes forces de police peuvent saisir tout matériel transporté sur la voie publique si visiblement celui-ci constitue un risque pour l'ordre public. Cela se voit couramment pour des arbalètes, des arcs ou des couteaux de lancer.\n\nSera puni d'un emprisonnement de 1 mois à 10 ans en Quartier de Faible Surveillance et/ou une amende de 300 à 1000 $ toute personne portant une arme sans autorisation ou qui aura maquillé la signature balistique de son arme ou son numéro d'identification. (Priorité 5)\n\nSera puni d'une amende forfaitaire de 300 $ toute personne ne pouvant présenter son permis de port d'arme immédiatement aux forces de police. (Priorité 6)\n\n## Article 3. Munitions\nLes munitions acceptées sur la voie publique sont les balles standards vendues couramment dans les commerces agréés. Toute munition perce-armure, explosive ou à fragmentation est interdite et est passible des peines relatives à l'article précédent. L'amélioration électrothermale est illégale.\n\n## Article 4. Equipement\nTout équipement non-installé lors de l'achat visant à augmenter la puissance de feu d'une arme, à masquer sa signature balistique ou dangereux pour l'utilisateur est interdit. En cas de modification majeure (changement de calibre, de canon), l'arme doit faire l'objet d'un nouvel enregistrement par les services de police.\n\n## Article 5. Utilisation des armes\nLes armes portées sur la voie publique ou dans une propriété privée doivent l'être dans un but strictement de self-défense, pour empêcher un crime ou des blessures occasionnées au tireur ou à un tiers. Les dispositifs tels que caméras de canon ou puce 22 sont vivement encouragés pour simplifier les litiges éventuels.\n\nSera puni d'un emprisonnement de 6 mois à cinq ans en Quartier de Moyenne Priorité et d'un traitement de réajustement de la personnalité et/ou d'un traitement en Braindance toute personne ayant fait usage d'une arme sans motif légitime dans un lieu public, même si cette utilisation n'a pas occasionné de blessure ou de dégâts. (Priorité 4)\n\n## Article 6. Lieux sujets à un contrôle des armes\nTout endroit privé (restaurant, discothèque...) ou zone de résidence corporatiste peut être sujet à une interdiction de port d'arme à la discrétion du propriétaire ou des responsables de la sécurité. Tout manquement à ce règlement intérieur peut faire l'objet d'une plainte pour port d'arme illégal dans une propriété privée.\n\n## Article 7. Etrangers de passage\nTout ressortissant étranger de passage sur le sol des USA doit être en conformité avec les lois sur le port des armes et donc déclarer toute arme transportée dans le pays, qui sera soit enregistrée soit mise en consigne, selon sa catégorie et les antécédents judiciaires de son porteur.\n\n## Article 8. Responsabilité des propriétaires d'armes\nLe propriétaire d'une arme est responsable de son utilisation et il lui sera reproché toute voie de fait commise avec une arme enregistrée à son nom. Dans cette optique, tout vol ou perte d'arme doit être dûment signalé dans un commissariat de police dans les plus brefs délais.\n\nSera puni d'une amende de 200 à 400 $ toute personne ayant égaré ou s'étant fait voler une arme par négligence.\n\n## Article 9. Autorisations spéciales\nLa municipalité d'une ville se réserve le droit d'accorder des autorisations de détention ou de port d'armes de toute classe à toute personne ou organisme pouvant justifier cette obligation sur le plan personnel. Il s'agit notamment des gardes du corps déclarés comme tel, des gardes en faction devant un bâtiment, des agents de l'ordre, des services médicaux d'assistance rapide ou des milices de surveillance.",
+   "tables": []
+  },
+  {
+   "id": "resolution-des-taches",
+   "chapitre": "Actions & Compétences",
+   "titre": "Résolution des tâches",
+   "pages": "49",
+   "texte": "La plupart du temps, votre personnage sera capable de mener à bien toutes les sortes de tâches ordinaires sans difficulté : marcher, parler, ouvrir une boîte de nourriture, sans commettre de gaffe. Mais certaines choses exigeront du personnage qu'il fasse un jet de compétence pour déterminer s'il réussit ou non l'action entreprise.",
+   "tables": []
+  },
+  {
+   "id": "difficulte-etablie-par-le-maitre-du-jeu",
+   "chapitre": "Actions & Compétences",
+   "titre": "Difficulté établie par le Maître du Jeu",
+   "pages": "49",
+   "texte": "Chaque tâche est évaluée par le maître du jeu de simple à presque impossible. À chaque niveau de difficulté correspond une valeur numérique appelée **Difficulté**.",
+   "tables": [
+    {
+     "titre": "Difficulté des tâches",
+     "colonnes": [
+      "Niveau de difficulté",
+      "Difficulté"
+     ],
+     "lignes": [
+      [
+       "Simple",
+       "+10"
+      ],
+      [
+       "Nécessite entraînement",
+       "+15"
+      ],
+      [
+       "Difficile",
+       "+20"
+      ],
+      [
+       "Très difficile",
+       "+25"
+      ],
+      [
+       "Pratiquement impossible",
+       "+30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "donnez-vous-toutes-vos-chances",
+   "chapitre": "Actions & Compétences",
+   "titre": "Donnez vous toutes vos chances",
+   "pages": "49",
+   "texte": "Pour effectuer un jet de compétence commencez par déterminer quelle caractéristique de votre personnage est la plus susceptible d'être utilisée pour accomplir l'action. Par exemple si vous voulez tenter de tenir en équilibre sur la tête, votre **REF** est tout indiqué. Si vous tentez de déchiffrer un code, votre **INT** serait plus appropriée.\n\nEnsuite, si vous possédez une compétence directement en rapport avec la tâche que vous désirez accomplir, ajoutez cette compétence à votre Caractéristique. Vous ne pouvez tenir compte que d'une seule compétence par tâche. Les compétences (et comment les acquérir) sont traitées plus loin dans les règles, mais d'ores et déjà nous vous habituons au concept de tâche.\n\nEnfin, lancez 1D10 et ajoutez le résultat à votre total combiné de votre Caractéristique et votre Compétence. Comparez ce total avec la difficulté de la tâche. Si votre total est supérieur ou égal, vous avez réussi. S'il est inférieur, vous avez échoué.\n\n**COMPÉTENCE + CARACTÉRISTIQUE + 1D10**\n\n**Si > ou = à la difficulté, Action réussie**",
+   "tables": []
+  },
+  {
+   "id": "tu-te-sens-chanceux-punk",
+   "chapitre": "Actions & Compétences",
+   "titre": "Tu te sens chanceux Punk ?",
+   "pages": "49",
+   "texte": "Souviens toi que tu peux utiliser des points de ta caractéristique de **CHANCE** relancer un jet de dé désastreux. Ces points reviennent au maximum à la fin de chaque scénario ou à chaque « Chapitre » important fini dans une campagne.",
+   "tables": []
+  },
+  {
+   "id": "taches-opposees",
+   "chapitre": "Actions & Compétences",
+   "titre": "Tâches opposées",
+   "pages": "49",
+   "texte": "Si vous effectuez une tentative contre un autre personnage, le personnage adverse combinera sa caractéristique la plus appropriée, sa compétence et 1D10. Pour un jet égal ou supérieur le joueur en défense l'emporte.",
+   "tables": []
+  },
+  {
+   "id": "modificateurs-de-difficulte",
+   "chapitre": "Actions & Compétences",
+   "titre": "Modificateurs de difficulté",
+   "pages": "49",
+   "texte": "Les modificateurs sont des valeurs ajoutées à la difficulté des tâches pour représenter des conditions défavorables et des problèmes supplémentaires. Les modificateurs prennent toute leur valeur dès que vous entreprenez des tâches très minutieuses ou très délicates ; comme une question de vie ou de mort. Dans ces cas, les joueurs voudront bénéficier du moindre avantage possible, et décider simplement que « c'est très difficile » entraînera plus de tension que nécessaire. Dans ces conditions, vous aurez besoin d'expliquer les détails de la difficulté en la décomposant pour clarifier la situation. De plus les modificateurs vous permettront, à vous, maître du jeu, de déterminer la difficulté relative d'une action entreprise dans certaines conditions.",
+   "tables": [
+    {
+     "titre": "Modificateurs de difficultés de base",
+     "colonnes": [
+      "Condition",
+      "Modificateur"
+     ],
+     "lignes": [
+      [
+       "Réparation complexe",
+       "+2"
+      ],
+      [
+       "Réparation très complexe",
+       "+4"
+      ],
+      [
+       "« Cela n'a jamais été fait auparavant »",
+       "+6"
+      ],
+      [
+       "Pas les bonnes pièces",
+       "+2"
+      ],
+      [
+       "Outils, armes ou véhicule non familier",
+       "+4"
+      ],
+      [
+       "Sous l'emprise du stress",
+       "+3"
+      ],
+      [
+       "Sous attaque adverse",
+       "+3 à +4"
+      ],
+      [
+       "Blessé",
+       "+2 à +6"
+      ],
+      [
+       "Ivre, drogué, fatigué",
+       "+4"
+      ],
+      [
+       "Environnement hostile",
+       "+4"
+      ],
+      [
+       "Environnement très hostile",
+       "+6"
+      ],
+      [
+       "Manque d'instructions",
+       "+2"
+      ],
+      [
+       "Agitation environnante",
+       "+3"
+      ],
+      [
+       "Acrobatie difficile",
+       "+3"
+      ],
+      [
+       "Acrobatie très difficile",
+       "+4"
+      ],
+      [
+       "Acrobatie impossible",
+       "+5"
+      ],
+      [
+       "Information cachée, secrète, illisible",
+       "+3"
+      ],
+      [
+       "Solution dissimulée, cachette",
+       "+3"
+      ],
+      [
+       "Programme complexe",
+       "+3"
+      ],
+      [
+       "Programme très complexe",
+       "+4"
+      ],
+      [
+       "Serrure complexe",
+       "+3"
+      ],
+      [
+       "Serrure très complexe",
+       "+4"
+      ],
+      [
+       "Cible alertée ou sur ses gardes",
+       "+4"
+      ],
+      [
+       "Zone très éclairée",
+       "+3"
+      ],
+      [
+       "Luminosité insuffisante",
+       "+3"
+      ],
+      [
+       "Obscurité totale",
+       "+4"
+      ],
+      [
+       "En secret sous surveillance",
+       "+4"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "echec-automatique-reussite-critique",
+   "chapitre": "Actions & Compétences",
+   "titre": "Echec automatique, réussite critique",
+   "pages": "49",
+   "texte": "Sur un 1 naturel sur le dé, votre échec est automatique. Relancez 1D10 et consultez la table des « **ÉCHECS CRITIQUES** » à votre jet préliminaire.\n\nSur un 10 naturel sur le D10, vous avez obtenu un succès critique. Relancez 1D10 et ajoutez-en le résultat à votre jet préliminaire. Cela signifie que vous avez eu de la chance et que vous vous acquittez avec brio de votre tâche que vous n'aviez pas une chance de réussir normalement.",
+   "tables": []
+  },
+  {
+   "id": "tables-des-echecs-critiques",
+   "chapitre": "Actions & Compétences",
+   "titre": "Tables des échecs critiques",
+   "pages": "51",
+   "texte": "Table consultée après un échec automatique (1 naturel sur le dé) : relancez 1D10 et lisez le résultat dans le domaine correspondant à la compétence utilisée.",
+   "note": "Le livre imprime pour REFLEXE (Athlétisme) une deuxième et une troisième ligne qui se chevauchent (« 5-7 » puis « 6-10 ») ; les intervalles sont reproduits tels quels, la troisième ligne devant vraisemblablement se lire « 8-10 ».",
+   "tables": [
+    {
+     "titre": "Tables des échecs critiques",
+     "colonnes": [
+      "Domaine",
+      "Résultat D10",
+      "Effet"
+     ],
+     "lignes": [
+      [
+       "REFLEXE (Combat)",
+       "1-4",
+       "Pas d'échec critique. Cela a été juste"
+      ],
+      [
+       "REFLEXE (Combat)",
+       "5",
+       "Vous lâchez votre arme"
+      ],
+      [
+       "REFLEXE (Combat)",
+       "6",
+       "L'arme se décharge ou touche quelque chose sans importance"
+      ],
+      [
+       "REFLEXE (Combat)",
+       "7",
+       "L'arme s'enraye ou se plante dans le sol durant 1 tour"
+      ],
+      [
+       "REFLEXE (Combat)",
+       "8",
+       "Vous parvenez à vous blesser (Lancez 1D10 pour la localisation)"
+      ],
+      [
+       "REFLEXE (Combat)",
+       "9-10",
+       "Vous parvenez à blesser un membre de votre équipe"
+      ],
+      [
+       "REFLEXE (Athlétisme)",
+       "1-4",
+       "Pas d'échec critique. Vous ratez simplement et paraissez ridicule"
+      ],
+      [
+       "REFLEXE (Athlétisme)",
+       "5-7",
+       "Vous échouez lamentablement. Prenez 1 point de dégâts mineur (chute, entorse, etc.) et faites un jet contre l'évanouissement."
+      ],
+      [
+       "REFLEXE (Athlétisme)",
+       "6-10",
+       "C'est un échec total. Si vous faites une action physique, prenez 1D6 points de dégâts dû à la chute ou aux dégâts musculaires. Faites un jet à -1 contre l'évanouissement."
+      ],
+      [
+       "TECH (Réparation ou Création)",
+       "1-4",
+       "Pas d'échec critique. Vous n'arrivez pas à assembler."
+      ],
+      [
+       "TECH (Réparation ou Création)",
+       "5-7",
+       "Vous ne faites pas qu'échouer, c'est pire ! Vous lâchez vos outils ou vous perdez prise et vous lâchez l'objet sur lequel vous travaillez et l'endommagez encore plus."
+      ],
+      [
+       "TECH (Réparation ou Création)",
+       "8-10",
+       "Woaw ! Ce coup-ci c'est cassé. L'objet est à présent irréparable. Achetez-en un nouveau."
+      ],
+      [
+       "EMP (Convaincre, Baratin, Séduction)",
+       "1-4",
+       "Pas d'échec critique. Ils refusent seulement de l'acheter."
+      ],
+      [
+       "EMP (Convaincre, Baratin, Séduction)",
+       "5-6",
+       "Trop difficile pour vos talents. Non seulement vous ne les convainquez pas de l'acheter, mais vous les refroidissez complètement (-4 à vos prochains jets d'EMP) quant aux autres suggestions que vous pourrez leur faire."
+      ],
+      [
+       "EMP (Convaincre, Baratin, Séduction)",
+       "7-10",
+       "Ça c'est un plantage royal ! Non seulement ils ne sont pas convaincus, mais en plus ils réagissent violemment à tout ce que vous leur proposez. Lancez 1D10, de 1 à 4 ils vous agressent même physiquement."
+      ],
+      [
+       "INT (Déduction, Perception, Trouver un indice)",
+       "1-4",
+       "Vous ne savez tout simplement pas comment vous y prendre. Vous ne savez pas ce qui se passe. Vous allez de l'avant, concerné par des choses plus importantes."
+      ],
+      [
+       "INT (Déduction, Perception, Trouver un indice)",
+       "5-7",
+       "Vous ne savez vraiment pas ce qui se passe et vous n'avez aucun indice permettant de vous renseigner. Faites un jet de Convaincre à -2 pour voir si les autres s'aperçoivent quel idiot vous êtes."
+      ],
+      [
+       "INT (Déduction, Perception, Trouver un indice)",
+       "8-10",
+       "Hé ! Il y a quelqu'un ? Non seulement vous ne savez absolument rien mais les autres le remarquent tout de suite."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "les-competences",
+   "chapitre": "Actions & Compétences",
+   "titre": "Les compétences",
+   "pages": "52",
+   "texte": "Les compétences ont pour fonction de vous aider à accomplir certaines tâches. Elles représentent des connaissances particulières que vous avez pris le temps d'acquérir et peut être même de maîtriser (par opposition à vos caractéristiques qui n'indiquent que des aptitudes naturelles à accomplir certaines choses).\n\nPar exemple si vous avez de bons réflexes, vous pourriez choisir d'apprendre à conduire avec beaucoup de facilité, mais vous ne pourriez pas conduire avant d'avoir appris cette compétence. Chaque compétence se rapporte plus ou moins à une caractéristique.\n\nPar exemple la compétence Pistolet se rapporte à la caractéristique Réflexe **(REF)** de votre personnage. Les compétences sont évaluées en niveaux de maîtrise allant de 0 à 10, 1 étant le niveau novice et 10 le niveau d'un maître dans cette compétence.",
+   "note": "La page 50 du livre est un brouillon quasiment dupliqué de la page 52 (titre « COMPETENCES » au lieu de « LES COMPETENCES », mêmes paragraphes, mais sans le sous-titre « ÉVOLUTION », sans la limite « une compétence ne peut pas dépasser la valeur de l'attribut dont elle dépend », sans le coefficient (x2) de l'Adrénaline, avec trois moyens d'obtenir des PC au lieu de quatre et un paragraphe « Expérience » tronqué). C'est la version de la page 52, plus complète, qui est reproduite ici et dans les sections suivantes.",
+   "tables": []
+  },
+  {
+   "id": "description-restriction-evolution",
+   "chapitre": "Actions & Compétences",
+   "titre": "Description, restriction et évolution",
+   "pages": "52",
+   "texte": "## Description\nChaque compétence se rapporte à une caractéristique. Les tableaux suivants vous donnent des exemples de niveaux pour chaque compétence.\n\nQuand vous avez 10 dans une compétence la difficulté est réduite de 2.\n\n## Restrictions\nIl n'est pas possible de faire de jets de compétences pour celles qui dépendent de l'Intelligence **(INT)** dans lesquelles vous n'avez investi aucun point.\n\nNe pas oublier aussi la compétence **(Coeff x2) Adrénaline** que tout le monde possède, avec un maximum de 2 à la création de personnage pour celle-ci, quelque soit votre âge.\n\nUne compétence ne peut pas dépasser la valeur de l'attribut dont elle dépend.\n\n## Évolution\nLes joueurs peuvent améliorer leurs compétences ou en apprendre de nouvelles en accumulant des **(PC)**. Quand vous gagnez des PC, vous devez les noter dans la case à côté de la compétence sur la feuille de personnage. Lorsque vous en aurez gagné suffisamment dans une compétence, le niveau de compétence augmentera d'un point.",
+   "tables": []
+  },
+  {
+   "id": "ameliorer-vos-competences",
+   "chapitre": "Actions & Compétences",
+   "titre": "Améliorer vos compétences",
+   "pages": "52",
+   "texte": "Le premier niveau de compétence coûte 10 PC. Pour déterminer combien de PC sont nécessaires pour passer au niveau suivant, multipliez le niveau de compétence actuel x 10. Cela donne le nombre de points nécessaires pour augmenter une compétence simple (multiplicateur de PC = 1) d'un niveau.\n\n**Exemple** : ma compétence de Lutte est à +4. Pour passer à +5, il me faut 40 PC. Pour passer de +5 à +6, il me faudra 50 PC.",
+   "tables": []
+  },
+  {
+   "id": "multiplicateur-de-pc",
+   "chapitre": "Actions & Compétences",
+   "titre": "Multiplicateur de PC",
+   "pages": "52",
+   "texte": "Toutes les compétences ne sont pas aussi faciles à apprendre. Ces compétences ont un multiplicateur de PC additionnel qui multiplie le nombre de points nécessaires pour acquérir le niveau suivant. Ce coût est indiqué sur la feuille d'évolution de personnage.\n\n**Exemple** : Le Choi Li Fut a un multiplicateur de 3. Pour faire passer ma compétence en Choi Li Fut de +4 à +5, il me faudra 120 PC et pas 40.",
+   "tables": [
+    {
+     "titre": "PC par coefficient multiplicateur",
+     "colonnes": [
+      "Valeur de Compétence",
+      "Coût pour augmenter (+1 niv)",
+      "PC x2",
+      "PC x3",
+      "PC x4",
+      "PC x5"
+     ],
+     "lignes": [
+      [
+       "Achat",
+       "10",
+       "20",
+       "30",
+       "40",
+       "50"
+      ],
+      [
+       "1",
+       "10",
+       "20",
+       "30",
+       "40",
+       "50"
+      ],
+      [
+       "2",
+       "20",
+       "40",
+       "60",
+       "80",
+       "100"
+      ],
+      [
+       "3",
+       "30",
+       "60",
+       "90",
+       "120",
+       "150"
+      ],
+      [
+       "4",
+       "40",
+       "80",
+       "120",
+       "160",
+       "200"
+      ],
+      [
+       "5",
+       "50",
+       "100",
+       "150",
+       "200",
+       "250"
+      ],
+      [
+       "6",
+       "60",
+       "120",
+       "180",
+       "240",
+       "300"
+      ],
+      [
+       "7",
+       "70",
+       "140",
+       "210",
+       "280",
+       "350"
+      ],
+      [
+       "8",
+       "80",
+       "160",
+       "240",
+       "320",
+       "400"
+      ],
+      [
+       "9",
+       "90",
+       "180",
+       "270",
+       "360",
+       "450"
+      ],
+      [
+       "10",
+       "100",
+       "200",
+       "300",
+       "400",
+       "500"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "obtenir-plus-de-pc",
+   "chapitre": "Actions & Compétences",
+   "titre": "Obtenir plus de PC",
+   "pages": "52-53",
+   "texte": "Les quatre moyens de gagner des points de compétences sont :\n\n- Recevoir un enseignement\n- Expérience directe\n- Étude et pratique\n- Résultat de votre séance de jeu\n\n## Recevoir un enseignement\nTrouver un professeur est bien plus intéressant qu'apprendre soi-même ou dans des livres. Le professeur doit avoir la compétence supérieure à l'élève et du temps pour enseigner (le temps nécessaire sera déterminé par le maître de jeu). Mais, même le plus calé des professeurs ne sera pas toujours capable de transférer toute sa connaissance. C'est là que la compétence Enseignement entre en jeu. Le professeur doit faire la moyenne du sujet qu'il doit enseigner et de sa compétence enseignement. Il peut alors amener l'élève jusqu'à ce niveau moyen de compétence. Combien de temps cela prendra restera du ressort du maître du jeu, qui distribuera les PC au fur et à mesure que le temps passera (généralement 1 à 5 PC par leçon).\n\n## Expérience\nCela reste le meilleur professeur. Lorsque vous faites quelque chose de bien, mal (oui on apprend aussi de ses erreurs) ou d'exceptionnel lors de l'utilisation de vos compétences vous serez récompensé immédiatement. Le problème c'est que ces points sont uniquement destinés à la compétence que vous avez utilisée pour les gagner. La limite d'apprentissage de cette méthode est que vous ne pouvez apprendre qu'une seule fois d'un des gains possibles pour chaque compétence pour la séance.\n\n## Étude et pratique\nC'est la façon la plus simple. Vous vous procurez un livre sur le sujet ou une base d'informations numérique et commencez la pratique. L'étude est assez difficile. Vous ne savez pas forcément par où commencer et n'avez personne pour corriger vos fautes. La plus grande limite de ce type d'apprentissage est que vous ne pouvez augmenter votre compétence que de +0 à +2. En général, il faut une journée d'étude et lecture pour gagner 1 PC en ne vous consacrant qu'à cette tâche.\n\n## Séance de jeu\nLe résultat de votre séance de jeu, ainsi que le Roleplay que les joueurs ont investi est aussi une source de gains de PC mais qui reste à la discrétion du Maître du jeu. Vous pouvez compter sur un gain de 10 à 50 PC.",
+   "note": "Le brouillon de la page 50 ne liste que trois moyens (étude et pratique, recevoir un enseignement, expérience directe), sans « Résultat de votre séance du jeu », et sa table des gains n'indique la mention « (1 fois par partie) » que sur la ligne 2. La version retenue est celle des pages 52-53.",
+   "tables": [
+    {
+     "titre": "Gains de PC par expérience",
+     "colonnes": [
+      "Gain",
+      "Source de récompense"
+     ],
+     "lignes": [
+      [
+       "1",
+       "Échec critique (1 sur le dé) (1 fois par partie)"
+      ],
+      [
+       "2",
+       "Action réussie (1 fois par partie)"
+      ],
+      [
+       "3",
+       "Action réussie avec un résultat plus que décisif (1 fois par partie)"
+      ],
+      [
+       "4",
+       "Réussite mémorable qui change la partie (1 fois par partie)"
+      ],
+      [
+       "5",
+       "Réussite critique (10 sur le dé) (1 fois par partie)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "multiplicateur-des-pc-de-competences",
+   "chapitre": "Actions & Compétences",
+   "titre": "Multiplicateur des PC de compétences",
+   "pages": "53",
+   "texte": "Tableaux récapitulatifs du multiplicateur de PC (x PC) de chaque compétence, classées par caractéristique.",
+   "tables": [
+    {
+     "titre": "Spéciale",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Adrénaline",
+       "3"
+      ]
+     ]
+    },
+    {
+     "titre": "Beauté",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Habillement et Style",
+       "1"
+      ],
+      [
+       "Look",
+       "1"
+      ]
+     ]
+    },
+    {
+     "titre": "Constitution",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Endurance",
+       "1"
+      ],
+      [
+       "Escalade",
+       "1"
+      ],
+      [
+       "Force",
+       "1"
+      ],
+      [
+       "Natation",
+       "1"
+      ]
+     ]
+    },
+    {
+     "titre": "Empathie",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Baratin & persuasion",
+       "1"
+      ],
+      [
+       "Commandement",
+       "1"
+      ],
+      [
+       "Etiquette",
+       "1"
+      ],
+      [
+       "Interview",
+       "1"
+      ],
+      [
+       "Perception humaine",
+       "1"
+      ],
+      [
+       "Performance",
+       "1"
+      ],
+      [
+       "Séduction",
+       "1"
+      ]
+     ]
+    },
+    {
+     "titre": "Intelligence",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Anthropologie",
+       "1"
+      ],
+      [
+       "Bibliothèque",
+       "1"
+      ],
+      [
+       "Biologie",
+       "1"
+      ],
+      [
+       "Botanique",
+       "1"
+      ],
+      [
+       "Chimie",
+       "1"
+      ],
+      [
+       "Diagnostique",
+       "1"
+      ],
+      [
+       "Education",
+       "1"
+      ],
+      [
+       "Enseignement",
+       "2"
+      ],
+      [
+       "Expert",
+       "1"
+      ],
+      [
+       "Géologie",
+       "1"
+      ],
+      [
+       "Histoire",
+       "1"
+      ],
+      [
+       "Interface",
+       "1"
+      ],
+      [
+       "Investissement",
+       "2"
+      ],
+      [
+       "Jeu",
+       "1"
+      ],
+      [
+       "Langues étrangère",
+       "1 à 3"
+      ],
+      [
+       "Mathématiques",
+       "1"
+      ],
+      [
+       "Med-Tech",
+       "1"
+      ],
+      [
+       "Perception",
+       "1"
+      ],
+      [
+       "Physique",
+       "1"
+      ],
+      [
+       "Se cacher / Semer",
+       "1"
+      ],
+      [
+       "Suivre / Pister",
+       "1"
+      ],
+      [
+       "Survie",
+       "1"
+      ],
+      [
+       "Zoologie",
+       "1"
+      ]
+     ]
+    },
+    {
+     "titre": "Réflexes",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Armes automatiques",
+       "1"
+      ],
+      [
+       "Armes lourdes",
+       "1"
+      ],
+      [
+       "Arts martiaux",
+       "1 à 5"
+      ],
+      [
+       "Athlétisme",
+       "1"
+      ],
+      [
+       "Bagarre",
+       "1"
+      ],
+      [
+       "Conduite d'engins lourds",
+       "1"
+      ],
+      [
+       "Conduire automobile",
+       "1"
+      ],
+      [
+       "Conduire moto",
+       "1"
+      ],
+      [
+       "Danse",
+       "1"
+      ],
+      [
+       "Discrétion",
+       "2"
+      ],
+      [
+       "Escrime",
+       "1"
+      ],
+      [
+       "Esquive",
+       "1"
+      ],
+      [
+       "Fusil",
+       "1"
+      ],
+      [
+       "Lancer",
+       "1"
+      ],
+      [
+       "Mêlée",
+       "1"
+      ],
+      [
+       "Pickpoket",
+       "1"
+      ],
+      [
+       "Piloter Avion / Dirigeable / Gyro / AV Jet",
+       "2 / 2 / 3 / 3"
+      ],
+      [
+       "Pistolet",
+       "1"
+      ],
+      [
+       "Tir à l'arc / Arbalète",
+       "1"
+      ]
+     ]
+    },
+    {
+     "titre": "Sang froid",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Connaissance de la rue",
+       "1"
+      ],
+      [
+       "Eloquence",
+       "1"
+      ],
+      [
+       "Interrogatoire",
+       "1"
+      ],
+      [
+       "Intimidation",
+       "1"
+      ],
+      [
+       "Résister Torture et drogue",
+       "1"
+      ]
+     ]
+    },
+    {
+     "titre": "Technique",
+     "colonnes": [
+      "Compétence",
+      "x PC"
+     ],
+     "lignes": [
+      [
+       "Aérotech",
+       "2"
+      ],
+      [
+       "Armurier",
+       "2"
+      ],
+      [
+       "AV-Tech",
+       "3"
+      ],
+      [
+       "Contrefaçon",
+       "1"
+      ],
+      [
+       "Crocheter",
+       "1"
+      ],
+      [
+       "Cyber-Tech",
+       "2"
+      ],
+      [
+       "Déguisement",
+       "1"
+      ],
+      [
+       "Electronique",
+       "1"
+      ],
+      [
+       "Explosif",
+       "2"
+      ],
+      [
+       "Gen-Tech",
+       "2"
+      ],
+      [
+       "Graphisme",
+       "1"
+      ],
+      [
+       "Gyro-Tech",
+       "3"
+      ],
+      [
+       "Musique",
+       "1"
+      ],
+      [
+       "Pharmacologie",
+       "2"
+      ],
+      [
+       "Photo & films",
+       "1"
+      ],
+      [
+       "Sécurité électronique",
+       "2"
+      ],
+      [
+       "Utilisation caisson cryo",
+       "1"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "exemple_creation": {
+  "nom": "Gally",
+  "age": 18,
+  "concept": "Joueuse Pro de Motor Ball",
+  "nature": "Survivante",
+  "attitude": "Battante",
+  "caracs": {
+   "CON": 8,
+   "MV": 6,
+   "REF": 10,
+   "INT": 6,
+   "EMP": 6,
+   "BT": 4,
+   "TECH": 6,
+   "CH": 7,
+   "SF": 7
+  },
+  "points_competence": 73,
+  "competences": [
+   {
+    "nom": "Adrénaline",
+    "niv": 2
+   },
+   {
+    "nom": "Armurier",
+    "niv": 4
+   },
+   {
+    "nom": "Athlétisme",
+    "niv": 3
+   },
+   {
+    "nom": "Conduire (Roller)",
+    "niv": 6
+   },
+   {
+    "nom": "Connaissance de la Rue",
+    "niv": 3
+   },
+   {
+    "nom": "Electronique",
+    "niv": 3
+   },
+   {
+    "nom": "Endurance",
+    "niv": 5
+   },
+   {
+    "nom": "Esquive",
+    "niv": 4
+   },
+   {
+    "nom": "Force",
+    "niv": 4
+   },
+   {
+    "nom": "Fusil",
+    "niv": 3
+   },
+   {
+    "nom": "GenTech",
+    "niv": 3
+   },
+   {
+    "nom": "Mêlée",
+    "niv": 4
+   },
+   {
+    "nom": "Perception Humaine",
+    "niv": 3
+   },
+   {
+    "nom": "Performance",
+    "niv": 3
+   },
+   {
+    "nom": "Perception",
+    "niv": 4
+   },
+   {
+    "nom": "Pistolet",
+    "niv": 3
+   }
+  ],
+  "evenements": [
+   "Amis / Homme de Main / Vente de Matos",
+   "Ennemi / Militaire / Navy Engagé / Connais Pas / Lui la faute / Fausse Accusation",
+   "Désastre / Quelqu'un veut ma peau",
+   "Ami / Contact / Ouvrier du bâtiment"
+  ],
+  "avantages_defauts": [
+   {
+    "nom": "Rapide",
+    "pa": 2
+   },
+   {
+    "nom": "Sens Aiguisé",
+    "pa": 2
+   },
+   {
+    "nom": "Reflexe de Combat",
+    "pa": 2
+   },
+   {
+    "nom": "Trop sûr de soi",
+    "pa": -4
+   }
+  ],
+  "argent": 10000
+ }
+}

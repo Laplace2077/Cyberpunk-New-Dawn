@@ -1,0 +1,878 @@
+[
+ {
+  "nom": "ALLERGIE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -8
+  ],
+  "cout_texte": "-2, -4, -8 PA(s)",
+  "desc": "Le personnage est allergique à une substance quelconque :\n\nA -2, le personnage doit réussir une sauvegarde en CON à -2 ou souffrir de symptômes désagréables du genre éternuements, démangeaisons... Ceci peut modifier les compétences (par exemple -2 à Pistolet à cause d’yeux irrités qui pleurent...).\n\nA -4, le personnage éprouve des symptômes plus sévères, y compris de la fièvre et de la détresse respiratoire. Le personnage doit réussir une sauvegarde en CON à -4. Si le jet est raté, toutes les compétences sont divisées par deux tant que la substance allergisante est présente.\n\nA -8, le personnage peut avoir des réactions extrêmes (coma, vomissement et même mort). Une sauvegarde en CON doit être faite comme avec le désavantage Allergie à -4, mais cette fois avec un modificateur de -6. Les effets sont identiques, mais un jet raté provoque EN PLUS 1 point de dégâts et le personnage doit réussir un jet de sauvegarde contre l’évanouissement ou tomber dans le coma. Les dégâts sont infligés toutes les heures jusqu’à ce que la substance soit retirée.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage doit réussir une sauvegarde en CON à -2 ou souffrir de symptômes désagréables du genre éternuements, démangeaisons... Ceci peut modifier les compétences (par exemple -2 à Pistolet à cause d’yeux irrités qui pleurent...)."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage éprouve des symptômes plus sévères, y compris de la fièvre et de la détresse respiratoire. Le personnage doit réussir une sauvegarde en CON à -4. Si le jet est raté, toutes les compétences sont divisées par deux tant que la substance allergisante est présente."
+   },
+   {
+    "cout": -8,
+    "effet": "Le personnage peut avoir des réactions extrêmes (coma, vomissement et même mort). Une sauvegarde en CON doit être faite comme avec le désavantage Allergie à -4, mais cette fois avec un modificateur de -6. Les effets sont identiques, mais un jet raté provoque EN PLUS 1 point de dégâts et le personnage doit réussir un jet de sauvegarde contre l’évanouissement ou tomber dans le coma. Les dégâts sont infligés toutes les heures jusqu’à ce que la substance soit retirée."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "CASIER JUDICIERE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -6
+  ],
+  "cout_texte": "-2, -4 or -6 PA(s)",
+  "desc": "Un personnage avec ce Défaut a déjà été condamné pour un crime.\n\nA -2, c’est une marque dans son passé, et cela peut l’écarter de certains emplois (les employeurs n’aiment pas les anciens taulards). Comme il est dans un fichier criminel quelque part, il peut être soupçonné d’autres crimes, qu’il les ait commis ou pas. Ça donne aussi un prétexte à la police pour le harceler.\n\nA -4, le personnage est en liberté conditionnelle. Il doit voir son contrôleur judiciaire et subir un dépistage de drogue une fois par mois, et conserver un emploi (légal) stable.\n\nA -6 le personnage est un détenu évadé, susceptible d’être tiré à vue par n’importe quel flic qui le reconnaîtrait. Se faire arrêter signifie retourner en prison, et pour encore plus longtemps.\n\nVous pouvez vous servir de l’annexe 5 pour créer un parcours en prison.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "C’est une marque dans son passé, et cela peut l’écarter de certains emplois (les employeurs n’aiment pas les anciens taulards). Comme il est dans un fichier criminel quelque part, il peut être soupçonné d’autres crimes, qu’il les ait commis ou pas. Ça donne aussi un prétexte à la police pour le harceler."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage est en liberté conditionnelle. Il doit voir son contrôleur judiciaire et subir un dépistage de drogue une fois par mois, et conserver un emploi (légal) stable."
+   },
+   {
+    "cout": -6,
+    "effet": "Le personnage est un détenu évadé, susceptible d’être tiré à vue par n’importe quel flic qui le reconnaîtrait. Se faire arrêter signifie retourner en prison, et pour encore plus longtemps."
+   }
+  ],
+  "table": "prison"
+ },
+ {
+  "nom": "CAUCHEMARD",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Le personnage est hanté par des cauchemars. Chaque fois qu’il essaye de dormir, il doit jeter 1D10. Sur un résultat de 1 ou 2 il fait un cauchemar d’une telle intensité qu’il se réveille et est incapable de fermer l’oeil du reste de la nuit. Plusieurs nuits de cauchemars consécutives peuvent causer des pénalités aux jets de compétences et de sauvegarde de caractéristique à cause de la fatigue accumulée.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "CECITE",
+  "type": "defaut",
+  "couts": [
+   -4,
+   -6,
+   -8
+  ],
+  "cout_texte": "-4, -6, -8 PA(s)",
+  "desc": "Le personnage est aveugle d’un oeil ou des deux yeux.\n\nA -4 et -6, la cécité se limite à un oeil, choisi par le joueur. Ce handicap peut être «racheté» à -4 (ce qui implique de remplacer l’oeil par un substitut organique ou cybernétique), mais pas à -6. N’avoir qu’un oeil donne un malus de -2 à toute action impliquant la perception des distances.\n\nA -8 la cécité est totale, mais peut être rachetée en utilisant des points d’expérience, accompagnés par une chirurgie réparatrice et un remplacement organique ou cybernétique.",
+  "paliers": [
+   {
+    "cout": -4,
+    "effet": "La cécité se limite à un oeil, choisi par le joueur. Ce handicap peut être «racheté» (ce qui implique de remplacer l’oeil par un substitut organique ou cybernétique). N’avoir qu’un oeil donne un malus de -2 à toute action impliquant la perception des distances."
+   },
+   {
+    "cout": -6,
+    "effet": "La cécité se limite à un oeil, choisi par le joueur, mais ce handicap ne peut pas être racheté. N’avoir qu’un oeil donne un malus de -2 à toute action impliquant la perception des distances."
+   },
+   {
+    "cout": -8,
+    "effet": "La cécité est totale, mais peut être rachetée en utilisant des points d’expérience, accompagnés par une chirurgie réparatrice et un remplacement organique ou cybernétique."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "COMPULSION",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -6
+  ],
+  "cout_texte": "-2, -4, -6 PA(s)",
+  "desc": "Un personnage avec ce Défaut fait quelque chose de manière compulsive. Ces activités peuvent être des choses relativement mineure comme nettoyer derrière les gens, mais peut aussi être plus autodestructeur, comme les jeux d’argents.\n\nA -2 points, la compulsion n’est encore qu’une manie. Elle ne perturbe pas trop la vie du personnage, et peut généralement être gérée en roleplay. Si cela devient important, le personnage doit réussir une sauvegarde Moyenne en SF pour évider de céder à la tentation de s’adonner à sa compulsion.\n\nA -4 points, la compulsion est un problème psychologique sérieux. Lorsque l’objet de sa compulsion se présente, le personnage doit réussir une sauvegarde Difficile (-2) en SF ou être obligé de se soumettre à sa compulsion.\n\nA -6 la compulsion est un problème majeur, évident pour tout ceux qui rencontrent le personnage. Dans des circonstances en relation avec sa compulsion, le personnage doit réussir une sauvegarde Très Difficile (-4) pour résister à la tentation. Même s’il résiste, il est évident qu’il est mal à l’aise aussi longtemps que la situation persiste.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "La compulsion n’est encore qu’une manie. Elle ne perturbe pas trop la vie du personnage, et peut généralement être gérée en roleplay. Si cela devient important, le personnage doit réussir une sauvegarde Moyenne en SF pour éviter de céder à la tentation de s’adonner à sa compulsion."
+   },
+   {
+    "cout": -4,
+    "effet": "La compulsion est un problème psychologique sérieux. Lorsque l’objet de sa compulsion se présente, le personnage doit réussir une sauvegarde Difficile (-2) en SF ou être obligé de se soumettre à sa compulsion."
+   },
+   {
+    "cout": -6,
+    "effet": "La compulsion est un problème majeur, évident pour tout ceux qui rencontrent le personnage. Dans des circonstances en relation avec sa compulsion, le personnage doit réussir une sauvegarde Très Difficile (-4) pour résister à la tentation. Même s’il résiste, il est évident qu’il est mal à l’aise aussi longtemps que la situation persiste."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "CUPIDE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage est égoïste et obsédé par l’argent. Si on lui propose un pot de vin, le personnage doit réussir un jet de sauvegarde en SF à -2 pour le refuser. Il arrive que ce genre de personne trahisse des amis pour quelques misérables eurodollars, et cela risque d’affecter leur réputation.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "CYBER-IMCOMPATIBILITE",
+  "type": "defaut",
+  "couts": [
+   -10
+  ],
+  "cout_texte": "-10 PA(s)",
+  "desc": "Un personnage avec ce désavantage ne peut recevoir aucun implant sur ou dans son corps sans déclencher une violente réaction de rejet de son système immunitaire. S’il réussit une sauvegarde en CON (à -4), la cybernétique ne fonctionne pas et le personnage subit 2 poins de dégâts par jour jusqu’à ce qu’il soit retiré. Si le jet est raté, le personnage doit réussir un jet contre la mort toutes les heures jusqu’à ce que le cyberware soit retiré ou que le personnage soit mort, en plus de subir les 2 points de dégâts par jour.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DEPENDANCE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -3,
+   -4,
+   -5,
+   -6,
+   -7,
+   -8,
+   -9,
+   -10
+  ],
+  "cout_texte": "Variable (-2 à -10)",
+  "desc": "Le prix d’une dépendance est basé sur la légalité de la substance et le prix d’une dose. Quelque chose qui coûte cher ou qui est fortement illégal sera probablement plus difficile à trouver et les risques impliqués pour entretenir votre vice sont nettement accrus. De même, quelque chose que vous pouvez trouver pour cinq dollars au coin de la rue sera plus facile à acheter. Pour déterminer le coût de la dépendance, croisez la légalité du produit avec son prix dans la table ci-dessous :\n\nCoût / Légal Commun / Ordonnance / Type C / Type B / Type A\n1-150 €$ : -2 / -2 / -4 / -5 / -6\n151-300 €$ : -3 / -3 / -5 / -6 / -7\n301-500 €$ : -4 / -4 / -6 / -7 / -8\n501-1000 €$ : -5 / -5 / -7 / -8 / -9\n1001-5000+ €$ : -6 / -6 / -8 / -9 / -10",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DETTE D’ARGENT",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -6
+  ],
+  "cout_texte": "-2, -4, -6 PA(s)",
+  "desc": "Le personnage doit de l’argent à quelqu’un. La nature de la dette est à décider entre le joueur et le MJ, mais ce ne devrait pas être un montant que le personnage puisse régler sur le champs. Cette dette peut aussi servir pour rembourser du matériel perdu ou endommagé (une voiture que le personnage a accidenté, les dommages et intérêts d’un procès, une pension alimentaire, etc). Le personnage n’est pas obligé de tout payer d’un coup, mais ce doit être un drain constant de ses ressources. Ne pas faire de payements régulier peut entraîner des conséquences du genre notation financière revue à la baisse, saisie de biens ou même arrestation. Les montants de dette sont des propositions, soumises à la bonne volonté du MJ.\n\nPour -2 points supplémentaires la dette est auprès de gens peu scrupuleux qui n’hésiteront pas à nuire au personnage s’il manquait à ses obligations (par exemple un bookmaker de la Mafia qui envoie trois gros bras casser une jambe au personnage qui a raté une mensualité). MJs, soyez bien conscients que le personnage doit racheter le désavantage avec des points d’expérience avant de pouvoir complètement payer sa dette.\n\nA -2, le personnage doit payer 500 €$ par mois pendant un an pour s’acquitter de sa dette.\n\nA -4, le personnage doit payer 2000 €$ par mois pendant un an ou 1000 €$ par mois pendant deux ans pour s’acquitter de sa dette.\n\nA -6, le personnage doit payer 4000 €$ par mois pendant un an ou 2000 €$ par mois pendant deux ans pour s’acquitter de sa dette.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage doit payer 500 €$ par mois pendant un an pour s’acquitter de sa dette."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage doit payer 2000 €$ par mois pendant un an ou 1000 €$ par mois pendant deux ans pour s’acquitter de sa dette."
+   },
+   {
+    "cout": -6,
+    "effet": "Le personnage doit payer 4000 €$ par mois pendant un an ou 2000 €$ par mois pendant deux ans pour s’acquitter de sa dette."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "DISTANT",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Un personnage Distant a du mal à nouer des relations personnelles fortes. Ceci se traduit par un malus de -2 à la plupart des compétences relationnelles (à la discrétion du MJ). Un personnage Distant ne peut pas prendre l’avantage Empathie.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DOMINANT",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Un personnage avec ce Défaut aime diriger et s’efforcera d’être le chef de n’importe quel groupe auquel il appartient. Il est autoritaire, exigeant et attend de ses subordonnés de suivre ses ordres à la lettre. Ce genre de personnes est généralement peu apprécié de leurs subordonnés. Ceci est reflété par un malus de -2 à tout jet de Commandement fait par le personnage Dominant sur des PNJs qui le connaissent bien.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "DOUILLET",
+  "type": "defaut",
+  "couts": [
+   -6
+  ],
+  "cout_texte": "-6 PA(s)",
+  "desc": "Si le personnage subit des dommages, son jet de sauvegarde contre l’évanouissement et le choc est effectué avec un malus de -2. Si le jet est raté, le personnage est inconscient ou incapacité par la douleur (genre se roule par terre en hurlant). Si un tel personnage est torturé, il a toutes les chances de craquer très vite (-4 pour résister à la torture).",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "ENNEMI",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Pour chaque -2 dépensé en Ennemis, le joueur doit tirer un ennemi dans la partie «Amis et Ennemis» des Évènements de la Vie.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "ÊTRE CHER",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "Le personnage a un ami proche ou un parent dont il se soucie. Si cette personne est menacée le personnage est obligé de faire tout son possible pour l’aider. Si cet ami/parent devait mourir ou devenir un ennemi, un choc émotionnel violent peut se produire, au gré du MJ.\n\nA -2 l’Être Cher est capable de prendre soin de lui\nA -4 il dépend complètement du PJ.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "L’Être Cher est capable de prendre soin de lui."
+   },
+   {
+    "cout": -4,
+    "effet": "Il dépend complètement du PJ."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "FLASHBACK",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -6
+  ],
+  "cout_texte": "-2, -4, -6 PA(s)",
+  "desc": "Le personnage a des flashbacks d’une expérience traumatisante de son passé. Des circonstances similaires ou des situations de stress peuvent déclencher ces flashbacks.\n\nA -2, le personnage doit réussir un jet de sauvegarde en SF ou être étourdi pour un round.\n\nA -4, le personnage doit réussir un jet de sauvegarde en SF à -2 ou être étourdi pour 1D6 round.\n\nA -6, le personnage doit réussir le jet de sauvegarde à -4 ou il va commencer à halluciner, pensant que la situation est en fait l’ancienne. Il peut faire une nouvelle sauvegarde après 1D10 minutes pour reprendre ses esprits, avec un bonus de +1 cumulatif à chaque nouvelle tentative. Ce désavantage peut être «racheté» avec des points d’expérience si le personnage suit une thérapie.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage doit réussir un jet de sauvegarde en SF ou être étourdi pour un round."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage doit réussir un jet de sauvegarde en SF à -2 ou être étourdi pour 1D6 round."
+   },
+   {
+    "cout": -6,
+    "effet": "Le personnage doit réussir le jet de sauvegarde à -4 ou il va commencer à halluciner, pensant que la situation est en fait l’ancienne. Il peut faire une nouvelle sauvegarde après 1D10 minutes pour reprendre ses esprits, avec un bonus de +1 cumulatif à chaque nouvelle tentative."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "HEMOPHILE",
+  "type": "defaut",
+  "couts": [
+   -6
+  ],
+  "cout_texte": "-6 PA(s)",
+  "desc": "Le sang d’un personnage avec ce Défaut ne coagule pas bien. S’il est blessé, il reçoit un point de dommage supplémentaire par round jusqu’à ce que le saignement soit stoppé ou qu’il meure. Ceci continue même si le personnage est inconscient.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "HONNÊTE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "A -2 points, le personnage ne mentira pas, ne trichera pas, ne volera pas et respectera la loi à moins d’une question de vie ou de mort.\n\nA -4 points, le personnage ne se conduira jamais de façon malhonnête, même s’il peut se montrer évasif.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage ne mentira pas, ne trichera pas, ne volera pas et respectera la loi à moins d’une question de vie ou de mort."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage ne se conduira jamais de façon malhonnête, même s’il peut se montrer évasif."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "HONNEUR",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "A -2 points, le personnage fera tout pour accomplir son devoir, y compris risquer sa vie. Si cela paraît lui promettre une mort certaine, il peut abandonner.\n\nA -4 points, le personnage est prêt à donner sa vie pour accomplir sa mission.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage fera tout pour accomplir son devoir, y compris risquer sa vie. Si cela paraît lui promettre une mort certaine, il peut abandonner."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage est prêt à donner sa vie pour accomplir sa mission."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "ILLETTRE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage ne sait ni lire ni écrire, et a des problèmes avec les mathématiques élémentaires.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "IMPULSIF",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Un personnage Impulsif trouve que la discussion et la planification sont du temps perdu, et préfère foncer et faire le travail. Il est généralement impatient (mais ce n’est pas obligatoire), et devient rapidement agité si les choses n’avancent pas aussi vite qu’il le voudrait. Les MJs devraient se sentir libres d’inciter des personnages Impulsifs à foncer tête baissée dans les ennuis.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "KLEPTOMANE",
+  "type": "defaut",
+  "couts": [
+   -6
+  ],
+  "cout_texte": "-6 PCs",
+  "desc": "Le personnage est un voleur compulsif qui volera tout ce qu’il pense pouvoir se permettre. La valeur n’entre pas en ligne de compte, c’est l’acte de voler qui l’excite. Il peut même ne pas se rendre compte qu’il est en train de voler quelque chose avant de se faire prendre. Lorsqu’il est confronté à une opportunité de vol, le joueur (ou le MJ, en secret) doit faire un jet de sauvegarde en SF à -2. Si le jet est raté, le personnage doit tenter de dérober l’objet convoité (que ce soit un collier de fausses perles ou un diamant). Rater la tentative de vol peut conduire à une incarcération ou une mort violente.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "LÂCHE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Dès que le personnage essaye de faire quelque chose où il risque d’être blessé, il doit réussir une sauvegarde en SF à -2 pour réussir à montrer un peu de cran et tenter le coup. S’il le rate, il doit fuir ou se planquer, suivant ce qui est le plus commode, ou prudent.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "LOYAUTE PARTAGE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage éprouve une profonde loyauté envers quelque chose ou quelqu’un d’autre que son employeur actuel ou les autres PJs (un gouvernement, une corporation, un gang...). Les intérêts de l’objet de sa loyauté pourront parfois entrer en conflit avec ceux des autres PJs. Le MJ devrait définir les détails avec le joueur avant de jouer, et planifier en conséquence. Ignorer ce Défaut est un excellent moyen pour un PJ de se retrouver dans les ennuis jusqu’au cou. Contrairement à un Être Cher, ce Défaut ne représente pas forcément une personne qui compte ou un membre de la famille du personnage (mais ça reste possible, dans des circonstances particulièrement tordues).",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "LUXURE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "A -2 points, le personnage est attiré par les représentants du sexe opposé comme un papillon vers la flamme. Les jets de Séduction fait sur le personnage ont un bonus de +2.\n\nA -4 points, le personnage est un obsédé sexuel et fera tout son possible pour attirer l’objet de son désir dans son lit. Il a également un malus de -2 à tous ses jets basés sur Empathie envers le sexe opposé en raison de son regard baladeur et de son attitude.\n\nNote : si le personnage est homo- ou bisexuel, ce désavantage peut aussi s’appliquer à ses sentiments envers les représentants du même sexe.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage est attiré par les représentants du sexe opposé comme un papillon vers la flamme. Les jets de Séduction fait sur le personnage ont un bonus de +2."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage est un obsédé sexuel et fera tout son possible pour attirer l’objet de son désir dans son lit. Il a également un malus de -2 à tous ses jets basés sur Empathie envers le sexe opposé en raison de son regard baladeur et de son attitude."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "MACHOIR DE VERRE",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Un personnage avec ce Défaut est facilement rendu inconscient par des coups à la tête et donc subit un malus de -2 à ses jets de sauvegarde contre l’évanouissement après avoir reçu de telles blessures.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "MALADIE CHRONIQUE",
+  "type": "defaut",
+  "couts": [
+   -4,
+   -6,
+   -10
+  ],
+  "cout_texte": "-4, -6, -10 PA(s)",
+  "desc": "Un personnage avec ce Défaut a une maladie chronique qui ne peut pas être soignée par la médecine classique. Ces maladies peuvent inclure de l’arthrite, des migraines, des troubles musculaires et nerveux, du diabète, un cancer, etc. Les symptômes devraient se manifester en jeu. Les soins médicaux et d’urgence peuvent être un peu plus cher pour un personnage qui a ce désavantage, car son état demande de prendre des précautions particulières pour le soigner. Ce Défaut peut être racheté si un traitement adapté est appliqué en cours de jeu.\n\nA -4 points, la maladie est mineure et peut être gardée sous contrôle par la prise régulière de médicaments sur ordonnance, ce qui peut coûter cher (au choix du MJ). Si les médicaments ne sont pas pris, les symptômes de la maladie se manifestent au bout de 1D6 heures. Les symptômes peuvent inclure des douleurs, de la fatigue, et imposent un malus de -2 sur tous les jets de compétence à cause de la distraction et de la sensation de mauvaise santé générale.\n\nA -6 points, la maladie est plus sérieuse. Des médicaments doivent toujours être pris pour atténuer les symptômes de la maladie, mais soit ils ne peuvent être complètement supprimés, soit le médicament lui même a des effets secondaires nuisibles. Faute de traitement les symptômes se manifestent dans les 1D3 heures, infligeant un malus de -4 à tous les jets de compétences. Même régulièrement traité le personnage souffre d’un malus de -2 à ses jets d’Initiative, ainsi qu’à toute compétence jugée appropriée par le MJ.\n\nA -10 points, la maladie du personnage est au stade terminal et il n’en a plus pour très longtemps. Le MJ tire en secret 1D10+2 pour déterminer combien de mois il reste à vivre au personnage. Au départ le personnage subit les effets du désavantage Maladie Chronique à -4. Une fois que la moitié de ce temps s’est écoulé, son état s’aggrave au désavantage Maladie Chronique à -6. Lorsque les ¾ de ce temps ont passé, l’état du personnage se dégrade très vite. Passé ce point le personnage est cloué au lit et n’est plus disponible pour une partie normale. Lorsque le temps qu’il lui restait est épuisé, le personnage meurt.",
+  "paliers": [
+   {
+    "cout": -4,
+    "effet": "La maladie est mineure et peut être gardée sous contrôle par la prise régulière de médicaments sur ordonnance, ce qui peut coûter cher (au choix du MJ). Si les médicaments ne sont pas pris, les symptômes de la maladie se manifestent au bout de 1D6 heures. Les symptômes peuvent inclure des douleurs, de la fatigue, et imposent un malus de -2 sur tous les jets de compétence."
+   },
+   {
+    "cout": -6,
+    "effet": "La maladie est plus sérieuse. Des médicaments doivent toujours être pris pour atténuer les symptômes, mais soit ils ne peuvent être complètement supprimés, soit le médicament lui même a des effets secondaires nuisibles. Faute de traitement les symptômes se manifestent dans les 1D3 heures, infligeant un malus de -4 à tous les jets de compétences. Même régulièrement traité le personnage souffre d’un malus de -2 à ses jets d’Initiative, ainsi qu’à toute compétence jugée appropriée par le MJ."
+   },
+   {
+    "cout": -10,
+    "effet": "La maladie du personnage est au stade terminal et il n’en a plus pour très longtemps. Le MJ tire en secret 1D10+2 pour déterminer combien de mois il reste à vivre au personnage. Au départ le personnage subit les effets du désavantage Maladie Chronique à -4, puis à -6 à la moitié du temps ; aux ¾ son état se dégrade très vite et il est cloué au lit. Lorsque le temps est épuisé, le personnage meurt."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "MALADROIT",
+  "type": "defaut",
+  "couts": [
+   -4,
+   -6
+  ],
+  "cout_texte": "-4, -6 PA(s)",
+  "desc": "Le personnage est un empoté.\n\nA -4, ceci n’affecte au choix que la dextérité manuelle (travail précis avec les mains, tir etc) ou l’agilité générale (danse, arts martiaux, course etc).\n\nA -6, les deux sont affectés, le personnage est un balourd fini. En conséquence le personnage augmente automatiquement son échec critique de compétence de +4. De plus en période de stress (par exemple en désamorçant une bombe, ou dans un magasin de porcelaine) le personnage doit réussir une sauvegarde en SF ou casser quelque chose (il est nerveux car il sait qu’il est un lourdeau).",
+  "paliers": [
+   {
+    "cout": -4,
+    "effet": "Ceci n’affecte au choix que la dextérité manuelle (travail précis avec les mains, tir etc) ou l’agilité générale (danse, arts martiaux, course etc)."
+   },
+   {
+    "cout": -6,
+    "effet": "Les deux sont affectés, le personnage est un balourd fini. Il augmente automatiquement son échec critique de compétence de +4. De plus en période de stress il doit réussir une sauvegarde en SF ou casser quelque chose."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "MALENTENDANT/SOURD",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -6,
+   -8,
+   -10
+  ],
+  "cout_texte": "-2, -4/-6, -8, -10 PA(s)",
+  "desc": "A -2 PCs, le personnage souffre d’une perte d’audition partielle des deux oreilles. Ceci lui donne un malus de -2 à tous ses jets de Perception auditifs, mais le Défaut peut être racheté.\n\nA -4/-6 PA(s), le personnage est complètement sourd d’une oreille (-4 à tous ses jets de Perception auditifs).\n\nA -6, Comme ci-dessus, mais cette infirmité ne peut pas être rachetée.\n\nA -8 PA(s), le personnage est complètement sourd des deux oreilles. Cependant ce Défaut peut être racheté si le rachat est accompagné d’une chirurgie coûteuse (comprenant une amélioration bio ou cyber).\n\nA -10 PA(s), le personnage est complètement sourd des deux oreilles, et ce handicap ne peut pas être réparé/racheté.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage souffre d’une perte d’audition partielle des deux oreilles. Malus de -2 à tous ses jets de Perception auditifs, mais le Défaut peut être racheté."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage est complètement sourd d’une oreille (-4 à tous ses jets de Perception auditifs)."
+   },
+   {
+    "cout": -6,
+    "effet": "Comme à -4 (complètement sourd d’une oreille), mais cette infirmité ne peut pas être rachetée."
+   },
+   {
+    "cout": -8,
+    "effet": "Le personnage est complètement sourd des deux oreilles. Cependant ce Défaut peut être racheté si le rachat est accompagné d’une chirurgie coûteuse (comprenant une amélioration bio ou cyber)."
+   },
+   {
+    "cout": -10,
+    "effet": "Le personnage est complètement sourd des deux oreilles, et ce handicap ne peut pas être réparé/racheté."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "MASOCHISME",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Le personnage est masochiste et prend du plaisir à souffrir. Il reçoit un bonus de +2 à ses jets de Résister Torture, mais il pourrait faire un détour rien que pour une opportunité d’avoir mal par des méthodes telles que l’automutilation ou le sexe extrême.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "MAUVAIS CARACTERE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "Le personnage doit réussir une sauvegarde en SF pour garder son calme lorsque certaines situations se présentent. La sévérité de la situation devrait être reflétée par un modificateur à ce jet. Par exemple une contrariété mineure peut donner un bonus de +2 à la sauvegarde en SF, tandis qu’une situation énervante (un accrochage sur l’autoroute pendant les heures de pointe) pourrait imposer un -2. La crise dure 1D10 rounds, après quoi le râleur peut tenter une sauvegarde en SF sans modificateur à chaque round pour se calmer.\n\nA -2, la colère du personnage prend la forme d’une rafale d’insultes, de cris et de vociférations.\n\nA -4, le personnage devient violent lorsqu’il perd son sang-froid, attaquant l’objet de sa colère avec la première arme qui lui tombe sous la main (typiquement son corps, mais s’il avait en main une arme potentielle tout peut arriver...).",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "La colère du personnage prend la forme d’une rafale d’insultes, de cris et de vociférations."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage devient violent lorsqu’il perd son sang-froid, attaquant l’objet de sa colère avec la première arme qui lui tombe sous la main."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "MAUVAISE VUE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage a un défaut de vision : myopie, presbytie, astigmatisme... Ceci peut être corrigé par des lentilles ou des lunettes. Le Défaut ne peut pas être corrigé complètement (remplacements organiques ou cybernétiques, chirurgie) à moins que le Défaut n’ait été racheté avec des points d’expérience en complément de le chirurgie.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "MEMBRE MANQUANT",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s) par membre",
+  "desc": "Que ce soit dû à une malformation, un accident ou un acte de violence, le personnage a un membre en moins (l’étendue exacte de la difformité/des dégâts est sujette à discussion et peut accorder quelques PCs en plus ou en moins). Un remplacement organique ou cybernétique ne pourra être greffé sur le personnage qu’une fois qu’il aura racheté le Défaut avec des points d’expérience, en attendant le personnage peut utiliser des prothèses classiques.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "MENTEUR PATOLOGIQUE",
+  "type": "defaut",
+  "couts": [
+   -6
+  ],
+  "cout_texte": "-6 PA(s)",
+  "desc": "Le personnage ment pour le plaisir de s’entendre parler. Il se délecte d’inventer des histoires, et peu importe si son interlocuteur se rend compte qu’il ment ou pas. Inévitablement, il risque rapidement d’être difficile au personnage de trouver quelqu’un pour le croire (le petit garçon qui criait «Au loup»). Ceci peut entraîner un malus jusqu’à -5 pour des jets de Baratin et Persuasion, Éloquence ou Séduction si la personne à qui il tente de mentir connaît son problème. Si le joueur veut que son personnage dise la vérité, il doit réussir une sauvegarde en SF (à -2) ou il ment automatiquement.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "MUET",
+  "type": "defaut",
+  "couts": [
+   -4,
+   -6
+  ],
+  "cout_texte": "-4, -6 PA(s)",
+  "desc": "Le personnage ne peut pas parler, que ce soit dû à une malformation, une blessure, un problème psychologique...\n\nA -4 points le Défaut peut être racheté en utilisant des points d’expérience et de la chirurgie ou une psychothérapie.\n\nA -6 Le défaut est permanent.",
+  "paliers": [
+   {
+    "cout": -4,
+    "effet": "Le Défaut peut être racheté en utilisant des points d’expérience et de la chirurgie ou une psychothérapie."
+   },
+   {
+    "cout": -6,
+    "effet": "Le défaut est permanent."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "PACIFISME",
+  "type": "defaut",
+  "couts": [
+   -4,
+   -6
+  ],
+  "cout_texte": "-4, -6 PA(s)",
+  "desc": "A -4, le personnage ne tuera jamais délibérément, et se sentira coupable s’il provoque un décès involontairement. Il peut quand même blesser ses adversaires, les mettre K.O voire les estropier.\n\nA -6, le personnage ne fera jamais délibérément mal à quelqu’un. Blesser quelqu’un lui causera du chagrin, et tuer quelqu’un pourrait lui causer une grave dépression nerveuse.",
+  "paliers": [
+   {
+    "cout": -4,
+    "effet": "Le personnage ne tuera jamais délibérément, et se sentira coupable s’il provoque un décès involontairement. Il peut quand même blesser ses adversaires, les mettre K.O voire les estropier."
+   },
+   {
+    "cout": -6,
+    "effet": "Le personnage ne fera jamais délibérément mal à quelqu’un. Blesser quelqu’un lui causera du chagrin, et tuer quelqu’un pourrait lui causer une grave dépression nerveuse."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "PARANOÏA",
+  "type": "defaut",
+  "couts": [
+   -6
+  ],
+  "cout_texte": "-6 PA(s)",
+  "desc": "Le personnage souffre d’un délire paranoïaque. Tout le monde est contre lui, peut être même vous, et il ne fait confiance à personne. C’est une psychose très prononcée qui exige un roleplay soutenu. Les MJs sont invités à se montrer retors et à encourager la paranoïa du personnage.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "PETITE NATURE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Chaque fois que le personnage voit quelque chose de répugnant ou choquant, il doit faire un jet de sauvegarde en SF. S’il le rate, il sera pris de nausées, subissant un malus de -4 à tous ses jets de compétences jusqu’à ce qu’il soit loin de cette scène malsaine. Une simple flaque de sang donne un bonus de +2 sur ce jet, mais des choses comme des têtes tranchées et des corps mutilés peut donner un malus de -4, voire plus.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "PHOBIE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -6
+  ],
+  "cout_texte": "-2, -4, -6 PCs",
+  "desc": "A -2 points, le personnage a une peur mineure d’un objet, d’un animal ou d’une circonstance. Confronté à l’objet de sa phobie, le personnage doit réussir un jet de Sauvegarde en SF pour ne pas l’éviter.\n\nA -4 points, le personnage doit réussir un jet de Sauvegarde en SF avec un malus de -2. S’il le rate, il pourrait paniquer et tenter de fuir.\n\nA -6 points, le personnage doit réussir un jet de Sauvegarde en SF avec un malus de -4. S’il le rate, le personnage pourrait s’évanouir ou devenir hystérique. Suivant la situation, des jets supplémentaires peuvent être nécessaires.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage a une peur mineure d’un objet, d’un animal ou d’une circonstance. Confronté à l’objet de sa phobie, il doit réussir un jet de Sauvegarde en SF pour ne pas l’éviter."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage doit réussir un jet de Sauvegarde en SF avec un malus de -2. S’il le rate, il pourrait paniquer et tenter de fuir."
+   },
+   {
+    "cout": -6,
+    "effet": "Le personnage doit réussir un jet de Sauvegarde en SF avec un malus de -4. S’il le rate, il pourrait s’évanouir ou devenir hystérique. Suivant la situation, des jets supplémentaires peuvent être nécessaires."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "REBELLE",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Un des traits indispensables au personnage Cyberpunk typique. Un personnage rebelle a un malus de -2 à tous ses jets de compétences relationnelles lorsqu’il a affaire à une quelconque autorité (police, fonctionnaire, officiel corporatiste, etc).",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "RIVAL",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "Vous avez un rival, quelqu’un qui représente un concurrent sérieux dans votre domaine d’activité. Votre Rival devrait être un personnage à part entière, avec des compétences et des caractéristiques qui égalent (voire parfois surpassent) les vôtres. Cette rivalité n’a pas besoin d’être hostile, cela va dépendre du coût en points du désavantage.\n\nA -2, votre rivalité est presque amicale et empreinte de courtoisie professionnelle. Même si vous n’êtes pas des amis, vous n’êtes certainement pas des ennemis. Après tout, ce n’est que professionnel.\n\nA -4, votre rival a à coeur de réussir à vos dépends. Il vous voit comme un obstacle à surmonter et il n’hésitera pas à faire un écart (illégalement si nécessaire) pour vous faire de l’ombre, vous souffler des contrats, en bref empoisonner votre vie professionnelle. Cette compétition ne va pas jusqu’au meurtre, mais il pourrait envisager cette option si l’enjeu était assez élevé...",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Votre rivalité est presque amicale et empreinte de courtoisie professionnelle. Même si vous n’êtes pas des amis, vous n’êtes certainement pas des ennemis."
+   },
+   {
+    "cout": -4,
+    "effet": "Votre rival a à coeur de réussir à vos dépends. Il n’hésitera pas à faire un écart (illégalement si nécessaire) pour vous faire de l’ombre, vous souffler des contrats, en bref empoisonner votre vie professionnelle. Cette compétition ne va pas jusqu’au meurtre, mais il pourrait envisager cette option si l’enjeu était assez élevé..."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "RUSTRE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage est perdu dans n’importe quelle situation sociale, que ce soit pour lier connaissance ou un repas d’affaire avec le directeur local d’Arasaka. Ceci se traduite par un malus de -2 aux jets de compétences relationnelles comme Éloquence, Interview, Commandement, Séduction, Social et Baratin et Persuasion.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SADISME",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage prend son pied à infliger de la douleur. Ce genre de personnage est capable d’une violence extrême, et doit réussir un jet de sauvegarde en SF à -2 pour se retenir d’essayer de faire souffrir (physiquement ou mentalement) une personne en son pouvoir.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SENS DIMINUE",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Lorsque ce désavantage est sélectionné, le joueur doit choisir un sens parmi odorat, goût ou toucher. Les jets de Perception effectués avec ce sens souffrent d’un malus de -2.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SENS MORAL",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "Il y a des choses que le personnage juge immorale, par exemple faire du mal aux enfants, mentir ou torturer un prisonnier.\n\nA -2, même si le personnage ne prend pas part à ce genre d’activités, il accepte que les autres PJs s’y adonnent.\n\nA -4, le personnage est si écoeuré par cela qu’il interviendra pour l’empêcher et n’aura que peu d’estime pour ceux qui se l’autorise.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Même si le personnage ne prend pas part à ce genre d’activités, il accepte que les autres PJs s’y adonnent."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage est si écoeuré par cela qu’il interviendra pour l’empêcher et n’aura que peu d’estime pour ceux qui se l’autorise."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "SIGNATURE",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Le personnage est obligé de laisser une «carte de visite» derrière lui, même lors d’une opération sensible. Cela peut être un morceau de dentelle blanche, une balle en argent, une fleur, un cure-dent mâchouillé... Délibérément laisser ce genre d’indices augmente les risques que l’identité du personnage soit découverte.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SIGNE PARTICULIER",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Le personnage a une marque de naissance, une cicatrice, un tatouage ou autre caractéristique inhabituelle qui le rend facilement identifiable. Notez que cela peut comprendre avoir un jumeau identique ou simplement être un sosie de Marlon Brando. Ceci peut être racheté avec des points de compétence, mais devrait être accompagné par de la chirurgie esthétique.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SINER",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Votre personnage a un Système d’Identification Numérique. C’est à dire qu’il existe légalement et bénéficie de tous les droits et privilèges des citoyens de son pays. Cela veut aussi dire qu’il est responsable devant la loi de ses éventuels crimes et délits. Il devra donc faire attention à ne pas laisser, d’empreinte ou d’échantillon génétique sur les lieux de ses forfaits. De même, il lui est conseillé de cacher son visage lors d’action illégale.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "SOMMEIL LOURD",
+  "type": "defaut",
+  "couts": [
+   -2
+  ],
+  "cout_texte": "-2 PA(s)",
+  "desc": "Le personnage est difficile à réveiller une fois endormi. Il doit réussir une sauvegarde en INT à -4 pour se réveiller dans des circonstances normales (par exemple lorsque leur réveil sonne). Des bruits forts ou être secoué peuvent réduire cette pénalité, mais jamais donner de bonus. Chaque round où la perturbation continue réduit la pénalité de 1, jusqu’à un minimum de 0.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "STERILE",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4
+  ],
+  "cout_texte": "-2, -4 PA(s)",
+  "desc": "Pour une raison quelconque le personnage est incapable d’avoir des enfants.\n\nA -2, le personnage est toujours fonctionnel sexuellement, et conserve tous ses désirs et pulsions sexuelles.\n\nA -4, le personnage n’éprouve pas de désir charnel et est sexuellement non fonctionnel, ce qui peut être désastreux pour son estime de lui. Le côté positif est qu’un personnage avec cette forme de stérilité est immunisé à toute tentative de Séduction.",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "Le personnage est toujours fonctionnel sexuellement, et conserve tous ses désirs et pulsions sexuelles."
+   },
+   {
+    "cout": -4,
+    "effet": "Le personnage n’éprouve pas de désir charnel et est sexuellement non fonctionnel, ce qui peut être désastreux pour son estime de lui. Le côté positif est qu’il est immunisé à toute tentative de Séduction."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "TRAVAIL DE JOUR",
+  "type": "defaut",
+  "couts": [
+   -4,
+   -6,
+   -8
+  ],
+  "cout_texte": "4, 6, 8 PA(s)",
+  "desc": "Vous êtes employé par une grosse entreprise ou corporation. Le personnage à un emploi régulier qui l’occupera plus part du temps ce qui peut poser des problèmes avec ses activités extra-professionelles. Toutefois, cet emploi lui rapporte une certaine somme tous les mois. Plus le niveau du Défaut est élevé plus il est prenant et occupe le personnage. Le personnage touchera donc à la création son salaire annuel/12.\n\nNote : Cette Avantage oblige le joueur à prendre l’avantage Ressource à la même valeur que Travail de jour.\n\nA -4, le personnage dispose de 8 points à répartir pour sa Ressource.\nA -6, le personnage dispose de 12 points à répartir pour sa Ressource.\nA -8, le personnage dispose de 14 points à répartir pour sa Ressource.",
+  "paliers": [
+   {
+    "cout": -4,
+    "effet": "Le personnage dispose de 8 points à répartir pour sa Ressource."
+   },
+   {
+    "cout": -6,
+    "effet": "Le personnage dispose de 12 points à répartir pour sa Ressource."
+   },
+   {
+    "cout": -8,
+    "effet": "Le personnage dispose de 14 points à répartir pour sa Ressource."
+   }
+  ],
+  "table": "ressources"
+ },
+ {
+  "nom": "TROP SÛR DE SOI",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage se croit meilleur qu’il ne l’est. A ses yeux il peut affronter n’importe quoi et s’en tirer sans une égratignure. Cela peut l’amener à prendre des risques inconsidérés qui pourraient bien l’entraîner dans des ennuis trop gros pour lui.",
+  "paliers": [],
+  "table": null
+ },
+ {
+  "nom": "VENDETTA",
+  "type": "defaut",
+  "couts": [
+   -2,
+   -4,
+   -6
+  ],
+  "cout_texte": "-2, -4, -6 PA(s)",
+  "desc": "Le personnage a des comptes à régler avec quelqu’un. La façon dont il règle ses comptes n’a pas d’importance, mais il doit chercher à se venger si une opportunité se présente à moins de réussir un jet de sauvegarde en SF à -2.\n\nA -2, la cible de l’hostilité du personnage est un seul individu ou un petit groupe (par exemple une équipe rivale, un petit gang, etc).\n\nA -4, c’est un gang, une bande de nomades, une entreprise ou une organisation de taille moyenne.\n\nA -6, il s’en prend à un groupe parmi les plus nombreux et/ou puissants (par exemple Arasaka, l’IRA ou le LEDiv).",
+  "paliers": [
+   {
+    "cout": -2,
+    "effet": "La cible de l’hostilité du personnage est un seul individu ou un petit groupe (par exemple une équipe rivale, un petit gang, etc)."
+   },
+   {
+    "cout": -4,
+    "effet": "C’est un gang, une bande de nomades, une entreprise ou une organisation de taille moyenne."
+   },
+   {
+    "cout": -6,
+    "effet": "Il s’en prend à un groupe parmi les plus nombreux et/ou puissants (par exemple Arasaka, l’IRA ou le LEDiv)."
+   }
+  ],
+  "table": null
+ },
+ {
+  "nom": "VIEILLE BLESSURE",
+  "type": "defaut",
+  "couts": [
+   -4
+  ],
+  "cout_texte": "-4 PA(s)",
+  "desc": "Le personnage doit faire un tirage sur la Table des Blessures Aléatoires et en subir les conséquences. Les effets de la blessure, quelle que soit sa gravité, ne peuvent pas être corrigés tant que le Défaut n’a pas été racheté. Ce Défaut est une vraie loterie et ne devrait pas être pris à la légère. (Voir annexe 4).",
+  "paliers": [],
+  "table": "blessures"
+ }
+]

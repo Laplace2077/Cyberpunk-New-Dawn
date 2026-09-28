@@ -1,0 +1,363 @@
+{
+ "cout_progression": [
+  {
+   "valeur": "Achat",
+   "cout_plus1": 10,
+   "x2": 20,
+   "x3": 30,
+   "x4": 40,
+   "x5": 50
+  },
+  {
+   "valeur": "1",
+   "cout_plus1": 10,
+   "x2": 20,
+   "x3": 30,
+   "x4": 40,
+   "x5": 50
+  },
+  {
+   "valeur": "2",
+   "cout_plus1": 20,
+   "x2": 40,
+   "x3": 60,
+   "x4": 80,
+   "x5": 100
+  },
+  {
+   "valeur": "3",
+   "cout_plus1": 30,
+   "x2": 60,
+   "x3": 90,
+   "x4": 120,
+   "x5": 150
+  },
+  {
+   "valeur": "4",
+   "cout_plus1": 40,
+   "x2": 80,
+   "x3": 120,
+   "x4": 160,
+   "x5": 200
+  },
+  {
+   "valeur": "5",
+   "cout_plus1": 50,
+   "x2": 100,
+   "x3": 150,
+   "x4": 200,
+   "x5": 250
+  },
+  {
+   "valeur": "6",
+   "cout_plus1": 60,
+   "x2": 120,
+   "x3": 180,
+   "x4": 240,
+   "x5": 300
+  },
+  {
+   "valeur": "7",
+   "cout_plus1": 70,
+   "x2": 140,
+   "x3": 210,
+   "x4": 280,
+   "x5": 350
+  },
+  {
+   "valeur": "8",
+   "cout_plus1": 80,
+   "x2": 160,
+   "x3": 240,
+   "x4": 320,
+   "x5": 400
+  },
+  {
+   "valeur": "9",
+   "cout_plus1": 90,
+   "x2": 180,
+   "x3": 270,
+   "x4": 360,
+   "x5": 450
+  },
+  {
+   "valeur": "10",
+   "cout_plus1": 100,
+   "x2": 200,
+   "x3": 300,
+   "x4": 400,
+   "x5": 500
+  }
+ ],
+ "moyens_gagner_pc": [
+  {
+   "titre": "Recevoir un enseignement",
+   "texte": "Trouver un professeur est bien plus intéressant que d'apprendre seul ou dans des livres. Le professeur doit avoir la compétence à un niveau supérieur à celui de l'élève et disposer du temps nécessaire pour enseigner (temps déterminé par le maître du jeu). Il fait la moyenne entre le niveau du sujet qu'il enseigne et son niveau en compétence Enseignement : il peut amener l'élève jusqu'à ce niveau moyen, en distribuant généralement 1 à 5 PC par leçon."
+  },
+  {
+   "titre": "Expérience directe",
+   "texte": "C'est le meilleur professeur : quand vous utilisez une compétence de manière remarquable, bonne, mauvaise ou exceptionnelle, vous êtes récompensé immédiatement. Ces PC ne sont affectés qu'à la seule compétence effectivement utilisée pour les gagner. Chaque source de gain (échec critique, action réussie, action décisive, réussite mémorable, réussite critique) ne peut rapporter qu'une seule fois par compétence et par séance, pour 1 à 5 PC selon le cas."
+  },
+  {
+   "titre": "Étude et pratique",
+   "texte": "C'est la façon la plus simple : vous vous procurez un livre ou une base d'informations numérique et commencez la pratique. L'apprentissage est difficile car personne ne corrige vos fautes, et cette méthode ne permet de monter une compétence que de +0 à +2. Il faut en général une journée d'étude et de lecture consacrée uniquement à cette tâche pour gagner 1 PC."
+  },
+  {
+   "titre": "Résultat de votre séance de jeu",
+   "texte": "Le résultat de la séance et le roleplay investi par les joueurs constituent aussi une source de PC, laissée à la discrétion du maître du jeu. Vous pouvez compter sur un gain de 10 à 50 PC."
+  }
+ ],
+ "gains_experience": [
+  {
+   "gain": 1,
+   "source": "Échec critique (1 sur le dé) — 1 fois par partie"
+  },
+  {
+   "gain": 2,
+   "source": "Action réussie — 1 fois par partie"
+  },
+  {
+   "gain": 3,
+   "source": "Action réussie avec un résultat plus que décisif — 1 fois par partie"
+  },
+  {
+   "gain": 4,
+   "source": "Réussite mémorable qui change la partie — 1 fois par partie"
+  },
+  {
+   "gain": 5,
+   "source": "Réussite critique (10 sur le dé) — 1 fois par partie"
+  }
+ ],
+ "resolution": {
+  "formule": "Compétence + Caractéristique + 1D10 ; si le total est supérieur ou égal à la Difficulté, l'action est réussie.",
+  "difficultes": [
+   {
+    "nom": "Simple",
+    "seuil": 10
+   },
+   {
+    "nom": "Nécessite entraînement",
+    "seuil": 15
+   },
+   {
+    "nom": "Difficile",
+    "seuil": 20
+   },
+   {
+    "nom": "Très difficile",
+    "seuil": 25
+   },
+   {
+    "nom": "Pratiquement impossible",
+    "seuil": 30
+   }
+  ],
+  "texte": "La plupart des actions ordinaires réussissent sans jet ; seules les actions incertaines exigent un jet de compétence. Le maître du jeu évalue chaque tâche de simple à pratiquement impossible et lui attribue une valeur numérique appelée Difficulté (10, 15, 20, 25 ou 30). Le joueur détermine d'abord la caractéristique la plus adaptée à l'action (REF pour un test d'équilibre, INT pour déchiffrer un code…). Il y ajoute une compétence directement liée à la tâche : une seule compétence peut être prise en compte par tâche. Il lance ensuite 1D10 et additionne le tout : si le total égale ou dépasse la Difficulté, l'action est réussie, sinon elle échoue. Le maître du jeu peut ajouter des modificateurs de difficulté (réparation complexe +2, outils non familiers +4, blessé +2 à +6, obscurité totale +4, etc.) pour représenter les conditions défavorables et décomposer une situation délicate. Un personnage ayant 10 dans une compétence voit la difficulté réduite de 2. Pour une tâche opposée, l'adversaire combine sa meilleure caractéristique, sa compétence et 1D10 ; à égalité ou au-dessus, c'est le défenseur qui l'emporte. Enfin, les points de la caractéristique de CHANCE permettent de relancer un jet désastreux ; ils reviennent au maximum à la fin de chaque scénario ou chapitre important d'une campagne.",
+  "modificateurs": [
+   {
+    "nom": "Réparation complexe",
+    "mod": "+2"
+   },
+   {
+    "nom": "Réparation très complexe",
+    "mod": "+4"
+   },
+   {
+    "nom": "« Cela n'a jamais été fait auparavant »",
+    "mod": "+6"
+   },
+   {
+    "nom": "Pas les bonnes pièces",
+    "mod": "+2"
+   },
+   {
+    "nom": "Outils, armes ou véhicule non familier",
+    "mod": "+4"
+   },
+   {
+    "nom": "Sous l'emprise du stress",
+    "mod": "+3"
+   },
+   {
+    "nom": "Sous attaque adverse",
+    "mod": "+3 à +4"
+   },
+   {
+    "nom": "Blessé",
+    "mod": "+2 à +6"
+   },
+   {
+    "nom": "Ivre, drogué, fatigué",
+    "mod": "+4"
+   },
+   {
+    "nom": "Environnement hostile",
+    "mod": "+4"
+   },
+   {
+    "nom": "Environnement très hostile",
+    "mod": "+6"
+   },
+   {
+    "nom": "Manque d'instructions",
+    "mod": "+2"
+   },
+   {
+    "nom": "Agitation environnante",
+    "mod": "+3"
+   },
+   {
+    "nom": "Acrobatie difficile",
+    "mod": "+3"
+   },
+   {
+    "nom": "Acrobatie très difficile",
+    "mod": "+4"
+   },
+   {
+    "nom": "Acrobatie impossible",
+    "mod": "+5"
+   },
+   {
+    "nom": "Information cachée, secrète, illisible",
+    "mod": "+3"
+   },
+   {
+    "nom": "Solution dissimulée, cachette",
+    "mod": "+3"
+   },
+   {
+    "nom": "Programme complexe",
+    "mod": "+3"
+   },
+   {
+    "nom": "Programme très complexe",
+    "mod": "+4"
+   },
+   {
+    "nom": "Serrure complexe",
+    "mod": "+3"
+   },
+   {
+    "nom": "Serrure très complexe",
+    "mod": "+4"
+   },
+   {
+    "nom": "Cible alertée ou sur ses gardes",
+    "mod": "+4"
+   },
+   {
+    "nom": "Zone très éclairée",
+    "mod": "+3"
+   },
+   {
+    "nom": "Luminosité insuffisante",
+    "mod": "+3"
+   },
+   {
+    "nom": "Obscurité totale",
+    "mod": "+4"
+   },
+   {
+    "nom": "En secret sous surveillance",
+    "mod": "+4"
+   }
+  ]
+ },
+ "critiques": {
+  "texte": "Sur un 1 naturel sur le dé, l'échec est automatique : relancez 1D10 et consultez la table des « Échecs critiques » correspondant au domaine du jet préliminaire. Sur un 10 naturel sur le D10, vous obtenez un succès critique : relancez 1D10 et ajoutez le résultat à votre jet préliminaire, ce qui signifie que la chance vous a souri et que vous vous acquittez avec brio d'une tâche que vous n'auriez normalement pas pu réussir.",
+  "table_echecs": [
+   {
+    "domaine": "RÉFLEXE (Combat)",
+    "d10": "1-4",
+    "resultat": "Pas d'échec critique. Cela a été juste."
+   },
+   {
+    "domaine": "RÉFLEXE (Combat)",
+    "d10": "5",
+    "resultat": "Vous lâchez votre arme."
+   },
+   {
+    "domaine": "RÉFLEXE (Combat)",
+    "d10": "6",
+    "resultat": "L'arme se décharge ou touche quelque chose sans importance."
+   },
+   {
+    "domaine": "RÉFLEXE (Combat)",
+    "d10": "7",
+    "resultat": "L'arme s'enraye ou se plante dans le sol durant 1 tour."
+   },
+   {
+    "domaine": "RÉFLEXE (Combat)",
+    "d10": "8",
+    "resultat": "Vous parvenez à vous blesser (lancez 1D10 pour la localisation)."
+   },
+   {
+    "domaine": "RÉFLEXE (Combat)",
+    "d10": "9-10",
+    "resultat": "Vous parvenez à blesser un membre de votre équipe."
+   },
+   {
+    "domaine": "RÉFLEXE (Athlétisme)",
+    "d10": "1-4",
+    "resultat": "Pas d'échec critique. Vous ratez simplement et paraissez ridicule."
+   },
+   {
+    "domaine": "RÉFLEXE (Athlétisme)",
+    "d10": "5-7",
+    "resultat": "Vous échouez lamentablement. Prenez 1 point de dégâts mineur (chute, entorse, etc.) et faites un jet contre l'évanouissement."
+   },
+   {
+    "domaine": "RÉFLEXE (Athlétisme)",
+    "d10": "8-10",
+    "resultat": "C'est un échec total. Si vous faites une action physique, prenez 1D6 points de dégâts dus à la chute ou aux dégâts musculaires. Faites un jet à -1 contre l'évanouissement."
+   },
+   {
+    "domaine": "TECH (Réparation ou Création)",
+    "d10": "1-4",
+    "resultat": "Pas d'échec critique. Vous n'arrivez pas à assembler."
+   },
+   {
+    "domaine": "TECH (Réparation ou Création)",
+    "d10": "5-7",
+    "resultat": "Vous ne faites pas qu'échouer, c'est pire ! Vous lâchez vos outils ou vous perdez prise et lâchez l'objet sur lequel vous travaillez, l'endommageant encore plus."
+   },
+   {
+    "domaine": "TECH (Réparation ou Création)",
+    "d10": "8-10",
+    "resultat": "Woaw ! Ce coup-ci c'est cassé. L'objet est à présent irréparable. Achetez-en un nouveau."
+   },
+   {
+    "domaine": "EMP (Convaincre, Baratin, Séduction)",
+    "d10": "1-4",
+    "resultat": "Pas d'échec critique. Ils refusent seulement de l'acheter."
+   },
+   {
+    "domaine": "EMP (Convaincre, Baratin, Séduction)",
+    "d10": "5-6",
+    "resultat": "Trop difficile pour vos talents. Non seulement vous ne les convainquez pas de l'acheter, mais vous les refroidissez complètement (-4 à vos prochains jets d'EMP) quant aux autres suggestions que vous pourrez leur faire."
+   },
+   {
+    "domaine": "EMP (Convaincre, Baratin, Séduction)",
+    "d10": "7-10",
+    "resultat": "Ça c'est un plantage royal ! Non seulement ils ne sont pas convaincus, mais en plus ils réagissent violemment à tout ce que vous leur proposez. Lancez 1D10 : de 1 à 4, ils vous agressent même physiquement."
+   },
+   {
+    "domaine": "INT (Déduction, Perception, Trouver un indice)",
+    "d10": "1-4",
+    "resultat": "Vous ne savez tout simplement pas comment vous y prendre. Vous ne savez pas ce qui se passe. Vous allez de l'avant, concerné par des choses plus importantes."
+   },
+   {
+    "domaine": "INT (Déduction, Perception, Trouver un indice)",
+    "d10": "5-7",
+    "resultat": "Vous ne savez vraiment pas ce qui se passe et vous n'avez aucun indice permettant de vous renseigner. Faites un jet de Convaincre à -2 pour voir si les autres s'aperçoivent quel idiot vous êtes."
+   },
+   {
+    "domaine": "INT (Déduction, Perception, Trouver un indice)",
+    "d10": "8-10",
+    "resultat": "Hé ! Il y a quelqu'un ? Non seulement vous ne savez absolument rien, mais les autres le remarquent tout de suite."
+   }
+  ]
+ }
+}

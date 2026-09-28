@@ -1,0 +1,887 @@
+{
+ "consoles": [
+  {
+   "nom": "Archonte",
+   "vitesse": -1,
+   "memoire": 15,
+   "mur": 10,
+   "ports": "0 / 6",
+   "port_connexion": 0,
+   "port_sortie": 6,
+   "detail": "Contrôle à distance optimisé, modulation de signal précise, bonus contrôle système, connexion câble ou cellulaire",
+   "prix": 5000,
+   "prix_texte": "5 000",
+   "page": 15
+  },
+  {
+   "nom": "Astra",
+   "vitesse": 3,
+   "memoire": 25,
+   "mur": 4,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck rapide, grande mémoire, design chrome-noir iconique, netrunning fluide",
+   "prix": 9500,
+   "prix_texte": "9 500",
+   "page": 15
+  },
+  {
+   "nom": "Bastion commander",
+   "vitesse": 4,
+   "memoire": 30,
+   "mur": 6,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Cyberconsole militaire, circuiterie renforcée, transmission radio de données, capacité mémoire élevée",
+   "prix": null,
+   "prix_texte": "Variable",
+   "page": 15
+  },
+  {
+   "nom": "Chevalier d’émeraude",
+   "vitesse": 0,
+   "memoire": 10,
+   "mur": 8,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Protection anti-programmes, coupure automatique en cas d’attaque, sécurité maximale du runner, reconnexion rapide",
+   "prix": 10000,
+   "prix_texte": "10 000",
+   "page": 15
+  },
+  {
+   "nom": "Chrysalide",
+   "vitesse": 2,
+   "memoire": null,
+   "memoire_texte": "2+10",
+   "mur": 2,
+   "ports": "6 / 1+",
+   "port_connexion": 6,
+   "port_sortie": null,
+   "detail": "Console intégrée dans combinaison, furtivité extrême, détection très difficile, interfaces dissimulées",
+   "prix": null,
+   "prix_texte": "17 000+",
+   "page": 15
+  },
+  {
+   "nom": "Combinaison Cybermodem “Nexus”",
+   "vitesse": 1,
+   "memoire": 20,
+   "mur": 3,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck corporel complet, interfaces neuronales intégrées, kevlar multicouche, biomoniteur et radio",
+   "prix": 6300,
+   "prix_texte": "6 300",
+   "page": 15
+  },
+  {
+   "nom": "Danzig Blackline",
+   "vitesse": 0,
+   "memoire": 10,
+   "mur": 3,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck low-cost, électronique obsolète, fiabilité limitée, solution d’entrée pour runners",
+   "prix": 500,
+   "prix_texte": "500",
+   "page": 15
+  },
+  {
+   "nom": "Dominion",
+   "vitesse": 2,
+   "memoire": 20,
+   "mur": 7,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console élégante port ceinture, verrou biométrique, lecteur de puces, design personnalisable",
+   "prix": 10000,
+   "prix_texte": "10 000",
+   "page": 16
+  },
+  {
+   "nom": "Jagger",
+   "vitesse": 2,
+   "memoire": 25,
+   "mur": 5,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck de combat, blindage kevlar, immunité EMP et micro-ondes, compatibilité ports universels",
+   "prix": 8200,
+   "prix_texte": "8200",
+   "page": 16
+  },
+  {
+   "nom": "Joyau Noir",
+   "vitesse": 2,
+   "memoire": null,
+   "memoire_texte": "15-35",
+   "mur": 5,
+   "ports": "8 / 1",
+   "port_connexion": 8,
+   "port_sortie": 1,
+   "detail": "Cyberconsole de luxe, intégration bijou, indétectable, fabrication sur mesure",
+   "prix": null,
+   "prix_texte": "???",
+   "page": 16
+  },
+  {
+   "nom": "Microtech “Cortex”",
+   "vitesse": 2,
+   "memoire": 10,
+   "mur": 2,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console intégrée casque, affichage tête haute, radio intégrée, protection physique élevée",
+   "prix": 4100,
+   "prix_texte": "4 100",
+   "page": 16
+  },
+  {
+   "nom": "Monarch",
+   "vitesse": -1,
+   "memoire": 10,
+   "mur": 5,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console artistique, interface visuelle spectaculaire, style classique dans le Net, performances secondaires",
+   "prix": 7000,
+   "prix_texte": "7 000",
+   "page": 16
+  },
+  {
+   "nom": "Nebula",
+   "vitesse": 3,
+   "memoire": 20,
+   "mur": 2,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Ancien modèle évolutif, architecture modifiable, upgrades fréquents, deck cellulaire robuste",
+   "prix": 8025,
+   "prix_texte": "8 025",
+   "page": 17
+  },
+  {
+   "nom": "Omnibus Horizon",
+   "vitesse": -1,
+   "memoire": 10,
+   "mur": 2,
+   "ports": "0 / 6",
+   "port_connexion": 0,
+   "port_sortie": 6,
+   "detail": "Console historique fixe, interface pré-neuronale, usage stationnaire, ancêtre des cyberdecks",
+   "prix": 25000,
+   "prix_texte": "25 000",
+   "page": 17
+  },
+  {
+   "nom": "Raven Microcyb Eagle",
+   "vitesse": 3,
+   "memoire": 20,
+   "mur": 5,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck blindé offensif, haute résistance, utilisable comme arme, puissance brute",
+   "prix": 11000,
+   "prix_texte": "11 000",
+   "page": 17
+  },
+  {
+   "nom": "Raven Microcyb Kestrel",
+   "vitesse": 4,
+   "memoire": 10,
+   "mur": 4,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck ultra-rapide, léger et mobile, accès cellulaire, sécurité biométrique",
+   "prix": 9000,
+   "prix_texte": "9 000",
+   "page": 17
+  },
+  {
+   "nom": "Raven Microcyb Owl",
+   "vitesse": 1,
+   "memoire": 10,
+   "mur": 4,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console furtive, invisibilité dans le Net, camouflage physique, détection très difficile",
+   "prix": 25000,
+   "prix_texte": "25 000",
+   "page": 17
+  },
+  {
+   "nom": "Raven Microcyb Rook",
+   "vitesse": 1,
+   "memoire": 10,
+   "mur": 3,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck compact polyvalent, design discret, connexion cellulaire, modèle d’entrée Raven",
+   "prix": 4000,
+   "prix_texte": "4 000",
+   "page": 17
+  },
+  {
+   "nom": "SGI Technologies « Elysia »",
+   "vitesse": 3,
+   "memoire": 20,
+   "mur": 5,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console immersive, grand écran vidéo, expérience Net collective, interface trodes multiples",
+   "prix": 4260,
+   "prix_texte": "4 260",
+   "page": 18
+  },
+  {
+   "nom": "Specter",
+   "vitesse": 2,
+   "memoire": 10,
+   "mur": 4,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console sécurisée, activation biométrique, écran et imprimante intégrés, station netrunning",
+   "prix": 4200,
+   "prix_texte": "4 200",
+   "page": 18
+  },
+  {
+   "nom": "Vector",
+   "vitesse": 0,
+   "memoire": 10,
+   "mur": 2,
+   "ports": "0 / 2",
+   "port_connexion": 0,
+   "port_sortie": 2,
+   "detail": "Deck standard fiable, composants robustes, modèle classique pour débutants",
+   "prix": 1000,
+   "prix_texte": "1 000",
+   "page": 18
+  },
+  {
+   "nom": "Wraith",
+   "vitesse": 4,
+   "memoire": 20,
+   "mur": 7,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console fantôme anti-traçage, relais cellulaire, anonymat avancé, protection contre traçage Net",
+   "prix": 4500,
+   "prix_texte": "4 500",
+   "page": 18
+  },
+  {
+   "nom": "Zetatech 02-3000 Armdeck",
+   "vitesse": 2,
+   "memoire": 15,
+   "mur": 4,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console d’avant-bras, portable et dissimulable, cybermodem + micro-ordinateur, usage terrain",
+   "prix": 5000,
+   "prix_texte": "5 000",
+   "page": 18
+  },
+  {
+   "nom": "Zetatech chimera",
+   "vitesse": 1,
+   "memoire": 20,
+   "mur": 8,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck hybride workstation, ordinateur complet, scanner et imprimante, station de netrunning",
+   "prix": 10000,
+   "prix_texte": "10 000",
+   "page": 19
+  },
+  {
+   "nom": "Zetatech Parraline 5700",
+   "vitesse": 2,
+   "memoire": 10,
+   "mur": 3,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck minimaliste, performances fiables, design discret, configuration simple",
+   "prix": 2100,
+   "prix_texte": "2 100",
+   "page": 19
+  },
+  {
+   "nom": "Zetatech Parraline 5750",
+   "vitesse": 2,
+   "memoire": 10,
+   "mur": 2,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Console multimédia, grand écran spectaculaire, netrunning domestique, immersion visuelle",
+   "prix": 3600,
+   "prix_texte": "3 600",
+   "page": 19
+  },
+  {
+   "nom": "Zetatech Parraline 5800",
+   "vitesse": 3,
+   "memoire": 15,
+   "mur": 6,
+   "ports": "6 / 6",
+   "port_connexion": 6,
+   "port_sortie": 6,
+   "detail": "Deck puissant et polyvalent, station multimédia, analyse et affichage Net, console sociale",
+   "prix": 6500,
+   "prix_texte": "6 500",
+   "page": 19
+  }
+ ],
+ "ordinateurs": [
+  {
+   "nom": "Black Book",
+   "detail": "Petit ordinateur de poche avec clavier minuscule. Processeur basique, utile pour messagerie et calculs simples.",
+   "prix": 250,
+   "prix_texte": "250",
+   "caracs": {
+    "Type": "Micro-ordinateur",
+    "Vitesse": "1",
+    "Mémoire": "8 UM",
+    "Mur de données": "2"
+   },
+   "page": 20
+  },
+  {
+   "nom": "Zetatech E-Book",
+   "detail": "Tablette numérique compacte pour lecture et prise de notes. Sans capacité de combat dans le Net.",
+   "prix": 100,
+   "prix_texte": "100",
+   "caracs": {
+    "Type": "Micro-ordinateur",
+    "Vitesse": "1",
+    "Mémoire": "12 UM",
+    "Mur de données": "2"
+   },
+   "page": 20
+  },
+  {
+   "nom": "Valise Communications Avancées",
+   "detail": "Valise renforcée équipée d’une antenne satellite intégrée. Confère +2 à la Vitesse et +4 aux Murs de Données du Cybermodem connecté.",
+   "prix": 8000,
+   "prix_texte": "8 000",
+   "caracs": {
+    "Type": "Portable",
+    "Vitesse": "+2",
+    "Mémoire": "20 UM",
+    "Mur de données": "+4"
+   },
+   "page": 21
+  },
+  {
+   "nom": "EBM \"PCX\"",
+   "detail": "Portable professionnel robuste avec processeur performant. Clavier complet et écran haute résolution. Fiable sur le terrain.",
+   "prix": 900,
+   "prix_texte": "900",
+   "caracs": {
+    "Type": "Portable",
+    "Vitesse": "7",
+    "Mémoire": "25 UM",
+    "Mur de données": "3"
+   },
+   "page": 21
+  },
+  {
+   "nom": "Carnet Électronique Mead",
+   "detail": "Ultra-fin et léger, idéal pour journalistes et étudiants. Excellente autonomie de batterie. Stockage limité.",
+   "prix": 860,
+   "prix_texte": "860",
+   "caracs": {
+    "Type": "Portable",
+    "Vitesse": "5",
+    "Mémoire": "8 UM",
+    "Mur de données": "2"
+   },
+   "page": 21
+  },
+  {
+   "nom": "Mitsu/RMC Hybride",
+   "detail": "Format convertible tablette/laptop avec double processeur. Interface tactile et clavier mécanique rétractable. Très apprécié des fixers.",
+   "prix": 1000,
+   "prix_texte": "1 000",
+   "caracs": {
+    "Type": "Portable",
+    "Vitesse": "6",
+    "Mémoire": "25 UM",
+    "Mur de données": "2"
+   },
+   "page": 21
+  },
+  {
+   "nom": "Microtech \"PCZ Super\"",
+   "detail": "Portable haut de gamme. Clavier holographique en option, processeur haute fréquence. Le choix des techies exigeants.",
+   "prix": 1500,
+   "prix_texte": "1 500",
+   "caracs": {
+    "Type": "Portable",
+    "Vitesse": "4",
+    "Mémoire": "30 UM",
+    "Mur de données": "3"
+   },
+   "page": 21
+  },
+  {
+   "nom": "Wyzard Handbox",
+   "detail": "Mini-ordinateur portatif tenant dans la paume. Interface tactile simplifiée, idéal pour le travail de terrain discret.",
+   "prix": 6700,
+   "prix_texte": "6 700",
+   "caracs": {
+    "Type": "Portable",
+    "Vitesse": "7",
+    "Mémoire": "20 UM",
+    "Mur de données": "4"
+   },
+   "page": 21
+  },
+  {
+   "nom": "Zetatech PDA+",
+   "detail": "Assistant numérique personnel haute performance. Synchronisation automatique avec les réseaux corporatifs. Interface intuitive.",
+   "prix": 680,
+   "prix_texte": "680",
+   "caracs": {
+    "Type": "Portable",
+    "Vitesse": "5",
+    "Mémoire": "20 UM",
+    "Mur de données": "2"
+   },
+   "page": 22
+  },
+  {
+   "nom": "Microtech IIKL-4 Workstation",
+   "detail": "Station de travail de bureau standard. Puissante pour le traitement de données complexes et les simulations de bas niveau.",
+   "prix": 1200,
+   "prix_texte": "1 200",
+   "caracs": {
+    "Type": "Ordinateur personnel",
+    "Vitesse": "10",
+    "Mémoire": "40 UM",
+    "Mur de données": "7"
+   },
+   "page": 22
+  },
+  {
+   "nom": "Zetatech PS-4040 Portastation",
+   "detail": "Station de travail portable alliant la puissance d’un PC de bureau à la mobilité d’un laptop professionnel.",
+   "prix": 1000,
+   "prix_texte": "1 000",
+   "caracs": {
+    "Type": "Ordinateur portable",
+    "Vitesse": "3",
+    "Mémoire": "30 UM",
+    "Mur de données": "6"
+   },
+   "page": 22
+  },
+  {
+   "nom": "Toshiba Lightning",
+   "detail": "Monstre de calcul industriel nécessitant une infrastructure dédiée. Capacité de traitement quasi-illimitée pour les grandes corporations.",
+   "prix": 23000,
+   "prix_texte": "23 000",
+   "caracs": {
+    "Type": "Super-ordinateur",
+    "Vitesse": "23",
+    "Mémoire": "150 UM",
+    "Mur de données": "9"
+   },
+   "page": 22
+  }
+ ],
+ "options": [
+  {
+   "nom": "Amélioration de mémoire",
+   "type": "Amélioration",
+   "port": 1,
+   "detail": "Ajoute 10 UM de mémoire supplémentaire",
+   "prix": 1000,
+   "prix_texte": "1 000 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Amélioration du processeur",
+   "type": "Amélioration",
+   "port": 0.25,
+   "port_texte": "0.25",
+   "detail": "Augmente la vitesse de traitement de +1 (max +4)",
+   "prix": 200,
+   "prix_texte": "200 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Auto Extracteur",
+   "type": "Sécurité",
+   "port": 1,
+   "detail": "Déconnecte automatiquement en cas d’attaque, mais ralentit l’initiative",
+   "prix": 330,
+   "prix_texte": "330 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Base de données",
+   "type": "Logiciel",
+   "port": 0.5,
+   "port_texte": "0.5",
+   "detail": "Donne un bonus à une compétence spécifique via infos stockées",
+   "prix": null,
+   "prix_texte": "500 Ed / niveau",
+   "page": 24
+  },
+  {
+   "nom": "Batterie",
+   "type": "Énergie",
+   "port": 1,
+   "detail": "Fournit une source d’énergie portable pour l’appareil",
+   "prix": null,
+   "prix_texte": "5 Ed / heure",
+   "page": 24
+  },
+  {
+   "nom": "Blindage de Données Tritech",
+   "type": "Protection",
+   "port": 1,
+   "detail": "Rend le système immunisé aux EMP et micro-ondes",
+   "prix": null,
+   "prix_texte": "+20%",
+   "page": 24
+  },
+  {
+   "nom": "Câbles cyber-optique",
+   "type": "Amélioration",
+   "port": 0,
+   "detail": "Donne +1 en netrunning si tout le câble est de qualité",
+   "prix": null,
+   "prix_texte": "1 Ed / mètre",
+   "page": 24
+  },
+  {
+   "nom": "Câbles d’interfaces",
+   "type": "Interface",
+   "port": 1,
+   "detail": "Permet de relier directement le cerveau à la machine",
+   "prix": null,
+   "prix_texte": "20–30 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Câbles de faible impédance",
+   "type": "Amélioration",
+   "port": 1,
+   "detail": "Améliore les actions d’interface de +1",
+   "prix": 60,
+   "prix_texte": "60 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Claviers",
+   "type": "Interface",
+   "port": 1,
+   "detail": "Très lent mais protège contre les programmes antipersonnel",
+   "prix": 100,
+   "prix_texte": "100 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Commutateur de Netrunner",
+   "type": "Interface",
+   "port": 1,
+   "detail": "Permet de passer instantanément de la réalité à la Matrice",
+   "prix": 135,
+   "prix_texte": "135 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Deckmate",
+   "type": "Amélioration",
+   "port": 1,
+   "detail": "Ajoute des fonctions d’ordinateur classique au deck",
+   "prix": 100,
+   "prix_texte": "100 Ed",
+   "page": 24
+  },
+  {
+   "nom": "Driver holovidéo",
+   "type": "Logiciel",
+   "port": 0.5,
+   "port_texte": "0.5",
+   "detail": "Permet de contrôler et afficher des hologrammes",
+   "prix": 500,
+   "prix_texte": "500 Ed",
+   "page": 25
+  },
+  {
+   "nom": "EBM 99080 MUSE",
+   "type": "Sécurité",
+   "port": 1,
+   "detail": "Permet d’isoler une partie de la mémoire pour la protéger",
+   "prix": 300,
+   "prix_texte": "300 Ed",
+   "page": 25
+  },
+  {
+   "nom": "EBM XR-10 Chip-Rack",
+   "type": "Stockage",
+   "port": 1,
+   "detail": "Fournit une mémoire externe protégée des attaques",
+   "prix": 5000,
+   "prix_texte": "5 000 Ed",
+   "page": 25
+  },
+  {
+   "nom": "Ecrans vidéo",
+   "type": "Affichage",
+   "port": 1,
+   "detail": "Permet d’afficher la Matrice sur écran externe",
+   "prix": null,
+   "prix_texte": "100 Ed / m²",
+   "page": 25
+  },
+  {
+   "nom": "Grilles codée",
+   "type": "Sécurité",
+   "port": 0,
+   "detail": "Augmente la résistance du système (Mur de données)",
+   "prix": null,
+   "prix_texte": "1 500 Ed / niveau",
+   "page": 25
+  },
+  {
+   "nom": "Imprimantes",
+   "type": "Périphérique",
+   "port": 1,
+   "detail": "Permet d’imprimer des données sur papier",
+   "prix": 300,
+   "prix_texte": "300 Ed",
+   "page": 25
+  },
+  {
+   "nom": "Interface cybermodem",
+   "type": "Interface",
+   "port": 0,
+   "detail": "Permet une connexion cellulaire avec léger malus",
+   "prix": 500,
+   "prix_texte": "500 Ed",
+   "page": 25
+  },
+  {
+   "nom": "Jeux de trodes",
+   "type": "Interface",
+   "port": 1,
+   "detail": "Permet le netrunning sans implants mais plus lent",
+   "prix": 20,
+   "prix_texte": "20 Ed",
+   "page": 25
+  },
+  {
+   "nom": "Jonctions",
+   "type": "Réseau",
+   "port": 1,
+   "detail": "Fusionne et redirige les flux de données",
+   "prix": 100,
+   "prix_texte": "100 Ed",
+   "page": 25
+  },
+  {
+   "nom": "Lecteurs / enregistreurs de cartes / puces",
+   "type": "Stockage",
+   "port": 1,
+   "detail": "Permet de stocker et lire des données sur puces",
+   "prix": 100,
+   "prix_texte": "100 Ed",
+   "page": 25
+  },
+  {
+   "nom": "Mini-imprimantes",
+   "type": "Périphérique",
+   "port": 1,
+   "detail": "Permet d’imprimer en version portable",
+   "prix": 125,
+   "prix_texte": "125 Ed",
+   "page": 25
+  },
+  {
+   "nom": "Modems Datatel",
+   "type": "Réseau",
+   "port": 1,
+   "detail": "Donne accès à la Matrice et aux services en ligne",
+   "prix": null,
+   "prix_texte": "200 Ed / 1 200 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Module de mémoire externe",
+   "type": "Stockage",
+   "port": 1,
+   "detail": "Ajoute 10 UM de mémoire externe via module",
+   "prix": 750,
+   "prix_texte": "750 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Multiprise",
+   "type": "Énergie",
+   "port": 1,
+   "detail": "Coupe le courant en cas de surcharge électrique",
+   "prix": 50,
+   "prix_texte": "50 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Multiprise intelligente",
+   "type": "Énergie",
+   "port": 2,
+   "detail": "Protège des surtensions sans déconnexion mais pénalise",
+   "prix": 250,
+   "prix_texte": "250 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Prise du condamné",
+   "type": "Sécurité",
+   "port": 1,
+   "detail": "Permet de se déconnecter par simple volonté mentale",
+   "prix": 1000,
+   "prix_texte": "1 000 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Port de donnée",
+   "type": "Extension",
+   "port": 0.5,
+   "port_texte": "0.5",
+   "detail": "Ajoute un port pour connecter plus de périphériques",
+   "prix": 100,
+   "prix_texte": "100 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Protection de données",
+   "type": "Protection",
+   "port": 2,
+   "detail": "Protège le matériel contre divers dégâts électroniques",
+   "prix": null,
+   "prix_texte": "+20 %",
+   "page": 26
+  },
+  {
+   "nom": "Relais Radio Mono-Directionnel",
+   "type": "Connexion",
+   "port": null,
+   "port_texte": "1 / relais",
+   "detail": "Permet connexion longue distance via relais radio",
+   "prix": 1500,
+   "prix_texte": "1 500 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Répéteur",
+   "type": "Réseau",
+   "port": 0,
+   "detail": "Amplifie le signal réseau sur longue distance",
+   "prix": 1000,
+   "prix_texte": "1 000 Ed",
+   "page": 26
+  },
+  {
+   "nom": "Scanners",
+   "type": "Périphérique",
+   "port": 1,
+   "detail": "Permet de scanner documents et images",
+   "prix": null,
+   "prix_texte": "100–300 Ed",
+   "page": 27
+  },
+  {
+   "nom": "Sécurité de Reconnaissance Neurale",
+   "type": "Sécurité",
+   "port": 1,
+   "detail": "Sécurise l’accès via reconnaissance cérébrale",
+   "prix": 2000,
+   "prix_texte": "2 000 Ed",
+   "page": 27
+  },
+  {
+   "nom": "Système de sécurité Smartlock",
+   "type": "Sécurité",
+   "port": 1,
+   "detail": "Verrouille l’accès via empreinte ou rétine",
+   "prix": null,
+   "prix_texte": "400 Ed / 1 000 Ed",
+   "page": 27
+  },
+  {
+   "nom": "Terminal",
+   "type": "Interface",
+   "port": 1,
+   "detail": "Très lent mais protège contrattaques directes",
+   "prix": 400,
+   "prix_texte": "400 Ed",
+   "page": 27
+  },
+  {
+   "nom": "Time-lag buffer",
+   "type": "Amélioration",
+   "port": 0,
+   "detail": "Réduit les pénalités de latence en espace",
+   "prix": null,
+   "prix_texte": "350 Ed / puce",
+   "page": 27
+  },
+  {
+   "nom": "Transcripteur",
+   "type": "Périphérique",
+   "port": 1,
+   "detail": "Enregistre les actions de netrunning sur papier",
+   "prix": 150,
+   "prix_texte": "150 Ed",
+   "page": 27
+  },
+  {
+   "nom": "Voxbox",
+   "type": "Communication",
+   "port": 1,
+   "detail": "Permet de communiquer avec l’extérieur (audio)",
+   "prix": 300,
+   "prix_texte": "300 Ed",
+   "page": 27
+  },
+  {
+   "nom": "Zetateck Diagnet",
+   "type": "Simulation",
+   "port": 1,
+   "detail": "Simule la Matrice pour s’entraîner sans risque",
+   "prix": 5000,
+   "prix_texte": "5 000 Ed",
+   "page": 27
+  }
+ ],
+ "construire": {
+  "titre": "Construire ou améliorer son cybermodem",
+  "texte": "Un deck standard ne possède qu’une seule Mémoire (contient 10 unités de mémoire « UM » soit environ dix programmes), a une Vitesse de 0, et une Force de Mur de Données de 2. Vous allez vouloir savoir comment améliorer votre deck autant que possible.\n\nMémoire\nPour 5 000 Ed supplémentaires, vous pouvez acheter une mémoire additionnelle pour votre deck. Cela augmente votre capacité de programmes à 20 UM, soit le double de sa taille d’origine.\n\nVitesse\nPour 2 000 Ed supplémentaires, vous pouvez augmenter la vitesse de votre deck d’un niveau, jusqu’à un plafond de +5. Cela peut vous sauver la vie, car la vitesse du deck détermine qui agit en premier dans un combat de Netrunner. Et dans ce jeu, être dernier signifie être mort.\n\nMurs de données\nPour 1 000 Ed supplémentaires, vous pouvez augmenter la protection des Murs de données de votre deck d’un niveau, jusqu’à un plafond de 10. Les Murs de Données sont importants : ils sont « l’armure » du deck, résistant aux attaques des programmes anti-système.",
+  "pages": "19"
+ }
+}

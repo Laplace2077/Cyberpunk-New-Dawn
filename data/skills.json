@@ -1,0 +1,1522 @@
+[
+ {
+  "nom": "ADRÉNALINE",
+  "carac": null,
+  "coeff": 2,
+  "desc": "L'Adrénaline est la capacité de votre personnage à gérer son état de stress afin de s'en servir à son avantage lors des actions de combat, de poursuite, ou pour être plus réactif en initiative.",
+  "notes": "Pour utiliser l'Adrénaline, vous pouvez dépenser à chaque début de round vos points (dans la limite de la valeur de la compétence utilisable représentée par *) pour la booster pour le round. Tout le monde possède cette compétence, avec un maximum de 2 à la création de personnage, quel que soit votre âge.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "AÉROTECH",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour la réparation des avions (Ospreys et Jets).",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Connaissance des tâches de maintenance de base."
+   },
+   {
+    "niv": "+6",
+    "effet": "Réparation des moteurs et dégâts importants de la structure."
+   },
+   {
+    "niv": "+9",
+    "effet": "Capable de concevoir et de construire son propre aéronef."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "ANTHROPOLOGIE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Connaissance des cultures humaines, leurs habitudes et coutumes.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "ARMES AUTOMATIQUES",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Utilisation de toutes les armes automatiques.",
+  "notes": "1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "ARMES LOURDE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Utilisation des lance-grenades, des mitrailleuses lourdes, lance-missiles et lance-roquettes.",
+  "notes": "1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "ARMURIER",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence nécessaire pour réparer, modifier et faire la maintenance des armes.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Petites réparations et nettoyage."
+   },
+   {
+    "niv": "+6",
+    "effet": "Réparation de tout type d'armes et faire des modifications simples."
+   },
+   {
+    "niv": "+8",
+    "effet": "Conception de vos propres armes."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "ARTS MARTIAUX",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence couvrant tout type de combat élaboré.",
+  "notes": "Choisir un ou plusieurs Arts, voir chapitre 6. 1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": true
+ },
+ {
+  "nom": "ATHLETISME",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour les lancers précis, pour l'escalade, le saut en parachute, un test d'équilibre…",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Niveau champion scolaire."
+   },
+   {
+    "niv": "+5",
+    "effet": "Niveau champion universitaire."
+   },
+   {
+    "niv": "+8",
+    "effet": "Niveau championnat olympique."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "AV-TECH",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour la réparation des Aérodynes propulsés par air pulsé (véhicules de type AV).",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Effectuer les tâches de maintenance de routine."
+   },
+   {
+    "niv": "+6",
+    "effet": "Réparation moteur et modification de l'AV."
+   },
+   {
+    "niv": "+10",
+    "effet": "Conception de son propre AV."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "BAGARRE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence de combat homme à homme, avec les poings, les pieds ou autres parties du corps.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "BARATIN & PERSUASION",
+  "carac": "EMP",
+  "coeff": 1,
+  "desc": "Compétence requise pour persuader les gens de faire ce que vous voulez par la parole.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Remporter n'importe quel débat et convaincre votre petite amie que la blonde avec qui vous étiez est votre sœur."
+   },
+   {
+    "niv": "+5",
+    "effet": "Parleur rusé et professionnel."
+   },
+   {
+    "niv": "+7",
+    "effet": "Équivalent de Ronald Reagan."
+   },
+   {
+    "niv": "+9",
+    "effet": "Équivalent d'Hitler."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "BIBLIOTHEQUE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour les recherches dans les livres, les Data Base ou toute autre source d'informations dans le cadre d'une enquête.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Utilisation de bases de données simples."
+   },
+   {
+    "niv": "+6",
+    "effet": "Accès facilement à la bibliothèque d'un congrès."
+   },
+   {
+    "niv": "+9",
+    "effet": "Comprenez toutes les bases de données publiques et trouvez les faits les plus étranges."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "BIOLOGIE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence représentant votre connaissance générale des animaux, des plantes et autres processus biologiques.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Connaissance de la plupart des espèces communes d'animaux et de plantes."
+   },
+   {
+    "niv": "+6",
+    "effet": "Compréhension générale de la génétique et de la biologie cellulaire, etc."
+   },
+   {
+    "niv": "+10",
+    "effet": "Manipulation de gènes et la plupart des travaux en laboratoire."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "BOTANIQUE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Connaissance générale sur les plantes et leur identification.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Connaissance de la plupart des plantes courantes et savoir quelles essences sont dangereuses et pourquoi."
+   },
+   {
+    "niv": "+6",
+    "effet": "Connaissance d'une grande partie des essences mondiales et de leurs utilisations pratiques."
+   },
+   {
+    "niv": "+9",
+    "effet": "Équivalent d'un doctorat de botaniste : vous savez tout sur les poisons rares, les orchidées exotiques et les plantes utiles."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "CHIMIE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour effectuer des préparations et produire certaines substances chimiques.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Niveau chimie de lycée."
+   },
+   {
+    "niv": "+4",
+    "effet": "Niveau d'un pharmacien expérimenté ou d'un chimiste de faculté."
+   },
+   {
+    "niv": "+8",
+    "effet": "Niveau d'un chercheur de laboratoire."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "COMÉDIE",
+  "carac": "BT",
+  "coeff": 1,
+  "desc": "Jouer un rôle de façon convaincante, sur scène comme devant un vigile.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "COMMANDEMENT",
+  "carac": "EMP",
+  "coeff": 1,
+  "desc": "Art de conduire les gens et de les convaincre de vous suivre.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Petit chef de bureau avec du respect."
+   },
+   {
+    "niv": "+4",
+    "effet": "Dirigeant d'un petit groupe ou d'une escouade de combat sans risque de se faire tirer dessus."
+   },
+   {
+    "niv": "+7",
+    "effet": "Capable de diriger un empire Klingon en entier au combat et faire impression dans le feu de l'action."
+   },
+   {
+    "niv": "+11",
+    "effet": "James Kirk de Star Trek est à ce niveau de compétence, mais vous ne l'égalerez jamais."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "CONDUIRE AUTOMOBILE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour conduire tous les véhicules terrestres : voitures, camions et aéroglisseurs.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Niveau d'un très bon pilote non professionnel."
+   },
+   {
+    "niv": "+6",
+    "effet": "Niveau d'un pilote de course moyen."
+   },
+   {
+    "niv": "+8",
+    "effet": "Niveau d'un pilote reconnu qui gagne régulièrement des championnats."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "CONDUIRE MOTO",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour conduire tous les véhicules de type 2 ou 3 roues et les Cyberbikes.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "CONDUITE D'ENGINS LOURDS",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour manœuvrer tracteurs, chars, très gros camions et engins de chantier.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "CONNAISSANCE DE LA RUE",
+  "carac": "SF",
+  "coeff": 1,
+  "desc": "Compétence requise pour le savoir sur l'underground, où se procurer du matériel, éviter les situations difficiles dans les mauvais quartiers.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous savez vous procurer du matériel « sensible », des drogues…"
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous pouvez lancer un contrat sur quelqu'un, vous connaissez quelques voyous vous devant des faveurs."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous pourriez devenir un Caïd vous-même et vous passer des intermédiaires."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "CONNAISSANCE DES SYSTÈMES",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Architecture des réseaux et des systèmes : savoir comment une installation est bâtie avant d'y entrer.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "CONTREFACONS",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour copier et créer de faux documents, ainsi que pour les reconnaître.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "CORRUPTION",
+  "carac": "SF",
+  "coeff": 1,
+  "desc": "Acheter quelqu'un : évaluer le prix, faire l'offre, et ne pas se tromper de personne.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "CROCHETER",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour ouvrir les serrures, coffres et containers clos.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous pouvez ouvrir des serrures simples."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous pouvez forcer la plupart des coffres-forts."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous avez une réputation de maître-perceur et êtes connu de la plupart des gens importants du monde de Cyberpunk."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "CYBER-TECH",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour l'entretien et la réparation du cybermatériel.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Permet d'assurer des réglages corrects de votre matériel."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous savez monter et démonter la plupart des cybermatériels et savez même faire des modifications mineures."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous pouvez concevoir votre propre cybermatériel."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "DANSE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour devenir un danseur professionnel.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+4",
+    "effet": "Danseur de club ou de petites troupes."
+   },
+   {
+    "niv": "+6",
+    "effet": "Danseur professionnel donnant régulièrement des représentations."
+   },
+   {
+    "niv": "+9",
+    "effet": "Danseur étoile qui sera reconnu facilement dans la rue."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "DEGUISEMENT",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence représentant la capacité de se grimer afin de ressembler à quelqu'un d'autre, qu'il soit réel ou fictif.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "DIAGNOSTIC",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour diagnostiquer les symptômes pathologiques et problèmes médicaux.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous avez le niveau d'un infirmier diplômé et pouvez reconnaître les maladies les plus courantes."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous avez le niveau d'un interne expérimenté et savez traiter les troubles communs et les maladies plus rares."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous faites des diagnostics si précis que vos confrères vous soumettent leurs cas difficiles."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "DISCRETION",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour se cacher dans l'ombre, se déplacer silencieusement, éviter des gardes…",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+1",
+    "effet": "Niveau d'un gamin de 10 ans très discret voulant chiper des gâteaux."
+   },
+   {
+    "niv": "+3",
+    "effet": "Capable de tromper la plupart des gardes ou vos parents s'ils vous ont interdit de sortir."
+   },
+   {
+    "niv": "+6",
+    "effet": "Capable de vous glisser d'ombre en ombre sans être pris."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous êtes l'égal d'un Ninja."
+   },
+   {
+    "niv": "+10",
+    "effet": "Vous vous déplacez aussi facilement qu'une ombre, vous faites passer les ninjas pour des éléphants."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "EDUCATION",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Équivalent d'une formation scolaire de base, vous permettant de lire, écrire, compter, en connaissant un minimum d'histoire.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+1",
+    "effet": "Cursus scolaire de base."
+   },
+   {
+    "niv": "+3",
+    "effet": "Niveau d'un premier cycle d'université."
+   },
+   {
+    "niv": "+4",
+    "effet": "Niveau d'une maîtrise ou d'un doctorat."
+   },
+   {
+    "niv": "+7",
+    "effet": "Vous êtes une personne très cultivée."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous faites partie des gens qui en savent long sur tout (mais qui ont heureusement le bon sens de la boucler)."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "ELECTRONIQUE",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour assurer la maintenance, réparer et modifier des appareillages électroniques, alarmes, ordinateurs…",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "ELOQUENCE",
+  "carac": "BT",
+  "coeff": 1,
+  "desc": "Compétence pour parler en public et être dans le mouvement de votre environnement.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Gagnant de concours d'élocution des lycées."
+   },
+   {
+    "niv": "+6",
+    "effet": "On peut vous payer pour parler en public."
+   },
+   {
+    "niv": "+10",
+    "effet": "Capable de répondre à des discours comme celui de Kennedy « Ich bin ein Berliner » ou celui de Lincoln à Gettysburg."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "ENDURANCE",
+  "carac": "CON",
+  "coeff": 1,
+  "desc": "Aptitude à supporter la douleur et les épreuves sur de longues périodes, en cas de manque de nourriture et d'eau par exemple.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "ENSEIGNEMENT",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour transmettre le savoir à quelqu'un d'autre.",
+  "notes": "Nécessaire pour l'enseignement entre joueurs.",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Niveau d'un professeur d'élèves de terminale."
+   },
+   {
+    "niv": "+6",
+    "effet": "Niveau d'un maître de conférence en université."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous en connaissez assez pour donner des cours dans les plus grandes écoles."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "ESCALADE",
+  "carac": "CON",
+  "coeff": 1,
+  "desc": "Aptitude à escalader les murs, montagnes ou tout autre obstacle.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "ESCRIME",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour la maîtrise des épées, rapières et mono-lames.",
+  "notes": "1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous rend compétent avec une lame."
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous n'êtes pas mauvais du tout."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous pouvez gagner des championnats nationaux d'escrime."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous avez une réputation d'escrimeur hors pair."
+   },
+   {
+    "niv": "+10",
+    "effet": "Des gens comme d'Artagnan ou Miyamoto Musashi sont des maîtres avec ce niveau."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "ESQUIVE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour éviter un coup de poing, de pied, d'une arme blanche, d'une clé ou une tentative d'immobilisation.",
+  "notes": "1 Action d'Esquive par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "ETIQUETTE",
+  "carac": "EMP",
+  "coeff": 1,
+  "desc": "Aptitude à traiter des affaires « sociales », comme savoir quel type de fourchette utiliser.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous pouvez aller dans n'importe quel restaurant chic."
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous pouvez déjeuner avec aplomb à la table du président. Aucune situation ne vous troublera."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous pourriez donner des leçons de maintien à beaucoup de monde."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "EXPERT",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour une expertise de votre choix dans un domaine déterminé : langues étrangères, timbres rares, armes sordides…",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous êtes un expert local."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous en savez assez pour écrire plusieurs ouvrages à ce sujet."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vos ouvrages font référence dans le domaine et vous avez déjà fait des débats télévisés sur le sujet."
+   }
+  ],
+  "specialisable": true
+ },
+ {
+  "nom": "EXPLOSIF",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour la manipulation des explosifs et savoir comment les utiliser de la façon la plus optimale.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "FORCE",
+  "carac": "CON",
+  "coeff": 1,
+  "desc": "Compétence requise pour réaliser toutes les prouesses physiques de force.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Capable de broyer des boîtes de conserve et de déchirer des livres minces en deux."
+   },
+   {
+    "niv": "+8",
+    "effet": "Aucun annuaire n'est plus en sécurité, vous pouvez tordre des barres à mine et briser des menottes."
+   },
+   {
+    "niv": "+10",
+    "effet": "Capable de tordre des barreaux de cellule."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "FUSIL",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour utiliser toutes les armes de type fusil (FU).",
+  "notes": "1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "GEN-TECH",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour la réparation des appareillages mécaniques et électriques simples.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Capable de réparer les problèmes mineurs de votre voiture."
+   },
+   {
+    "niv": "+6",
+    "effet": "Permet de réparer une chaîne hifi, remonter un moteur, etc."
+   },
+   {
+    "niv": "+9",
+    "effet": "Montages les plus sophistiqués, mais nécessite les compétences complémentaires suivant le domaine."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "GEOLOGIE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Connaissance pratique des roches et des minéraux, ainsi que des structures géologiques.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous pouvez identifier la plupart des roches communes."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous avez l'équivalent d'un diplôme universitaire en géologie et identifiez les minéraux et la structure géologique."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous pouvez enseigner la géologie dans les universités."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "GESTION",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour tenir des livres de comptes (ou pour les truquer) et jongler avec les chiffres.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "GRAPHISME",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence permettant de faire des dessins professionnels.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous pouvez faire des œuvres d'art moderne « vendables »."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous faites des choses reconnaissables et extrêmement plaisantes à l'œil, qui rapportent de l'argent."
+   },
+   {
+    "niv": "+8",
+    "effet": "Artiste connu internationalement, vous exposerez dans les plus grandes galeries."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "GYRO-TECH",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour réparer et réaliser la maintenance des aéronefs, hélicoptères et autogires.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "HABILLEMENT ET STYLES",
+  "carac": "BT",
+  "coeff": 1,
+  "desc": "Porter les bons vêtements, au bon moment et avoir l'air cool, même en combinaison spatiale.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous savez choisir vos vêtements."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vos amis vous demandent conseil pour bien s'habiller et vous ne portez plus de prêt-à-porter."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous êtes une des rares personnes dont le style influence les courants majeurs de la mode."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "HISTOIRE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Connaissance des dates et événements du passé.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "INTERFACE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour utiliser la technologie informatique, se déplacer sur les réseaux, programmer…",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous avez les bases dans ce domaine, vous surfez, trouvez ce qu'il vous faut sur le net."
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous avez un niveau professionnel de programmeur ou de hackeur."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous avez déjà craqué plusieurs MEGA-Corpo, dont l'une vous a peut-être embauché en finalité."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "INTERROGATOIRE",
+  "carac": "SF",
+  "coeff": 1,
+  "desc": "Compétence requise pour soutirer des informations aux gens et faire sortir les secrets au grand jour.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous permettra de deviner de manière infaillible si votre petite amie vous ment."
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous avez un niveau professionnel, comme un détective chevronné passant un suspect sur le gril."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous savez faire craquer les gens les plus résistants."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "INTERVIEW",
+  "carac": "EMP",
+  "coeff": 1,
+  "desc": "Compétence requise pour collecter des informations intéressantes sur un sujet donné.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Le sujet vous donnera habituellement des renseignements relatifs à ce qui fait que cette personne est connue."
+   },
+   {
+    "niv": "+6",
+    "effet": "Le sujet vous livrera des anecdotes du passé."
+   },
+   {
+    "niv": "+9",
+    "effet": "Il ou elle vous dira ce que vous désirez savoir, une confiance sans limite pour vous informer."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "INTIMIDATION",
+  "carac": "SF",
+  "coeff": 1,
+  "desc": "Art de forcer les gens à faire ce que vous voulez par force de personnalité ou contrainte physique.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous pouvez intimider n'importe quel citoyen typique, politicien ou pâle voyou."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous intimidez Sylvester Stallone ou n'importe quel gars moyennement impressionnant."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous intimideriez facilement Arnold Schwarzenegger."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "INVESTISSEMENT",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Aptitude à jouer en bourse et aux marchés des échanges.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous en savez assez long pour investir dans des actions sans valeur et y perdre votre chemise."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vos investissements vous rapportent trois fois sur quatre."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous êtes un grand du marché, présent continuellement sur les bourses mondiales."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "JEU",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour les paris, déterminer les probabilités et réussir aux jeux de chance.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous êtes la terreur des tables de poker du samedi soir."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous pouvez vivre de votre art à Las Vegas ou Monte-Carlo."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous pouvez défier James Bond à la roulette et avoir des chances de faire sauter la banque."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "LANCER",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour lancer les shurikens, lances, couteaux…",
+  "notes": "1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "LANGAGE INFORMATIQUE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Lire et comprendre le code d'un système, ses protocoles et ses formats.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "LANGUES ETRANGÈRES",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour la connaissance de langues étrangères.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous pouvez vous débrouiller en utilisant cette langue."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous êtes très à l'aise, mais un natif ne se laissera pas tromper par votre aptitude."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous parlez et écrivez cette langue comme un natif."
+   }
+  ],
+  "specialisable": true
+ },
+ {
+  "nom": "LOOK",
+  "carac": "BT",
+  "coeff": 1,
+  "desc": "Savoir se coiffer et retoucher son aspect physique.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous présentez bien."
+   },
+   {
+    "niv": "+5",
+    "effet": "Niveau d'un modèle de mode (+5 ou +6)."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous pourriez être un modèle célèbre, une star de cinéma ou un lanceur de mode."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "LUTTE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Corps à corps au sol : saisies, immobilisations, projections sans style particulier.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "MATHEMATIQUES",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour la compréhension des calculs et les formules mathématiques.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous savez soustraire, diviser, additionner et multiplier avec une aisance remarquable."
+   },
+   {
+    "niv": "+4",
+    "effet": "Vous êtes incollable sur l'algèbre et la géométrie."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous effectuez des calculs poussés."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous savez élaborer les formules les plus compliquées."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "MEDTECH",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour vous soigner, soigner vos compagnons, opérer à cœur ouvert…",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous savez panser une plaie et laisser ça propre."
+   },
+   {
+    "niv": "+4",
+    "effet": "Vous maîtrisez les soins d'urgence en plein combat et faites ça proprement."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous êtes un chirurgien très connu, expert dans votre domaine."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous savez élaborer des techniques pour soigner plus vite, expert de la body reconstruction : un corps doit être parfait."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "MÊLÉE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Capacité à utiliser les couteaux, haches, massues et autres armes en combat de corps à corps (écorcheurs, étripeurs…).",
+  "notes": "1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "MUSIQUE",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour jouer d'un instrument de musique.",
+  "notes": "Chaque instrument requiert une compétence distincte.",
+  "paliers": [
+   {
+    "niv": "+4",
+    "effet": "Vous permet de jouer dans des groupes professionnels."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous êtes reconnu sur le plan professionnel et avez des contrats en cours."
+   },
+   {
+    "niv": "+10",
+    "effet": "Vous êtes acclamé, avez des tas de groupies et vous vous brouillez régulièrement avec Kerry Eurodyne."
+   }
+  ],
+  "specialisable": true
+ },
+ {
+  "nom": "NATATION",
+  "carac": "CON",
+  "coeff": 1,
+  "desc": "Compétence requise pour nager, même si vous êtes performant en athlétisme.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "PERCEPTION",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Don de l'observation permettant au personnage de déceler des indices, et sa réactivité à l'environnement.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous pouvez déceler de petits indices comme des papiers couverts d'inscriptions."
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous pouvez déceler des indices bien dissimulés."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous pouvez systématiquement tirer des conclusions comme habituellement dans les séries policières."
+   },
+   {
+    "niv": "+10",
+    "effet": "Vous égalez Sherlock Holmes."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "PERCEPTION HUMAINE",
+  "carac": "EMP",
+  "coeff": 1,
+  "desc": "L'art de détecter le mensonge, les réponses évasives, les humeurs et autres indices émotionnels chez les autres.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous pouvez déterminer quand quelqu'un ne dit pas toute la vérité."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous détectez les réponses évasives subtiles et les changements d'humeur."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous pouvez détecter les indices émotionnels subtils, mais aussi deviner une partie de ce que l'on vous cache."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "PERFORMANCE",
+  "carac": "EMP",
+  "coeff": 1,
+  "desc": "Jeu d'acteur ou prestation d'un chanteur.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+4",
+    "effet": "Qualité de chanteur ou d'acteur pour un mariage ou un petit club."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous êtes un professionnel avec des fans et pouvez décrocher des contrats."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous entrez dans la catégorie des stars et on vous reconnaît dans la rue."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "PHARMACOLOGIE",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour concevoir et produire des drogues ou des médicaments.",
+  "notes": "Une compétence de +4 en Chimie est nécessaire. (imprimé « IPHARMACOLOGIE » dans le livre : coquille)",
+  "paliers": [
+   {
+    "niv": "+4",
+    "effet": "Vous pouvez faire de l'aspirine."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous pouvez faire des hallucinogènes ou des antibiotiques."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous pouvez créer des drogues adaptées à la biochimie d'un individu en particulier."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "PHOTOS & FILMS",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour faire des photos ou des films de qualité professionnelle.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous permet de faire des films amateurs buvables."
+   },
+   {
+    "niv": "+4",
+    "effet": "Votre travail peut gagner des prix dans des compétitions amateurs."
+   },
+   {
+    "niv": "+6",
+    "effet": "Votre travail aura le niveau d'une couverture de Playboy ou d'un clip."
+   },
+   {
+    "niv": "+8",
+    "effet": "Travail d'un photographe ou cinéaste mondialement reconnu."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "PHYSIQUE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Aptitude à calculer des principes physiques (pression d'un gaz, énergie mécanique…).",
+  "notes": "Un +4 en Mathématiques est aussi nécessaire.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "PICKPOCKET",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour voler dans les poches sans être repéré, ou escamoter quelque chose.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "PILOTER",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour piloter les appareils volants : Piloter Avion, Piloter Dirigeable, Piloter Gyro, Piloter Jet (AV).",
+  "notes": "Une compétence distincte par type d'appareil. Multiplicateurs de PC : Avion x2, Dirigeable x2, Gyro x3, Jet (AV) x3.",
+  "paliers": [
+   {
+    "niv": "+1",
+    "effet": "Permet de décoller et d'atterrir en toute sécurité par beau temps."
+   },
+   {
+    "niv": "+3",
+    "effet": "Pilote entraîné capable d'affronter la plupart des situations de combat et des zones de mauvais temps."
+   },
+   {
+    "niv": "+6",
+    "effet": "Pilote vétéran capable de se tirer quasiment de n'importe quelle situation, incluant les manœuvres acrobatiques."
+   },
+   {
+    "niv": "+9",
+    "effet": "Pilote ayant l'étoffe d'un héros du ciel."
+   }
+  ],
+  "specialisable": true
+ },
+ {
+  "nom": "PILOTER AVION",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Pilotage des avions à voilure fixe.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "PILOTER DIRIGEABLE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Pilotage des dirigeables et aérostats.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "PILOTER GYRO",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Pilotage des gyroptères et hélicoptères.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "PILOTER JET (AV)",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Pilotage des aérodynes à air pulsé, les fameux AV.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "PISTOLET",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour les pistolets de tout type, y compris ceux de cybermatériel.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous pouvez tirer efficacement sur une cible, mais le combat vous pose toujours un problème."
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous êtes aussi compétent que la plupart des militaires ou des policiers."
+   },
+   {
+    "niv": "+7",
+    "effet": "Vous commencez à avoir une réputation de fin tireur."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous êtes un tireur d'élite de réputation. La seule mention de votre nom fait fuir certaines personnes."
+   },
+   {
+    "niv": "+10",
+    "effet": "Vous êtes une légende, redouté par tous hormis les plus stupides."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "PROGRAMMATION",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Écrire, modifier et déboguer des programmes.",
+  "notes": "Compétence de la variante de table, absente du PDF du livre.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "RESISTER TORTURE / DROGUE",
+  "carac": "SF",
+  "coeff": 1,
+  "desc": "Permet de résister plus facilement aux techniques de torture et aux effets des drogues.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "SE CACHER / SEMER",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "L'art d'éconduire d'éventuels poursuivants, de dissimuler ses traces et de faire perdre votre piste aux gens qui vous suivent.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous pouvez semer la plupart des gangs de déglingués."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous échappez à la police et aux détectives privés."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous semez la plupart des solos."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "SECURITE ELECTRONIQUE",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Pour installer et contrer les détecteurs électroniques, les serrures, alarmes électroniques, pisteurs et traceurs.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Vous pouvez leurrer ou installer la plupart des serrures d'appartement et les caméras de surveillance."
+   },
+   {
+    "niv": "+6",
+    "effet": "Vous pouvez surmonter la plupart des pièges des bureaux corporatistes."
+   },
+   {
+    "niv": "+9",
+    "effet": "Vous pouvez pénétrer dans les zones de haute sécurité en toute impunité."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "SEDUCTION",
+  "carac": "EMP",
+  "coeff": 1,
+  "desc": "L'art de commencer et de maintenir des relations romantiques.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "SUIVRE / PISTER",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour suivre et prendre des gens en filature. Suivre en milieu urbain et pister en milieu rural.",
+  "notes": "",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "SURVIE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Compétence requise pour savoir comment survivre dans la nature sauvage.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+3",
+    "effet": "Niveau d'un Boy Scout."
+   },
+   {
+    "niv": "+6",
+    "effet": "Niveau d'un béret vert des forces spéciales."
+   },
+   {
+    "niv": "+9",
+    "effet": "Niveau de Grizzly Adams, le montagnard des étendues sauvages (+9 ou +10)."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "TIR A L'ARC / ARBALETE",
+  "carac": "REF",
+  "coeff": 1,
+  "desc": "Compétence requise pour utiliser les arcs, arbalètes et autres armes tirant des flèches.",
+  "notes": "1 Action d'Attaque par round par tranche de 3 en compétence",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
+  "nom": "UTILISER CAISSON CRYO",
+  "carac": "TECH",
+  "coeff": 1,
+  "desc": "Compétence requise pour utiliser un caisson cryogénique.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+4",
+    "effet": "Nécessaire pour congeler une personne en bonne santé."
+   },
+   {
+    "niv": "+6",
+    "effet": "Nécessaire pour congeler une personne blessée."
+   }
+  ],
+  "specialisable": false
+ },
+ {
+  "nom": "ZOOLOGIE",
+  "carac": "INT",
+  "coeff": 1,
+  "desc": "Étude des formes de vie, des processus biologiques et de leurs relations avec l'environnement.",
+  "notes": "",
+  "paliers": [
+   {
+    "niv": "+2",
+    "effet": "Vous reconnaissez la plupart des animaux communs."
+   },
+   {
+    "niv": "+5",
+    "effet": "Vous connaissez en plus bon nombre d'espèces exotiques ou en voie d'extinction."
+   },
+   {
+    "niv": "+8",
+    "effet": "Vous êtes instruit sur presque tous les animaux et leurs mœurs, et gagnez un bonus de +1 en Survie pour chasser."
+   }
+  ],
+  "specialisable": false
+ }
+]

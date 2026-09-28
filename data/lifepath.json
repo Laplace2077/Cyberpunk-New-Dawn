@@ -1,0 +1,2531 @@
+{
+ "intro": "Les tables suivantes ont été conçues pour permettre aux joueurs d'étoffer le background de leurs personnages. Faites un lancer par an, en commençant à 14 ans. Suivez les instructions et consultez la sous-table appropriée. Si un lancer ne correspond vraiment pas au concept de personnage du joueur, n'hésitez pas à l'ignorer et à tirer à nouveau (ou à choisir).",
+ "regle": "Un jet sur la table 1A par année d'âge au-delà de 14 ans, 14 ans inclus (soit âge - 13 jets). Chaque résultat renvoie éventuellement vers une autre table (clé « suite ») ; les tables sans dé (« des »: null) ne servent qu'à enchaîner les tables listées dans « chaine ». Un jet qui ne colle pas au concept du personnage peut être ignoré et relancé (ou choisi).",
+ "source": "Cyberpunk: New Dawn - Chapitre 2 « Les Légendes de la Rue », Événements de la vie, pages 35 à 46.",
+ "notes": [
+  "Les plages « 00 » des tables en 1D100 sont normalisées à 100 ; les résultats « 0 » des tables en 1D10 sont normalisés à 10.",
+  "Les identifiants 4B, 5A1 à 5A5, 6A1, 6A2 et 1.0a à 1.0g désignent des sous-tables réellement présentes dans le livre mais non numérotées par celui-ci ; ils ont été attribués pour permettre le chaînage automatique.",
+  "La table 1A indique « (Lancer 1D20) » dans le livre alors que ses plages couvrent 01 à 00 : c'est un 1D100."
+ ],
+ "tables": {
+  "1A": {
+   "titre": "Évènements de la vie",
+   "des": "1D100",
+   "note_livre": "Le livre imprime « (Lancer 1D20) » mais les plages vont de 01 à 00 : il s'agit d'un 1D100 (coquille du livre).",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 15,
+     "resultat": "Vous avez de la chance (Table 2A)",
+     "suite": "2A"
+    },
+    {
+     "min": 16,
+     "max": 30,
+     "resultat": "Un désastre frappe ! (Table 3A)",
+     "suite": "3A"
+    },
+    {
+     "min": 31,
+     "max": 50,
+     "resultat": "Vous vous faites un ami (Table 4A)",
+     "suite": "4A"
+    },
+    {
+     "min": 51,
+     "max": 70,
+     "resultat": "Vous vous faites un ennemi (Table 5A)",
+     "suite": "5A"
+    },
+    {
+     "min": 71,
+     "max": 90,
+     "resultat": "Vie romantique (Table 6A)",
+     "suite": "6A"
+    },
+    {
+     "min": 91,
+     "max": 100,
+     "resultat": "Rien ne vous est arrivé",
+     "suite": null
+    }
+   ]
+  },
+  "2A": {
+   "titre": "Vous avez de la chance !",
+   "des": "1D100",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 5,
+     "resultat": "Rentrée financière (1D5 x 100 Euro)",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 10,
+     "resultat": "Grosse affaire ! (1D10 x 100 Euro)",
+     "suite": null
+    },
+    {
+     "min": 11,
+     "max": 15,
+     "resultat": "Gagnez 1D10 x 100 Euro en matériel ou cyberware",
+     "suite": null
+    },
+    {
+     "min": 16,
+     "max": 20,
+     "resultat": "Vous rencontrez un sensei (+2/+1 dans un art martial)",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 25,
+     "resultat": "Vous rencontrez un instructeur (+2/+1 dans une compétence de REF autre qu'un art martial)",
+     "suite": null
+    },
+    {
+     "min": 26,
+     "max": 30,
+     "resultat": "Vous rencontrez un professeur (+2/+1 dans une compétence d'INT)",
+     "suite": null
+    },
+    {
+     "min": 31,
+     "max": 35,
+     "resultat": "Vous rencontrez un entraîneur (+2/+1 dans une compétence de CON ou à Athlétisme)",
+     "suite": null
+    },
+    {
+     "min": 36,
+     "max": 40,
+     "resultat": "Vous rencontrez un professeur de technique (+2/+1 dans une compétence de TECH)",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 45,
+     "resultat": "École de charme (+2/+1 dans une compétence d'EMP)",
+     "suite": null
+    },
+    {
+     "min": 46,
+     "max": 50,
+     "resultat": "Vous découvrez la mode (+2/+1 dans une compétence de BT)",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 55,
+     "resultat": "Vous apprenez une langue étrangère (+2/+1 dans une compétence de langue)",
+     "suite": null
+    },
+    {
+     "min": 56,
+     "max": 60,
+     "resultat": "Vous apprenez les bases du Netrun (+2/+1 dans la compétence Interface)",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 65,
+     "resultat": "Vous vivez dans la Rue (+2/+1 dans une compétence de SF)",
+     "suite": null
+    },
+    {
+     "min": 66,
+     "max": 70,
+     "resultat": "Un gang du coin vous trouve sympa (avantage «Rang» à 2 PCs, peut être augmenté)",
+     "suite": null
+    },
+    {
+     "min": 71,
+     "max": 75,
+     "resultat": "Vous vous faites des amis nomades (avantage «Famille» à 2 PCs, peut être augmenté)",
+     "suite": null
+    },
+    {
+     "min": 76,
+     "max": 80,
+     "resultat": "Vous gagnez un contact («Contact» à 2 PCs, peut être augmenté; à créer sur la table AE&C)",
+     "suite": "AE&C 1.0"
+    },
+    {
+     "min": 81,
+     "max": 85,
+     "resultat": "Quelqu'un vous doit une faveur (à créer sur la table AE&C)",
+     "suite": "AE&C 1.0"
+    },
+    {
+     "min": 86,
+     "max": 90,
+     "resultat": "Vous vous faites un nouvel ami (à créer sur la table AE&C)",
+     "suite": "AE&C 1.0"
+    },
+    {
+     "min": 91,
+     "max": 95,
+     "resultat": "Un ennemi disparaît/meurs (choisissez en un, si vous n'avez pas d'ennemis relancez)",
+     "suite": null
+    },
+    {
+     "min": 96,
+     "max": 100,
+     "resultat": "Vous avez fait quelque chose de vraiment impressionnant (+2 Réputation positive)",
+     "suite": null
+    }
+   ]
+  },
+  "3A": {
+   "titre": "Un désastre frappe !",
+   "des": "1D100",
+   "instruction": "Lancer 1D100 et croisez les doigts",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 5,
+     "resultat": "Perte financière (1D5 x 100 Euro)",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 10,
+     "resultat": "Dette (1D10 x 100 Euro - payez maintenant, ou vous le payerez plus tard !)",
+     "suite": null
+    },
+    {
+     "min": 11,
+     "max": 15,
+     "resultat": "Vous contractez une maladie; une caractéristique au hasard est réduite de 1",
+     "suite": null
+    },
+    {
+     "min": 16,
+     "max": 20,
+     "resultat": "Dépendance. INT, REF, BODY ou EMP réduit de 1",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 25,
+     "resultat": "Blessure (faites un tirage sur la table 3B)",
+     "suite": "3B"
+    },
+    {
+     "min": 26,
+     "max": 30,
+     "resultat": "Un ami, un amant ou une maîtresse meurt ou disparaît (tirez en un au hasard)",
+     "suite": null
+    },
+    {
+     "min": 31,
+     "max": 35,
+     "resultat": "Un contact meurt ou disparaît (tirez en un au sort)",
+     "suite": null
+    },
+    {
+     "min": 36,
+     "max": 40,
+     "resultat": "Vous vous faites un ennemi (à créer sur la table AE&C)",
+     "suite": "AE&C 1.0"
+    },
+    {
+     "min": 41,
+     "max": 45,
+     "resultat": "Quelqu'un veut votre peau (le MJ crée un ennemi secret)",
+     "suite": null
+    },
+    {
+     "min": 46,
+     "max": 50,
+     "resultat": "Trahi par un ami (un ami devient un ennemi)",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 55,
+     "resultat": "Arrêté mais pas condamné (1D5 semaines de prison)",
+     "suite": null
+    },
+    {
+     "min": 56,
+     "max": 60,
+     "resultat": "Arrêté et condamné pour un délit mineur (1D10 x 10 Euro d'amende)",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 65,
+     "resultat": "Arrêté et condamné pour un crime (1D12 mois en prison)",
+     "suite": null
+    },
+    {
+     "min": 66,
+     "max": 70,
+     "resultat": "Vous êtes sous le coup d'un mandant d'arrêt quelque part (choisissez)",
+     "suite": null
+    },
+    {
+     "min": 71,
+     "max": 75,
+     "resultat": "Un de vos implants tombe en panne, 1/2 prix d'achat pour le réparer",
+     "suite": null
+    },
+    {
+     "min": 76,
+     "max": 80,
+     "resultat": "Vous avez fâché un gang, une bande de nomades ou un groupe du genre (au choix du MJ)",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 85,
+     "resultat": "Vous êtes traqué par une corporation (tirez ou choisissez)",
+     "suite": "1.3"
+    },
+    {
+     "min": 86,
+     "max": 90,
+     "resultat": "Vous devez une faveur à quelqu'un (à créer sur la table AE&C)",
+     "suite": "AE&C 1.0"
+    },
+    {
+     "min": 91,
+     "max": 95,
+     "resultat": "Blâmé pour quelque chose que vous avez fait... ou pas (+1 Réputation négative)",
+     "suite": null
+    },
+    {
+     "min": 96,
+     "max": 100,
+     "resultat": "Grossesse imprévue ! Il va falloir gérer, Choomba.",
+     "suite": null
+    }
+   ]
+  },
+  "3B": {
+   "titre": "Table des blessures - Un désastre frappe !",
+   "des": "1D100",
+   "instruction": "Table 3B (ou désavantage «Vieille Blessure»). Lancer 1D100.",
+   "notes": {
+    "*1*": "La blessure peut être guérie avec un remplacement cybernétique ou développé en cuve.",
+    "*2*": "La chirurgie peut remédier au problème en extrayant quelque chose ou en soignant directement.",
+    "*3*": "Une reconstruction faciale et/ou de la chirurgie esthétique peuvent corriger certains effets de cette blessure. Voir les règles de sur l'amélioration de la BT.",
+    "general": "Les blessures résultant du désavantage «Vieille blessure» ne peuvent pas être corrigés tant que le désavantage n'a pas été racheté. Pour plus d'informations sur les effets des différentes blessures, voir l'Annexe 4."
+   },
+   "lignes": [
+    {
+     "min": 1,
+     "max": 5,
+     "resultat": "Brûlures mineures *3*",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 10,
+     "resultat": "Brûlures sérieuses *1* *3*",
+     "suite": null
+    },
+    {
+     "min": 11,
+     "max": 15,
+     "resultat": "Perforation(s) *3*",
+     "suite": null
+    },
+    {
+     "min": 16,
+     "max": 20,
+     "resultat": "Blessure par balle : a traversé proprement *3*",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 25,
+     "resultat": "Blessure par balle : projectile resté dans la plaie, retiré *3*",
+     "suite": null
+    },
+    {
+     "min": 26,
+     "max": 30,
+     "resultat": "Blessure par balle : projectile resté dans la plaie, jamais retiré *2* *3*",
+     "suite": null
+    },
+    {
+     "min": 31,
+     "max": 35,
+     "resultat": "Blessure par balle : fragmentée, grosse blessure de sortie *1* *3*",
+     "suite": null
+    },
+    {
+     "min": 36,
+     "max": 40,
+     "resultat": "Fracture mal rétablie *1* *2*",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 45,
+     "resultat": "Lésions internes *1* *2*",
+     "suite": null
+    },
+    {
+     "min": 46,
+     "max": 50,
+     "resultat": "Fracture du crâne : dégâts neurologiques mineurs",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 55,
+     "resultat": "Fracture du crâne : dégâts neurologiques sévères",
+     "suite": null
+    },
+    {
+     "min": 56,
+     "max": 60,
+     "resultat": "Éclats non retirés *2*",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 65,
+     "resultat": "Dents en moins *3*",
+     "suite": null
+    },
+    {
+     "min": 66,
+     "max": 70,
+     "resultat": "Doigts ou orteils en moins *1*",
+     "suite": null
+    },
+    {
+     "min": 71,
+     "max": 75,
+     "resultat": "Perte d'un oeil *1*",
+     "suite": null
+    },
+    {
+     "min": 76,
+     "max": 80,
+     "resultat": "Perte d'une oreille *2* *3*",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 85,
+     "resultat": "Perte du nez *3*",
+     "suite": null
+    },
+    {
+     "min": 86,
+     "max": 90,
+     "resultat": "Main/pied/membre tranché *1*",
+     "suite": null
+    },
+    {
+     "min": 91,
+     "max": 95,
+     "resultat": "Blessure au dos *2*",
+     "suite": null
+    },
+    {
+     "min": 96,
+     "max": 100,
+     "resultat": "Cicatrice impressionnante *3*",
+     "suite": null
+    }
+   ]
+  },
+  "4A": {
+   "titre": "Vous vous faites un ami",
+   "des": null,
+   "instruction": "Consultez la table AE&C 1.0 pour voir à quoi il ressemble, puis utilisez la table suivante (4B).",
+   "chaine": [
+    "AE&C 1.0",
+    "4B"
+   ],
+   "lignes": []
+  },
+  "4B": {
+   "titre": "Vous vous faites un ami - Comment vous êtes vous rencontrés ?",
+   "des": "1D100",
+   "note_livre": "Sous-table de la table 4A, non numérotée dans le livre ; identifiant « 4B » attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 4,
+     "resultat": "Un partenaire",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 8,
+     "resultat": "Un collègue",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "resultat": "Un contact",
+     "suite": null
+    },
+    {
+     "min": 13,
+     "max": 16,
+     "resultat": "Un ex-amant ou une ex-maîtresse",
+     "suite": null
+    },
+    {
+     "min": 17,
+     "max": 20,
+     "resultat": "Un ancien ennemi",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 24,
+     "resultat": "Un ancien ami d'enfance",
+     "suite": null
+    },
+    {
+     "min": 25,
+     "max": 28,
+     "resultat": "Un membre de votre famille, un proche",
+     "suite": null
+    },
+    {
+     "min": 29,
+     "max": 32,
+     "resultat": "Vous vous rencontrez grâce à un intérêt commun",
+     "suite": null
+    },
+    {
+     "min": 33,
+     "max": 36,
+     "resultat": "Vous lui avez sauvé la vie",
+     "suite": null
+    },
+    {
+     "min": 37,
+     "max": 40,
+     "resultat": "Il vous a sauvé la vie",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 44,
+     "resultat": "A une fête",
+     "suite": null
+    },
+    {
+     "min": 45,
+     "max": 48,
+     "resultat": "Une personne pour qui vous avez travaillé",
+     "suite": null
+    },
+    {
+     "min": 49,
+     "max": 52,
+     "resultat": "Une personne qui a travaillé pour vous",
+     "suite": null
+    },
+    {
+     "min": 53,
+     "max": 56,
+     "resultat": "Vous vous rencontrez grâce à un ami commun",
+     "suite": null
+    },
+    {
+     "min": 57,
+     "max": 60,
+     "resultat": "Vous vous rencontrez grâce à un «Blind Date»",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 64,
+     "resultat": "Vous étiez à l'école ensemble",
+     "suite": null
+    },
+    {
+     "min": 65,
+     "max": 68,
+     "resultat": "Vous vous rencontrez grâce à un ennemi commun",
+     "suite": null
+    },
+    {
+     "min": 69,
+     "max": 72,
+     "resultat": "A un concert",
+     "suite": null
+    },
+    {
+     "min": 73,
+     "max": 76,
+     "resultat": "Dans un bar",
+     "suite": null
+    },
+    {
+     "min": 77,
+     "max": 80,
+     "resultat": "Dans un centre commercial",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 84,
+     "resultat": "Vous vous rencontrez grâce à un amant ou une maîtresse commun",
+     "suite": null
+    },
+    {
+     "min": 85,
+     "max": 88,
+     "resultat": "Il vous a vendu quelque chose",
+     "suite": null
+    },
+    {
+     "min": 89,
+     "max": 92,
+     "resultat": "Vous lui avez vendu quelque chose",
+     "suite": null
+    },
+    {
+     "min": 93,
+     "max": 96,
+     "resultat": "Il vous a fait une faveur",
+     "suite": null
+    },
+    {
+     "min": 97,
+     "max": 100,
+     "resultat": "Vous lui avez fait une faveur",
+     "suite": null
+    }
+   ]
+  },
+  "5A": {
+   "titre": "Vous vous faites un ennemi",
+   "des": null,
+   "instruction": "Consultez la table AE&C 1.0 pour voir à quoi il ressemble, puis utilisez les tables suivantes.",
+   "chaine": [
+    "AE&C 1.0",
+    "5A1",
+    "5A2",
+    "5A3",
+    "5A4",
+    "5A5"
+   ],
+   "lignes": []
+  },
+  "5A1": {
+   "titre": "Vous vous faites un ennemi - Le connaissiez-vous ?",
+   "des": "1D100",
+   "note_livre": "Sous-table de la table 5A, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 10,
+     "resultat": "Ex-ami",
+     "suite": null
+    },
+    {
+     "min": 11,
+     "max": 20,
+     "resultat": "Ex-amant ou ex-maîtresse",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 30,
+     "resultat": "Un membre de la famille",
+     "suite": null
+    },
+    {
+     "min": 31,
+     "max": 40,
+     "resultat": "Une personne pour qui vous travaillez",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 50,
+     "resultat": "Une personne travaillant pour vous",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 60,
+     "resultat": "Un partenaire ou un collègue",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 100,
+     "resultat": "Un étranger complet",
+     "suite": null
+    }
+   ]
+  },
+  "5A2": {
+   "titre": "Vous vous faites un ennemi - Qui a commis la faute ?",
+   "des": "1D100",
+   "note_livre": "Sous-table de la table 5A, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 50,
+     "resultat": "C'est vous.",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 100,
+     "resultat": "C'est lui ou elle.",
+     "suite": null
+    }
+   ]
+  },
+  "5A3": {
+   "titre": "Vous vous faites un ennemi - Que s'est-il passé ?",
+   "des": "1D100",
+   "note_livre": "Sous-table de la table 5A, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 4,
+     "resultat": "A tenté de tuer l'autre",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 8,
+     "resultat": "A essayé de faire chanter l'autre",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "resultat": "A révélé un secret",
+     "suite": null
+    },
+    {
+     "min": 13,
+     "max": 16,
+     "resultat": "A monté une accusation contre l'autre",
+     "suite": null
+    },
+    {
+     "min": 17,
+     "max": 20,
+     "resultat": "A déserté ou trahi",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 24,
+     "resultat": "A fait des menaces physiques",
+     "suite": null
+    },
+    {
+     "min": 25,
+     "max": 28,
+     "resultat": "A fait des menaces de mort",
+     "suite": null
+    },
+    {
+     "min": 29,
+     "max": 32,
+     "resultat": "A endommagé/détruit des biens",
+     "suite": null
+    },
+    {
+     "min": 33,
+     "max": 36,
+     "resultat": "A causé à l'autre une blessure (directement ou indirectement)",
+     "suite": null
+    },
+    {
+     "min": 37,
+     "max": 40,
+     "resultat": "A causé une blessure à un parent, un ami, un amant ou une maîtresse",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 44,
+     "resultat": "A causé la mort d'un parent, d'un ami, d'un amant ou d'une maîtresse",
+     "suite": null
+    },
+    {
+     "min": 45,
+     "max": 48,
+     "resultat": "A fait perdre la face ou son statut à l'autre",
+     "suite": null
+    },
+    {
+     "min": 49,
+     "max": 52,
+     "resultat": "A provoqué la fin d'une amitié",
+     "suite": null
+    },
+    {
+     "min": 53,
+     "max": 56,
+     "resultat": "A fait perdre un emploi ou un contrat à l'autre",
+     "suite": null
+    },
+    {
+     "min": 57,
+     "max": 60,
+     "resultat": "A repoussé les avances de l'autre",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 64,
+     "resultat": "A volé des biens (valeur 1D10 x 10 Euro)",
+     "suite": null
+    },
+    {
+     "min": 65,
+     "max": 68,
+     "resultat": "A volé de l'argent (1D10 x 10 Euro)",
+     "suite": null
+    },
+    {
+     "min": 69,
+     "max": 72,
+     "resultat": "Personnalités incompatibles",
+     "suite": null
+    },
+    {
+     "min": 73,
+     "max": 76,
+     "resultat": "Désaccord mineur (quelque chose de bête)",
+     "suite": null
+    },
+    {
+     "min": 77,
+     "max": 80,
+     "resultat": "Désaccord profond",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 84,
+     "resultat": "A insulté un parent, un ami, un amant ou une maîtresse",
+     "suite": null
+    },
+    {
+     "min": 85,
+     "max": 88,
+     "resultat": "A insulté ou accusé l'autre",
+     "suite": null
+    },
+    {
+     "min": 89,
+     "max": 92,
+     "resultat": "A tenté de séduire l'amant ou la maîtresse de l'autre",
+     "suite": null
+    },
+    {
+     "min": 93,
+     "max": 96,
+     "resultat": "A couché avec l'amant ou la maîtresse de l'autre",
+     "suite": null
+    },
+    {
+     "min": 97,
+     "max": 100,
+     "resultat": "A fait échouer le plan de l'autre",
+     "suite": null
+    }
+   ]
+  },
+  "5A4": {
+   "titre": "Vous vous faites un ennemi - Qui est l'offensé ?",
+   "des": "1D100",
+   "note_livre": "Sous-table de la table 5A, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 25,
+     "resultat": "Vous le ou la haïssez",
+     "suite": null
+    },
+    {
+     "min": 26,
+     "max": 50,
+     "resultat": "Il ou elle vous hait",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 100,
+     "resultat": "Le sentiment est mutuel",
+     "suite": null
+    }
+   ]
+  },
+  "5A5": {
+   "titre": "Vous vous faites un ennemi - Qu'allez vous faire ?",
+   "des": "1D10",
+   "condition": "Si vous êtes l'offensé, lancez 1D10",
+   "note_livre": "Sous-table de la table 5A, non numérotée dans le livre ; identifiant attribué pour le chaînage. Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "Dire du mal de lui ou d'elle dans son dos.",
+     "suite": null
+    },
+    {
+     "min": 2,
+     "max": 2,
+     "resultat": "Le crucifier verbalement à la moindre opportunité.",
+     "suite": null
+    },
+    {
+     "min": 3,
+     "max": 3,
+     "resultat": "Le tabasser jusqu'à le laisser à moitié mort.",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 4,
+     "resultat": "Tuer l'enfoiré à la première occasion.",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 5,
+     "resultat": "L'éviter comme la peste.",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 6,
+     "resultat": "Saboter ses projets indirectement.",
+     "suite": null
+    },
+    {
+     "min": 7,
+     "max": 7,
+     "resultat": "Lui rendre la vie infernale (monter un coup contre lui, détourner ses amis, séduire sa maîtresse(s)...).",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 8,
+     "resultat": "Le blesser de la même manière qu'il vous a blessé, oeil pour oeil.",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 9,
+     "resultat": "Sympathiser avec lui en attendant le meilleur moment pour le trahir.",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Il n'est pas digne de votre attention. Ignorez le et faites comme s'il n'existait pas.",
+     "suite": null
+    }
+   ]
+  },
+  "6A": {
+   "titre": "Vie romantique",
+   "des": null,
+   "instruction": "Consultez la table AE&C 1.0 pour voir à quoi il ressemble, puis utilisez les tables suivantes.",
+   "chaine": [
+    "AE&C 1.0",
+    "6A1",
+    "6A2"
+   ],
+   "lignes": []
+  },
+  "6A1": {
+   "titre": "Vie romantique - Comment vous êtes vous rencontrés ?",
+   "des": "1D100",
+   "note_livre": "Sous-table de la table 6A, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 5,
+     "resultat": "Un(e) partenaire",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 10,
+     "resultat": "Un(e) collègue",
+     "suite": null
+    },
+    {
+     "min": 11,
+     "max": 15,
+     "resultat": "Un contact",
+     "suite": null
+    },
+    {
+     "min": 16,
+     "max": 20,
+     "resultat": "Un(e) ex-amant (maîtresse)",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 25,
+     "resultat": "Un(e) ancien(ne) ennemi(e)",
+     "suite": null
+    },
+    {
+     "min": 26,
+     "max": 30,
+     "resultat": "Un(e) ancien(ne) ami(e) d'enfance",
+     "suite": null
+    },
+    {
+     "min": 31,
+     "max": 35,
+     "resultat": "Vous vous rencontrez grâce à un intérêt commun",
+     "suite": null
+    },
+    {
+     "min": 36,
+     "max": 40,
+     "resultat": "Vous lui avez sauvé la vie",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 45,
+     "resultat": "Il (elle) vous a sauvé la vie",
+     "suite": null
+    },
+    {
+     "min": 46,
+     "max": 50,
+     "resultat": "A une fête",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 55,
+     "resultat": "Une personne pour qui vous avez travaillé",
+     "suite": null
+    },
+    {
+     "min": 56,
+     "max": 60,
+     "resultat": "Une personne qui a travaillé pour vous",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 65,
+     "resultat": "Vous vous rencontrez grâce à un ami commun",
+     "suite": null
+    },
+    {
+     "min": 66,
+     "max": 70,
+     "resultat": "Vous vous rencontrez grâce à un «Blind Date»",
+     "suite": null
+    },
+    {
+     "min": 71,
+     "max": 75,
+     "resultat": "Vous étiez à l'école ensemble",
+     "suite": null
+    },
+    {
+     "min": 76,
+     "max": 80,
+     "resultat": "Vous vous rencontrez grâce à un ennemi commun",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 85,
+     "resultat": "A un concert",
+     "suite": null
+    },
+    {
+     "min": 86,
+     "max": 90,
+     "resultat": "Dans un bar",
+     "suite": null
+    },
+    {
+     "min": 91,
+     "max": 95,
+     "resultat": "Dans un centre commercial",
+     "suite": null
+    },
+    {
+     "min": 96,
+     "max": 100,
+     "resultat": "Vous vous rencontrez grâce à un amant ou une maîtresse commun",
+     "suite": null
+    }
+   ]
+  },
+  "6A2": {
+   "titre": "Vie romantique - Déroulement ?",
+   "des": "1D10",
+   "note_livre": "Sous-table de la table 6A, non numérotée dans le livre ; identifiant attribué pour le chaînage. Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 4,
+     "resultat": "Histoire d'amour heureuse",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 5,
+     "resultat": "Histoire d'amour tragique (voir table 6B)",
+     "suite": "6B"
+    },
+    {
+     "min": 6,
+     "max": 7,
+     "resultat": "Histoire d'amour problématique (voir table 6C)",
+     "suite": "6C"
+    },
+    {
+     "min": 8,
+     "max": 10,
+     "resultat": "Histoire rapide et rendez-vous brûlants",
+     "suite": null
+    }
+   ]
+  },
+  "6B": {
+   "titre": "Histoire d'amour tragique",
+   "des": "1D100",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 16,
+     "resultat": "Cela n'a pas collé entre vous",
+     "suite": null
+    },
+    {
+     "min": 17,
+     "max": 22,
+     "resultat": "La personne aimée vous a laissé une lettre et a filé",
+     "suite": null
+    },
+    {
+     "min": 23,
+     "max": 28,
+     "resultat": "La personne aimée est morte d'une maladie incurable",
+     "suite": null
+    },
+    {
+     "min": 29,
+     "max": 34,
+     "resultat": "La personne aimée a été tué dans un accident",
+     "suite": null
+    },
+    {
+     "min": 35,
+     "max": 40,
+     "resultat": "La personne aimée a disparu ou a été kidnappé",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 46,
+     "resultat": "Un but personnel vous a séparés",
+     "suite": null
+    },
+    {
+     "min": 47,
+     "max": 52,
+     "resultat": "La personne aimée a perdu la raison",
+     "suite": null
+    },
+    {
+     "min": 53,
+     "max": 58,
+     "resultat": "La personne aimée s'est suicidée",
+     "suite": null
+    },
+    {
+     "min": 59,
+     "max": 64,
+     "resultat": "La personne aimée a été tuée dans un combat",
+     "suite": null
+    },
+    {
+     "min": 65,
+     "max": 70,
+     "resultat": "La personne aimée a été incarcérée (1D10 ans)",
+     "suite": null
+    },
+    {
+     "min": 71,
+     "max": 76,
+     "resultat": "La personne aimée a été assassinée par un ennemi (choisissez lequel)",
+     "suite": null
+    },
+    {
+     "min": 77,
+     "max": 82,
+     "resultat": "La personne aimée vous a quitté pour un ami (choisissez lequel)",
+     "suite": null
+    },
+    {
+     "min": 83,
+     "max": 88,
+     "resultat": "La personne aimée vous a quitté pour un ennemi (choisissez lequel)",
+     "suite": null
+    },
+    {
+     "min": 89,
+     "max": 94,
+     "resultat": "La personne aimée vous manipulait",
+     "suite": null
+    },
+    {
+     "min": 95,
+     "max": 100,
+     "resultat": "La personne aimée vous a volé 1D10 x 100 Euro et s'est sauvée",
+     "suite": null
+    }
+   ]
+  },
+  "6C": {
+   "titre": "Histoire d'amour problématique",
+   "des": "1D100",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 7,
+     "resultat": "La famille de la personne aimée vous hait",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 14,
+     "resultat": "Les amis de la personne aimée vous haïssent",
+     "suite": null
+    },
+    {
+     "min": 15,
+     "max": 21,
+     "resultat": "Votre famille hait la personne que vous aimez",
+     "suite": null
+    },
+    {
+     "min": 22,
+     "max": 28,
+     "resultat": "Vos amis haïssent la personne que vous aimez",
+     "suite": null
+    },
+    {
+     "min": 29,
+     "max": 35,
+     "resultat": "La personne aimée veut fréquenter un autre milieu",
+     "suite": null
+    },
+    {
+     "min": 36,
+     "max": 42,
+     "resultat": "Vous voulez fréquenter un autre milieu",
+     "suite": null
+    },
+    {
+     "min": 43,
+     "max": 49,
+     "resultat": "Vous êtes séparés d'une façon ou d'une autre",
+     "suite": null
+    },
+    {
+     "min": 50,
+     "max": 56,
+     "resultat": "Vous n'arrêtez pas de vous battre",
+     "suite": null
+    },
+    {
+     "min": 57,
+     "max": 62,
+     "resultat": "L'un de vous est d'une jalousie maladive",
+     "suite": null
+    },
+    {
+     "min": 63,
+     "max": 68,
+     "resultat": "La personne aimée commence à chercher ailleurs",
+     "suite": null
+    },
+    {
+     "min": 69,
+     "max": 74,
+     "resultat": "Vous commencez à chercher ailleurs",
+     "suite": null
+    },
+    {
+     "min": 75,
+     "max": 80,
+     "resultat": "L'ex de la personne aimée veut votre peau",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 87,
+     "resultat": "La personne aimée est dépendante à une drogue",
+     "suite": null
+    },
+    {
+     "min": 88,
+     "max": 93,
+     "resultat": "La personne aimée est dans le coma",
+     "suite": null
+    },
+    {
+     "min": 94,
+     "max": 100,
+     "resultat": "La personne aimée est mariée",
+     "suite": null
+    }
+   ]
+  },
+  "6D": {
+   "titre": "Sentiments mutuels",
+   "des": "1D10",
+   "condition": "Lancer 1D10 si applicable",
+   "note_livre": "Aucune autre table du livre ne renvoie explicitement vers la table 6D ; la mention « si applicable » invite à l'utiliser après une histoire d'amour tragique (6B) ou problématique (6C). Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "La personne aimée vous aime toujours",
+     "suite": null
+    },
+    {
+     "min": 2,
+     "max": 2,
+     "resultat": "Vous l'aimez toujours",
+     "suite": null
+    },
+    {
+     "min": 3,
+     "max": 3,
+     "resultat": "Vous vous aimez toujours",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 4,
+     "resultat": "Vous la haïssez",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 5,
+     "resultat": "Elle vous hait",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 6,
+     "resultat": "Vous vous haïssez mutuellement",
+     "suite": null
+    },
+    {
+     "min": 7,
+     "max": 7,
+     "resultat": "Vous êtes restés amis",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 8,
+     "resultat": "Plus de sentiment des deux côtés, c'est fini",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 9,
+     "resultat": "Vous l'aimez mais il ou elle vous déteste",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Il ou elle vous aime mais vous le ou la haïssez",
+     "suite": null
+    }
+   ]
+  },
+  "AE&C 1.0": {
+   "titre": "Profession des amis, ennemis et contacts (Table AE&C 1.0)",
+   "des": "1D100",
+   "instruction": "La table qui suit peut être utilisée par le MJ pour générer des professions aléatoires pour des PNJs et pour étoffer les amis, ennemis et contacts. Suivez les instructions de lancer ou choisissez une entrée et consultez la sous-table comme indiqué. Pour déterminer le sexe du PNJ, tirez 1D10. Résultat impair = masculin, résultat pair = féminin.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 20,
+     "resultat": "Emploi légal (Lancer 1D100)",
+     "suite": "1.0a"
+    },
+    {
+     "min": 21,
+     "max": 35,
+     "resultat": "Street Trash (Lancer 1D100)",
+     "suite": "1.0b"
+    },
+    {
+     "min": 36,
+     "max": 50,
+     "resultat": "Loi/Secours (Lancer 1D100)",
+     "suite": "1.0c"
+    },
+    {
+     "min": 51,
+     "max": 65,
+     "resultat": "Crime Organisé (Lancer 1D10)",
+     "suite": "1.0d"
+    },
+    {
+     "min": 66,
+     "max": 79,
+     "resultat": "Corporatiste (Lancer 1D10)",
+     "suite": "1.0e"
+    },
+    {
+     "min": 80,
+     "max": 89,
+     "resultat": "Divertissement (Lancer 1D10)",
+     "suite": "1.0f"
+    },
+    {
+     "min": 90,
+     "max": 100,
+     "resultat": "Gouvernement (Lancer 1D10)",
+     "suite": "1.0g"
+    }
+   ]
+  },
+  "1.0a": {
+   "titre": "AE&C 1.0 - Emploi légal",
+   "des": "1D100",
+   "note_livre": "Sous-table de catégorie de la table AE&C 1.0, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 6,
+     "resultat": "Comptable",
+     "suite": null
+    },
+    {
+     "min": 7,
+     "max": 13,
+     "resultat": "Employé (vente ou autre)",
+     "suite": null
+    },
+    {
+     "min": 14,
+     "max": 19,
+     "resultat": "Ouvrier du bâtiment",
+     "suite": null
+    },
+    {
+     "min": 20,
+     "max": 25,
+     "resultat": "Coursier",
+     "suite": null
+    },
+    {
+     "min": 26,
+     "max": 31,
+     "resultat": "Médecin/Infirmière",
+     "suite": null
+    },
+    {
+     "min": 32,
+     "max": 37,
+     "resultat": "Ingénieur/Technicien",
+     "suite": null
+    },
+    {
+     "min": 38,
+     "max": 44,
+     "resultat": "Concierge",
+     "suite": null
+    },
+    {
+     "min": 45,
+     "max": 50,
+     "resultat": "Pilote",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 56,
+     "resultat": "Secrétaire",
+     "suite": null
+    },
+    {
+     "min": 57,
+     "max": 61,
+     "resultat": "Scientifique",
+     "suite": null
+    },
+    {
+     "min": 62,
+     "max": 68,
+     "resultat": "Travailleur socia",
+     "suite": null
+    },
+    {
+     "min": 69,
+     "max": 75,
+     "resultat": "Lycéen",
+     "suite": null
+    },
+    {
+     "min": 76,
+     "max": 80,
+     "resultat": "Étudiant",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 87,
+     "resultat": "Professeur, lycée",
+     "suite": null
+    },
+    {
+     "min": 88,
+     "max": 93,
+     "resultat": "Professeur, université",
+     "suite": null
+    },
+    {
+     "min": 94,
+     "max": 100,
+     "resultat": "Chauffeur de bus/camion",
+     "suite": null
+    }
+   ]
+  },
+  "1.0b": {
+   "titre": "AE&C 1.0 - Street Trash",
+   "des": "1D100",
+   "note_livre": "Sous-table de catégorie de la table AE&C 1.0, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 2,
+     "resultat": "Assassin",
+     "suite": null
+    },
+    {
+     "min": 3,
+     "max": 7,
+     "resultat": "Barman",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 11,
+     "resultat": "Garde du corps",
+     "suite": null
+    },
+    {
+     "min": 12,
+     "max": 15,
+     "resultat": "Videur",
+     "suite": null
+    },
+    {
+     "min": 16,
+     "max": 20,
+     "resultat": "Chauffeur de taxi",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 23,
+     "resultat": "Escroc",
+     "suite": null
+    },
+    {
+     "min": 24,
+     "max": 26,
+     "resultat": "Détenu",
+     "suite": null
+    },
+    {
+     "min": 27,
+     "max": 28,
+     "resultat": "Faussaire",
+     "suite": null
+    },
+    {
+     "min": 29,
+     "max": 30,
+     "resultat": "Producteur de drogue",
+     "suite": null
+    },
+    {
+     "min": 31,
+     "max": 36,
+     "resultat": "Dealer",
+     "suite": null
+    },
+    {
+     "min": 37,
+     "max": 40,
+     "resultat": "Ex-détenu",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 44,
+     "resultat": "Fixer/Receleur",
+     "suite": null
+    },
+    {
+     "min": 45,
+     "max": 49,
+     "resultat": "Membre de gang",
+     "suite": null
+    },
+    {
+     "min": 50,
+     "max": 53,
+     "resultat": "Prostitué(e) (sans licence)",
+     "suite": null
+    },
+    {
+     "min": 54,
+     "max": 58,
+     "resultat": "Junkie",
+     "suite": null
+    },
+    {
+     "min": 59,
+     "max": 62,
+     "resultat": "Mercenaire",
+     "suite": null
+    },
+    {
+     "min": 63,
+     "max": 65,
+     "resultat": "Netrunner",
+     "suite": null
+    },
+    {
+     "min": 66,
+     "max": 69,
+     "resultat": "Nomade",
+     "suite": null
+    },
+    {
+     "min": 70,
+     "max": 72,
+     "resultat": "Prostitué(e) (avec licence)",
+     "suite": null
+    },
+    {
+     "min": 73,
+     "max": 74,
+     "resultat": "Charcudoc",
+     "suite": null
+    },
+    {
+     "min": 75,
+     "max": 78,
+     "resultat": "Ronin",
+     "suite": null
+    },
+    {
+     "min": 79,
+     "max": 82,
+     "resultat": "Contrebandier",
+     "suite": null
+    },
+    {
+     "min": 83,
+     "max": 88,
+     "resultat": "Vendeur ambulant",
+     "suite": null
+    },
+    {
+     "min": 89,
+     "max": 90,
+     "resultat": "Techie",
+     "suite": null
+    },
+    {
+     "min": 91,
+     "max": 94,
+     "resultat": "Voleur/Cambrioleur",
+     "suite": null
+    },
+    {
+     "min": 95,
+     "max": 100,
+     "resultat": "Vagabond",
+     "suite": null
+    }
+   ]
+  },
+  "1.0c": {
+   "titre": "AE&C 1.0 - Loi/Secours",
+   "des": "1D100",
+   "note_livre": "Sous-table de catégorie de la table AE&C 1.0, non numérotée dans le livre ; identifiant attribué pour le chaînage.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 5,
+     "resultat": "Chasseur de primes",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 20,
+     "resultat": "Flic (voir sous-table 1.1)",
+     "suite": "1.1"
+    },
+    {
+     "min": 21,
+     "max": 36,
+     "resultat": "Pompier",
+     "suite": null
+    },
+    {
+     "min": 37,
+     "max": 40,
+     "resultat": "Avocat",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 55,
+     "resultat": "Ambulancier",
+     "suite": null
+    },
+    {
+     "min": 56,
+     "max": 61,
+     "resultat": "Gardien de prison",
+     "suite": null
+    },
+    {
+     "min": 62,
+     "max": 75,
+     "resultat": "Détective privé",
+     "suite": null
+    },
+    {
+     "min": 76,
+     "max": 90,
+     "resultat": "Vigile",
+     "suite": null
+    },
+    {
+     "min": 91,
+     "max": 95,
+     "resultat": "Flic à la retraite (voir sous-table 1.1)",
+     "suite": "1.1"
+    },
+    {
+     "min": 96,
+     "max": 100,
+     "resultat": "Milicien",
+     "suite": null
+    }
+   ]
+  },
+  "1.0d": {
+   "titre": "AE&C 1.0 - Crime Organisé",
+   "des": "1D10",
+   "note_livre": "Sous-table de catégorie de la table AE&C 1.0, non numérotée dans le livre ; identifiant attribué pour le chaînage. Le livre place « (voir sous-table 1.2) » sur la seule entrée « Netrunner », mais la sous-table 1.2 détermine l'affiliation de tout PNJ du crime organisé : elle s'applique vraisemblablement à toute la catégorie. Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "Assassin",
+     "suite": null
+    },
+    {
+     "min": 2,
+     "max": 3,
+     "resultat": "Garde du corps",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 4,
+     "resultat": "Bookmaker",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 5,
+     "resultat": "Faussaire",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "resultat": "Homme de main",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 9,
+     "resultat": "Petit caïd",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Netrunner (voir sous-table 1.2)",
+     "suite": "1.2"
+    }
+   ]
+  },
+  "1.0e": {
+   "titre": "AE&C 1.0 - Corporatiste",
+   "des": "1D10",
+   "note_livre": "Sous-table de catégorie de la table AE&C 1.0, non numérotée dans le livre ; identifiant attribué pour le chaînage. Le livre place « (voir sous-table 1.3) » sur la seule entrée « Technicien », mais la sous-table 1.3 détermine la corporation de tout PNJ corporatiste : elle s'applique vraisemblablement à toute la catégorie. Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "Assassin/Ninja",
+     "suite": null
+    },
+    {
+     "min": 2,
+     "max": 2,
+     "resultat": "Police corpo/sécurité",
+     "suite": null
+    },
+    {
+     "min": 3,
+     "max": 3,
+     "resultat": "Médecin/MedTech",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "resultat": "Employé (de bureau, secrétaire, etc)",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 6,
+     "resultat": "Cadre intermédiaire",
+     "suite": null
+    },
+    {
+     "min": 7,
+     "max": 7,
+     "resultat": "Cadre supérieur",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 8,
+     "resultat": "Netrunner",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 9,
+     "resultat": "Samuraï",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Technicien (voir sous-table 1.3)",
+     "suite": "1.3"
+    }
+   ]
+  },
+  "1.0f": {
+   "titre": "AE&C 1.0 - Divertissement",
+   "des": "1D10",
+   "note_livre": "Sous-table de catégorie de la table AE&C 1.0, non numérotée dans le livre ; identifiant attribué pour le chaînage. Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "Acteur",
+     "suite": null
+    },
+    {
+     "min": 2,
+     "max": 3,
+     "resultat": "Artiste",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 4,
+     "resultat": "Athlète",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 5,
+     "resultat": "Disk Jockey",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 6,
+     "resultat": "Média (voir sous-table 1.4)",
+     "suite": "1.4"
+    },
+    {
+     "min": 7,
+     "max": 8,
+     "resultat": "Rocker",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 9,
+     "resultat": "Danseur",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Écrivain",
+     "suite": null
+    }
+   ]
+  },
+  "1.0g": {
+   "titre": "AE&C 1.0 - Gouvernement",
+   "des": "1D10",
+   "note_livre": "Sous-table de catégorie de la table AE&C 1.0, non numérotée dans le livre ; identifiant attribué pour le chaînage. Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "Agent du LEDiv (voir sous-table 1.5)",
+     "suite": "1.5"
+    },
+    {
+     "min": 2,
+     "max": 2,
+     "resultat": "Assassin",
+     "suite": null
+    },
+    {
+     "min": 3,
+     "max": 6,
+     "resultat": "Militaire (voir sous-table 1.6)",
+     "suite": "1.6"
+    },
+    {
+     "min": 7,
+     "max": 7,
+     "resultat": "Netrunner",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 8,
+     "resultat": "Officiel/Politicien",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 10,
+     "resultat": "Techie",
+     "suite": null
+    }
+   ]
+  },
+  "1.1": {
+   "titre": "AE&C 1.0 - Sous-table 1.1 - Types de Police",
+   "des": "1D100",
+   "instruction": "Utilisée seulement après un tirage de «Flic» ou «Flic à la retraite» sur la table 1.0 pour déterminer dans quel service est ou était le PNJ.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 3,
+     "resultat": "Divisions des Affaire Internes (DIA)",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 8,
+     "resultat": "Administration",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 13,
+     "resultat": "Section Sécurité du Réseau (NetSec)",
+     "suite": null
+    },
+    {
+     "min": 14,
+     "max": 18,
+     "resultat": "Homicide",
+     "suite": null
+    },
+    {
+     "min": 19,
+     "max": 23,
+     "resultat": "Vice",
+     "suite": null
+    },
+    {
+     "min": 24,
+     "max": 28,
+     "resultat": "Cambriolage",
+     "suite": null
+    },
+    {
+     "min": 29,
+     "max": 33,
+     "resultat": "Enquêtes Spéciales (EnS)",
+     "suite": null
+    },
+    {
+     "min": 34,
+     "max": 37,
+     "resultat": "Special Weapons And Tactics (SWAT)",
+     "suite": null
+    },
+    {
+     "min": 38,
+     "max": 41,
+     "resultat": "Cyborg Suppression Unit (CSU, MaxTac, C-SWAT)",
+     "suite": null
+    },
+    {
+     "min": 42,
+     "max": 46,
+     "resultat": "Section anti-émeutes",
+     "suite": null
+    },
+    {
+     "min": 47,
+     "max": 50,
+     "resultat": "Patrouille aérienne",
+     "suite": null
+    },
+    {
+     "min": 51,
+     "max": 67,
+     "resultat": "Patrouille motorisée",
+     "suite": null
+    },
+    {
+     "min": 68,
+     "max": 82,
+     "resultat": "Circulation",
+     "suite": null
+    },
+    {
+     "min": 83,
+     "max": 98,
+     "resultat": "Patrouille à pieds",
+     "suite": null
+    },
+    {
+     "min": 99,
+     "max": 100,
+     "resultat": "Autoroute",
+     "suite": null
+    }
+   ]
+  },
+  "1.2": {
+   "titre": "AE&C 1.0 - Sous-table 1.2 - Crime organisé",
+   "des": "1D10",
+   "instruction": "Spécifique des organisations de la côte Ouest. Utilisé pour déterminer à quel groupe est affilié le PNJ.",
+   "note_livre": "Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 4,
+     "resultat": "Les Yakuza (japonais)",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 7,
+     "resultat": "La Mafia (surtout italiens)",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 9,
+     "resultat": "Les Triades (chinois)",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Les Colombiens (et autres sud-américains)",
+     "suite": null
+    }
+   ]
+  },
+  "1.3": {
+   "titre": "AE&C 1.0 - Sous-table 1.3 - Corporations",
+   "des": "1D100",
+   "instruction": "Utilisée pour savoir à quelle corporation le PNJ est affilié.",
+   "legende": "Les livres dans lesquels sont publiés les détails des corporations citées sont donnés entre parenthèses : CP = Cyberpunk 2020; CR# = Corporate Report, «#» est le volume; ERI = Edgerunners INC; RB = Rockerboy; NO = Near Orbit; PRS = Pac Rim Sourcebook; RGUK = Rough Guide to the UK; DS = Deep Space; NT = Neo Tribes; IF#.# = magazines Interface, où «#.#» indique respectivement le volume et le numéro.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 3,
+     "resultat": "Arasaka (CP, CR1)",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "resultat": "BioMass Laboratories Group, GMbH (ERI)",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "resultat": "Biotechnicia (CP)",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 10,
+     "resultat": "Consolodated Agriculture (IF1.4)",
+     "suite": null
+    },
+    {
+     "min": 11,
+     "max": 13,
+     "resultat": "Diverse Media Systems (RB)",
+     "suite": null
+    },
+    {
+     "min": 14,
+     "max": 16,
+     "resultat": "Dornier AeroSpace (NO)",
+     "suite": null
+    },
+    {
+     "min": 17,
+     "max": 19,
+     "resultat": "Euro-Business Machines Corporation (CP)",
+     "suite": null
+    },
+    {
+     "min": 20,
+     "max": 21,
+     "resultat": "Fujiwara (PRS)",
+     "suite": null
+    },
+    {
+     "min": 22,
+     "max": 23,
+     "resultat": "Hilliard Corporation (RGUK)",
+     "suite": null
+    },
+    {
+     "min": 24,
+     "max": 25,
+     "resultat": "Imperial Metropolitan Agriculture, PLC (RGUK)",
+     "suite": null
+    },
+    {
+     "min": 26,
+     "max": 28,
+     "resultat": "InfoComp (CP, ERI)",
+     "suite": null
+    },
+    {
+     "min": 29,
+     "max": 31,
+     "resultat": "International Electric Corporation (CR1, DS)",
+     "suite": null
+    },
+    {
+     "min": 32,
+     "max": 33,
+     "resultat": "Kendachi (PRS)",
+     "suite": null
+    },
+    {
+     "min": 34,
+     "max": 35,
+     "resultat": "Lazarus Military Group (CR2)",
+     "suite": null
+    },
+    {
+     "min": 36,
+     "max": 37,
+     "resultat": "Matsushima-Kiroshi (PRS)",
+     "suite": null
+    },
+    {
+     "min": 38,
+     "max": 40,
+     "resultat": "Merrill, Asukaga, & Finch (CP)",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 43,
+     "resultat": "MicroTech (CP)",
+     "suite": null
+    },
+    {
+     "min": 44,
+     "max": 46,
+     "resultat": "MiliTech (CP, CR2)",
+     "suite": null
+    },
+    {
+     "min": 47,
+     "max": 49,
+     "resultat": "Mitsubishi/Koridansu (DS)",
+     "suite": null
+    },
+    {
+     "min": 50,
+     "max": 52,
+     "resultat": "Network News 54 (CP, RB)",
+     "suite": null
+    },
+    {
+     "min": 53,
+     "max": 54,
+     "resultat": "No-Ahme Caldwell Genetic Engineering & Biochemicals (NO)",
+     "suite": null
+    },
+    {
+     "min": 55,
+     "max": 56,
+     "resultat": "Ocean Technology & Energy Corporation (IF1.1)",
+     "suite": null
+    },
+    {
+     "min": 57,
+     "max": 59,
+     "resultat": "Orbital Air (CP)",
+     "suite": null
+    },
+    {
+     "min": 60,
+     "max": 61,
+     "resultat": "Peak & Derrera (ERI)",
+     "suite": null
+    },
+    {
+     "min": 62,
+     "max": 64,
+     "resultat": "PetroChem (CP, CR3)",
+     "suite": null
+    },
+    {
+     "min": 65,
+     "max": 67,
+     "resultat": "Raven MicroCybernetics (ERI)",
+     "suite": null
+    },
+    {
+     "min": 68,
+     "max": 69,
+     "resultat": "RepliTech (DS)",
+     "suite": null
+    },
+    {
+     "min": 70,
+     "max": 71,
+     "resultat": "Revolution Genetics, Inc. (IF1.3)",
+     "suite": null
+    },
+    {
+     "min": 72,
+     "max": 73,
+     "resultat": "SegAtari (PRS)",
+     "suite": null
+    },
+    {
+     "min": 74,
+     "max": 75,
+     "resultat": "Soviet World Oil Industries (CR3)",
+     "suite": null
+    },
+    {
+     "min": 76,
+     "max": 77,
+     "resultat": "Storm Technologies Inc. (NT)",
+     "suite": null
+    },
+    {
+     "min": 78,
+     "max": 79,
+     "resultat": "Sungan Industries (PRS)",
+     "suite": null
+    },
+    {
+     "min": 80,
+     "max": 81,
+     "resultat": "Tanson Group (PRS)",
+     "suite": null
+    },
+    {
+     "min": 82,
+     "max": 83,
+     "resultat": "Terra Nova (DS)",
+     "suite": null
+    },
+    {
+     "min": 84,
+     "max": 85,
+     "resultat": "Tiger Medicines Corporation (PRS)",
+     "suite": null
+    },
+    {
+     "min": 86,
+     "max": 88,
+     "resultat": "Trauma Team International (CP)",
+     "suite": null
+    },
+    {
+     "min": 89,
+     "max": 90,
+     "resultat": "Tsunami Design Bureau (ERI)",
+     "suite": null
+    },
+    {
+     "min": 91,
+     "max": 92,
+     "resultat": "Utopian Corporation (DS)",
+     "suite": null
+    },
+    {
+     "min": 93,
+     "max": 95,
+     "resultat": "World News Service (CP)",
+     "suite": null
+    },
+    {
+     "min": 96,
+     "max": 98,
+     "resultat": "WorldSat Communications Network (CP)",
+     "suite": null
+    },
+    {
+     "min": 99,
+     "max": 100,
+     "resultat": "ZetaTech (CP)",
+     "suite": null
+    }
+   ]
+  },
+  "1.4": {
+   "titre": "AE&C 1.0 - Sous-table 1.4 - Types de Médias",
+   "des": "1D10",
+   "note_livre": "Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "Reporter journal TV",
+     "suite": null
+    },
+    {
+     "min": 2,
+     "max": 3,
+     "resultat": "Journaliste",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "resultat": "Photographe",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 6,
+     "resultat": "Présentateur",
+     "suite": null
+    },
+    {
+     "min": 7,
+     "max": 7,
+     "resultat": "Cameraman/-woman",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 8,
+     "resultat": "Technicien du son",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 9,
+     "resultat": "Commentateur sportif",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Correspondant de guerre",
+     "suite": null
+    }
+   ]
+  },
+  "1.5": {
+   "titre": "AE&C 1.0 - Sous-table 1.5 - Types d'agents du LEDiv",
+   "des": "1D10",
+   "note_livre": "Le résultat « 0 » du D10 correspond à 10.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 1,
+     "resultat": "Administration",
+     "suite": null
+    },
+    {
+     "min": 2,
+     "max": 2,
+     "resultat": "Enquêtes Corporatistes",
+     "suite": null
+    },
+    {
+     "min": 3,
+     "max": 3,
+     "resultat": "Enquêtes Criminelles",
+     "suite": null
+    },
+    {
+     "min": 4,
+     "max": 4,
+     "resultat": "Anti-Drogue",
+     "suite": null
+    },
+    {
+     "min": 5,
+     "max": 5,
+     "resultat": "Renseignement",
+     "suite": null
+    },
+    {
+     "min": 6,
+     "max": 6,
+     "resultat": "Crime Organisé",
+     "suite": null
+    },
+    {
+     "min": 7,
+     "max": 7,
+     "resultat": "Archives",
+     "suite": null
+    },
+    {
+     "min": 8,
+     "max": 8,
+     "resultat": "Science/Tech",
+     "suite": null
+    },
+    {
+     "min": 9,
+     "max": 9,
+     "resultat": "Service Secret",
+     "suite": null
+    },
+    {
+     "min": 10,
+     "max": 10,
+     "resultat": "Opérations Spéciales",
+     "suite": null
+    }
+   ]
+  },
+  "1.6": {
+   "titre": "AE&C 1.0 - Sous-table 1.6 - Militaires",
+   "des": "1D100",
+   "instruction": "Utilisée pour déterminer l'affiliation d'un PNJ militaire.",
+   "lignes": [
+    {
+     "min": 1,
+     "max": 17,
+     "resultat": "Air Force, engagé",
+     "suite": null
+    },
+    {
+     "min": 18,
+     "max": 20,
+     "resultat": "Air Force, officer",
+     "suite": null
+    },
+    {
+     "min": 21,
+     "max": 37,
+     "resultat": "Army, engagé",
+     "suite": null
+    },
+    {
+     "min": 38,
+     "max": 40,
+     "resultat": "Army, officer",
+     "suite": null
+    },
+    {
+     "min": 41,
+     "max": 57,
+     "resultat": "Marines, engagé",
+     "suite": null
+    },
+    {
+     "min": 58,
+     "max": 60,
+     "resultat": "Marines, officer",
+     "suite": null
+    },
+    {
+     "min": 61,
+     "max": 77,
+     "resultat": "Navy, engagé",
+     "suite": null
+    },
+    {
+     "min": 78,
+     "max": 80,
+     "resultat": "Navy, officer",
+     "suite": null
+    },
+    {
+     "min": 81,
+     "max": 97,
+     "resultat": "Forces de l'État, engagé",
+     "suite": null
+    },
+    {
+     "min": 98,
+     "max": 100,
+     "resultat": "Forces de l'État, officer",
+     "suite": null
+    }
+   ]
+  }
+ }
+}

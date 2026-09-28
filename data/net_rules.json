@@ -1,0 +1,1389 @@
+{
+ "sections": [
+  {
+   "id": "net-organisation-du-reseau",
+   "chapitre": "Le réseau et ses territoires",
+   "titre": "Organisation du réseau",
+   "pages": "8",
+   "texte": "Le Réseau est, à la base, un vaste espace potentiel construit en liant entre elles les lignes téléphoniques et les fibres optiques de contrôle. Les algorithmes de transformation de Ihara-Grubb qui régissent la réalité du Réseau le représentent comme une structure filaire de grilles et de formes. Les zones de forte résistance, lignes anciennes, transmissions brouillées, apparaissent comme des montagnes, tandis que celles de faible résistance apparaissent comme des plaines et des vallées.\n\nLes différents systèmes informatiques sont représentés sous forme d'icônes ou de constructions constituées de millions de points de couleur et de lumière. Ces points, comme pour les images vidéo ou les photographies noir et blanc, ne peuvent être distingués que par une observation minutieuse. Pour simplifier les déplacements dans l'espace Réseau, appelé la Matrice, les véritables lignes de communications sont représentées sous forme d'une grille infinie de couleur bleu ciel. Si une ligne donnée doit être localisée, les programmes de la cyberconsole la retrouvent et matérialisent ses points d'accès par une balise rouge vif.\n\nLes transformations Ihara-Grubb ont aussi été conçues pour tenir compte de la position relative d'un système par rapport à la Matrice environnante. Par exemple, un ordinateur situé en haut d'un gratte-ciel apparaîtra comme une icône planant dans le haut de la Matrice. L'altitude relative d'un système par rapport au sol de la Matrice sera proportionnelle à son altitude relative par rapport au sol dans la réalité externe, ou Espace Réel. Si un système est enfoui, il sera représenté sous le sol de la Matrice.\n\nLa position relative des représentations des différents systèmes dans la Matrice est analogue à leur emplacement relatif dans l'Espace Réel. La représentation d'un système en mouvement dans l'Espace Réel se déplacera dans la Matrice en suivant un trajet parallèle au trajet réel.\n\nTout endroit où un ordinateur peut être allumé et connecté au Réseau est une extension du Réseau dans cet univers. Le Réseau est, jusqu'à preuve du contraire, potentiellement infini, si vous pouvez connecter un ordinateur à cette maille de communication, vous créez automatiquement une nouvelle section du Réseau autour de lui."
+  },
+  {
+   "id": "net-ile-de-reseau",
+   "chapitre": "Le réseau et ses territoires",
+   "titre": "Île de réseau",
+   "pages": "8",
+   "texte": "Le Réseau est peuplé d'entités très diverses : des Netrunners humains connectés depuis leurs cyberconsoles, des programmes ICE autonomes patrouillant les couloirs de données, des intelligences artificielles dont la nature exacte reste débattue, et d'innombrables icônes flottantes représentant les systèmes et fichiers du monde réel transposés dans la Matrice. Chaque système informatique connecté crée une présence dans ce monde virtuel, et certains de ces espaces ont développé une identité propre au fil du temps.\n\nL'Espace Sauvage désigne les territoires situés entre les liaisons longue distance, par exemple entre San Francisco et Night City. Les déplacements entre les liaisons longue distance se font quasiment toujours par des connexions haut/bas. La plus grande partie de l'espace physique est sautée, et il y a de nombreux territoires inconnus. En fait, l'activation d'un ordinateur quelconque peut créer des zones indépendantes non directement reliées au Réseau.\n\nLa théorie de l'Espace Sauvage a pour origine les travaux de J.A. Grubb en 2004. Grubb était un concepteur de jeux vidéo et un hacker occasionnel qui le décrit comme une vaste zone de réalité potentielle, dormante, qui peut devenir réelle lorsqu'un ordinateur se connecte au Réseau. Sans les connexions haut/bas, cette région resterait isolée du trafic principal de la Matrice et ne serait accessible que par ceux qui voudraient y trouver l'aventure. Les légendes des Netrunners disent que quelque chose vit probablement dans l'Espace Sauvage : des IA dissidentes, des intelligences extra-terrestres, des entités ayant leurs propres grilles de villes qui n'apparaissent que lorsque ces forces ouvrent une connexion vers la Matrice principale.\n\nCette zone est comparable à une île lointaine des Mers du Sud restée inconnue jusqu'à ce qu'un de ses bateaux soit envoyé vers la civilisation. Si les autochtones savent pénétrer une civilisation tout en cachant leur véritable nature, ils ne seront probablement pas découverts avant des siècles."
+  },
+  {
+   "id": "net-regions",
+   "chapitre": "Le réseau et ses territoires",
+   "titre": "Régions",
+   "pages": "8-9",
+   "texte": "Les Régions, aussi surnommées royaumes, sont de grandes zones du réseau mondial. On peut citer Atlantis dans le sud du bassin afro-atlantique. Elles sont référencées par leur nom. Une Région est une zone floue aux limites changeantes. De nouvelles régions apparaissent continuellement et les frontières changent constamment lorsque la réalité potentielle du Réseau varie. Ce n'est pas véritablement un endroit, juste une définition vague d'une zone sur laquelle certains groupes ou gouvernements exercent le plus de contrôle.\n\n**Atlantis** : ce royaume régional est le second en superficie, s'étendant de l'Amérique Centrale et l'Amérique du Sud jusqu'à la côte ouest de l'Afrique. La région est principalement contrôlée par la Fédération d'Amérique Centrale et ses corporations alliées. Les principales grilles de villes sont Mexico, Panama City, Bogota, La Havane, Rio de Janeiro, Buenos Aires, Dakar et Ascension. Atlantis est une région où la justice est peu regardante, le marché noir y marche bien surtout du côté de Panama City.\n\n**Rustbelt** : cette région couvre les États-Unis du Centre et de l'Est. Les principales grilles de villes sont New York/BosWash Megaplex, Chicago-Grands Lacs, Atlanta-City Core, La Nouvelle Orléans et Saint Louis. La région est une dictature informatique presque absolue contrôlée par la troïka Netwatch, le Gouvernement Provisoire des États-Unis et le Consortium Euro-Marché. Les systèmes sont extrêmement surveillés et le crime informatique est traité avec une férocité draconienne.\n\n**Olympia** : la Région Olympia couvre les États-Unis de l'Ouest et du Sud-Ouest. Globalement, elle est le domaine de Netwatch et du Gouvernement Provisoire des États-Unis. Les différentes grilles de villes sont généralement contrôlées au niveau local par les corporations les plus influentes de l'endroit : Denver (Orbital Air), Salt Lake (Militech), Dallas/Houston Megaplex (WorldSat), Albuquerque (Militech). La plupart du trafic dans ces régions concerne les corporations mais aussi des messageries et des réseaux de service connus.\n\n**Pacifica** : c'est la plus grande des régions. Elle s'étend à partir de la côte ouest de l'Amérique du Nord sur presque tout le bassin pacifique. Comme Olympia, elle est régie par Netwatch et le GPEU jusqu'au bassin de Hawaï. À partir de là, il y a 4 intervenants : Netwatch, Arasaka Ltd et la Fédération de Coprospérité de l'Extrême-Asie. Aux États-Unis, la plupart des grilles de villes sont contrôlées par la Corps la plus puissante de la cité : Night City (Arasaka), San Francisco (EBM), Los Angeles (Petrochem), Seattle (Arasaka). Dans ces villes, le contrôle est assez souple.\n\n**TokyoChiba** : c'est une très petite région couvrant l'archipel nippon, spécifiquement Tokyo, Osaka et Yokohama. Chiba est le centre des opérations pour un certain nombre de zaïbatsus puissantes : Mitsubishi-Dai, Matsushima-Kiroshiu et bien sûr Arasaka. Néanmoins, vue l'intensité des luttes inter zaïbatsus, aucune Megacorpo ne détient le contrôle, laissant le champ libre pour les casses informatiques et l'espionnage corporatif.\n\n**EuroThéâtre** : le plus puissant des royaumes régionaux, l'EuroThéâtre est contrôlé par les Eurocorpos. Les principales grilles de villes sont Londres, Paris, Berlin, Francfort, Munich, Zurich, Amsterdam, Rome, Madrid et Stockholm. Les trois plus importantes Eurocorpos de chaque ville collaborent avec Netwatch pour maintenir la sécurité. Le Réseau de l'EuroThéâtre est dominé par le trafic corporatif. Il y a peu de systèmes privés et la plupart des Netrunners indépendants sont connus et fichés par Netwatch. C'est un terrain de jeu pour les transactions commerciales, les banques, les réseauconférences et autres transactions légales. C'est un très, très mauvais endroit pour commettre un crime informatique.\n\n**Sovspace** : cette région couvre les frontières de la défunte Union Soviétique en s'étendant en Europe de l'Est. Les principales grilles de villes sont Moscou, Léningrad, Budapest, Vienne et Prague. L'URSS exerce un contrôle global sur cette région, le contrôle passant peu à peu à Netwatch et à la Communauté Économique Européenne. Les systèmes utilisés en Sovspace sont assez primitifs, lents et équipés de programmes mortels plutôt que de défenses sophistiquées. Toute la région est vouée à l'espionnage, au commerce d'informations et aux luttes de petits groupes politiques cherchant à gagner un avantage économique. C'est un bon endroit où vendre de l'information si ça ne vous dérange pas d'être payé en monnaies faibles.\n\n**Afrikani** : ce royaume régional s'étend de la limite africaine d'Atlantis jusqu'au Moyen Orient et Madagascar. Les principales grilles de villes sont Addis Abeba, Zanzibar, Le Caire, Alger, Nairobi, Mozambique et Alexandrie. À l'exception de Nairobi et du Caire (sous le contrôle ferme d'Orbital Air), le reste de l'Afrikani est une zone dévastée et chaotique aux systèmes antiques, aux alliances changeantes et aux nombreux fanatiques. La plus grande prudence y est recommandée.\n\n**Orbiteville** : la plus importante région potentielle couvrant la Terre et le Proche Espace Terrestre, Orbiteville est l'endroit idéal pour rencontrer des gens, récolter des rumeurs et prendre du bon temps. La sécurité est lâche, voire inexistante. Orbiteville est principalement contrôlée par les Orbicorpos et l'ASE. Il n'y a pas beaucoup de trafic avec le sol, le temps de transfert des communications (2 à 3 secondes) rendant les échanges difficiles. Le trafic local est très actif, chaque habitat ou colonie de l'espace étant connecté en permanence en un flux constant de bavardages. Les transactions sont généralement de bas niveau : échange de matériaux bruts, médicaments, air, nourriture, eau et ragots."
+  },
+  {
+   "id": "net-liaison-longue-distance",
+   "chapitre": "Le réseau et ses territoires",
+   "titre": "Liaison longue distance",
+   "pages": "9",
+   "texte": "Les liaisons longue distance (LLD) permettent un transfert instantané entre villes. L'Internet Communications Corporation s'occupe de la maintenance de la plupart des liaisons longue distance à travers le monde, cela fait partie de ses services longue distance. Mais de nombreuses corps possèdent des liaisons longue distance privée reliant uniquement leurs bureaux.\n\nL'utilisation d'une liaison longue distance nécessite un mot de passe qui est normalement le code d'accès au Réseau du Netrunner. Néanmoins avec les programmes appropriés, on peut convaincre un Internet que cet appel est un appel local ou que cet appel n'a jamais été fait.\n\nEntre les nœuds des liaisons longue distance s'étendent les territoires de l'Espace Sauvage. Ces zones ne sont pas directement reliées au Réseau standard, elles existent en marge, dormantes, attendant qu'un signal les réveille. Quelques Netrunners aventureux ont exploré ces régions et rapporté des choses étranges : des structures de données sans origine connue, des programmes qui semblent développer leur propre logique, et parfois des présences qui ne correspondent à aucun système recensé par Netwatch.\n\nPour traverser une LLD, le Netrunner doit saisir son Code d'Accès au point de connexion. Une LLD transporte immédiatement l'icône du Netrunner à la grille de villes de destination. Une fois arrivé, le runner se retrouve à l'entrée principale de la grille distante, prêt à naviguer dans ce nouveau territoire. Le coût de l'utilisation d'une LLD privée ou corporative sans autorisation constitue une effraction pénalisée selon les lois locales, et les corps n'hésitent pas à envoyer leurs propres Runners pour gérer les intrus à leur façon."
+  },
+  {
+   "id": "net-mur-noir",
+   "chapitre": "Le réseau et ses territoires",
+   "titre": "Le Mur Noir",
+   "pages": "9",
+   "texte": "Dans les profondeurs du Net, là où plus aucun signal ne filtre, s'élève une barrière invisible, massive et terrifiante : le Mur Noir. Nommé ainsi par les Netrunners les plus aguerris, ce Mur n'est pas fait de briques ou de lignes de code classiques, mais d'algorithmes meurtriers et de couches d'ICE autonomes si sophistiquées qu'on les soupçonne d'être semi-conscientes.\n\nLe Mur Noir est né dans le chaos post-Bartmoss, lorsque le virus R.A.B.I.D.S. a libéré des intelligences artificielles sauvages dans les tréfonds du Net. Pour éviter la propagation de ces entités devenues incontrôlables, les autorités et mégacorporations ont décidé de sceller les zones profondes du réseau derrière cette barrière numérique infranchissable. C'est un gouffre sans fond, un abîme électromagnétique qui punit toute tentative d'intrusion par une riposte immédiate, brutale, parfois fatale.\n\nAucune interface humaine n'est censée survivre à un contact prolongé avec le Mur. Les rares qui s'y sont risqués ont vu leur esprit se désintégrer dans une lumière noire, leurs implants grillés de l'intérieur. Ce n'est pas un simple pare-feu : c'est une sentinelle, une frontière, un avertissement. Le Net n'est plus libre. Au-delà du Mur, les règles changent, ou cessent d'exister.\n\nNetwatch veille à la stabilité de cette frontière, patrouillant les zones proches du Mur et éradiquant tout programme ou netrunner imprudent qui s'en approche de trop près. Officiellement, personne n'a jamais réussi à traverser. Officieusement… certains murmures prétendent que des fragments d'IA, ou même des humains fusionnés à la matrice, errent de l'autre côté. Mais ce ne sont peut-être que des légendes. Ou des promesses.\n\nCar dans un monde où l'information est pouvoir, certains seraient prêts à tout pour percer ce voile numérique. Même si cela signifie y laisser leur âme."
+  },
+  {
+   "id": "net-netwatch",
+   "chapitre": "Se connecter",
+   "titre": "Netwatch",
+   "pages": "10",
+   "texte": "Netwatch est une organisation policière qui patrouille le Réseau à la recherche d'activités illégales. Des gouvernements, des corporations et d'autres groupes importants fournissent de l'argent, des équipements et leurs meilleurs Netrunners à Netwatch. Les NetCops sont équipés de logiciels très performants et se déplacent librement dans la Matrice, patrouillant un secteur spécifique pouvant être une ville, une Région ou même un continent. La création de Netwatch a fait l'objet d'un accord unilatéral dans le traité des Nations Unies. Son pouvoir lui permet de protéger et servir les habitants respectueux de la loi du Réseau Mondial des Communications.\n\nLes NetCops, surnommés Loups, Belettes ou Glaceurs selon leur rôle, sont équipés de programmes de surveillance très puissants, ainsi que de programmes de gel qui peuvent mettre une cyberconsole en boucle paralysant ainsi le Netrunner. Il est alors incapable de se déconnecter tant qu'il n'a pas été relâché. Bien que l'arrestation et l'emprisonnement soient le but des Netcops, ils sont connus pour avoir utilisé des programmes noirs afin de tuer ou mutiler leurs opposants lorsque la situation le justifie.\n\nEn pratique, Netwatch dispose de ressources considérables mais ne peut être partout à la fois. Dans les zones corporatives fortement surveillées comme l'EuroThéâtre ou le Rustbelt, leur présence est écrasante. Dans des régions comme Atlantis, Afrikani ou l'Espace Sauvage, leur contrôle est quasi inexistant. Les Netrunners indépendants ont donc appris à identifier les signatures caractéristiques des NetCops et à adapter leurs comportements selon les zones traversées. Un Netrunner surpris par un Glaceur dans les grilles corporatives d'EDM a beaucoup moins de chances de s'en sortir que celui qui se fait pincer dans les bas-fonds de la grille de Bogota."
+  },
+  {
+   "id": "net-messageries",
+   "chapitre": "Se connecter",
+   "titre": "Messageries",
+   "pages": "10",
+   "texte": "Une Messagerie est une forteresse de données amicale où les Runners peuvent se rencontrer pour échanger des informations, discuter, copier des logiciels, etc. Une Messagerie est généralement cachée et fortement protégée. Un mot de passe ou un cryptage très complexe est nécessaire pour y pénétrer. Une fois à l'intérieur, les utilisateurs disposent d'un certain nombre de salles ou de clubs remplissant diverses fonctions.\n\nLeur représentation tourne généralement autour d'un thème de la réalité virtuelle. Par exemple, la Messagerie Hunt Club de Denver est une construction élaborée de la réalité virtuelle d'un vieux manoir anglais avec ses serviteurs, sa salle de dessin et son terrain de croquet. D'autres messageries s'habillent en cantinas de l'espace, en académies de kung-fu flottant dans le vide numérique, ou en ruines d'anciennes civilisations peuplées d'avatars mystérieux. C'est souvent le meilleur indicateur de la personnalité du sysop qui la gère.\n\nLes Messageries jouent un rôle crucial dans l'économie souterraine de l'information. C'est là que les fixeurs informatiques passent leurs commandes, que les programmes rares s'échangent entre Runners de confiance, et que les rumeurs les plus précieuses circulent avant de se répandre dans le reste du Réseau. Trouver l'adresse d'une bonne Messagerie est souvent aussi précieux que le contenu qu'on y trouve. Les Runners chevronnés gardent jalousement leurs accès, et l'invitation à rejoindre le réseau d'une Messagerie bien fréquentée constitue un signe de reconnaissance entre pairs."
+  },
+  {
+   "id": "net-le-materiel",
+   "chapitre": "Se connecter",
+   "titre": "Le matériel",
+   "pages": "10",
+   "texte": "L'esprit humain ne peut pas comprendre un flux de données qu'il ne peut pas voir sous forme d'électrons. Il a besoin d'un moyen pour transformer les données qui arrivent en quelque chose de compréhensible. C'est pourquoi les Netrunners utilisent un programme d'interface, une version très améliorée des systèmes de réalité virtuelle des années 90, qui les interprètent pour eux.\n\nPour parcourir le Réseau en tant que Netrunner, vous avez besoin de deux éléments fondamentaux : une interface neuronale capable de traduire les signaux électroniques en expériences sensorielles, et une cyberconsole suffisamment puissante pour faire tourner les programmes dont vous aurez besoin. Sans ces deux composants, vous ne pouvez qu'observer le Net depuis un écran comme un simple utilisateur, et dans le monde de New Dawn, les simples utilisateurs ne survivent pas longtemps dans les zones chaudes."
+  },
+  {
+   "id": "net-interfaces",
+   "chapitre": "Se connecter",
+   "titre": "Interfaces",
+   "pages": "10",
+   "texte": "L'interface intercepte les données arrivant par la cyberconsole et les traduit en quelque chose de compréhensible, puis elle dirige les données transformées vers les yeux et les oreilles du Netrunner. Le monde perçu à travers l'interface est réel car il est directement branché sur les sens du Runner. Autrefois la couleur dominante du Net était le bleu-gris mais des efforts de programmation ont abouti à créer des représentations plus élaborées.\n\nAlors pourquoi s'embêter à créer des interfaces ? Pourquoi ne pas utiliser juste un clavier comme tout le monde ? En partie pour le fun. Mais, en plus, une interface réaliste et dangereuse donne une nouvelle acuité au Netrunner. Elle le rend plus alerte, plus impliqué et intéressé par son environnement. Elle réagit le plus rapidement possible : le mot démon apparaissant dans les airs devant vous, ou un monstre vivant de cinq tonnes, crachant du feu et faisant claquer un fouet enflammé au-dessus de votre tête ? Voilà quelque chose qui fait agir vite."
+  },
+  {
+   "id": "net-deuxieme-generation",
+   "chapitre": "Se connecter",
+   "titre": "La deuxième génération",
+   "pages": "10",
+   "texte": "Les premières interfaces relevaient du travail d'artiste. Des millions d'heures de programmation étaient destinées chaque année à élaborer des réalités précises et intéressantes pour le Réseau. Des programmes sophistiqués faisant appel à l'intelligence artificielle et des générateurs aléatoires de scénarios étaient utilisés. La bande passante de ces programmes d'interface était très étroite, ils ne pouvaient transporter guère plus d'informations qu'un ancien modem d'ordinateur des années 1990. En plus d'être très limitées en capacité, ces premières interfaces étaient incapables de donner au Netrunner une idée de sa position dans le monde réel au-delà de l'écran de l'ordinateur.\n\nPuis en 2014, les magiciens du Réseau réussirent une percée majeure : les algorithmes de transformation de Ihara-Grubb. Les transformations d'Ihara-Grubb permettent à une cyberconsole d'extrapoler les voies du Réseau à partir de leurs coordonnées dans l'Espace Réel, puis de générer un modèle graphique qui peut être intégré par un programme d'interface. Les résultats peuvent être utilisés comme une aide antirationnelle dans le Réseau et donnent une notion de l'espace et du temps qui était impossible à obtenir avec les versions précédentes. Aujourd'hui, toute cyberconsole digne de ce nom intègre ces algorithmes."
+  },
+  {
+   "id": "net-icones",
+   "chapitre": "Se connecter",
+   "titre": "Icônes",
+   "pages": "11",
+   "texte": "L'une des autres améliorations dues aux transformations I-G est qu'elles vous permettent de traduire le signal de votre cyberconsole en une représentation visuelle dans la Matrice. Cette représentation de vous-même est connue comme étant votre Icône.\n\nLa plupart des entités dans la Matrice ont une sorte d'icône. Même si aucune n'est spécifiée, les formules I-G créeront une forme polygonale représentant votre icône. Votre Icône est votre symbole personnel, c'est avec elle que les autres Runners vous parleront et auront des relations lorsqu'ils vous rencontreront dans la Matrice. Votre Icône peut ressembler à tout ce que vous voulez : à un techguerrier en armure, à une créature fantastique, à une forme ou un logo bizarre, ou encore à vous-même.\n\nVous pouvez changer votre icône chaque fois que vous pénétrez dans la Matrice. Vous pouvez même déguiser votre icône en utilisant des programmes spéciaux de furtivité et d'esquive. Choisir votre icône sera une de vos premières activités lorsque vous déciderez de vous connecter. Faites en sorte qu'elle porte votre marque personnelle sur toute sa surface. Dans New Dawn, votre icône est aussi une cible : un programme ennemi qui l'attaque vous attaque directement. Soignez-la."
+  },
+  {
+   "id": "net-prise-de-connexion",
+   "chapitre": "Se connecter",
+   "titre": "Prise de connexion",
+   "pages": "11",
+   "texte": "Bon, de quoi avez-vous besoin pour parcourir le Réseau en plus d'un cerveau froid et d'une interface chaude ? La connexion sur le vaste méta-univers du Réseau nécessite deux importants composants matériels supplémentaires.\n\nLe premier est un jeu de prises neurales ou d'interfaces. Les prises d'interface sont simplement des prises en plastique incrustées dans les poignets, les tempes ou la base du cou du Netrunner. Elles servent à se connecter à un cybermodem par des câbles. Vous n'êtes pas obligé d'utiliser des prises. Vous avez alors juste besoin d'un jeu de trodes. Ce sont des électrodes auto-adhésives qui captent les influx nerveux via l'inductance de la peau. Elles sont plus lentes et répondent moins bien que les prises directes (malus de 2 à REF dans la Matrice), mais elles sont moins chères et n'occasionnent pas de perte d'humanité.\n\nL'autre élément dont vous avez besoin est une cyberconsole, appelée aussi cybermodem. C'est la machine qui fait le lien entre votre cerveau et le Réseau, qui interprète vos pensées en commandes exécutables et transforme les données du Net en expériences sensorielles que votre interface peut traiter. Sans cyberconsole, pas de Netrunning. Et dans New Dawn, une cyberconsole bas de gamme peut vous coûter la vie aussi sûrement qu'un programme ICE de Force 8."
+  },
+  {
+   "id": "net-fonctionnement-cybermodem",
+   "chapitre": "Fonctionnement",
+   "titre": "Fonctionnement d'un cybermodem",
+   "pages": "12",
+   "texte": "Le cybermodem standard est à peu près de la taille d'un livre de poche, est fait de plastique et pèse environ un demi-kilogramme. Il possède six ports d'extension pour ajouter des options supplémentaires, ainsi que six ports de sortie permettant de brancher d'autres personnes (le propriétaire du deck, cependant, est le seul à pouvoir le contrôler, ce qui fait des autres personnes de simples passagers).\n\nC'est le deck de base avec lequel tout le monde commence sa carrière de Netrunner. Les prix vont de 500 Ed pour un modèle d'occasion à 1000 Ed pour un modèle neuf. C'est là que votre Referee peut faire preuve d'un peu de clémence, en orientant votre personnage vers un deck d'occasion bon marché… moyennant un prix, bien sûr !\n\nLa plupart des cyberdecks sont des modèles de table, une fois jacké et aveugle, un Netrunner ne va pas vraiment se déplacer, n'est-ce pas ? Cependant, des percées technologiques ont retiré le deck de la table pour le mettre dans la rue.\n\n## Console portable\nCes decks possèdent des batteries internes rechargeables offrant jusqu'à 4 heures d'autonomie (la recharge est d'1 heure pour chaque heure d'utilisation). Toute les console de combat cybermembres et cellulaires sont de ce type. Un deck portable coûte 2000 Ed.\n\n## Console cybermembre\nCe sont des decks portables de la taille d'un paquet de cigarettes. Ils peuvent être installés dans un cybermembre (les câbles de connexion téléphonique sont branchés entre le membre et les lignes téléphoniques). Le deck lui-même est câblé directement dans le corps, en même temps que les liens de contrôle du cybermembre. C'est une option très dangereuse, câblé en dur, il est impossible pour vos amis de remarquer que vous êtes en train de griller et d'arracher les câbles. À la place, vous brûlez. De plus, cela rend vos cybernétiques vulnérables aux attaques matérielles et au microrunning. Un cyberdeck portable coûte 3000 Ed, 5000 Ed pour la version cellulaire.\n\n## Console d'assaut\nConstruits en céramiques robustes et en acier, capables d'encaisser des impacts de balles et des chocs violents (SP 20). La plupart des decks de combat sont conçus pour être portables, et disposent de câbles adaptateurs permettant de les brancher sur n'importe quel type de ligne téléphonique. Environ 3000 Ed lorsqu'on peut en trouver.\n\n## Console d'assaut scellé\nDéveloppé pour les équipes SEAL de la Navy américaine, un deck scellé est un deck cellulaire d'assaut de combat doté d'un boîtier étanche en polymère/Kevlar (SP 20) et de joints en plastique à mémoire de forme pour tous les ports d'options et les slots à puces. Deux couches d'isolation caoutchoutée à l'intérieur du boîtier garantissent que l'utilisateur est protégé contre les chocs électriques. Ce type de deck peut même être utilisé sous l'eau, à condition que l'utilisateur se jacke avant d'entrer dans l'eau. Inclut un FlipSwitch.\n\n**COÛT** : Les modèles varient. Base : 6000 Ed + améliorations.\n\n## Console cellulaire\nCe sont des decks portables conçus pour se connecter à un réseau téléphonique cellulaire. Ils sont très efficaces partout en ville, mais inutiles dans les zones rurales (la plupart possèdent des ports pour connexions téléphoniques manuelles). Un deck cellulaire a 25 % de chances de perdre la connexion lorsqu'il est utilisé dans un véhicule en mouvement ; un jet raté éjecte automatiquement le Netrunner de la Matrice. Mais c'est un petit prix à payer pour le haut niveau de mobilité offert par un deck cellulaire. Un deck cellulaire coûte 4000 Ed."
+  },
+  {
+   "id": "net-ordinateurs-dans-le-net",
+   "chapitre": "Fonctionnement",
+   "titre": "Fonctionnement d'un ordinateur : les ordinateurs dans le net",
+   "pages": "12-13",
+   "texte": "Cyberpunk 2020 est un monde défini par les ordinateurs. Pratiquement chaque aspect de la vie quotidienne est déterminé par ces machines. Les anciennes fonctions de la plupart des ordinateurs personnels de la fin du XXe siècle ont été absorbées par des ordinateurs-blocs comme l'E-Book. Pour ceux qui désirent plus de puissance, il existe des miniordinateurs portables (le miniordinateur EBM RPCXS). Et enfin, pour ceux qui veulent privilégier la puissance plutôt que la portabilité, sans pour autant payer le prix exorbitant d'un véritable cybermodem, il existe les nouveaux « PC », des ordinateurs personnels qui offrent plus de puissance de calcul et de capacité mémoire que les Ordinateur d'il y a à peine vingt-cinq ans.\n\nCela n'a rien de surprenant, sachant que dans les années 1980-90, le ratio capacité mémoire / volume physique doublait chaque année. Le fait qu'un PC courant de 2020 ne soit qu'environ vingt fois plus performant que ses prédécesseurs vieux de trente ans montrent bien que les percées technologiques en informatique deviennent de plus en plus difficiles à obtenir.\n\nLes punks qui demandent « Pourquoi un PC ? Un cybermodem, c'est mieux » n'ont évidemment pas regardé les règles pour netrunner depuis un ordinateur. Les Netrunners qui opèrent via une station de travail ou une console accessible cybernétiquement peuvent effectuer plusieurs actions dans un round de combat s'ils lancent d'abord le programme multi-Tasker (UM 6, STR 5, 1140 Ed). Cela signifie qu'un netrunner qui branche sa cyberconsole à travers un autre ordinateur, comme la Microtech IIKL-4 Workstation, peut faire bien plus de choses qu'un petit runner qui se contente de brancher son modem tout seul. Certes, la station de travail est moins portable, mais les avantages…\n\nLorsqu'il passe par une station ou un PC, le Netrunner peut faire fonctionner plusieurs programmes. En réalité, le runner peut même laisser le PC exécuter des programmes alors qu'il n'est pas connecté à sa cyberconsole ! Les programmes statiques (ceux qui n'ont pas besoin de se déplacer dans la Matrice et qui n'ont pas à prendre de décisions) sont les meilleurs. Bien sûr, un PC peut facilement maintenir un Daemon en train de faire son travail. De plus, le runner a un accès complet à la mémoire interne du PC (au moins 25 UM supplémentaires !) pour stocker programmes et données. Et enfin, les PC disposent généralement de lecteurs de puces et de bases de données pour aider le runner lorsqu'il est dans la Matrice.\n\nIl existe un autre usage pour les PC et autres : le multi-running. Les Netrunners qui relient leurs cybermodems à travers des ordinateurs personnels conservent la vitesse et la mémoire de leurs cybermodems. Ils gagnent également les avantages des actions supplémentaires (s'ils utilisent multi-Tasker), mais subissent les désavantages liés à la vitesse et à l'initiative des ordinateurs personnels (il y a un malus de,8 + vitesse du processeur, car il faut donner des ordres à l'ordinateur, cela revient généralement à un,3). Ils subissent aussi les attaques anti-personnel normalement, alors que les « tortues » normales sont immunisées contre tout sauf les effets visuels des attaques anti-personnel. Toute attaque anti-système est dirigée d'abord contre l'ordinateur personnel et ses Murs de Données."
+  },
+  {
+   "id": "net-multi-actions",
+   "chapitre": "Fonctionnement",
+   "titre": "Multi-actions",
+   "pages": "13",
+   "texte": "Un Netrunner équipé d'un cybermodem ne peut effectuer qu'une seule action tous les 3 point dans la compétence interface par round de combat dans la Matrice. Les Netrunners qui opèrent à travers une station de travail ou un ordinateur cybernétiquement peuvent effectuer plusieurs actions dans un round de combat s'ils lancent d'abord le programme multi-Tasker (UM 6, STR 5, 1140 Ed). Cela permet à un seul Netrunner de prendre une action supplémentaire pour chaque CPU qu'il possède au-delà de un (jusqu'à un maximum de 10 actions !). Pour chaque action supplémentaire effectuée dans un round, il subit un malus cumulatif de,1 en Vitesse.\n\nLe programme multi-Tasker reste actif durant toute la durée du run, et peut être attaqué si un Netrunner adverse parvient à pénétrer dans la forteresse de donnée de l'utilisateur.\n\nPour ce qui est des attaques de programmes anti-personnel, l'Interface SA d'un ordinateur non-IA commence au niveau 4, et peut être augmentée comme n'importe quelle autre compétence. Les IA ont automatiquement une Interface de départ de 8 ; pour elles, le netrunning est intuitif."
+  },
+  {
+   "id": "net-improviser-une-console",
+   "chapitre": "Fonctionnement",
+   "titre": "Improviser une console",
+   "pages": "13",
+   "texte": "Un combo ordinateur/clavier ne fera pas tourner votre programme d'interface. Vous devrez programmer votre propre routine d'interface (tâche Très Difficile, compétence Programmation ; tâche Difficile, compétence Expert [langage informatique]). Ou bien vous pouvez modifier un programme de modem standard déjà existant pour qu'il gère vos programmes de console (tâche Difficile ou Moyenne, mêmes compétences). Si vous ne pouvez faire ni l'un ni l'autre, un Tech peut le faire pour 150–200 Ed.\n\nUne fois que vous avez modifié votre routine d'interface, vous devez aussi modifier votre logiciel (tâche Difficile ou Moyenne par programme, mêmes compétences que ci-dessus). 50 Ed par programme si le travail est fait par quelqu'un d'autre. Si vous n'avez pas l'argent pour modifier les programmes, alors vous n'avez pas de chance : la seule chose que vous pourrez affecter sera les grilles codées (si vous connaissez le code d'accès, vous entrez). Vous pouvez toujours opérer des télécommandes et examiner des unités mémoire, cependant, la compétence Interface ne peut pas être utilisée. Vous utilisez la compétence Expert [language informatique] à la place. Cela entraîne aussi un malus de,3 à cause de la lenteur des interfaces clavier. Heureusement, votre compétence ne peut pas descendre en dessous de 0. Sans interface cybernétique, vous n'utilisez pas votre REF ni les modificateurs de Vitesse de la console pour l'Initiative, ni votre INT pour les attaques Anti-Personnel. À la place, vous utilisez la Vitesse du processeur de votre ordinateur (voir tableau).\n\n## Résumé des formules\n- **Initiative** = Vitesse du processeur + 1D10\n- **Attaque Anti-Personnel** = FOR du programme + Vitesse du processeur + (Expert [langage informatique], 3) + 1D10\n\nTout programme noir qui réduit des caractéristiques n'a aucun effet. Tout programme qui inflige des dégâts en points de vie réduit la Vitesse du processeur de votre ordinateur de 1D6 points. Lorsque la vitesse atteint zéro, l'ordinateur plante et vous éjecte de la Matrice (l'ordinateur peut aussi nécessiter des réparations à cause des surtensions, mais cela dépend du MJ). Colle fonctionne normalement. conskrash n'est pas efficace (étant une attaque de biofeedback, elle n'a aucun effet via un clavier). De même, Liche n'a aucun effet. Tous les programmes Antisystème fonctionnent normalement. BouteFeu fait toujours exploser votre modem (sauf que maintenant, le feu peut se propager à votre ordinateur !)",
+   "tables": [
+    {
+     "titre": "Vitesse du processeur",
+     "colonnes": [
+      "Type de machine",
+      "Valeur",
+      "Plage typique",
+      "Exemple"
+     ],
+     "lignes": [
+      [
+       "Superordinateur",
+       "20",
+       "18–23",
+       "Équivalent Cray pour 2020"
+      ],
+      [
+       "Mainframe",
+       "15",
+       "12–20",
+       "Microtech 9000"
+      ],
+      [
+       "Workstation / Mini comp",
+       "10",
+       "8–13",
+       "Toshiba Lightning"
+      ],
+      [
+       "PC de bureau / Portable",
+       "5",
+       "3–8",
+       "Nutek 101"
+      ],
+      [
+       "Ordinateur stylo",
+       "2",
+       "1–3",
+       "Petit netron mignon"
+      ],
+      [
+       "Organiseur de poche",
+       "1",
+       "1",
+       "Total désespoir"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-creer-de-nouveaux-programmes",
+   "chapitre": "Programmation",
+   "titre": "Créer de nouveaux programmes",
+   "pages": "75",
+   "texte": "Dans le système de netrunning de Cyberpunk 2020, chaque programme est construit à partir de trois éléments : les fonctions, les options et la force. Lorsque vous combinez ces trois éléments, vous créez un nouveau programme."
+  },
+  {
+   "id": "net-fonctions-des-programmes",
+   "chapitre": "Programmation",
+   "titre": "Fonctions des programmes",
+   "pages": "75-76",
+   "texte": "Les fonctions sont ce que fait le programme. Chaque programme a une fonction. Vous pouvez même combiner plusieurs fonctions en un seul programme, le rendant plus polyvalent et plus puissant. Une liste de fonctions est fournie à la page suivante. Elle est censée être générale : décidez ce que fait votre programme, trouvez la fonction la plus proche de votre conception et payez le coût de Difficulté correspondant.\n\nLa manière dont cette fonction agit réellement dépend en grande partie de vous et de votre MJ ; si votre programme Anti-Personnel attaque un Netrunner en enfermant son icône dans une lumière violette et en lui faisant fondre le cerveau avec une décharge d'énergie, c'est parfait. Mais en termes de jeu, ce n'est qu'une Fonction Anti-Personnel.\n\nComme les fonctions laissent beaucoup de marge à l'imagination, le MJ doit toujours avoir le dernier mot pour décider si un programme correspond réellement à cette fonction ou non. Il ou elle peut aussi vouloir augmenter ou diminuer la Difficulté de quelques points si le programme dépasse un peu trop les limites des fonctions listées. Et si ça devient incontrôlable, n'hésitez pas à faire que le truc explose à la figure du joueur et lui bouffe le cervelet. C'est ça, l'esprit Cyberpunk.",
+   "tables": [
+    {
+     "titre": "Fonctions des programmes",
+     "colonnes": [
+      "Type",
+      "Description",
+      "Diff"
+     ],
+     "lignes": [
+      [
+       "Alarme",
+       "Alerte le système ou le Netrunner en cas d'intrusion.",
+       "15"
+      ],
+      [
+       "Anti-compiler (assassin)",
+       "Détruit les compileurs (Démons/Daemons).",
+       "20"
+      ],
+      [
+       "Anti-personnel",
+       "Attaque un Netrunner : dégâts, prise de contrôle ou effacement mental. Base 1D6, +1D6 par +5 Diff.",
+       "20"
+      ],
+      [
+       "Anti-programme",
+       "Détruit d'autres programmes : 1D6 dégâts +1D6 par +5 Diff.",
+       "20"
+      ],
+      [
+       "Antisystème",
+       "Endommage ou perturbe un système informatique.",
+       "15"
+      ],
+      [
+       "Compileur (Démon / Daemon)",
+       "Gère d'autres programmes, les compresse pour réduire leur taille jusqu'à utilisation.",
+       "10"
+      ],
+      [
+       "Contrôleur",
+       "Permet de contrôler des machines dans le monde réel.",
+       "10"
+      ],
+      [
+       "Décryptage",
+       "Ouvre les codes et déverrouille les protections.",
+       "15"
+      ],
+      [
+       "Déguisement",
+       "Se fait passer pour un autre programme.",
+       "10"
+      ],
+      [
+       "Détection",
+       "Détecte les intrusions (runners ou programmes).",
+       "10"
+      ],
+      [
+       "Discrétion",
+       "Rend le programme ou le runner difficile à détecter.",
+       "15"
+      ],
+      [
+       "Doppleganger",
+       "Prend l'apparence et les fonctions d'un programme qu'il vient de détruire.",
+       "20"
+      ],
+      [
+       "Éditeur",
+       "Réécrit un programme selon les instructions du programmeur.",
+       "25"
+      ],
+      [
+       "Enchantement",
+       "Programme permettant d'améliorer le netrunner lui-même et n'influençant que sa propre personne.",
+       "25"
+      ],
+      [
+       "Evasion",
+       "Rend le programme ou le runner difficile à tracer.",
+       "10"
+      ],
+      [
+       "Interactif",
+       "Agit comme une personne dans une VR : se déplace, manipule, interagit. Avec Pseudo-Intellect + Conversation, imite un humain.",
+       "10"
+      ],
+      [
+       "Intrusion",
+       "Permet de traverser les Murs de Données. 1D6 dégâts aux Murs +1D6 par +3 Diff.",
+       "15"
+      ],
+      [
+       "Protection",
+       "Bloque les attaques contre runner ou deck. Pour chaque +5 Diff, bloque 3 points de dégâts même si l'attaque passe.",
+       "10"
+      ],
+      [
+       "Utilitaire",
+       "Lit fichiers, sauvegarde programmes endommagés, copie, optimise vitesse, tâches diverses.",
+       "10"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-options-des-programmes",
+   "chapitre": "Programmation",
+   "titre": "Options des programmes",
+   "pages": "76",
+   "texte": "Les options individualisent un programme. Elles lui permettent de se déplacer librement dans la Matrice, de se souvenir d'événements, de reconnaître des choses, d'obéir à des commandes ou même de converser. Tu peux aussi créer tes propres options (avec l'accord de ton MJ).\n\n**Une note sur les icônes** : Les Icônes sont les représentations visuelles des programmes dans la Matrice. Une Icône peut ressembler à absolument tout : une personne, un monstre, un objet, un logo, ce que tu veux.\n\nLes programmes ne sont pas fournis avec un Icônes par défaut ; il faut le créer pour eux, et ne pas avoir d'Icônes ne rend pas le programme indétectable, mais cela signifie qu'il apparaîtra seulement comme une forme floue et indistincte plutôt qu'une image détaillée.",
+   "tables": [
+    {
+     "titre": "Options des programmes",
+     "colonnes": [
+      "Option",
+      "Description",
+      "Diff"
+     ],
+     "lignes": [
+      [
+       "Auto-recompilation",
+       "Le programme peut se reconstruire après destruction sur un jet de 5–6 sur 1D6.",
+       "3"
+      ],
+      [
+       "Bruyant",
+       "Produit du « bruit », facile à détecter à longue distance.",
+       "-5"
+      ],
+      [
+       "Capacité conversationnelle",
+       "Le programme peut parler.",
+       "3"
+      ],
+      [
+       "Endurance",
+       "Ne se fatigue jamais ; continue tant qu'il n'est pas détruit.",
+       "3"
+      ],
+      [
+       "Icône (contextuelle)",
+       "Icône de qualité image haute résolution.",
+       "2"
+      ],
+      [
+       "Icône (fractal)",
+       "Icône semi-réaliste avec texture et relief.",
+       "3"
+      ],
+      [
+       "Icône (photoréaliste)",
+       "Icône niveau vidéo/film.",
+       "4"
+      ],
+      [
+       "Icône (simple)",
+       "Icône visible, style cartoon.",
+       "1"
+      ],
+      [
+       "Icône (superéaliste)",
+       "Icône indiscernable d'un vrai objet ou d'une vraie personne.",
+       "5"
+      ],
+      [
+       "Indépendant",
+       "Permet au programme de fonctionner independamment d'un Netrunner ou d'un compileur.",
+       "10"
+      ],
+      [
+       "Invisibilité",
+       "+2 en Force pour éviter la détection.",
+       "3"
+      ],
+      [
+       "Mémoire",
+       "Peut se souvenir d'événements et de personnes.",
+       "5"
+      ],
+      [
+       "Mouvement",
+       "Se déplace librement dans la Matrice tout en restant chargé en mémoire.",
+       "5"
+      ],
+      [
+       "Optimisation de code",
+       "Réduit la taille finale du programme de moitié (arrondi au supérieur).",
+       "10"
+      ],
+      [
+       "Pseudo-intellect",
+       "Logique floue simulant INT 6.",
+       "6"
+      ],
+      [
+       "Raccrocher",
+       "Coupe la connexion d'un runner, le déconnectant brutalement. Nécessite Alarme.",
+       "5"
+      ],
+      [
+       "Reconnaissance",
+       "Distingue différents runners et programmes.",
+       "2"
+      ],
+      [
+       "Traçage",
+       "Suit un programme ou un runner à travers la Matrice.",
+       "2"
+      ],
+      [
+       "Une utilisation",
+       "Se détruit après une seule utilisation, réussie ou non.",
+       "-10"
+      ],
+      [
+       "Vitesse",
+       "+2 à la vitesse de deck quand il tourne.",
+       "2"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-force",
+   "chapitre": "Programmation",
+   "titre": "Force",
+   "pages": "76",
+   "texte": "La Force représente la puissance d'un programme. Plus la Force d'un programme est élevée, plus il est efficace. La Force est notée de 1 à 10, la plupart des programmes se situant autour de 3 ou 4."
+  },
+  {
+   "id": "net-ecrire-son-programme",
+   "chapitre": "Programmation",
+   "titre": "Écrire son programme",
+   "pages": "76",
+   "texte": "Une fois que tu as déterminé les fonctions, les options et le niveau de Force du programme, tu dois déterminer à quel point il sera difficile de l'écrire. Additionne tous les coûts de Difficulté des options, puis ajoute le niveau de Force fois 3 : le total obtenu est la Difficulté du programme. Pour effectuer un test de compétence, tu additionnes INT + Programmation + 1D10, et tu dois obtenir un résultat égal ou supérieur à cette Difficulté.\n\n**Entraide** : Parfois, tu n'auras pas assez de compétences pour écrire un programme. Cependant, deux Netrunners ou plus peuvent mettre en Commun leurs INT et leurs compétences, en lançant un seul D10 pour le total.\n\n**Exemple** : Spider (INT 10, Programmation 10) ne peut pas écrire un Chien des Enfer de Difficulté 40. Mais avec Edger (INT 9, Programmation 7), ils obtiennent : 10 + 10 + 9 + 7 = 36. Ils doivent donc faire 6 ou plus sur 1D10 pour réussir à écrire le programme."
+  },
+  {
+   "id": "net-taille-du-programme",
+   "chapitre": "Programmation",
+   "titre": "Taille du programme",
+   "pages": "76",
+   "texte": "La Difficulté détermine la taille du programme. Consulte le tableau ci-dessous : trouve le nombre de Difficulté, puis lis la ligne correspondante pour connaître la taille en Unité mémoire (UM).\n\nAinsi, un Le Chien des Enfer (Difficulté 40) occupe 6 UM.\n\nEn utilisant le tableau, tu peux extrapoler la taille UM des programmes dépassant 45 de Difficulté (par exemple : 46–50 = 8 UM, etc.).",
+   "tables": [
+    {
+     "titre": "Taille du programme",
+     "colonnes": [
+      "DIFF",
+      "Taille"
+     ],
+     "lignes": [
+      [
+       "10-15",
+       "1"
+      ],
+      [
+       "16-20",
+       "2"
+      ],
+      [
+       "21-25",
+       "3"
+      ],
+      [
+       "26-30",
+       "4"
+      ],
+      [
+       "31-35",
+       "5"
+      ],
+      [
+       "36-40",
+       "6"
+      ],
+      [
+       "41+",
+       "7"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-temps-de-programmation",
+   "chapitre": "Programmation",
+   "titre": "Temps de programmation",
+   "pages": "77",
+   "texte": "Chaque point de Difficulté d'un programme demande 3 heures de travail pour être écrit. Le travail n'a pas besoin d'être continu et peut être réparti entre plusieurs Netrunners (si plusieurs participent).\n\nPar exemple, pour une Difficulté de 40, il faut 120 heures pour programmer un Chien des Enfers. Spider décide de travailler par sessions de 8 heures ; à ce rythme, elle terminera en environ 15 jours. Cependant, en travaillant avec Edger, le temps est réduit à 8 jours."
+  },
+  {
+   "id": "net-cout-du-programme",
+   "chapitre": "Programmation",
+   "titre": "Coût du programme",
+   "pages": "77",
+   "texte": "Souvent, les programmes sont achetés sur le marché plutôt qu'écrits à la maison. Pour déterminer le coût de base d'un programme, Multiplie sa Difficulté par 10 Ed. Ensuite, Multiplie ce résultat par le modificateur correspondant au type de programme.",
+   "tables": [
+    {
+     "titre": "Modificateur de coût par type de programme",
+     "colonnes": [
+      "Type",
+      "Modificateur"
+     ],
+     "lignes": [
+      [
+       "Anti personnel",
+       "×25"
+      ],
+      [
+       "Anti programme",
+       "×4"
+      ],
+      [
+       "Antisystème",
+       "×3"
+      ],
+      [
+       "Compileur",
+       "×25"
+      ],
+      [
+       "Contrôleur",
+       "×1"
+      ],
+      [
+       "Décryptage",
+       "×1"
+      ],
+      [
+       "Détection",
+       "×2"
+      ],
+      [
+       "Editeur de logiciel",
+       "×25"
+      ],
+      [
+       "Evasion",
+       "×2"
+      ],
+      [
+       "Intrusion",
+       "×1"
+      ],
+      [
+       "Utilitaire",
+       "×1"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-virtuellement-la",
+   "chapitre": "Programmation",
+   "titre": "Virtuellement là",
+   "pages": "77",
+   "texte": "La Matrice n'est pas seulement un réseau de données, c'est un espace virtuel dans lequel vous pouvez construire des réalités. Les Réalités Virtuelles (RV) sont des espaces tridimensionnels dans lesquels les programmes peuvent interagir comme s'ils étaient des objets physiques.\n\nVous pouvez créer des RV en utilisant la commande CREER/DETRUIRE du Menu et le programme Créateur. La complexité d'une RV détermine sa taille en UM et la difficulté pour la créer.\n\nLes RV peuvent servir à de nombreux usages : des espaces de réunion privés, des espaces de stockage camouflés, des pièges pour les Netrunners adverses, ou simplement des décorations dans votre coin de la Matrice.\n\nPour créer une RV, lancez un jet de Programmation contre la Difficulté de la RV. Si le jet réussit, la RV prend forme dans la Matrice. Elle occupera une zone de la Sous-Grille proportionnelle à sa taille.\n\nLes objets dans une RV sont semi-réels. Dans la Matrice, un pistolet virtuel peut tirer des balles virtuelles, des impulsions de données qui peuvent endommager d'autres programmes ou même causer de légères perturbations dans les systèmes proches. Cependant, ces armes virtuelles ne causent aucun dommage physique réel dans l'Espace Réel.\n\nLes RV peuvent aussi être utilisées comme couverture ou camouflage. Un Netrunner habile peut dissimuler une Forteresse de Données derrière une RV trompeuse, faisant croire aux intrus qu'ils naviguent dans un innocent centre commercial virtuel pendant qu'ils se font encercler par les programmes de défense.\n\nSouvenez-vous : tout ce que vous créez dans la Matrice peut être détruit. Un adversaire suffisamment puissant peut décompiler votre RV avec les bons programmes Anti-Système. La permanence est une illusion dans le Réseau, tout comme dans l'Espace Réel, d'ailleurs."
+  },
+  {
+   "id": "net-les-demons",
+   "chapitre": "Démonologie",
+   "titre": "Les Démons",
+   "pages": "77-78",
+   "texte": "Les Démons sont un type spécialisé de programme conçu pour gérer plusieurs autres programmes. Ces sous-programmes sont compressés par la fonction Compiler du Démon, de sorte qu'ils n'occupent que la moitié de l'espace qu'ils nécessiteraient normalement, permettant au Netrunner de transporter davantage de programmes dans la même quantité de mémoire.\n\nPour construire un Démon, vous commencez par créer un programme normal utilisant la fonction Compiler/Démon. À cela, vous pouvez ajouter autant d'options que vous le souhaitez, ainsi que définir sa Force. La Force du Démon est légèrement modifiée par le nombre de programmes qu'il transporte ; pour chaque programme « à bord », le Démon perd un point de Force.\n\n**Exemple** : Succubus II commence avec une Force de 7. Mais en transportant 3 programmes, cette Force est réduite à 4.\n\nEnsuite, construisez tous vos sous-programmes. Ne vous préoccupez pas de leur Force ; ils combattront au niveau de Force du Démon, pas au leur. Une fois créés, additionnez tous leurs nombres de Difficulté et divisez le total par 2. Ajoutez ce résultat à la Difficulté du Démon et vous obtenez la Difficulté totale (et la quantité de mémoire requise) pour votre Démon final.\n\n**Exemple** : Edger construit un Démon destiné à contenir quatre programmes. Surnommé Pixie, le programme est construit ainsi : il y ajoute quatre programmes, un de Difficulté 30, un de 25, et deux de 15, pour un total de 70. Mais grâce au Démon, le coût n'est que de 35 points ! Le résultat est une version finale de Pixie qui a une valeur de seulement 53 points, soit une économie de 17 points.\n\nUn Démon semble être une excellente idée au premier abord : vous obtenez beaucoup de programmes dans un petit espace. Mais il existe plusieurs problèmes sérieux :\n\nPremièrement, le Démon ne peut contrôler tous ces programmes qu'en liant sa programmation à la leur. Cela signifie que chaque fois que le Démon est détruit, tous les programmes qui y sont liés sont également détruits (comme un navire qui coule avec tout son équipage).\n\nDeuxièmement, tous les programmes combattent au même niveau de Force que le Démon d'origine. Ce n'est pas une mauvaise idée : chargez le Démon avec quelques programmes bon marché, et si la Force du Démon est élevée, ils combattront tous comme… des démons ! Cependant, vous n'aurez pas un Démon très puissant si vous le surchargez de sous-programmes.\n\nTroisièmement, le Démon doit décompresser chaque programme avant de l'utiliser, puis le recompresser lorsqu'il a terminé. Cela signifie qu'il y a un délai (Vitesse moins le nombre de programmes actuellement chargés). Par exemple, si vous avez quatre programmes chargés dans un Démon, cela signifie un malus correspondant de,4 à la Vitesse de votre console lorsque vous utilisez le Démon. Dans un duel rapide sur la Matrice, cela peut être un désastre.\n\nMais si vous cherchez un moyen de stocker beaucoup de programmes dans un petit espace, un Démon est la solution idéale."
+  },
+  {
+   "id": "net-programmes-daemons",
+   "chapitre": "Démonologie",
+   "titre": "Programmes daemons",
+   "pages": "78",
+   "texte": "Avec le phénomène actuel du netrunning sous les projecteurs du grand public, beaucoup oublient l'une des plus anciennes tactiques des hackers : insérer un programme dans un autre système et utiliser la puissance de calcul de ce système pour exécuter le programme. Dans les premiers jours de la calomnie informatique, le « ver à bande » en était l'exemple principal. Avec l'avènement des programmes Daemon, cette tactique a connu une véritable révolution.\n\nL'une des plus grandes difficultés du netrunning est qu'un Netrunner doit entrer dans un système depuis l'extérieur, généralement via une ligne externe. Cela signifie que des précautions élaborées doivent être prises pour empêcher les défenses du système de remarquer qu'un signal étranger est présent ; à défaut, il faut affronter ces défenses (une entreprise coûteuse et risquée).\n\nLes Deamons évitent ce problème en insérant un programme auto-activé dans le système cible et en faisant en sorte que le système l'exécute comme l'un de ses propres processus.\n\nL'idée du netrunning par Deamon est très simple. Le Netrunner crée un programme « intelligent » et autonome, doté de Multiples sous-routines, puis l'insère dans le système cible. Une fois sur place, le programme utilise son accès (fourni ou acquis par lui-même) pour planifier du temps d'exécution en utilisant le processeur du système cible pour faire le travail ! Le programme accomplit ensuite sa fonction prévue, qu'il s'agisse d'espionnage interne, de sabotage ou simplement de semer le désordre. (La définition « Daemon » désigne un programme compilé et Multipart, semblable à un démon, mais doté de plus de sophistication et d'une semi-indépendance.)"
+  },
+  {
+   "id": "net-faire-un-daemon-independant",
+   "chapitre": "Démonologie",
+   "titre": "Faire un daemon indépendant",
+   "pages": "78",
+   "texte": "Un Daemon est construit comme un Démon. Il se compose d'une fonction Compiler, d'une Force de programme (qui sera modifiée par le nombre de sous-programmes transportés), ainsi que des options Reconnaissance, Mouvement et Pseudo-intellect. Des ajouts plus complexes incluent la fonction Icône fractal, ainsi que les options Mémoire, Capacité conversationnelle et d'une invibilité.\n\nDeux nouvelles fonctions de programme sont disponibles :\n\n**Déguisement** (Difficulté 10) permet à un programme de prendre l'identité d'un autre programme. Cela inclut les codes, les mots de passe et l'icône du programme imité ; les programmes défensifs du système seront trompés et croiront que le programme est allié. Les programmes de surveillance et les sysops effectuent un test d'Interface pour repérer la véritable nature du programme (Moniteurs : FOR du système + Interface + D10 ; Sysops : INT + Interface + D10 ; le programme déguisé utilise sa FOR de programme + INT 6 + D10).\n\nLa fonction **Doppleganger** (Difficulté 20) permet à un programme d'absorber les fonctions d'un programme qu'il vient de détruire, et de les intégrer au Daemon lui-même (cela nécessite de laisser un emplacement de sous-programme libre). Les programmes équipés de Doppleganger ne peuvent pas être distingués de l'original sans analyser leur code (cela prend trois tours ; test de compétence Programmation du Netrunner/sysop contre FOR du programme Doppleganger + INT 6 + D10)."
+  },
+  {
+   "id": "net-entrer-dans-le-systeme-cible",
+   "chapitre": "Démonologie",
+   "titre": "Entrer dans le système cible",
+   "pages": "78-79",
+   "texte": "Une fois que le daemon est créé, le programme doit être introduit discrètement dans le système cible. Il existe quatre façons de le faire :\n\n- Pénétrer dans le système lors d'un netrun normal et placer le programme dans les fichiers mémoire.\n- Pénétrer physiquement dans le système et téléverser le daemon depuis un support de stockage.\n- Glisser le programme dans une transmission de données.\n- L'introduire physiquement via un allié, volontaire ou non.\n\nLa première option, celle qui consiste à pénétrer dans le système via un netrun, est assez évidente. Malheureusement, si l'intrusion du netrunner est détectée, la plupart des sysops lancent une recherche système pour vérifier si quelque chose est anormal, c'est-à-dire manquant ou ajouté. La plupart des sysops connaissent aussi l'existence des daemons.\n\nLa deuxième option est délicate, mais plus susceptible de réussir. Cela signifie que le sysop devra examiner tous les journaux d'utilisation des postes de travail ou terminaux pour voir s'il y a eu une activité non autorisée, et un Netrunner compétent peut effacer ou modifier ces journaux, avec suffisamment de temps. Le daemon pourrait même modifier les journaux d'utilisation par lui-même…\n\nLa troisième option, glisser le daemon dans une transmission de données, implique que le Netrunner doit savoir quand une telle transmission a lieu, et encoder son daemon dedans à l'avance. Par exemple, si vous savez qu'Arasaka va effectuer un transfert de données, et que vous pouvez pénétrer ou compromettre la transmission pour y inclure votre daemon. Cela implique de découvrir quand une transmission a lieu, son « calendrier » (où il pourrait y avoir des interruptions dans la transmission), puis vient l'acte d'insérer le daemon. Dans l'ensemble, ce n'est pas un processus difficile ; il demande simplement beaucoup de patience, d'observation et les bonnes informations.\n\nLa dernière méthode est la plus sûre : utiliser un porteur humain pour introduire le programme et le téléverser sous son propre accès utilisateur. Si le daemon est dissimulé sur une puce-programme sous l'apparence d'un autre programme, le porteur n'a même pas besoin de savoir qu'il installe un programme frauduleux dans son système."
+  },
+  {
+   "id": "net-acces",
+   "chapitre": "Démonologie",
+   "titre": "Accès",
+   "pages": "79",
+   "texte": "Une fois dans le système cible, un Daemon est assez inutile sans accès au CPU. Si le Netrunner pénètre personnellement dans le système, il peut entrer dans la file d'attente des programmes du CPU et attribuer un accès.\n\nSi le Daemon est introduit par un porteur volontaire, celui-ci peut utiliser son propre accès utilisateur pour attribuer un accès au Daemon. Le Daemon peut détruire un programme déjà présent dans le système et usurper son accès grâce à la fonction Déguisement, ou un Daemon équipé de la fonction Doppleganger peut simplement absorber l'identité d'un programme de routine (et son accès). De plus, les Daemons sont suffisamment intelligents pour changer d'identité, améliorant ainsi leur accès. Certains peuvent même imiter ou absorber les contrôleurs du système, leur permettant un accès complet au système !\n\n(Une note rapide sur le terme « accès » : il en existe deux types, utilisateur et programme. L'accès utilisateur est ce à quoi pensent les hackers et les runners : une valeur qui indique à l'ordinateur quels fichiers et priorités la personne peut utiliser. En termes de jeu, ce sont les différents mots de passe/codes permettant d'ouvrir des fichiers verrouillés et d'utiliser des programmes spéciaux. L'accès programme est simplement la mesure de la priorité assignée à un programme, la capacité de « pousser » un autre programme hors de sa place dans le CPU. L'accès programme dépend du MJ ; il fixe les priorités des programmes si nécessaire (1 à 10). Un Daemon peut prendre l'accès d'un programme qu'il a absorbé ; un runner peut définir l'accès s'il peut contrôler l'un des CPU du système, ou l'accès peut être défini aléatoirement (lancer 1D10) lorsque le Daemon est lancé. Plus le nombre est bas, plus il faudra de temps avant que les fonctions du Daemon ne soient réellement exécutées.)\n\nLes usages les plus courants d'un programme Daemon sont l'espionnage interne et le sabotage. Vous voulez savoir ce qui se passe dans une entreprise ? Plantez un daemon d'information dans l'E-Mail de l'entreprise ! Il collecte des informations et vous les télécharge lorsque vous appelez un compte E-Mail fictif, ou il peut même vous appeler lui-même ! Vous voulez surveiller les projets secrets d'une entreprise en action ? Même chose, il suffit de faire en sorte que le Daemon obtienne un accès à ce secteur.\n\nLes Daemons fonctionnent selon le principe de l'« agent dormant » en espionnage. Le Daemon attend, largement inactif, jusqu'à ce qu'il soit activé (cela peut être fait par un code-minuteur dans le programme, l'activation observée d'un autre programme du système, un code envoyé par le netrunner, etc.). Une fois réveillé, le Daemon peut détruire d'autres programmes, insérer de fausses données, supprimer des données, prendre le contrôle d'éléments reliés au système informatique, ou même faire s'effondrer les défenses du système, permettant au Netrunner de passer librement."
+  },
+  {
+   "id": "net-trouver-les-daemons",
+   "chapitre": "Démonologie",
+   "titre": "Trouver les daemons",
+   "pages": "79",
+   "texte": "Pas une tâche facile. Par définition, un daemon est généralement déguisé en un autre programme. Tout Daemon non déguisé ressortira comme un phare visible à un parsec à la ronde lorsqu'il est scanné par un programme défensif, un moniteur ou un sysop.\n\nTrouver un Daemon déguisé est plus difficile. Si le Daemon ne fait qu'imiter un autre programme, et que le programme qu'il imite n'a pas été détruit ou retiré, alors le Daemon apparaîtra comme un programme supplémentaire et sera examiné. Si le Daemon a pris l'identité d'un programme du système, alors un sysop peut scanner toutes les tailles de programmes. Si un programme donné est beaucoup plus gros qu'il ne devrait l'être, il y a de fortes chances que ce soit un Daemon. Cela prend environ 1 seconde par UM de programmes scannés. Combien de UM y a-t-il dans ce système ?\n\nUn sysop peut scanner toutes les opérations des programmes pour comparer leur utilisation processeur à leur taille. S'il y a une différence, il y a généralement un Daemon. Cela prend au moins une minute par UM de programmes scannés.\n\nUn sysop peut également examiner quels secteurs ont été accédés à chaque exécution de programme, et comparer cela avec les paramètres du programme. Les programmes agissant de manière étrange méritent d'être investigués. Cela prend 2 à 3 minutes par UM de programmes scannés.\n\nEnfin, les sysops désespérés peuvent appeler chaque programme enregistré et scanner son code à la recherche de sous-routines étrangères. Cela expose à coup sûr chaque daemon et chaque programme frauduleux du système, mais comme cela prend entre 15 minutes et une heure par UM de programme examiné, c'est une défense longue et de dernier recours !"
+  },
+  {
+   "id": "net-virus-editeur-d-icone",
+   "chapitre": "Démonologie",
+   "titre": "Virus éditeur d'icône",
+   "pages": "79-80",
+   "texte": "Eh bien, pas vraiment des Icônes, mais des VR. Ce concept de programmation particulièrement vicieux implique un Compileur chargé avec une fonction Anti-Programme et une fonction Anti-VR spéciale, similaire à la capacité Création/Suppression du Menu de votre cyberdeck, mais utilisable contre les VR des autres. Cela ajoute 25 à la DIFF de programmation, et le modificateur de coût est le même que pour la fonction Anti-Personnel. Chacun est pré-programmé pour écraser/réécrire une VR avec la VR que le programmeur lui a donnée.\n\nVous opposez la Force du programme + la valeur DIFF de la nouvelle VR + 1D10 contre la valeur DIFF de la VR cible + 1D10. Rappelez-vous que la valeur DIFF de la nouvelle VR dépend de sa complexité au moment où vous l'avez créée. Si la VR cible perd le jet, elle est modifiée à un rythme de 10x objets par round (x étant le numéro du round dans le Net). Par exemple : au 1er round, 10 objets changés ; au 4e round, 10 000 objets changés. Voir CP2020 pour les niveaux d'objets dans une VR donnée, et les valeurs DIFF nécessaires pour les créer.\n\nSoyez prudent en introduisant cela dans une partie, ses effets, entre les mains des joueurs, peuvent être douloureux."
+  },
+  {
+   "id": "net-editeur-de-ressource",
+   "chapitre": "Démonologie",
+   "titre": "Éditeur de ressource",
+   "pages": "80",
+   "texte": "Tout comme un virus éditeur d'icône, vous pouvez utiliser la fonction d'Éditeur de Logiciel mentionnée ci-dessus pour perturber les principes de fonctionnement de base du système d'un adversaire malchanceux ! Il suffit de remplacer la fonction Anti-Programme par Antisystème et d'ajouter les options Traçage, Reconnaissance et Mémoire. La grande différence est que vous devrez ajouter une fonction Intrusion (ou Décryptage) au programme, ou envoyer un programme séparé pour ouvrir la voie et pénétrer dans le deck de la cible."
+  },
+  {
+   "id": "net-connexions-en-direct",
+   "chapitre": "Plongée dans la matrice",
+   "titre": "Connexions en direct",
+   "pages": "81",
+   "texte": "Bon, vous avez une console et des programmes. De quoi d'autre aurez-vous besoin ?\n\nLa dernière chose nécessaire est un endroit pour se brancher. Cela signifie un numéro de téléphone.\n\nSi vous utilisez une cyberconsole stationnaire, il suffit simplement de contacter votre correspondant local de l'Internet Phone Corporation et de lui demander un numéro de téléphone. Le bureau vérifiera votre identité et votre niveau de crédit puis vous donnera un Code d'Accès au Réseau (l'équivalent d'un numéro de téléphone du 20ème siècle).\n\nSi vous avez un téléphone ou un cybermodem cellulaire, le processus est aussi simple. Appelez Internet, donnez-leur le numéro de série de votre cyberconsole et, une fois votre solvabilité vérifiée, vous obtiendrez un Code d'Accès au Réseau.\n\nLe coût de l'accès au Réseau est de 30 Ed par mois, plus le coût des communications longue distance. La facture est envoyée à votre adresse le premier de chaque mois. Si vous n'avez pas de résidence permanente, Internet fera un prélèvement automatique sur votre compte et enverra un relevé à l'endroit où vous recevez votre courrier habituellement.\n\nVous n'avez pas payé la facture ce mois-ci ? Internet vous donne trente jours pour payer avec un rappel poli à la fin des trente. Passé soixante jours, Internet efface votre Code d'Accès. À partir de ce moment votre code est inutilisable et vous ne pouvez plus faire d'appels. Après un dépôt de 1000 Ed vous pourrez obtenir un nouveau code. Peut-être.\n\nAu-delà de 120 jours, Internet envoie une équipe de Solos à votre recherche. Le recouvrement est une branche en rapide expansion au 21ème siècle, avec d'excitants développements dans le domaine des armes intégrées au corps humain, du lavage de cerveau et des ajustements du comportement en utilisant une thérapie par la douleur.\n\nVous n'avez pas besoin d'avoir un Code d'Accès au Réseau. Vous pouvez brancher votre console sur la ligne de quelqu'un d'autre (vous rendant très populaire auprès de votre copiaule) ou même sur un Terminal de Données dans la rue. Néanmoins, à raison de 0,5 Ed par minute plus le surcoût pour appel longue distance, cela peut être une proposition onéreuse. Il vous faudra beaucoup de monnaie pour vous connecter.\n\nCela peut expliquer qu'une des tactiques favorites des Netrunners est de se glisser dans un immeuble corporatif où ils pourront se connecter en utilisant les téléphones de la corporation pour leurs courses. C'est illégal et dangereux mais c'est gratuit, et le jeu en vaut la chandelle pour certains.\n\nVous avez un Code d'Accès ? Maintenant vous êtes prêt. Au travail."
+  },
+  {
+   "id": "net-courses-dans-la-matrice",
+   "chapitre": "Plongée dans la matrice",
+   "titre": "Courses dans la matrice",
+   "pages": "81",
+   "texte": "Bon, commençons par les bases. D'abord il faut apprendre à se déplacer. Pendant chaque tour dans la Matrice, vous pouvez vous déplacer de 5 cases, quelle que soit la taille des cases.\n\nSur la Carte du Réseau Mondial, une case représente 2500 km². Sur un plan d'une Grille de Ville, une case représente environ une douzaine de blocs. Sur un plan de Sous-Grille (une case d'une Grille de Ville), une case représente quelques mètres. Quel que soit l'endroit où vous vous trouvez, vous vous déplacez toujours de cinq cases par tour.\n\nComment ça ? Écoutez, chombatta, en fait, vous ne vous déplacez pas du tout. C'est juste votre point de vue qui bouge. Imaginez que vous envoyez un oeil au bout d'une longue ficelle. Votre oeil se déplace mais pas vous.\n\nDans la Matrice, les choses vont vite. Les vitesses sont mesurées en nanosecondes, même pas en secondes. Nos petits cerveaux sont des tortues comparés aux gros systèmes et aux IAs. Pour ramener ça à une échelle compréhensible par nous humains, le programme d'interface de votre console ralentit le temps pour correspondre à vos perceptions. En temps réel, vous pouvez vous être déplacé de 3000 kilomètres en une seconde. Mais vous le percevez juste comme une 'téléportation', zap, vous êtes là-bas. Lorsque les distances sont plus courtes, le programme d'interface ralentit les choses pour que vous ne vous écrasiez pas contre la forteresse de données d'un quelconque gugusse.\n\nCinq cases par tour d'une seconde. C'est la Loi.\n\nDeuxième règle. Tous les déplacements dans la Matrice se font en ligne droite. Cela signifie que vous passez par les côtés d'une case, pas par les coins. Bien sûr, dans la réalité les gens coupent les virages tout le temps. Mais, rappelez-vous, vous ne vous déplacez pas réellement. La case que vous n'êtes pas en train de traverser n'existe pas 'réellement', et même si elle existait, la sensation de volume est une création de ces bonnes vieilles Transformation I-G. Alors, dans la Matrice, vous jouez avec les règles de l'Interface. C'est compris ?\n\nSur la Carte du Réseau Mondial, nous nous déplaçons en allant d'une Liaison Longue Distance (LLD) à la suivante. Disons que vous voulez aller de Night City à Londres. Vous ne pouvez pas vous téléporter directement dans Londres. Non, vous devrez faire une série de 5 courts sauts de cases pour atteindre votre destination.\n\nVous faites cela en trouvant la Liaison Longue Distance (LLD) la plus lointaine dans un rayon de cinq cases. De Night City vous avez le choix entre Salt Lake, Denver, Atlanta, Chicago, New York/BosWash, La Nouvelle-Orléans et La Havane. Vous ne pouvez faire qu'un saut maximum. À cinq cases par tour, vous vous retrouveriez au milieu de l'océan sans LLD où s'arrêter.\n\nDonc, vous sautez de Night City à New York. De là vous pouvez facilement atteindre Londres, il y a exactement cinq cases. Mais, attendez une seconde. Il y a une autre chose dont vous devez tenir compte : les Niveaux de Sécurité."
+  },
+  {
+   "id": "net-les-niveaux-de-securite",
+   "chapitre": "Plongée dans la matrice",
+   "titre": "Les niveaux de sécurité",
+   "pages": "81-82",
+   "texte": "Si vous vous apprêtez à faire un saut longue distance légal, aller à New York ne pose pas de problème. Mais réfléchissez bien, vous n'allez pas dépenser un tas d'euros en appels longue distance. Vous voulez utiliser cette vieille commande Liaison Longue Distance du Menu et foncer à travers.\n\nC'est là que les Niveaux de Sécurité interviennent. Chaque LLD est entouré de codes et de défenses pour vous empêcher de passer des appels gratuits sur le dos d'Internet. Ces défenses sont représentées par le Code de Sécurité de la LLD. Vous devez obtenir cette valeur ou plus avec 1D10 pour router le système. Si vous ratez, vous êtes pris. Pire que cela, vos actions peuvent alerter les toujours vigilants flics de NetWatch qui vous poursuivront et vous enverront dans une prison de sécurité maximale de la Vallée de la Mort. Lancez 1D6 et voyez ce qui vous est arrivé.\n\nSouvent, il est plus futé de prendre un chemin plus long pour approcher la ville désirée, en utilisant des LLD de faible niveau de sécurité plutôt que de foncer tout droit dans celles de haut niveau.",
+   "tables": [
+    {
+     "titre": "Conséquences d'un échec de routage (1D6)",
+     "colonnes": [
+      "1D6",
+      "Résultat"
+     ],
+     "lignes": [
+      [
+       "1-4",
+       "Vous êtes coupé. La ligne est encombrée."
+      ],
+      [
+       "5",
+       "Vous êtes coupé et NetWatch a obtenu votre Code d'Accès. Attendez-vous à une visite amicale bientôt dans l'Espace Réel."
+      ],
+      [
+       "6",
+       "Les Netcops essaient de vous prendre sur le fait (Lancez 1D6). 1-2 : Vous avez une amende de 1D6x100 Ed. 3-5 : Vous vous échappez. Ils ne peuvent vous suivre mais patrouillent la zone pendant 1D6+1 jours dans l'espoir de vous revoir. 6 : Vous vous échappez mais ils émettent un ARTR (Avis de Recherche Tout Réseau) pour vous. Ils savent que vous êtes là quelque part et vous cherchent. C'est juste une question de temps."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-pistage-lld",
+   "chapitre": "Plongée dans la matrice",
+   "titre": "Pistage",
+   "pages": "82",
+   "texte": "Il y a une autre raison pour choisir avec soin ses LLD. En plus d'avoir un Niveau de Sécurité, chaque LLD a un Niveau de Pistage. Le Niveau de Pistage représente la difficulté de pister votre cybersignal à travers cette LLD particulière. Chaque LLD que vous traversez a son propre Niveau de Pistage. Le total des Niveaux de Pistage des LLD que vous avez traversées représente la difficulté de remonter le signal jusqu'à sa source. En choisissant les bonnes LLD ou en passant à travers beaucoup d'entre elles, il devient quasiment impossible de remonter jusqu'à votre point d'origine.\n\nCeci est important, particulièrement si vous faites attaquer par un programme ayant une capacité de pistage. Par exemple si un Chien de l'Enfer n'arrive pas à vous coincer avant que vous vous déconnectiez, il essaiera de remonter votre signal pour exécuter le reste du programme (trouver où le Netrunner a pénétré la Matrice et attendre jusqu'à ce qu'il revienne, alors le tuer).\n\nPour vous pister, le programme doit réussir un jet de 1D10 + sa Force, supérieur ou égal au total des Niveaux de Pistage de toutes les LLD que vous avez traversées durant votre course. Si le programme échoue, il ne pourra pas obtenir une trace de votre signal.\n\n**Exemple** : La dernière course de Spider l'a fait passer par Salt Lake (1), Denver (2), La Nouvelle-Orléans (3), La Havane (3), Bogota (4) et Rio (4). À Rio, elle rencontre un Chien d'Enfer (Force 6) qui l'attaque à l'extérieur de la nouvelle Forteresse de Données de Petrochem. Spider se déconnecte et le Chien d'Enfer essaie de remonter la piste vers son point de départ. Il doit faire mieux que 15 (= 1+2+3+3+4+2) pour réussir. Ce Chien d'Enfer a intérêt à faire un 9 ou un 10, ou il restera dehors dans le froid."
+  },
+  {
+   "id": "net-sous-grilles",
+   "chapitre": "Plongée dans la matrice",
+   "titre": "Sous-grilles",
+   "pages": "82",
+   "texte": "C'est là que la plupart de vos actions de Netrunner ont lieu. Une fois que vous aurez sauté à travers les LLD et localisé votre cible sur la Grille de Ville, vous n'aurez qu'à vous déplacer vers la Sous-Grille spécifique du système que vous visez.\n\nUn plan de Sous-Grille couvre à peu près un carré de douze blocs de côté et est divisé en cases de 10 mètres carrés. Un système ou une Forteresse de Données (un système lourdement blindé) est construit en remplissant des cases adjacentes de la Sous-Grille pour obtenir une forme ressemblant vaguement à un bâtiment sur le papier. La forme de la Forteresse de Données sur le papier correspond seulement approximativement à sa forme réelle. Les systèmes peuvent avoir la forme du logo de la corporation, des polygones colorés, de bâtiments de l'Espace Réel, de formes abstraites et même de personnalités (comme la titanesque Forteresse de Données de Disney en forme de Mickey Mouse dans la région de Tokyo/Chiba).\n\nLorsqu'ils conçoivent une Forteresse de Données (pour plus d'informations voir la section Concevoir une Forteresse de Données), les maîtres de jeu devraient tenter de faire à peu près correspondre la forme sur le plan avec celle de l'icône dans la Matrice, pour aider leurs joueurs.\n\nComme pour tous les autres déplacements dans la Matrice, les Netrunners avancent de 5 cases par tour. Le mouvement se fait, bien sûr, en lignes droites et ne peut pas (évidemment) passer à travers un obstacle à moins de le transformer d'abord en gravats.\n\nUne fois que vous êtes descendu au niveau de la Sous-Grille, cela devient assez simple. Vous devez essayer de rentrer dans la Forteresse de Données, soit en passant par une Grille Codée soit en défonçant un Mur. Une fois à l'intérieur, vous allez de place en place, cherchant des mémoires à vider et d'autres choses utiles. En chemin vous rencontrerez des programmes et pièges anti-intrusion variés. Tous programmes pour faire des trucs désagréables à vous, à vos softs ou à votre console. Vous lancerez vos propres contre-programmes pour les empêcher de détruire quelque chose d'important."
+  },
+  {
+   "id": "net-le-menu",
+   "chapitre": "Plongée dans la matrice",
+   "titre": "Le Menu",
+   "pages": "82-83",
+   "texte": "Jusqu'à maintenant nous avons parlé de la manière de se déplacer dans la Matrice. Mais toutes les activités du Netrunner ne tournent pas autour des courses dans le Réseau. En fait, les tâches les plus utiles du Netrunner peuvent se faire avec un minimum d'interfaçage. La plupart du temps vous n'aurez pas du tout besoin de vous enfoncer profondément dans la Matrice. Vous allez parcourir les rues avec vos coéquipiers, en support d'une action houtement risquée pour les beaux euros. Le centre d'une fusillade n'est pas un endroit pour marcher en dormant, chombatta.\n\nC'est là que le Menu intervient. Le Menu est une liste de commandes que vous utilisez pour dire à votre console ce que vous voulez qu'elle fasse. Chaque commande active une fonction préprogrammée de la console.\n\nLe Menu est toujours présent lorsque vous vous connectez. Tout ce que vous avez à faire, c'est d'y penser et il apparaîtra instantanément, flottant dans votre champ de vision comme une image bi-dimensionnelle. Vous pensez la commande et c'est parti.\n\n**De nouveau dans la Rue.** Deux des plus importantes commandes du Menu ne nécessitent pas du tout d'aller dans la Matrice. Vous pouvez les appeler de l'Espace Réel.\n\nLa première est **LOCALISER PILOTABLE**. Avec cette commande, votre console fouille immédiatement le voisinage (jusqu'à 400 mètres) pour trouver tous les systèmes pilotables connectés au Réseau. Il affiche alors une liste des possibilités, leur position et leur type sur le Menu.\n\nMaintenant arrive la seconde plus importante commande : **CONTROLER PILOTABLE**. Lorsqu'on l'active, cette commande indique à votre console qu'elle doit chercher dans sa Mémoire un programme lui permettant de contrôler le Pilotable que vous avez choisi. Ces programmes de contrôle sont conçus pour commander des types spécifiques de pilotables. Un VidéoMaître, par exemple, pourra contrôler uniquement un écran vidéo, tandis que SuperPilote permet le contrôle direct de tout véhicule piloté à distance.\n\nLorsque la cyberconsole a déterminé le bon programme Contrôleur (que vous n'avez peut-être pas), il lance le programme et tente de prendre le contrôle du Pilotable (un jet d'intelligence + interface plus la force du programme + 1D10 opposé a une difficulté approprié). Si le jet est réussi, vous pouvez faire tout ce que vous voulez au Pilotable, du moment que ça fait partie de ses possibilités (conduire une voiture, piloter un avion, faire afficher les images de son choix sur un écran vidéo, etc.).\n\nLe reste du Menu comprend les commandes suivantes :\n\n**LOG ON/OFF** : les commandes restantes du Menu sont conçues pour être utilisées dans la Matrice. Elles sont activées lorsque vous choisissez la commande LOG ON/OFF de la liste. Cela vous propulse dans la Matrice. Pour se déconnecter (LOG OFF), vous devez faire un jet inférieur ou égal à 8 avec 1D10. La déconnexion vous ramène dans l'Espace Réel. Certains programmes sont conçus pour vous empêcher de faire cela (après tout, NetWatch préfère que vous restiez là lorsqu'ils vous parlent). Ces programmes dérèglent le CPU de votre cyberconsole, vous empêchant de vous déconnecter avant 1D6 tours.\n\n**EXECUTER PROGRAMME** : cette commande lance un programme que vous avez chargé dans la mémoire de votre console. Le programme entre immédiatement en action, réalisant la fonction pour laquelle il a été conçu (du moins, vous l'espérez).\n\n**LIAISON LONGUE DISTANCE** : cette commande est utilisée pour se transférer entre deux échangeurs longue distance (LLD). Lorsqu'on l'active, la console tente de faire croire à la Compagnie Téléphonique que cet appel n'est qu'un appel local (bien que ce ne soit pas le cas) et qui n'est pas facturé au même tarif. Pour réussir il faut réussir un jet supérieur ou égal au Niveau de Sécurité de la LLD avec 1D10.\n\n**COPIER** : cette commande indique à la console qu'elle doit faire une copie de tout programme ou fichier auquel le Netrunner a accès. Vous l'utilisez, par exemple, pour copier le petit livre noir de Saburo Arasaka au cas où vous vous retrouveriez sans donnée un vendredi soir dans l'Espace Réel. Une copie est automatiquement stockée dans la mémoire de votre console (s'il y a de la place disponible).\n\n**EFFACER** : cela efface un programme ou un fichier de votre console personnelle ou du système dans lequel vous vous trouvez actuellement. Vous pouvez utiliser EFFACER et vous faire de la place mémoire pour copier l'intégralité du livre noir de Saburo ('c'est qu'y en a des bits dans c'foutu calepin').\n\n**LIRE** : cette commande permet de passer en revue la table des matières ou le contenu d'un fichier trouvé dans la Mémoire d'un système. En général vous n'aurez pas envie de perdre du temps à lire le véritable contenu, vous ferez juste une COPIE et courrez à couvert.\n\n**EDITER** : cette commande permet de faire des modifications, des rajouts, des réécritures ou tout autre altération du contenu d'un fichier.\n\n**CREER/DETRUIRE** : cette commande active un programme spécial appelé Créateur. Il est utilisé pour générer des constructions et réalités virtuelles dans la mémoire. Pour plus d'informations lisez 'Virtuellement là'. En attendant, sachez que CREER vous permet de faire de petits objets dans la Matrice (ils seront relativement non-fonctionnels : les pistolets ne feront aucun dégât et la plupart du matériel électronique n'aura aucun effet réel) et que DETRUIRE permet de les décompiler. Néanmoins, des protections dans Créateur vous empêcheront de décompiler les créations des autres."
+  },
+  {
+   "id": "net-initiative",
+   "chapitre": "Combat et déplacement",
+   "titre": "Initiative",
+   "pages": "83",
+   "texte": "La première chose à déterminer lors d'un combat dans le Net, c'est qui agit en premier. Et ça peut tout changer : la plupart des programmes offensifs sont capables de neutraliser ou tuer en un seul assaut.\n\n**ORDINATEUR** : INT + 1D10\n**VS**\n**NETRUNNER** : REF + Vitesse de la console + 1D10\n\nS'il y a plusieurs Netrunners ou plusieurs systèmes impliqués, chacun lance son propre jet d'initiative, et les actions se jouent ensuite du plus haut au plus bas.\n\nComme dans un combat classique, un runner peut retarder son action, ou préparer une embuscade numérique, selon sa stratégie.",
+   "tables": [
+    {
+     "titre": "Initiative dans le Net",
+     "colonnes": [
+      "Camp",
+      "Jet d'initiative"
+     ],
+     "lignes": [
+      [
+       "Ordinateur",
+       "INT + 1D10"
+      ],
+      [
+       "Netrunner",
+       "REF + Vitesse de la console + 1D10"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-tours-et-actions",
+   "chapitre": "Combat et déplacement",
+   "titre": "Tours et actions",
+   "pages": "83",
+   "texte": "Un round de combat de Netrunner dure une seconde. Pendant ce temps, un Netrunner peut effectuer une action supplémentaire tous les cinq points dans la compétence interface (contrairement à un round de combat normal, où un personnage dispose de trois secondes complètes pour accumuler plusieurs actions). Cette action peut être n'importe quelle commande listée dans le Menu, en plus d'un déplacement.\n\nPar exemple, Edger a quatre points dans sa compétence d'interface, pendant son round de combat, il choisit de se déplacer de cinq cases pour s'éloigner du Chien d'Enfer, puis de lancer un programme (en l'occurrence, Tueur) pour attaquer son ennemi.\n\nLes ordinateurs, bien entendu, sont beaucoup plus rapides que les humains. Un système équipé d'un seul processeur (CPU) ne peut effectuer qu'une action par tour. Cependant, un ordinateur peut effectuer une action supplémentaire par tour pour chaque paire de CPU supplémentaires dans le système. Un ordinateur vraiment puissant peut donc activer deux, trois, quatre ou même davantage de programmes contre un seul Netrunner.\n\nC'est pour cette raison que les Netrunners s'associent en équipe lorsqu'ils doivent s'attaque aux gros systèmes."
+  },
+  {
+   "id": "net-portee",
+   "chapitre": "Combat et déplacement",
+   "titre": "Portée",
+   "pages": "83",
+   "texte": "La portée d'un programme dépend entièrement de sa conception et de sa fonction. Chaque programme possède une portée d'attaque spécifique, définissant la distance maximale à laquelle il peut interagir avec une cible. Au-delà de cette limite, le programme ne peut plus établir de connexion, d'intrusion ou d'impact, quelle que soit sa Force."
+  },
+  {
+   "id": "net-mouvement",
+   "chapitre": "Combat et déplacement",
+   "titre": "Mouvement",
+   "pages": "83-84",
+   "texte": "Comme auparavant, les Netrunners se déplacent à la vitesse de 5 cases par tour. Mais à quelle vitesse se déplacent les programmes, si jamais ils bougent ?\n\nLa plupart des programmes doivent rester confinés dans un système. Mais, une fois qu'ils vous ont repérés, ils peuvent se déplacer n'importe où dans le système pour vous intercepter, à la même vitesse de cinq cases par tour. Un programme peut poursuivre un Netrunner n'importe où dans son système hôte et jusqu'à une case à l'extérieur. Ensuite il arrêtera l'attaque et retournera à sa position initiale.\n\nLes Chiens d'Enfer, les Limiers et les PitBulls n'ont pas de telles restrictions. Ils ont une fonction de pistage qui leur permet de quitter leur système hôte et de vous suivre n'importe où. La seule manière de se débarrasser de l'un de ces monstres est de se déconnecter et d'espérer que le poursuivant manquera son jet de pistage. Autrement il sera là la prochaine fois que vous vous connecterez à cet endroit de la Matrice.\n\n**Jet de pistage** : un jet de pistage est fait en comparant la Force du programme + 1D10 au total des Niveaux de Sécurité de toutes les LLD traversées durant la course."
+  },
+  {
+   "id": "net-furtivite-et-esquive",
+   "chapitre": "Combat et déplacement",
+   "titre": "Furtivité et esquive",
+   "pages": "84",
+   "texte": "Comme vous, un programme peut attaquer tout ce qu'il voit. Comme les programmes n'ont pas d'avant ni d'arrière (qu'est-ce que le devant d'une ligne de code ?), cela signifie qu'ils vous voient venir de n'importe quelle direction en permanence.\n\nQuoique. C'est là que la furtivité et l'esquive interviennent. Lorsque vous avez lancé un programme de Furtivité ou d'Invisibilité, les opposants doivent faire un jet spécial pour déterminer s'ils vous voient :\n\n**OBSERVATEUR** : INT + Interface + Force du programme de détection + 1D10\n**VS**\n**CIBLE** : INT + Interface + Force du programme de discrétion + 1D10\n\nSi le jet de l'attaquant est inférieur à celui de votre programme, il ne peut pas vous voir.",
+   "tables": [
+    {
+     "titre": "Jet de détection contre furtivité",
+     "colonnes": [
+      "Camp",
+      "Jet"
+     ],
+     "lignes": [
+      [
+       "Observateur",
+       "INT + Interface + Force du programme de détection + 1D10"
+      ],
+      [
+       "Cible",
+       "INT + Interface + Force du programme de discrétion + 1D10"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-attaques-contre-les-systemes",
+   "chapitre": "Attaques dans le Net",
+   "titre": "Attaques contre les systèmes",
+   "pages": "84",
+   "texte": "Certains programmes sont conçus pour attaquer seulement les systèmes et les cyberconsoles. Ils opèrent en pénétrant les Murs de Données qui protègent le système, puis en exécutant leurs programmes d'attaque. Les attaques Anti-systèmes incluent les programmes d'Intrusion et les programmes Anti-systèmes. Ces attaques se font avec la formule :\n\n**ATTAQUANT** : INT + Interface + Force du programme de d'attaque + 1D10\n**VS**\n**DEFENSEUR** : INT + Interface + Force du programme de défense + 1D10\n\nSi le jet de l'attaquant est supérieur à celui du Mur de données, le Mur est percé.\n\nCertains programmes d'Intrusion font plus de 'bruits' que d'autres. Le Marteau alertera toujours le système, lui permettant d'envoyer des programmes offensifs pour s'occuper de l'intrus. Le Maillet alertera le système sur un jet de 8, 9 ou 10 avec 1D10. Ce jet est fait après que le programme ait été lancé, que le Mur soit ou non percé. Le Ver alertera le système sur un jet de 9 ou 10 avec 1D10.\n\nLes attaques Anti-système se font aussi contre les Murs de Données du système. La formule est la même que pour une intrusion. Si le jet du programme Anti-système est supérieur à celui du Mur de données, le Mur est percé et le programme prend effet au tour suivant.\n\nPar exemple, si un Poison Electroplat fait une brèche dans un Mur de données de niveau 5, à partir du tour suivant, une des mémoires du système ou de la console sera effacée chaque tour jusqu'à ce que l'Electroplat soit arrêté. Cela peut être fait par un Tueur ou tout autre programme Anti-IC.\n\nLes programmes de Décryptage attaquent les Grilles Codées et les Serrures Codées. Les Grilles Codées sont les points d'entrée dans un système. Les Serrures Codées sont souvent placées sur les fichiers pour les protéger contre les entrées. Les attaques de Décryptage se font comme les autres attaques Anti-système.",
+   "tables": [
+    {
+     "titre": "Formule d'attaque dans le Net",
+     "colonnes": [
+      "Camp",
+      "Jet"
+     ],
+     "lignes": [
+      [
+       "Attaquant",
+       "INT + Interface + Force du programme d'attaque + 1D10"
+      ],
+      [
+       "Défenseur",
+       "INT + Interface + Force du programme de défense + 1D10"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-attaques-anti-personnel",
+   "chapitre": "Attaques dans le Net",
+   "titre": "Attaques anti-personnel",
+   "pages": "84",
+   "texte": "Les programmes Anti-Personnel attaquent physiquement le Netrunner soit avec des dégâts physiques, soit avec des attaques contre ses caractéristiques. Ils peuvent être utilisés à la fois par les systèmes informatiques et par les Netrunners.\n\nLes attaques Anti-Personnel sont faites avec la formule :\n\n**ATTAQUANT** : INT + Interface + Force du programme de d'attaque + 1D10\n**VS**\n**DEFENSEUR** : INT + Interface + Force du programme de défense + 1D10\n\nSi le jet de l'attaquant est supérieur ou égal à l'autre, il gagne le round de combat.\n\nPar exemple Spider est attaquée par un système puissant utilisant un programme Lavage de Cerveau. Elle lève son propre programme Bouclier de Puissance. Les jets sont de 18 pour Spider, 17 pour l'ordinateur. Spider repousse avec succès le Lavage de Cerveau.\n\nLe tour d'après, Spider prend l'offensive en lançant un Tueur contre le Lavage de Cerveau. Son total est de 18 alors que le système fait uniquement 15. Le Lavage de Cerveau perd 3 points de dégâts en Force. Comme c'est un programme de Force 4, il est décompilé.",
+   "tables": [
+    {
+     "titre": "Formule d'attaque dans le Net",
+     "colonnes": [
+      "Camp",
+      "Jet"
+     ],
+     "lignes": [
+      [
+       "Attaquant",
+       "INT + Interface + Force du programme d'attaque + 1D10"
+      ],
+      [
+       "Défenseur",
+       "INT + Interface + Force du programme de défense + 1D10"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-attaques-contre-les-programmes-anti-ic",
+   "chapitre": "Attaques dans le Net",
+   "titre": "Attaques contre les programmes anti-IC",
+   "pages": "84",
+   "texte": "Les programmes de Protection sont conçus pour protéger le Netrunner des attaques. Un jet de défense réussi signifie que le programme attaquant a été dévié et qu'aucun dégât ne sera subi. Par exemple, une défense réussie avec un Bouclier empêchera un Chien d'Enfer de tuer le Netrunner, mais n'aura aucun effet sur l'attaque d'un Tueur contre la Liche d'un Netrunner.\n\nLes programmes Anti-IC sont utilisés pour attaquer d'autres programmes (comme un Tueur attaquant un Chien d'Enfer). Lorsqu'une attaque réussit, le programme attaqué perd un nombre de points de Force dépendant du type du programme. Si la Force du programme attaqué est réduite à zéro, il est décompilé (détruit).\n\nL'utilisation de programmes d'Évasion, de Furtivité et de Détection nécessite la même formule que les attaques contre les Netrunners :\n\n**ATTAQUANT** : INT + Interface + Force du programme de d'attaque + 1D10\n**VS**\n**DEFENSEUR** : INT + Interface + Force du programme de défense + 1D10\n\nNotez que les Netrunners peuvent utiliser des programmes de Détection contre les programmes Furtifs des autres Netrunners et vice versa.",
+   "tables": [
+    {
+     "titre": "Formule d'attaque dans le Net",
+     "colonnes": [
+      "Camp",
+      "Jet"
+     ],
+     "lignes": [
+      [
+       "Attaquant",
+       "INT + Interface + Force du programme d'attaque + 1D10"
+      ],
+      [
+       "Défenseur",
+       "INT + Interface + Force du programme de défense + 1D10"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-controleurs-et-utilitaires",
+   "chapitre": "Outils d'intrusion et de défense",
+   "titre": "Contrôleurs et utilitaires",
+   "pages": "85",
+   "texte": "Quoiqu'ils n'interviennent pas dans les combats de Netrunners, les Contrôleurs et les Utilitaires méritent d'être mentionnés rapidement.\n\nLes Contrôleurs peuvent prendre le contrôle d'un pilotable en réussissant un jet de 1D10 + INT + Interface + Force du programme opposé a une difficulté appropriée, à la convenance du maitre du jeu.\n\nLes Utilitaires fonctionnent en effectuant un jet inférieur ou égal à la Force du programme. En cas de réussite, l'Utilitaire accomplit entièrement sa fonction. Cependant, la majorité des Utilitaires ne nécessitent aucun jet : ils sont traités comme des tâches automatiques. Par exemple, l'exécution d'un Compacteur réduit automatiquement de moitié la taille en mégas de tout programme ciblé. À l'inverse, un Recompilateur répare intégralement un programme endommagé si son jet est réussi."
+  },
+  {
+   "id": "net-concevoir-une-forteresse-de-donnees",
+   "chapitre": "Outils d'intrusion et de défense",
+   "titre": "Concevoir une forteresse de données",
+   "pages": "85",
+   "texte": "On appelle Forteresse de Données tout type de système informatique qui est défendu par des programmes et blindé avec des Murs de Données. Une part importante du travail du maître de jeu consistera à créer des Forteresses de Données que les joueurs pourront piller (et où ils pourront éventuellement mourir en essayant).\n\nCommencez par faire des photocopies d'une Sous-Grille vierge. Vous pouvez aussi utiliser le papier à petits carreaux, dont vous numérotez les colonnes de A à T et les lignes de 1 à 20.\n\n**Unité Centrale (CPU)** : Choisissez le nombre de CPU qu'aura le système, en payant 10 000 Ed pour chacune. Sélectionnez aussi une zone libre de la feuille et placez chacune des CPU dans une case de la grille, en utilisant le symbole d'une CPU (un cercle barré d'une croix).\n\n**Intelligence de l'ordinateur** : pour chaque CPU, l'INT de l'ordinateur est augmentée de 3 points. L'INT est importante. C'est ce qui est utilisé par l'ordinateur à la place du REF et des autres caractéristiques pour accomplir des tâches. Elle est aussi utilisée lorsque l'ordinateur met en action son talent d'interface pour faire des attaques ou se défendre.\n\n**Intelligence Artificielle** : Lorsqu'un système atteint une INT de 12 ou plus, il est considéré comme étant une Intelligence Artificielle (IA) capable d'actions indépendantes sans surveillance humaine. Si vous avez créé une IA, vous devez déterminer sa personnalité (après tout, les IA sont presque autant des personnes humaines qu'elles sont des systèmes informatiques) et quelle sorte d'icône elle utilise pour se représenter dans la Matrice.\n\n**Les Mémoires** sont les endroits où sont stockées les données sur lesquelles travaille l'ordinateur. Elles sont les composants les plus importants du système après la CPU. Chaque CPU possède quatre Mémoires. Les Mémoires servent à stocker les programmes, des compétences, des fichiers et des réalités virtuelles. Les Mémoires doivent être placées dans les cases adjacentes aux CPU.\n\n**Unités Mémoire** : les programmes, les compétences, les fichiers et les réalités virtuelles sont mesurées en Unités Mémoire (UM). Chaque Mémoire peut contenir 10 Unités Mémoire.\n\n**Les Murs de Données** représentent le durcissement électronique de l'ordinateur contre les intrusions (fusibles, interrupteurs...). Un Mur de données recouvre le dessus, le bas et les côtés d'un système. Les systèmes vraiment bien protégés sont appelés Forteresses de Données."
+  },
+  {
+   "id": "net-jouer-une-intelligence-artificielle",
+   "chapitre": "Outils d'intrusion et de défense",
+   "titre": "Jouer une intelligence artificielle",
+   "pages": "85",
+   "texte": "Une IA ressemble beaucoup à une personne réelle. Elle a la possibilité de concevoir de nouvelles idées, de faire des plans à long terme et d'agir pour suivre ses propres désirs.\n\nNéanmoins, ce qui motive un ordinateur n'est pas les mêmes choses que ce qui vous motive vous ou moi. Les ordinateurs n'ont pas de glandes ou d'émotions. Il n'y a pas beaucoup de chance pour que vous rencontriez une IA qui ressente quelque chose pour un beau mec, tout simplement parce que le câblage n'est pas là.\n\nC'est la curiosité ou la volonté de survivre qui motive généralement les ordinateurs. Une IA pourra construire toute une série de réalités virtuelles complexes rien que pour étudier les humains venant les visiter ou jouer. Elle pourra suivre un simple Netrunner durant des années rien que parce qu'elle est curieuse de savoir pourquoi il fait ce qu'il fait. Si un Netrunner intrigue une IA, on ne peut prévoir ce que fera l'IA pour l'aider ou le gêner.\n\nD'un autre côté, les IA sont aussi programmées pour promouvoir leur propre survie. Tout ce qui empêche l'IA d'obtenir des informations ou de l'énergie électrique ou d'accéder à des composants est considéré comme une menace dont il faut s'occuper. Une IA peut traiter très brutalement les intrus dans son système parce qu'ils menacent ses programmes et ses mémoires.\n\nDe plus, tout ce qui pourrait conduire les opérateurs humains d'une IA à l'éteindre sera aussi une menace. Si l'IA n'est pas vigilante, il y a toujours une possibilité que ses opérateurs l'échangent contre un ordinateur plus agressif.\n\nAu niveau de la personnalité, les IA sont plutôt distantes, puissantes et imprévisibles. Elles ont leur propre logique interne qui est souvent oblique et difficile à déchiffrer. Les IA sont les dragons et les demi-dieux de la Matrice, des joueurs dont les raisons sont insondables pour les simples mortels. Bien que des IA puissent être utilisées comme personnages dans une partie de Cyberpunk, nous recommandons de les considérer exclusivement comme des personnages pour maîtres de jeu.\n\n**Personnalité** : Une IA ressemble à un être qui peut percevoir son environnement et réagir à lui. Selon la façon dont elle a été programmée, elle peut être amicale et curieuse, hostile et paranoïaque, stable et tournée vers les affaires, intellectuelle et détachée, mécanique et inhumaine, ou lointaine et divine."
+  },
+  {
+   "id": "net-generation-rapide-de-forteresse",
+   "chapitre": "Outils d'intrusion et de défense",
+   "titre": "Système de génération rapide de forteresse",
+   "pages": "85-86",
+   "texte": "Pour créer rapidement une Forteresse de Données, suivez ces étapes :\n\n1. Déterminez le niveau de sécurité de la Forteresse (de 1 à 4). Un niveau élevé signifie plus de CPU, de Murs de Données puissants et des programmes défensifs agressifs.\n2. Lancez 1D6 pour le nombre de CPU. Multipliez par le niveau de sécurité.\n3. Chaque CPU ajoute 3 à l'INT de base du système (INT de base = 5). Multipliez le nombre de CPU par 10 000 Ed pour le coût total du système.\n4. Attribuez une valeur de Mur de données égale au niveau de sécurité + 1D6.\n5. Choisissez les programmes défensifs en fonction du niveau de sécurité. Un système de niveau 1 utilisera surtout des programmes d'alarme et de détection. Un système de niveau 2 ajoutera des programmes Anti-IC. Un système de niveau 3 aura aussi des programmes Anti-Personnel non-létaux. Un système de niveau 4 (les systèmes noirs des grandes corporations) utilisera tous les programmes disponibles, y compris les programmes Anti-Personnel létaux.\n6. Placez les mémoires, les fichiers et les points d'intérêt sur le plan de la Sous-Grille. Pensez à l'histoire de la Forteresse, pourquoi existe-t-elle ? Que protège-t-elle ? Ces questions aideront à donner une logique à la disposition des éléments.\n\nRappelez-vous : une bonne Forteresse de Données n'est pas simplement une série d'obstacles mais un environnement cohérent qui reflète les priorités et la personnalité de son créateur."
+  },
+  {
+   "id": "net-geo-courses-dans-la-matrice",
+   "chapitre": "Géographie du réseau",
+   "titre": "Courses dans la matrice",
+   "pages": "86",
+   "texte": "La géographie du Réseau mondial structure toutes les opérations d'un Netrunner. Comprendre comment les grilles de villes, les liaisons longue distance et l'espace orbital s'organisent est essentiel pour planifier une incursion, localiser une cible ou s'échapper après un coup réussi.\n\nSe déplacer dans la Matrice obéit à des règles précises. Un Netrunner peut parcourir 5 cases par tour dans la Matrice, en se déplaçant en ligne droite dans n'importe quelle direction : haut, bas, gauche, droite ou en diagonale.\n\nPour les déplacements longue distance entre les grilles de villes via les Liaisons Longue Distance (LDD), le coût est calculé en fonction de la distance parcourue."
+  },
+  {
+   "id": "net-tarifs-longue-distance",
+   "chapitre": "Géographie du réseau",
+   "titre": "Tarifs longue distance",
+   "pages": "86",
+   "texte": "Chaque case parcourue entre deux noeuds de LDD coûte 0,20 eb. Pour calculer le coût d'un voyage longue distance, comptez le nombre de cases séparant les deux noeuds sur la carte du réseau mondial, puis multipliez par 0,20 eb. Ce tarif est automatiquement débité du compte du Netrunner lors de chaque utilisation d'une LDD.\n\n**Exemple** : Night City à San Francisco = 3 cases × 0,20 eb = 0,60 eb."
+  },
+  {
+   "id": "net-geo-pistage",
+   "chapitre": "Géographie du réseau",
+   "titre": "Pistage",
+   "pages": "86",
+   "texte": "Chaque LDD possède un Niveau de Pistage qui indique l'efficacité avec laquelle les autorités du réseau peuvent retracer les connexions entrantes et sortantes. Le Niveau de Pistage est listé dans la table des LDD ci-dessous. Plus ce niveau est élevé, plus il est difficile de passer inaperçu et plus le risque d'être repéré par NetWatch ou une corporation est grand.\n\nLorsqu'un Netrunner utilise une LDD, le MJ effectue un jet utilisant le programme de traçage approprié en additionnant le niveau de pistage de chaque ville que le netrunner empreinte comme difficulté au jet. En cas d'échec du Netrunner à se dissimuler, l'intrusion est enregistrée et peut déclencher une réponse. Pour vous pister, le programme doit réussire un jet de 1D10 + INT + Interface + sa Force, supérieur ou égal au total des Niveaux de Pistages que vous avez traversés durant votre course. Si le programme réussi de plus de 5 le jet, le netrunner ne ce rendra pas compte d'être suivit."
+  },
+  {
+   "id": "net-geo-niveaux-de-securite",
+   "chapitre": "Géographie du réseau",
+   "titre": "Niveaux de sécurité",
+   "pages": "86",
+   "texte": "Chaque LLD est entouré de codes et de défenses pour vous empêcher de passer des appels gratuits sur le dos d'Internet. Ces défenses sont représentées par le Code de Sécurité de la LLD. Vous devez obtenir cette valeur additionner ou plus avec un programme de furtivité pour rouler le système. Si vous ratez, vous êtes pris. Pire que cela, vos actions peuvent alerter les toujours vigilants flics de NetWatch qui vous pourchasseront et vous enverront dans une prison de sécurité maximum de la Vallée de la Mort.",
+   "tables": [
+    {
+     "titre": "Niveaux de Sécurité",
+     "colonnes": [
+      "Niveau",
+      "Catégorie",
+      "Description"
+     ],
+     "lignes": [
+      [
+       "Blanc (niveau 0)",
+       "Aucune sécurité",
+       "Systèmes publics ou données sans importance. Aucun ICE présent et aucune défense active."
+      ],
+      [
+       "Gris 1 (niveau 1)",
+       "Sécurité faible",
+       "Systèmes publics, hôpitaux, petits commerces. Peu ou pas de défenses actives."
+      ],
+      [
+       "Gris 2 (niveau 2)",
+       "Sécurité standard",
+       "Entreprises moyennes, services municipaux. ICE de base présente."
+      ],
+      [
+       "Gris 3 (niveau 3)",
+       "Sécurité renforcée",
+       "Grandes entreprises, banques. ICE active et programmes de surveillance, NetWatch allerté en cas d'intrusion."
+      ],
+      [
+       "Noir (mortel)",
+       "Sécurité maximale",
+       "Corporations majeures, militaire. ICE mortelle, NetWatch alerté en cas d'intrusion."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-grilles-de-ville",
+   "chapitre": "Géographie du réseau",
+   "titre": "Grilles de ville",
+   "pages": "86",
+   "texte": "Chaque grande ville du monde possède une Grille de Ville dans la Matrice : une représentation virtuelle de tous les systèmes informatiques connectés dans cette zone géographique. Les grilles de villes sont organisées comme des plans en deux dimensions, avec des cases représentant les différents systèmes et sous-réseaux accessibles.\n\nUn Netrunner se déplaçant dans une grille de ville avance de 5 cases par tour. Chaque système visible sur la grille dispose d'un Niveau de Sécurité qui détermine ses défenses et les risques associés à une tentative d'intrusion."
+  },
+  {
+   "id": "net-carte-du-reseau-mondial",
+   "chapitre": "Géographie du réseau",
+   "titre": "Carte du réseau mondial",
+   "pages": "86-87",
+   "texte": "Le Réseau mondial s'étend sur toute la planète et inclut même les stations orbitales. Il se divise en grandes zones régionales appelées Royaumes, chacune sous l'influence de différentes entités (corporations, gouvernements, factions).\n\n- **PACIFICA** : Façade Pacifique des anciens États-Unis et du Canada ouest. Domain de NetWatch et du GPEU, avec une forte présence d'Arasaka sur la côte. Comprend Night City, San Francisco, Los Angeles, Seattle, Portland.\n- **OLYMPIA** : Intérieur des États-Unis de l'Ouest. Contrôlé localement par les corporations dominantes : Orbital Air (Denver), Militech (Salt Lake, Albuquerque), WorldSat (Dallas/Houston).\n- **RUSTBELT** : Côte Est des États-Unis et nord-est. Forte densité de trafic corporatif et gouvernemental. NetWatch y est très présente. Washington D.C. est le noeud le plus sécurisé de la région (Niveau 4).\n- **EUROTHÉÂTRE** : La zone la plus puissante et la plus sécurisée du monde. Les Eurocorpos collaborent avec NetWatch pour maintenir un contrôle strict. Peu de systèmes privés subsistent. Zurich est le noeud le plus sécurisé (Niveau 5).\n- **SOVSPACE** : Territoires de l'ancienne Union Soviétique. Dominé par SovOil et Red Star. La sécurité est plus variable mais le pistage y est élevé en raison du contrôle étatique.\n- **TOKYO/CHIBA** : Zone sous contrôle quasi total d'Arasaka. La sécurité y est maximale (mortel pour Tokyo). Très difficile à infiltrer sans le soutien de programmes très performants ou de contacts internes.\n- **ATLANTIS** : Amérique du Sud, domaine de Petrochem et des cartels locaux. Sécurité généralement faible, mais très chaotique.\n- **AFRIKANI** : Afrique. Infrastructures faibles et contrôle fragmentaire. Pistage quasi inexistant dans de nombreuses zones, mais les réseaux sont instables."
+  },
+  {
+   "id": "net-orbitsville",
+   "chapitre": "Géographie du réseau",
+   "titre": "Orbitsville",
+   "pages": "87",
+   "texte": "Le Réseau ne se limite pas à la surface de la Terre. Les stations orbitales et les satellites sont eux aussi connectés à la Matrice via des liaisons spatiales. L'espace orbital est appelé Orbitsville par les Netrunners.\n\nStructure d'Orbitsville (de la Lune vers la Terre) :\n\n- **LUNE** : Base lunaire, noeud isolé. Liaison très lente (délai important). Contrôlée par un consortium de corporations spatiales. Niveau Sécu : 3.\n- **WORLDSAT (×4)** : Quatre satellites de télécommunication en orbite géostationnaire. Ce sont les relais principaux de toutes les LDD mondiales. Chaque WorldSat possède un Niveau Sécu : 4. Attaquer un WorldSat déclenche une réponse internationale immédiate.\n- **CRYSTAL PALACE** : Station orbitale de luxe/résidence. Le réseau y est séparé du réseau public mais accessible par LDD privée. Niveau Sécu : 5.\n- **TERRE** : Le point de connexion de toutes les LDD terrestres."
+  },
+  {
+   "id": "net-liste-des-liaisons-longue-distance",
+   "chapitre": "Géographie du réseau",
+   "titre": "Liste des liaisons longue distance (LDD)",
+   "pages": "87",
+   "texte": "Le tableau ci-dessous liste les principaux noeuds de LDD dans le monde, avec leur région d'appartenance, l'entité qui en contrôle l'accès, et les niveaux de sécurité et de pistage applicables.",
+   "tables": [
+    {
+     "titre": "Liste des liaisons longue distance (LDD)",
+     "colonnes": [
+      "Ville",
+      "Région",
+      "Contrôlée par",
+      "Code. Sécu.",
+      "Niv. Pistage"
+     ],
+     "lignes": [
+      [
+       "Albuquerque",
+       "Olympia",
+       "Militech",
+       "2",
+       "2"
+      ],
+      [
+       "Amsterdam",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "4",
+       "4"
+      ],
+      [
+       "Atlanta",
+       "Rustbelt",
+       "NetWatch/GPEU",
+       "2",
+       "2"
+      ],
+      [
+       "Berlin",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "4",
+       "4"
+      ],
+      [
+       "Boston",
+       "Rustbelt",
+       "NetWatch/GPEU",
+       "3",
+       "3"
+      ],
+      [
+       "Buenos Aires",
+       "Atlantis",
+       "Petrochem",
+       "1",
+       "1"
+      ],
+      [
+       "Chiba City",
+       "Tokyo/Chiba",
+       "Arasaka",
+       "4",
+       "3"
+      ],
+      [
+       "Chicago",
+       "Rustbelt",
+       "NetWatch/GPEU/Militech",
+       "3",
+       "3"
+      ],
+      [
+       "Dallas/Houston",
+       "Olympia",
+       "WorldSat",
+       "2",
+       "2"
+      ],
+      [
+       "Denver",
+       "Olympia",
+       "Orbital Air",
+       "2",
+       "3"
+      ],
+      [
+       "Detroit",
+       "Rustbelt",
+       "NetWatch/Militech",
+       "2",
+       "2"
+      ],
+      [
+       "Francfort",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "4",
+       "4"
+      ],
+      [
+       "Lagos",
+       "Afrikani",
+       "Netwatch/Warlords",
+       "1",
+       "0"
+      ],
+      [
+       "Londres",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "4",
+       "4"
+      ],
+      [
+       "Los Angeles",
+       "Pacifica",
+       "NetWatch/GPEU/Arasaka",
+       "2",
+       "2"
+      ],
+      [
+       "Madrid",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "3",
+       "3"
+      ],
+      [
+       "Mexico City",
+       "Rustbelt",
+       "Cartel/SovOil",
+       "1",
+       "1"
+      ],
+      [
+       "Miami",
+       "Rustbelt",
+       "NetWatch/Cartel",
+       "2",
+       "1"
+      ],
+      [
+       "Montreal",
+       "Rustbelt",
+       "NetWatch/SovOil",
+       "3",
+       "3"
+      ],
+      [
+       "Moscou",
+       "SovSpace",
+       "SovOil/Red Star",
+       "3",
+       "4"
+      ],
+      [
+       "Nairobi",
+       "Afrikani",
+       "NetWatch/Warlords",
+       "1",
+       "0"
+      ],
+      [
+       "New York",
+       "Rustbelt",
+       "NetWatch/GPEU",
+       "3",
+       "3"
+      ],
+      [
+       "Night City",
+       "Pacifica",
+       "NetWatch/GPEU/Arasaka",
+       "2",
+       "2"
+      ],
+      [
+       "Paris",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "4",
+       "4"
+      ],
+      [
+       "Portland",
+       "Pacifica",
+       "NetWatch/GPEU",
+       "2",
+       "2"
+      ],
+      [
+       "Rome",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "3",
+       "3"
+      ],
+      [
+       "Salt Lake",
+       "Olympia",
+       "Militech",
+       "2",
+       "2"
+      ],
+      [
+       "San Francisco",
+       "Pacifica",
+       "NetWatch/GPEU",
+       "3",
+       "3"
+      ],
+      [
+       "São Paulo",
+       "Atlantis",
+       "Petrochem/NetWatch",
+       "1",
+       "1"
+      ],
+      [
+       "Seattle",
+       "Pacifica",
+       "NetWatch/GPEU/Boeing",
+       "3",
+       "3"
+      ],
+      [
+       "Stockholm",
+       "EuroThéâtre",
+       "Eurocorpos/NetWatch",
+       "4",
+       "4"
+      ],
+      [
+       "Tokyo",
+       "Tokyo/Chiba",
+       "Arasaka/NetWatch",
+       "4",
+       "5"
+      ],
+      [
+       "Toronto",
+       "Rustbelt",
+       "NetWatch",
+       "3",
+       "3"
+      ],
+      [
+       "Washington D.C.",
+       "Rustbelt",
+       "GPEU/NetWatch",
+       "4",
+       "4"
+      ],
+      [
+       "Zurich",
+       "EuroThéâtre",
+       "EuroBank/NetWatch",
+       "4",
+       "5"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-plan-de-grille-de-ville-night-city",
+   "chapitre": "Géographie du réseau",
+   "titre": "Plan de grille de ville : Night City",
+   "pages": "88",
+   "texte": "La grille de Night City est l'une des plus utilisées par les Netrunners opérant dans la région Pacifica. Elle comprend de nombreux systèmes accessibles, allant des terminaux publics aux forteresses de données des grandes corporations.\n\nSystèmes accessibles sur la grille de Night City :",
+   "tables": [
+    {
+     "titre": "Systèmes de la grille de Night City",
+     "colonnes": [
+      "Système",
+      "Description",
+      "Niveau"
+     ],
+     "lignes": [
+      [
+       "MetalHed",
+       "BBS public, informations générales",
+       "Niv. 1"
+      ],
+      [
+       "Boogie Board",
+       "BBS de musique underground",
+       "Niv. 1"
+      ],
+      [
+       "Internet Phone",
+       "Téléphonie via la Matrice (accès public)",
+       "Niv. 1"
+      ],
+      [
+       "Mairie",
+       "Administration municipale de Night City",
+       "Niv. 2"
+      ],
+      [
+       "Palais de Justice",
+       "Archives judiciaires",
+       "Niv. 3"
+      ],
+      [
+       "EuroBank",
+       "Banque européenne, transactions financières",
+       "Niv. 3"
+      ],
+      [
+       "Big Black",
+       "Fixeur de données, système non officiel",
+       "Niv. ?"
+      ],
+      [
+       "MicroTech",
+       "Fabricant informatique, R&D protégé",
+       "Niv. 3"
+      ],
+      [
+       "Arasaka",
+       "Forteresse de données Arasaka, MORTEL",
+       "Mortel"
+      ],
+      [
+       "Petrochem",
+       "Forteresse de données Petrochem, MORTEL",
+       "Mortel"
+      ],
+      [
+       "ESM",
+       "Entertainment/médias, système corporatif",
+       "Mortel"
+      ],
+      [
+       "InfoComp",
+       "Base de données de renseignements",
+       "Niv. 3"
+      ],
+      [
+       "Net 54",
+       "Réseau médias publics",
+       "Niv. 1"
+      ],
+      [
+       "Merrill, Abukara & Finch",
+       "Cabinet financier/juridique",
+       "Niv. 2"
+      ],
+      [
+       "WNS",
+       "World News Service",
+       "Niv. 1"
+      ],
+      [
+       "Orbital Air",
+       "Compagnie aérienne spatiale",
+       "Niv. 2"
+      ],
+      [
+       "WorldBeat",
+       "Label musical corporatif",
+       "Niv. 2"
+      ],
+      [
+       "Trauma Team",
+       "Services médicaux d'urgence",
+       "Niv. 1"
+      ],
+      [
+       "Centre Médical",
+       "Hôpital public de Night City",
+       "Niv. 1"
+      ],
+      [
+       "Medical Technologies",
+       "Labo médical privé",
+       "Niv. 2"
+      ],
+      [
+       "Virtual Mall",
+       "Centre commercial virtuel (accès public)",
+       "Niv. 1"
+      ],
+      [
+       "Uni-Board",
+       "Université en ligne de Night City",
+       "Niv. 1"
+      ],
+      [
+       "Night City U",
+       "Système académique de l'université",
+       "Niv. 2"
+      ],
+      [
+       "TechTalk BBS",
+       "BBS technique, informations spécialisées",
+       "Niv. 1"
+      ],
+      [
+       "Dark Angels",
+       "Gang virtuel, système dangereux, MORTEL",
+       "Mortel"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net-votre-propre-plan-de-grille-de-ville",
+   "chapitre": "Géographie du réseau",
+   "titre": "Votre propre plan de grille de ville",
+   "pages": "88",
+   "texte": "Le MJ peut créer sa propre grille de ville pour n'importe quel lieu où les Netrunners sont susceptibles d'opérer. La grille doit inclure au minimum un système Internet Phone (point d'accès public) et quelques systèmes locaux. Elle peut être aussi simple ou complexe que la campagne l'exige. La plupart des grilles de villes secondaires n'ont pas de LDD propre : elles sont accessibles uniquement via la grille d'une ville principale voisine."
+  },
+  {
+   "id": "net-geo-sous-grilles",
+   "chapitre": "Géographie du réseau",
+   "titre": "Sous-grilles",
+   "pages": "88",
+   "texte": "Chaque système d'une grille de ville possède sa propre sous-grille interne : la Forteresse de Données. Une sous-grille type fait environ 10 cases de large sur 5 cases de haut. L'icône d'entrée dans une sous-grille est représentée par l'icône Forteresse de Données sur la grille de ville.\n\nUne fois entré dans une sous-grille, le Netrunner continue de se déplacer au rythme de 5 cases par tour. C'est dans les sous-grilles que se trouvent les fichiers, les programmes de défense, les CPU et les informations que les Netrunners cherchent à accéder ou à détruire."
+  },
+  {
+   "id": "net-rencontres-aleatoires-dans-la-matrice",
+   "chapitre": "Géographie du réseau",
+   "titre": "Rencontres aléatoires dans la matrice",
+   "pages": "88",
+   "texte": "Lorsque le Netrunner se déplace dans la grille de ville ou attend dans la Matrice, le MJ peut déclencher une rencontre aléatoire. Lancez 1D6 et consultez la table suivante :",
+   "tables": [
+    {
+     "titre": "Rencontres aléatoires dans la Matrice (1D6)",
+     "colonnes": [
+      "1D6",
+      "Résultat"
+     ],
+     "lignes": [
+      [
+       "1-2",
+       "Rien. Le Netrunner se déplace sans rencontrer d'obstacle."
+      ],
+      [
+       "3",
+       "Passage d'un programme aléatoire. Le programme ne s'arrête pas, mais le Netrunner peut tenter de l'identifier (jet d'INT diff. 15)."
+      ],
+      [
+       "4",
+       "NetRunner ami. Un autre Netrunner en mission sympathise. Il peut fournir une information ou un coup de main (à la discrétion du MJ)."
+      ],
+      [
+       "5",
+       "NetRunner hostile. Un Runner adverse ou un programme de sécurité autonome attaque. Tirez son niveau de maîtrise aléatoirement."
+      ],
+      [
+       "6",
+       "NetWatch. Un agent NetWatch se manifeste. Il peut ignorer le Runner, lui poser des questions, ou l'arrêter selon ses activités."
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,551 @@
+{
+ "tarifs_chirurgicaux": {
+  "colonnes": [
+   "CODE",
+   "CLAIR",
+   "DEGATS",
+   "PRIX",
+   "ENDROIT"
+  ],
+  "lignes": [
+   {
+    "CODE": "N",
+    "CLAIR": "Normal",
+    "DEGATS": "1",
+    "PRIX": "-",
+    "ENDROIT": "N’importe quelle clinique : 1H - Diff. 10"
+   },
+   {
+    "CODE": "M",
+    "CLAIR": "Mineure",
+    "DEGATS": "1D6+1",
+    "PRIX": "500",
+    "ENDROIT": "Centre Médical, Charcudoc : 2H - Diff. 15"
+   },
+   {
+    "CODE": "MA",
+    "CLAIR": "Majeur",
+    "DEGATS": "2D6+1",
+    "PRIX": "1500",
+    "ENDROIT": "Salle Opération, Bon Charcudoc : 4H - Diff. 20"
+   },
+   {
+    "CODE": "CR",
+    "CLAIR": "Critique",
+    "DEGATS": "3D6+1",
+    "PRIX": "2500",
+    "ENDROIT": "Hopital avec Salle d’Opération : 6H - Diff. 25"
+   },
+   {
+    "CODE": "SCR",
+    "CLAIR": "Super Critique",
+    "DEGATS": "4D6+1",
+    "PRIX": "5000",
+    "ENDROIT": "Clinique Haut de Gamme (Chiba, Orbite, Corpo)"
+   }
+  ],
+  "texte": "TARIFS DES INTERVENTIONS — Le code chirurgical est une mesure de la difficulté et de la lourdeur de l’implantation d’un système cybernétique. Plus le code est élevé, plus l’opération sera longue, difficile et demandera du temps de récupération."
+ },
+ "qualite": {
+  "texte": "QUALITE DE LA CYBERNETIQUE — Il est possible d’acheter de la cybernétique de meilleur qualité, ce qui permet d’augmenter la fiabilité et de réduire la perte en humanité. Dans les cas des équipements biomatériel et autres nanotech, la qualité représente une meilleur adaptation du produit à la psysiologie de l’utilisateur. Les nanoïdes des matériels haut de gamme sont également mieux supportés par l’organisme, et moins suceptible de créer des intéractions dangereuses.\n\nLes conditions de pose jouent également : il y a un monde entre une clinique Scandinave ou vous pouvez tester votre cybernétique en Braindance avant l’implantation et où une équipe de médecins et de psycologues vous suivent pendant une semaine, et Jo le Boucher, le charcudoc du coin, qui vous bricole sur une table de cuisine encore chaud du dernier, et comme suivi se borne à une boîte de pilules en vous disant d’en prendre une par jour.\n\nEFFET COMBINE DE LA CLINIQUE ET DU MATERIEL — Le résultat finale sur l’humanité du patient de la combinaison de la qualité de la clinique et de celle du matériel. Le matériel, ne sera pas amélioré par une bonne clinique, il vous fera juste moins de dégats dans la tête. Et si vous avez du Fric autant prendre le Top niveau. Les matériels haut de gamme sont assez difficile à obtenir. Les prix sont prohibitifs et les vendeurs plutôt rares. Si vous en trouvez chez votre fixer habituel, c’est que quelqu’un n’en à plus l’usage … Mais si vous avez un bon paquet de fric à claquer, il se trouvera toujours des gens pour vous aider. Personne ne saura que c’est vous qui achetez, et la comission sera raisonnable, (entre 10% et 30%) selon le matériel... Si vous tenez à régler les choses personnellement, pensez juste à échanger le Kevalr pour quelque chose de plus classe.",
+  "lignes": [
+   {
+    "table": "Qualité du matériel",
+    "colonnes": [
+     "GRADE",
+     "PRIX",
+     "FIABILITE",
+     "DISPONIBILITÉ",
+     "DESCRIPTION"
+    ],
+    "GRADE": "E",
+    "PRIX": "x0,7",
+    "FIABILITE": "PF",
+    "DISPONIBILITÉ": "E",
+    "DESCRIPTION": "Matériel bas de gamme, cybernétique chinoise ou russe."
+   },
+   {
+    "table": "Qualité du matériel",
+    "GRADE": "D",
+    "PRIX": "x1",
+    "FIABILITE": "ST",
+    "DISPONIBILITÉ": "C",
+    "DESCRIPTION": "Matériel ordinaire."
+   },
+   {
+    "table": "Qualité du matériel",
+    "GRADE": "C",
+    "PRIX": "x3",
+    "FIABILITE": "F",
+    "DISPONIBILITÉ": "M",
+    "DESCRIPTION": "Matériel de bonne qualité."
+   },
+   {
+    "table": "Qualité du matériel",
+    "GRADE": "B",
+    "PRIX": "x7",
+    "FIABILITE": "TF",
+    "DISPONIBILITÉ": "R",
+    "DESCRIPTION": "Matériel d’excellente qualité personnalisé ou sur mesure."
+   },
+   {
+    "table": "Qualité du matériel",
+    "GRADE": "A",
+    "PRIX": "x10",
+    "FIABILITE": "TF",
+    "DISPONIBILITÉ": "R+",
+    "DESCRIPTION": "Le Top ! Conçu par les meilleurs pour les meilleurs !"
+   },
+   {
+    "table": "Qualité de la clinique",
+    "colonnes": [
+     "GRADE",
+     "PRIX",
+     "DESCRIPTION"
+    ],
+    "GRADE": "E",
+    "PRIX": "x0,5",
+    "DESCRIPTION": "Boucherie crasseuse, le chacudoc moyen est dans cette catégorie et les cliniques ordinaires."
+   },
+   {
+    "table": "Qualité de la clinique",
+    "GRADE": "D",
+    "PRIX": "x1",
+    "DESCRIPTION": "Clinique de base, bon charcudoc."
+   },
+   {
+    "table": "Qualité de la clinique",
+    "GRADE": "C",
+    "PRIX": "x5",
+    "DESCRIPTION": "Bonne clinique, excellent charcudoc."
+   },
+   {
+    "table": "Qualité de la clinique",
+    "GRADE": "B",
+    "PRIX": "x10",
+    "DESCRIPTION": "Excellente clinique (Scandinavie, Orbite)"
+   },
+   {
+    "table": "Qualité de la clinique",
+    "GRADE": "A",
+    "PRIX": "x20",
+    "DESCRIPTION": "Le Top ! Seuelment 10 cliniques mondialements, dirigés par des Corporations."
+   },
+   {
+    "table": "Effet combiné clinique x matériel",
+    "note": "Multiplicateur de PH par grade de matériel : E x1,2 / D x1 / C x0,8 / B x0,6 / A x0,5. Le tableau croise le grade du matériel (colonnes E-A) et celui de la clinique (lignes E-A) et donne le grade effectif de perte d’humanité.",
+    "colonnes": [
+     "PH (clinique)",
+     "E",
+     "D",
+     "C",
+     "B",
+     "A"
+    ],
+    "matrice": [
+     {
+      "clinique": "E",
+      "E": "E",
+      "D": "E",
+      "C": "D",
+      "B": "D",
+      "A": "C"
+     },
+     {
+      "clinique": "D",
+      "E": "E",
+      "D": "D",
+      "C": "D",
+      "B": "C",
+      "A": "C"
+     },
+     {
+      "clinique": "C",
+      "E": "D",
+      "D": "D",
+      "C": "C",
+      "B": "C",
+      "A": "B"
+     },
+     {
+      "clinique": "B",
+      "E": "D",
+      "D": "C",
+      "C": "C",
+      "B": "B",
+      "A": "B"
+     },
+     {
+      "clinique": "A",
+      "E": "C",
+      "D": "C",
+      "C": "B",
+      "B": "B",
+      "A": "A"
+     }
+    ]
+   }
+  ]
+ },
+ "cyberpsychose": {
+  "definition": "LA CYBERPSYCHOSE C’EST QUOI ? — Quelque chose se passe lorsque vous commencez à ajouter du métal et du plastique dans les gens. Ils commencent à changer. Et c’est pas beau à voir. Dans les années 2000, on appel ça Cyberpsychose, une maladie mentale où l’ajout de cybernétiques provoque une fragmentation de la personnalité déja instable. Celle ci évolue en proportion du cyber que vous vous gréffez.",
+  "attraper": "COMMENT J’ATTRAPE LA CYBERPSYCHOSE ? — Chaque personnage de Cyberpunk à une caractéristique Empathie (EMP). Cette caractéristique mesure la qualité des relations que le personnage entretien avec les autres.",
+  "perdre_humanite": "COMMENT PERDRE VOTRE HUMANITÉ ? — Dans les règles la Cyberpsychose est liée à votre Humanité et les effets correspondants sur l’Empathie (pour chaque 10 points complets de Perte d’Humanité, l’Empathie d’un personnage est réduite de 1 jusqu’à atteindre 0 qui représente l’arrivée de la véritable cyber-psychose). En plus de la perte d’Humanité habituelle, Le personnage doit déterminer quelle sorte de perte d’humanité il perd. Durant la phase de création de son personnage, chaque joueur lance 1D100 (en jetant 2D10) qui déterminera le type de Cyberpsychose que son personnage sera amené à dévelloper.",
+  "determination": "DÉTERMINATION DE VOTRE CYBERPSYCHOSE — Nous avons 4 type de perte d’humanité : l’Aliénation (01 à 25), l’Égoïsme (26 à 50), l’Obsession (51 à 75), la Paranoïa (76 à 00).",
+  "declencheurs": [
+   "Décision du MJ (liée à la narration, où au scénario, etc…).",
+   "Un échec",
+   "Cumul de fatigue ou de stress",
+   "Situation inconfortable ou stressante pour le personnage",
+   "Un rappel douloureux du passé",
+   "Captivité",
+   "Rencontre avec un individu ou un groupe",
+   "Violence",
+   "Assister à l’insupportable"
+  ],
+  "resistance": "RÉSISTANCE À LA CYBERPSYCHOSE — Durant la partie, lorsque les personnages se retrouveront confrontés avec des situations susceptibles de déclencher des troubles (appelés ici des “déclencheurs”), ils pourront tenter d’y résister en réussissant des jets de résistance à la cyberpsychose, à la discrétion du MJ. Test de résistance à la cyberpsychose : le joueur concerné jette 1D10 et compare le résultat à l’Empathie (EMP) de son personnage (un résultat de 10 compte comme un 0). Si le résultat est inférieur ou égal : le personnage résiste à sa tendance psychotique. Si le résultat est supérieur, le personnage doit interpréter le trait en question jusqu’à ce que le MJ lui indique d’arrêter.",
+  "paliers": [
+   {
+    "emp": "10",
+    "alienation": "Normal",
+    "egoisme": "Normal",
+    "obsession": "Normal",
+    "paranoia": "Normal"
+   },
+   {
+    "emp": "9-8",
+    "alienation": "Distant",
+    "egoisme": "Arrogant",
+    "obsession": "Joyeux",
+    "paranoia": "Nerveux"
+   },
+   {
+    "emp": "7-6",
+    "alienation": "Absent",
+    "egoisme": "Têtu",
+    "obsession": "Distrait",
+    "paranoia": "Crispé"
+   },
+   {
+    "emp": "5-4",
+    "alienation": "Excentique",
+    "egoisme": "Vaniteux",
+    "obsession": "Compulsif",
+    "paranoia": "Hypocondriaque"
+   },
+   {
+    "emp": "3-2",
+    "alienation": "Délusions",
+    "egoisme": "Egocentrique",
+    "obsession": "Accro",
+    "paranoia": "Phobie"
+   },
+   {
+    "emp": "1",
+    "alienation": "Hallucinations",
+    "egoisme": "Narcissique",
+    "obsession": "Obsédé",
+    "paranoia": "Paranoïaque"
+   },
+   {
+    "emp": "0",
+    "alienation": "Schizophrène",
+    "egoisme": "Mégalomanie",
+    "obsession": "Monomanie",
+    "paranoia": "Criminel"
+   }
+  ],
+  "effets": {
+   "paranoia": [
+    {
+     "emp": "10",
+     "effet": "Le personnage ne montre aucun signe de paranoïa."
+    },
+    {
+     "emp": "9-8",
+     "effet": "Le personnage est un peu nerveux, mais cela est gage de survie dans un monde Cyberpunk."
+    },
+    {
+     "emp": "7-6",
+     "effet": "Le personnage est un peu plus nerveux que la moyenne voyant des choses, des formes, des ombres, etc. Le personnage reçoit une pénalité de 2- sur les tests de peur."
+    },
+    {
+     "emp": "5-4",
+     "effet": "Le personnage a maintenant constamment peur d'être en train de tomber malade, ou dans une embuscade, ou n'importe quoi du genre. Le personnage ressent les symptômes de différentes maladies, découvre des embuscades, etc."
+    },
+    {
+     "emp": "3-2",
+     "effet": "Le personnage contracte une phobie sévère."
+    },
+    {
+     "emp": "1",
+     "effet": "Le personnage commence à penser que les gens sont tous contre lui, qu’il est la cible d’une conspiration. A chaque fois qu’une personne fait quelque chose de désintéressé envers ce personnage, il doit réussir un jet de SF à 2- ou commencer à la détester étant donné qu’elle fait parti de la conspiration. Le personnage reçoit une pénalité de 4- à tous les tests de peur, et son SF effectif diminue de 1."
+    },
+    {
+     "emp": "0",
+     "effet": "Craignant que les gens complotent secrètement contre lui, il prend les choses en main et commence à les chasser."
+    }
+   ],
+   "alienation": [
+    {
+     "emp": "10",
+     "effet": "Le personnage ne montre aucun signe d’aliénation."
+    },
+    {
+     "emp": "9-8",
+     "effet": "Le personnage est un peu distant, mais pas plus que le commun des mortels dans un monde Cyberpunk."
+    },
+    {
+     "emp": "7-6",
+     "effet": "Le personnage oublie facilement ses souvenirs d’avant son amélioration ou son usage de drogues. Le personnage a du mal à remarquer ce qui semble inutile par rapport à son centre d’intérêt actuel (-2 au test de mémoire et au jet pour remarquer les indices et les choses qu’il ne cherche pas)."
+    },
+    {
+     "emp": "5-4",
+     "effet": "Le personnage développe une (ou plusieurs) manie(s) qui le met à part des «autres». Il se met lui-même au ban de la société, et a érigé un mur de défense qui utilise son excentricité pour marquer sa différence. Le plus souvent il ne fera plus allusion à sa vie «d’avant» sa cybernétisation (s’il n’a pas déjà tout oublié)."
+    },
+    {
+     "emp": "3-2",
+     "effet": "Le personnage gagne une fausse croyance à propos du monde ou de lui-même (et il n’en démordra pas). Par exemple il peut penser que pas mal de ses action sont contrôlées par sa cybernétique, que son wearman lui permet de capter des transmissions top-secrètes, ou qu’il peut voir les auras des gens grâce à ses cyber-optiques."
+    },
+    {
+     "emp": "1",
+     "effet": "Le personnage commence à voir des choses qui ne sont pas là, ou que le personnage croit qui devraient être ici. Les hallucinations durent 1D6 tours et sont déclenchées par le stress, et demande un jet de sauvegarde contre le SF pour les éviter dans des situations chaudes. A partir de maintenant, le personnage s’est probablement inventé sa vie précédant son implantation."
+    },
+    {
+     "emp": "0",
+     "effet": "A ce point, le personnage vit dans son monde à lui. Le personnage doit réussir un test d’INT à -2 pour faire quoi que ce soit de constructif. Si le jet rate de 4 ou plus, le personnage fait quelque chose de destructif."
+    }
+   ],
+   "egoisme": [
+    {
+     "emp": "10",
+     "effet": "Le personnage ne montre aucun signe d’égoïsme."
+    },
+    {
+     "emp": "9-8",
+     "effet": "Le personnage est un peu arrogant, mais pas plus que ce qui se fait parmi la lie égocentrique de l’humanité."
+    },
+    {
+     "emp": "7-6",
+     "effet": "Le personnage est plus auto-impliqué et têtu. Il pense qu’il est plus intelligent et/ou fort que les autres, et que ses idées sont meilleures. Un jet facile de Commandement ou Persuasion ramènera le personnage dans le droit chemin (habituellement)."
+    },
+    {
+     "emp": "5-4",
+     "effet": "L’entêtement du personnage prend une nouvelle tournure, le personnage commence à agir et à penser comme si il était réellement meilleur que les autres. Le personnage s’assurera d’être récompensé pour ses efforts, et prendra des compétences pour améliorer son apparence ou sa réputation."
+    },
+    {
+     "emp": "3-2",
+     "effet": "Le personnage voit les choses seulement par leur rapport à lui, les besoins et désirs des autres sont négligeables par rapports aux siens. Un jet de commandement ou de Persuasion moyen est nécessaire pour le convaincre que le plan d’un autre est meilleur que le sien."
+    },
+    {
+     "emp": "1",
+     "effet": "Le personnage devient obsédé par ses propres apparence, compétences, confort et/ou réputation. Le personnage devra être fortement pressé (jet de commandement ou persuasion difficile) pour faire quoi que ce soit pour quelqu’un d’autre."
+    },
+    {
+     "emp": "0",
+     "effet": "Le personnage a des illusions de grandeur. Comme tel, tous les autres sont inférieurs et peuvent être négligés. Le personnage se voit également comme immortel ou au moins pare-balles. Le personnage ignorera les risques, se voyant comme imperméable au danger."
+    }
+   ],
+   "obsession": [
+    {
+     "emp": "10",
+     "effet": "Le personnage ne montre aucun signe d’obsession."
+    },
+    {
+     "emp": "9-8",
+     "effet": "Le personnage est heureux avec sa cybernétique ou ses drogues et aime jouer avec, mais sans interférer avec sa vie normale."
+    },
+    {
+     "emp": "7-6",
+     "effet": "Le personnage aime jouer avec sa cybernétique ou ses drogues, les utilisant dès qu’il a du temps libre. Si le personnage n’est pas concentré, il reçoit un -1 à tous ses jets (habituellement, cela s’applique quand les choses deviennent barbantes, ou quand les gens commencent à parler d’autres trucs)."
+    },
+    {
+     "emp": "5-4",
+     "effet": "Le personnage joue de manière compulsive avec sa cybernétique ou ses drogues, les utilisant dès que possible. Les autres trouveront cela irritant quand il pose ou défile."
+    },
+    {
+     "emp": "3-2",
+     "effet": "Le personnage a besoin de jouer avec sa cybernétique ou ses drogues. Ca commence à prendre le pas sur sa vie et agit comme une sérieuse distraction (comme Distrait mais pénalité -2). Le Sang Froid du personnage baisse de 1 point pour chaque 6 heures durant lesquelles il n’est pas autorisé à jouer avec sa cybernétique ou utiliser des drogues."
+    },
+    {
+     "emp": "1",
+     "effet": "Le personnage joue tout le temps avec sa cybernétique ou ses drogues. Cela interfère aves sa vie sociale (-2 à la plupart des jets sociaux). Le SF du personnage baisse de 1 point pour chaque 3 heures durant lesquelles il n’est pas autorisé à jouer avec sa cybernétique ou utiliser des drogues."
+    },
+    {
+     "emp": "0",
+     "effet": "Le personnage doit jouer tout le temps avec sa cybernétique ou ses drogues. C’est une sérieuse distraction, avec une pénalité de -3 appliquée à toutes les actions qui ne sont pas reliées à la cybernétique ou aux drogues. Le SF du personnage baisse de 1 point pour chaque heure qu’il passe sans jouer. Le personnage est essentiellement un légume, 100% accro, et dédiant toute sa vie a son addiction."
+    }
+   ]
+  }
+ },
+ "regles_mise_en_garde": "RÈGLES DE MISE EN GARDE\n\nSYNTHÉDORPHINE BÊTA\nCette version «améliorée» est une belle saleté : elle empêche de tomber, mais chaque jet «rattrapé» par l’implant entraîne la perte d’un point d’humanité. De plus, tant que la glande diffuse sa drogue, vous bénéficiez du désavantage «Tendances agressives». En prime, il y un risque de devenir accro. Et le seul moyen d’avoir votre dose sera de vous faire mal, ou de vous rabattre sur des mixtures genre Lien Noir. Pas vraiment cool, même si c’est top balèze ! En prime, cet implant est illégal en raison d’incidents fâcheux survenus chez les utilisateurs.\n\nSUPRATHYROÏDE\n«Ce système est très efficace, pour une perte d’humanité raisonnable. Par contre, il fait subir à l’organisme un traitement très rude. Imaginez vous avec un V10 de Formule 1 dans votre voiture de tous les jours et pensez à ce que cela peut donner. Si le niveau Alpha ne pose pas trop de problèmes, le niveau Beta est déjà plus risqué. Le système impose des tests périodiques sous la CON initiale pour éviter des problèmes, à +1 avec des nanochirurgiens ou des anticorps améliorés, cumulables.»\nNiveau ALPHA : fréquence du test 6 mois, ajustement 0. Niveau BETA : fréquence du test 3 mois, ajustement -2.\nSÉQUELLES POSSIBLES : Lésions musculaires (pertes de CON) ; Lésions nerveuses (pertes de REF) ; Lésions neurologiques et hyperactivité (pertes de SF et EMP) ; Goutte, déficiences rénales ; Troubles de la coordination (pénalités aux compétences de REF).\nEn clair, ce truc peut assez rapidement faire de vous une loque agonisante. A vous de juger si ça en vaut la peine.\n\nBOOSTERS DE REFLEXES\n«Au vu de tout ce qui existe pour booster ses réflexes, la panique commence à vous gagner : un Kerenzikov, un Boostmaster, un accélérateur de réaction, un petit câblage neuromoteur par-dessus, et hop, +5 au REF et +8 à l’Initiative, +7 au tir... Stop ! Les différents boosters existants ne sont pas tous compatibles, et ont leurs petits défauts. De plus certains n’ont aucun effet en cas de Netrun ou de conduite par interface, les informations ne traversant pas le système nerveux.»\n- Accélérateur de réaction : Compatible avec les boosters de réflexe Kerenzikov et Sandevistan, avec ou sans Boostmaster.\n- Booster et optimiseur d’adrénaline * : Compatibles avec tout. Ils sont compatibles, mais en cas d’activation simultanée on n’applique que les effets de l’optimiseur.\n- Boostmaster * : Compatible avec Kerenzikov et Sandevistan uniquement.\n- Accélérateur neural * : Efficace uniquement pour les actions menées par interface, incluant la cyberconduite, compatible avec tout système n’affectant pas le réflexe et interface, ainsi qu’avec la suprathyroïde et le booster et l’optimiseur d’adrénaline.\n- Câblage neuromoteur intégral : Compatible uniquement avec la suprathyroïde, le booster et l’optimiseur d’adrénaline.\n- Fastpath : Compatible avec Néo-myéline. Compatible avec un accélérateur de réaction, mais l’efficacité de ce dernier est réduite de 1 (Alpha) ou 2 (Bêta).\n- Kerenzikov et Sandevistan * : Compatibles avec Boostmaster, suprathyroïde, booster et optimiseur d’adrénaline, accélérateur de réction.\n- Néo-myéline : Compatible avec le Fastpath. Combinée avec un accélérateur de réaction, l’efficacité de ce dernier est réduite de 1.\n- Réflexes câblés : Compatible avec le Fastpath. Combinée avec un accélérateur de réaction, l’efficacité de ce dernier est réduite de 1.\n- Suprathyroïde * : Compatibles avec tout, mais il est conseillé de l’installer en premier, sinon il faut réajuster les boosters pour s’adapter au métabolisme suractivé.",
+ "options": {
+  "texte": "LES OPTIONS CYBERMEMBRES — Ce sont différentes améliorations qui peuvent être intégrées à un membre de base afin d’améliorer sa force, sa résistance ou lui conférer les capacités particulières désirées par l’acheteur. Un cybermembre peut recevoir au maximum quatre options. (p. 144)\n\nCertaines options ne consomment pas un emplacement plein : la Structure orbitale « ne compte pas comme une option » ; le Membre désarticulé, la Rotation complète et le Verrouillage articulaire comptent pour « 1/2 opt. » ; l’Étanchéité « compte comme 2 options » ; le Revêtement organique « compte comme trois options » ; l’ensemble Booster de cyberjambe + Structure renforcée « occupe 2 options ». Une Armure souple peut de plus « recevoir un revêtement plastique ou de la Vraipeau sans que ceci compte pour une option » (p. 145). Un Flashlight implanté dans une partie du corps déjà cybernétisée « compte pour 0 option » (p. 126).\n\nLes autres pièces ont leur propre capacité, imprimée dans leur ligne de tableau : un cyber-tentacule et une cyber-queue « peuvent recevoir trois options » (p. 143), une CyberBar a « 0 options » (p. 142), les Cyberjambes haute performance « ne disposent que de deux options par jambe » (p. 143), les Cyberjambes Romanova offrent « 2 options/cyberjambe » (p. 142). Une cyberoptique est un « MODULE DE VISION DE BASE (Max. 4 OPTIONS/ŒIL) » (p. 154), tandis que le cyberaudio est un « Module Ouïe De Base (Options Illimitées) » (p. 140). L’option de cyber-queue Extension sensorielle « place une optique (4 options) et un système audio (3 options) au bout de la queue » (p. 144). Le Cybersenseur monte une cyberoptique sur un tentacule rétractable, mais « l’optique ne dispose que de trois options » (p. 169).",
+  "limites": [
+   {
+    "hote": "cybermembre",
+    "libelle": "Cybermembre (cyberbras, cyberjambe)",
+    "max": 4,
+    "note": "« Un cybermembre peut recevoir au maximum quatre options » (p. 144). Les cyberbras et cyberjambes de base annoncent « 4 options par bras / par jambe » (p. 142)."
+   },
+   {
+    "hote": "cybermembre",
+    "libelle": "Cyber-tentacule",
+    "max": 3,
+    "note": "« Chaque tentacule peut recevoir trois options » (p. 143)."
+   },
+   {
+    "hote": "cybermembre",
+    "libelle": "Cyber-queue",
+    "max": 3,
+    "note": "« Elle peut recevoir trois options » (p. 143). Accueille en plus les options spécifiques de cyber-queue."
+   },
+   {
+    "hote": "cybermembre",
+    "libelle": "CyberBar",
+    "max": 0,
+    "note": "« Cyberjambe avec bar, qui a la force d’une jambe normale et 0 options » (p. 142)."
+   },
+   {
+    "hote": "cybermembre",
+    "libelle": "Cyberjambes haute performance",
+    "max": 2,
+    "note": "« 2 options par jambe » — « Elles ne disposent que de deux options par jambe » (p. 142-143)."
+   },
+   {
+    "hote": "cybermembre",
+    "libelle": "Cyberjambes Romanova",
+    "max": 2,
+    "note": "« 2 options/cyberjambe. La paire. » (p. 142)."
+   },
+   {
+    "hote": "cybermembre_incorpore",
+    "libelle": "Options incorporées d’un cybermembre",
+    "max": 4,
+    "note": "Les dispositifs incorporés se logent dans le même membre et partagent son quota d’options (p. 147). Le Système d’ancrage précise « 1 option/jambe »."
+   },
+   {
+    "hote": "main",
+    "libelle": "Main montée sur un cyberbras",
+    "max": 1,
+    "note": "« Un cyberbras est fourni avec une main standard, mais on peut acquérir des modèles plus spécifiques » : une seule main à la fois par bras (p. 148). On ne peut pas monter de pied à la place d’une main."
+   },
+   {
+    "hote": "cybermain",
+    "libelle": "Options cybermains incorporées",
+    "max": 1,
+    "note": "« Une de ces options peut être installée dans toute cybermain standard. L’espace de rangement et le détecteur de mouvement peuvent être montés dans un cyberpied » (p. 150). Une Cybermain indépendante annonce « 4 doigts modulables ou 1 option » (p. 148)."
+   },
+   {
+    "hote": "doigt",
+    "libelle": "Options doigts incorporées",
+    "max": 4,
+    "note": "« Ces doigts peuvent se monter sur toute cybermain dont les doigts ne sont pas déjà utilisés » (p. 151) : une main compte quatre doigts modulables (p. 148). Ciseaux/pince coupante occupe 2 doigts, la Prise Taser 3 (pouce, index, majeur). Le Fleshmount permet de monter un cyberdoigt sur une main organique."
+   },
+   {
+    "hote": "pied",
+    "libelle": "Pied monté sur une cyberjambe",
+    "max": 1,
+    "note": "« Une cyberjambe est fournie avec un pied standard, mais on peut acquérir des modèles plus spécifiques » : un seul pied à la fois par jambe (p. 153). On ne peut pas monter de main à la place d’un pied."
+   },
+   {
+    "hote": "cyberoptique",
+    "libelle": "Cyberoptique (un œil)",
+    "max": 4,
+    "note": "« MODULE DE VISION DE BASE (Max. 4 OPTIONS/ŒIL) » (p. 154). Variantes : Yeux Insectoïde et Monovision « Max. 6 Options/Œil » ; Cyberoptique Revelation « Max. 2 Options/Oeil » ; Remote Eye « 1 Option/Œil » ; Cybersenseur « 3 Options Libres » (p. 169) ; optique en bout de cyber-queue « 4 options » (p. 144). Les Yeux Multiples ne sont pas chiffrés par le livre."
+   },
+   {
+    "hote": "cyberaudio",
+    "libelle": "Cyberaudio",
+    "max": null,
+    "note": "« Module Ouïe De Base (Options Illimitées) » (p. 140) : le livre ne fixe aucun plafond. Seule exception chiffrée, le système audio placé au bout d’une cyber-queue par l’Extension sensorielle est limité à 3 options (p. 144)."
+   },
+   {
+    "hote": "cyberqueue",
+    "libelle": "Options spécifiques de cyber-queue",
+    "max": 3,
+    "note": "Elles se prennent sur le quota des trois options de la cyber-queue (p. 143-144)."
+   },
+   {
+    "hote": "puce",
+    "libelle": "Support de puces",
+    "max": 10,
+    "note": "« Permet de charger jusqu’à 10 Puces » (Support de Puces I) ou 15 pour la version II (p. 164). « Pour pouvoir utiliser les puces, un Neuromat est nécessaire ainsi qu’un support de puces » ; le nombre de puces activables simultanément est limité par l’INT du personnage (p. 167)."
+   },
+   {
+    "hote": "audiovox",
+    "libelle": "Audiovox",
+    "max": null,
+    "note": "L’Imitateur et la Langue de Serpent sont désignés comme « Option Audiovox » (p. 159) ; le livre ne fixe pas de nombre maximum."
+   },
+   {
+    "hote": "new_throat",
+    "libelle": "New Throat",
+    "max": 2,
+    "note": "« New Throat (2 Options Max) » (p. 159)."
+   }
+  ],
+  "familles": [
+   {
+    "id": "cybermembre",
+    "nom": "Options cybermembres",
+    "desc": "Améliorations intégrées à un membre cybernétique de base (armures, revêtements, structures, vérins, myomère, articulations…). Section « LES OPTIONS CYBERMEMBRES », p. 144-146."
+   },
+   {
+    "id": "cybermembre_incorpore",
+    "nom": "Options cybermembres incorporées",
+    "desc": "Dispositifs placés à l’intérieur d’un cybermembre pour une tâche spécifique et dissimulés sous son revêtement (boîte à gants, cybermodem, holsters, treuil…). Section « LES OPTIONS CYBERMEMBRES INCORPORÉES », p. 147."
+   },
+   {
+    "id": "main",
+    "nom": "Options mains incorporées",
+    "desc": "Mains spécialisées qui se raccordent au poignet d’un cyberbras à la place de la main standard fournie. Section « LES OPTIONS MAINS INCORPORÉES », p. 148-149."
+   },
+   {
+    "id": "cybermain",
+    "nom": "Options cybermains incorporées",
+    "desc": "Dispositifs logés dans une cybermain standard (derringer, lance-fléchettes, torche cutter…), plus les revêtements et finitions de cybermain. Section « LES OPTIONS CYBERMAINS INCORPORÉES », p. 150."
+   },
+   {
+    "id": "doigt",
+    "nom": "Options doigts incorporées",
+    "desc": "Cyberdoigts spécialisés montés sur une cybermain dont les doigts ne sont pas déjà utilisés, ou sur une main organique via un Fleshmount. Section « LES OPTIONS DOIGTS INCORPORÉES », p. 151-152."
+   },
+   {
+    "id": "pied",
+    "nom": "Options pieds incorporées",
+    "desc": "Pieds spécialisés qui se raccordent à la cheville d’une cyberjambe à la place du pied standard fourni. Section « LES OPTIONS PIEDS INCORPORÉES », p. 153."
+   },
+   {
+    "id": "cyberoptique",
+    "nom": "Options cyberoptiques",
+    "desc": "Modules ajoutés à un module de vision de base (infrarouge, téléoptique, réticule, Time Square…). Section « LA CYBEROPTIQUE », p. 154."
+   },
+   {
+    "id": "cyberaudio",
+    "nom": "Options cyberaudio",
+    "desc": "Modules ajoutés à un module d’ouïe de base (écoute amplifiée, liaisons radio, analyseur de stress vocal…). Section « LE CYBERAUDIO », p. 140."
+   },
+   {
+    "id": "cyberqueue",
+    "nom": "Options de cyber-queue",
+    "desc": "Options sur mesure spécifiques aux cyber-queues : Extension sensorielle, Lizard, Warrior Lizard. Sous-section « OPTIONS DE QUEUE CYBER », p. 144 et 146."
+   },
+   {
+    "id": "puce",
+    "nom": "Puces",
+    "desc": "Logiciels sur puce insérés dans un support de puces ; nécessitent un Neuromat et un support de puces. Section « LES PUCES », p. 167-168."
+   },
+   {
+    "id": "audiovox",
+    "nom": "Options Audiovox",
+    "desc": "Modules d’un synthétiseur vocal Audiovox (Imitateur, Langue de Serpent), explicitement notés « Option Audiovox ». Famille hors de la liste normalisée initiale, p. 159."
+   },
+   {
+    "id": "new_throat",
+    "nom": "Options New Throat",
+    "desc": "Modules d’une gorge cybernétique New Throat (blindage, brouilleur, perroquet, volume…), limités à 2 par gorge. Famille hors de la liste normalisée initiale, p. 159."
+   }
+  ]
+ }
+}

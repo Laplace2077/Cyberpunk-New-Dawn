@@ -1,0 +1,644 @@
+{
+ "accessoires": [
+  {
+   "nom": "Viseur Laser",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Bonus à l'attaque : +1",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "CP20"
+  },
+  {
+   "nom": "Lien Superarme (arme intelligente)",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Bonus à l'attaque : +2 avec Superarme",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "CP20"
+  },
+  {
+   "nom": "Lunette Cyberoptique de Ciblage",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Bonus à l'attaque : +1 avec Superarme",
+   "prix": 400,
+   "prix_texte": "400",
+   "source": "CP20"
+  },
+  {
+   "nom": "Lunette Smart/Vision",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "4 emplacements d'options optiques (-10% par option)",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "CP20"
+  },
+  {
+   "nom": "Lunette Smartlink",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Bonus à l'attaque : +1/+3 avec Superarme",
+   "prix": 360,
+   "prix_texte": "360",
+   "source": "CP20"
+  },
+  {
+   "nom": "Grossissement",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Jusqu'à x25 de grossissement",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "HoB"
+  },
+  {
+   "nom": "Intensificateurs d'Image",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "+2 en Perception",
+   "prix": 250,
+   "prix_texte": "250",
+   "source": "HoB"
+  },
+  {
+   "nom": "Thermographe",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Fonctionne comme l'option cybernétique",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "HoB"
+  },
+  {
+   "nom": "Lunette de Visée",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Portée longue : +2, Portée moyenne : +1 dans une action de visée",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "HoB"
+  },
+  {
+   "nom": "Lunette Faible Luminosité",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Portée longue : +2, Portée moyenne : +1 dans une action de visée",
+   "prix": 300,
+   "prix_texte": "300",
+   "source": "HoB"
+  },
+  {
+   "nom": "Viseur Informatisé",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Portée longue : +3, Portée moyenne : +2 dans une action de visée",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "HoB"
+  },
+  {
+   "nom": "Viseur Informatisé + Thermographe",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Portée longue : +2, Portée moyenne : +1 dans une action de visée + thermo",
+   "prix": 700,
+   "prix_texte": "700",
+   "source": "HoB"
+  },
+  {
+   "nom": "Viseur COT pour Superarme",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Bonus à l'attaque : +3",
+   "prix": 4000,
+   "prix_texte": "4000",
+   "source": "SOF"
+  },
+  {
+   "nom": "Gant Intelligent Midnight Arms (GIMA)",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "+200 Ed / Superarme",
+   "prix": 110,
+   "prix_texte": "110",
+   "source": "Chr3"
+  },
+  {
+   "nom": "Lunettes intelligentes Mirroshades",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "2 emplacements, -10% option",
+   "prix": 450,
+   "prix_texte": "450",
+   "source": "Chr3"
+  },
+  {
+   "nom": "Lien smartplate pour Superarme",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "3x le prix de base",
+   "prix": 300,
+   "prix_texte": "300",
+   "source": "Chr3"
+  },
+  {
+   "nom": "Lien d'Arme Digital",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "+2 aux jets de TECH pour désenrayer l'arme",
+   "prix": 500,
+   "prix_texte": "500",
+   "source": "Chr1"
+  },
+  {
+   "nom": "Contrôleur Vocal DUD pour Superarme",
+   "categorie": "Viseurs, lunettes et liens de superarme",
+   "notes": "Armes à activation vocale, nécessite le programme DUD",
+   "prix": 720,
+   "prix_texte": "720",
+   "source": "Chr1"
+  },
+  {
+   "nom": "Holster d'Épaule",
+   "categorie": "Holsters et montures",
+   "notes": "Cuisse ou jambe",
+   "prix": 20,
+   "prix_texte": "20",
+   "source": "CP20"
+  },
+  {
+   "nom": "Bretelle d'Épaule",
+   "categorie": "Holsters et montures",
+   "notes": "Pour fusils, fusils à pompe, pistolet mitrailleur",
+   "prix": 5,
+   "prix_texte": "5",
+   "source": "CP20"
+  },
+  {
+   "nom": "Holster de Cyberjambe",
+   "categorie": "Holsters et montures",
+   "notes": "Pistolet léger à pistolet mitrailleur moyen, 1 chargeur",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "CP20"
+  },
+  {
+   "nom": "Arme Cybernétique Escamotable",
+   "categorie": "Holsters et montures",
+   "notes": "Pistolet léger à pistolet mitrailleur moyen, 1 chargeur",
+   "prix": 800,
+   "prix_texte": "800",
+   "source": "CP20"
+  },
+  {
+   "nom": "Monture d'arme",
+   "categorie": "Holsters et montures",
+   "notes": "Monte et lie un point dur sur membre cybernétique",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "CP20"
+  },
+  {
+   "nom": "Monture gyrostabilisateur",
+   "categorie": "Holsters et montures",
+   "notes": "Annule les pénalités de mouvement",
+   "prix": 250,
+   "prix_texte": "250",
+   "source": "HoB"
+  },
+  {
+   "nom": "Monture Exo-Motorisée",
+   "categorie": "Holsters et montures",
+   "notes": "Pour armes lourdes (LRD), Malus à l'attaque : -1, -2 REF, -1 en MV",
+   "prix": 5000,
+   "prix_texte": "5000",
+   "source": "HoB"
+  },
+  {
+   "nom": "Système de Ciblage Cybernétique",
+   "categorie": "Holsters et montures",
+   "notes": "Support Gyrostabilisé intégré",
+   "prix": 1300,
+   "prix_texte": "1300",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Speedholster",
+   "categorie": "Holsters et montures",
+   "notes": "Permet le tir rapide depuis un Holster",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "Chr1"
+  },
+  {
+   "nom": "Holster Cyberbras Rapide",
+   "categorie": "Holsters et montures",
+   "notes": "+2 au tir rapide, uniquement pour les pistolets légers",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Lance-Grenade Sous-Canon Commercial LRD",
+   "categorie": "Armes sous-canon",
+   "notes": "Discrétion Long Manteau (LM), Calibre 30-40mm, 1 coup, Portée : 225m",
+   "prix": 150,
+   "prix_texte": "150",
+   "source": "CP20"
+  },
+  {
+   "nom": "Lance-Grenades M-205 LRD",
+   "categorie": "Armes sous-canon",
+   "notes": "Bonus d'attaque : +1, Discrétion LM, Calibre 40mm, 1 coup, Portée 200m",
+   "prix": 250,
+   "prix_texte": "250",
+   "source": "HoB"
+  },
+  {
+   "nom": "Grenades Fusil Classiques LRD",
+   "categorie": "Armes sous-canon",
+   "notes": "Malus d'attaque : -3, Non Dissimulable (ND), 1 coup, Portée : 100m",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "HoB"
+  },
+  {
+   "nom": "Baïonnette",
+   "categorie": "Armes sous-canon",
+   "notes": "3d6 Perforant une fois fixée",
+   "prix": 15,
+   "prix_texte": "15",
+   "source": "HoB"
+  },
+  {
+   "nom": "Mini-Lance-Grenades Pompe Militech L LRD",
+   "categorie": "Armes sous-canon",
+   "notes": "Malus d'attaque : -1, Discrétion LM, Calibre 25mm, 4 coups, Portée 150m",
+   "prix": 255,
+   "prix_texte": "255",
+   "source": "Chr1"
+  },
+  {
+   "nom": "Mini-Lance-Grenades Tambour Militech L LRD",
+   "categorie": "Armes sous-canon",
+   "notes": "ND, Calibre Variables, 16 coups, Portée 150m",
+   "prix": 475,
+   "prix_texte": "475",
+   "source": "Chr1"
+  },
+  {
+   "nom": "Grenades Fusil DCR LRD",
+   "categorie": "Armes sous-canon",
+   "notes": "Malus d'attaque : -1, ND, Calibre Variable, 1 coup, portée 150m",
+   "prix": 50,
+   "prix_texte": "50/100",
+   "source": "Chr1"
+  },
+  {
+   "nom": "Adaptateur de .22",
+   "categorie": "Armes sous-canon",
+   "notes": "50 Ed à l'installation ; permet de tirer des grenades de fusil/pistolet",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Laser à Condensateur Sous-Canon FUS",
+   "categorie": "Armes sous-canon",
+   "notes": "Bonus d'attaque : +2, ND, Dégâts 3d6, 2 coups, Portée 25m",
+   "prix": 950,
+   "prix_texte": "950",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Micro-Ondes Sous-Canon EX",
+   "categorie": "Armes sous-canon",
+   "notes": "ND, Dégâts 1d6+spécial, 4 coups, Portée 20m",
+   "prix": 500,
+   "prix_texte": "500",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Pack d'Énergie sur Hanche x2 tirs",
+   "categorie": "Armes sous-canon",
+   "notes": "+5m à la portée du micro-ondes, 4 kg",
+   "prix": 250,
+   "prix_texte": "250",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Pod de Micro-Missiles Sous-Canon LRD",
+   "categorie": "Armes sous-canon",
+   "notes": "Bonus d'attaque : +1, LM, Dégâts 4d6, 1 coup, Portée 200m",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Filet Sharpwire Sous-Canon",
+   "categorie": "Armes sous-canon",
+   "notes": null,
+   "prix": 450,
+   "prix_texte": "450",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Filtre Badge pour Superarme",
+   "categorie": "Sécurité et sûreté",
+   "notes": "Ne tire pas sur les personnes portant un badge autorisé",
+   "prix": 300,
+   "prix_texte": "300",
+   "source": "SOF"
+  },
+  {
+   "nom": "Badge Filtre Badge Supplémentaire",
+   "categorie": "Sécurité et sûreté",
+   "notes": "Comme au dessus",
+   "prix": 15,
+   "prix_texte": "15",
+   "source": "SOF"
+  },
+  {
+   "nom": "Techtronica «Scangrip»",
+   "categorie": "Sécurité et sûreté",
+   "notes": "-",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Puce Anti-Tir Ami",
+   "categorie": "Sécurité et sûreté",
+   "notes": "Empêche de tirer sur les alliés désignés",
+   "prix": 310,
+   "prix_texte": "310",
+   "source": "Chr3"
+  },
+  {
+   "nom": "Nine-Eleven",
+   "categorie": "Sécurité et sûreté",
+   "notes": "La puce appelle automatiquement des renforts, arrivée en 1d10+2 mins",
+   "prix": 175,
+   "prix_texte": "175",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Puce de Sécurité",
+   "categorie": "Sécurité et sûreté",
+   "notes": "Verrouillage intelligent, DIFF Très difficile en TECH pour le désactiver",
+   "prix": 250,
+   "prix_texte": "250",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Cam Arme",
+   "categorie": "Sécurité et sûreté",
+   "notes": "Stocke jusqu'à 20 000 photos numériques",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Silencer/Suppressor",
+   "categorie": "Autres équipements d'arme",
+   "notes": "-1 WA, +1 Con, Awareness roll to hear",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "CP20"
+  },
+  {
+   "nom": "Bipod",
+   "categorie": "Autres équipements d'arme",
+   "notes": "+2 when braced & stationary",
+   "prix": 10,
+   "prix_texte": "10",
+   "source": "HoB"
+  },
+  {
+   "nom": "Portable Laser Rangefinder",
+   "categorie": "Autres équipements d'arme",
+   "notes": "Determines exact range",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "HoB"
+  },
+  {
+   "nom": "New Frames Bullpup",
+   "categorie": "Autres équipements d'arme",
+   "notes": "frame might lower concealability",
+   "prix": null,
+   "prix_texte": "?",
+   "source": "SOF"
+  },
+  {
+   "nom": "Braces and Stocks",
+   "categorie": "Autres équipements d'arme",
+   "notes": "+1WA",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "SOF"
+  },
+  {
+   "nom": "Cooling Shroud",
+   "categorie": "Autres équipements d'arme",
+   "notes": "+1 Rel",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "SOF"
+  },
+  {
+   "nom": "Magazine Extensions",
+   "categorie": "Autres équipements d'arme",
+   "notes": "x2 or x3 capacity",
+   "prix": 40,
+   "prix_texte": "40",
+   "source": "SOF"
+  },
+  {
+   "nom": "Gun Cleaning Kit",
+   "categorie": "Autres équipements d'arme",
+   "notes": "-1 Rel when used and not cleaned",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Electro-Thermal Battery",
+   "categorie": "Autres équipements d'arme",
+   "notes": "100 shot battery",
+   "prix": 150,
+   "prix_texte": "150",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Kleen Bore Nanoagents",
+   "categorie": "Autres équipements d'arme",
+   "notes": "Cleans gun!",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Bow String Silencer",
+   "categorie": "Accessoires d'arc (Bow Accessories)",
+   "notes": "Makes bow completely silent",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Crossbow Autoloader",
+   "categorie": "Accessoires d'arc (Bow Accessories)",
+   "notes": "Holds 1/2 normal shots (6), ROF x2, -1 WA 25%",
+   "prix": null,
+   "prix_texte": "?",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Basic Bow Sights",
+   "categorie": "Accessoires d'arc (Bow Accessories)",
+   "notes": "+1 WA when aimed",
+   "prix": 50,
+   "prix_texte": "50",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Cyber-targeting",
+   "categorie": "Accessoires d'arc (Bow Accessories)",
+   "notes": "+1 WA (+2), needs smartgoggles or optic",
+   "prix": 250,
+   "prix_texte": "250",
+   "source": "SOF2"
+  },
+  {
+   "nom": "IR",
+   "categorie": "Accessoires d'arc (Bow Accessories)",
+   "notes": "As cyberoptic option",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "SOF2"
+  },
+  {
+   "nom": "LowLite",
+   "categorie": "Accessoires d'arc (Bow Accessories)",
+   "notes": "Negates darkness penalties",
+   "prix": 200,
+   "prix_texte": "200",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Gyro-stabilizer",
+   "categorie": "Accessoires d'arc (Bow Accessories)",
+   "notes": "Halves movement penalties for self-bow",
+   "prix": 100,
+   "prix_texte": "100",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Monomolecular Edges",
+   "categorie": "Modification d'arme blanche",
+   "notes": "+1d6 damage, 1/3 soft SP, 2/3 hard",
+   "prix": null,
+   "prix_texte": "SPx5",
+   "source": "PAC"
+  },
+  {
+   "nom": "Cordless Smartchipping",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "+2 WA, but using a wireless transceiver",
+   "prix": null,
+   "prix_texte": "150%",
+   "source": "WGF"
+  },
+  {
+   "nom": "Advanced Lasing Crystals",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "+2 dice to beam laser damage, 7d6/12d10 max",
+   "prix": null,
+   "prix_texte": "200%",
+   "source": "WGF"
+  },
+  {
+   "nom": "Beam Splitters Area-effect",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "Range/pattern width+1m, -1d per meter width",
+   "prix": 2000,
+   "prix_texte": "2000",
+   "source": "WGF"
+  },
+  {
+   "nom": "Advanced Laser Batteries (Backpack)",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "Holds 60 points/shots for beam/pulse lasers. 7kg",
+   "prix": 1000,
+   "prix_texte": "1000",
+   "source": "WGF"
+  },
+  {
+   "nom": "Advanced Laser Batteries (Stationary)",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "Holds 100 points/shots for beam/pulse lasers. 15kg",
+   "prix": 2500,
+   "prix_texte": "2500",
+   "source": "WGF"
+  },
+  {
+   "nom": "Gauss Signature Suppressor",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "Reduces detection chance by 50%. Large weapons only.",
+   "prix": 1200,
+   "prix_texte": "1200",
+   "source": "WGF"
+  },
+  {
+   "nom": "Remote Weapons Station 2m",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "portable console, SP10 dome, 12 weapon links. 30kg",
+   "prix": 6000,
+   "prix_texte": "6000",
+   "source": "WGF"
+  },
+  {
+   "nom": "Remote Weapon Link",
+   "categorie": "Modification d'arme blanche avancée",
+   "notes": "Required for each remote weapon",
+   "prix": 500,
+   "prix_texte": "500",
+   "source": "WGF"
+  }
+ ],
+ "montures": [
+  {
+   "nom": "Monture légère",
+   "desc": "Monture d'épaule à la Predator. Fixée sur l'épaule à la Predator. Cette monture peut recevoir toute arme de poing (pistolets, PM légers, lance-grenades du type sous fusils, etc).",
+   "prix": 1000,
+   "prix_texte": "1000",
+   "chir": "MA",
+   "humanite": "3D6",
+   "notes": null
+  },
+  {
+   "nom": "Monture moyenne",
+   "desc": "Bras articulé fixé sur une charpente linéaire ou une plaque de torse. Il a un débattement de 360°, avec un angle mort de 30° à cause de la tête. Cette monture peut recevoir n'importe quel PM ou assimilé (lance micro-missiles ou lance mini-grenades Militech par exemple).",
+   "prix": 2000,
+   "prix_texte": "2000",
+   "chir": "MA",
+   "humanite": "3D6+1",
+   "notes": null
+  },
+  {
+   "nom": "Monture moyenne (gyrostabilisée)",
+   "desc": "Idem, mais gyrostabilisée. C'est une monture moyenne ou lourde munie de gyroscopes de stabilisation et autres compensations de recul. Elle donne un ENC supplémentaire de +1, mais permet d'ignorer les malus pour tireur en mouvement.",
+   "prix": 3000,
+   "prix_texte": "3000",
+   "chir": "MA",
+   "humanite": "3D6+2",
+   "notes": "ENC +1"
+  },
+  {
+   "nom": "Monture lourde",
+   "desc": "Bras articulé fixé sur une charpente linéaire. Cette monture ne peut être fixée que sur un full borg ou une charpente linéaire. Similaire à la monture moyenne, mais plus puissante et avec un plus grand débattement. Le bras articulé dépasse au-dessus de la tête et couvre 360°. Il peut recevoir un fusil d'assaut, une mitrailleuse légère ou une autre arme équivalente. La monture a un ENC de +1.",
+   "prix": 4000,
+   "prix_texte": "4000",
+   "chir": "MA",
+   "humanite": "3D6+3",
+   "notes": "ENC -1"
+  },
+  {
+   "nom": "Monture lourde (gyrostabilisée)",
+   "desc": "Idem, mais gyrostabilisée.",
+   "prix": 5000,
+   "prix_texte": "5000",
+   "chir": "MA",
+   "humanite": "3D6+4",
+   "notes": "ENC +2"
+  }
+ ],
+ "montures_intro": "Pour tous ceux qui veulent tirer en gardant les mains libres. Elles existent en plusieurs modèles, et sont contrôlées par liaison neurale directe. Cela implique un Neuromat et donne un +1 pour le tir. Les bonus du réticule s'appliquent, de même ceux liés à des systèmes du genre TCO. Il est conseillé de se munir d'une protection auditive. Les armes montées de la sorte doivent être munies de points de fixation spéciaux, qui plus est ces dispositifs sont impossibles à dissimuler. Ils sont en général réservés aux militaires, et il est difficile de jouer au gentil citoyen en étant muni de cet équipement de combat."
+}

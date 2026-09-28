@@ -1,0 +1,500 @@
+{
+ "classement": [
+  {
+   "type_arme": "Pistolets",
+   "calibre": ".38",
+   "prix_10_texte": "3 €$",
+   "prix_10": 3
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": ".41",
+   "prix_10_texte": "5 €$",
+   "prix_10": 5
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": ".44",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": ".45C",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": ".357",
+   "prix_10_texte": "8 €$",
+   "prix_10": 8
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": "5 mm",
+   "prix_10_texte": "2 €$",
+   "prix_10": 2
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": "6 mm",
+   "prix_10_texte": "3 €$",
+   "prix_10": 3
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": "9 mm",
+   "prix_10_texte": "4 €$",
+   "prix_10": 4
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": "10 mm",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Pistolets",
+   "calibre": "12 mm",
+   "prix_10_texte": "7 €$",
+   "prix_10": 7
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "5 mm",
+   "prix_10_texte": "5 €$",
+   "prix_10": 5
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "6 mm",
+   "prix_10_texte": "5 €$",
+   "prix_10": 5
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "7 mm",
+   "prix_10_texte": "5 €$",
+   "prix_10": 5
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "9 mm",
+   "prix_10_texte": "5 €$",
+   "prix_10": 5
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "10 mm",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "11 mm",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "12 mm",
+   "prix_10_texte": "7 €$",
+   "prix_10": 7
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "14 mm",
+   "prix_10_texte": "20 €$",
+   "prix_10": 20
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "15 mm",
+   "prix_10_texte": "40 €$",
+   "prix_10": 40
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": "5.56",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": ".45",
+   "prix_10_texte": "4 €$",
+   "prix_10": 4
+  },
+  {
+   "type_arme": "Pistolets Mitrailleur",
+   "calibre": ".177",
+   "prix_10_texte": "4 €$",
+   "prix_10": 4
+  },
+  {
+   "type_arme": "Fusil d'Assaut",
+   "calibre": "25 mm",
+   "prix_10_texte": "4 €$",
+   "prix_10": 4
+  },
+  {
+   "type_arme": "Fusil d'Assaut",
+   "calibre": "5.56",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Fusil d'Assaut",
+   "calibre": "7.62",
+   "prix_10_texte": "8 €$",
+   "prix_10": 8
+  },
+  {
+   "type_arme": "Fusil de Précision",
+   "calibre": "20 mm",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Fusil de Précision",
+   "calibre": "7.62",
+   "prix_10_texte": "7 €$",
+   "prix_10": 7
+  },
+  {
+   "type_arme": "Fusil à Pompe",
+   "calibre": ".10",
+   "prix_10_texte": "6 €$",
+   "prix_10": 6
+  },
+  {
+   "type_arme": "Fusil à Pompe",
+   "calibre": ".12",
+   "prix_10_texte": "4 €$",
+   "prix_10": 4
+  }
+ ],
+ "munitions": [
+  {
+   "nom": "Standard",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "-",
+   "prix": null,
+   "prix_texte": "1x",
+   "source": "CP20"
+  },
+  {
+   "nom": "Sealed Caseless Bullets",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "Waterproof",
+   "prix": null,
+   "prix_texte": "2x",
+   "source": "SF"
+  },
+  {
+   "nom": "Brass Cased",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "-",
+   "prix": null,
+   "prix_texte": "3x",
+   "source": "CP20"
+  },
+  {
+   "nom": "Plasticase",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "Poor availability",
+   "prix": null,
+   "prix_texte": "1x",
+   "source": "CP20"
+  },
+  {
+   "nom": "Armor Piercing",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "x1/2 1/2 Pen",
+   "prix": null,
+   "prix_texte": "3X",
+   "source": "CP20"
+  },
+  {
+   "nom": "Hollowpoints",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "x2 1.5x Pen 1.12",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "Chr1 Chr2"
+  },
+  {
+   "nom": "Armor Piercing Incendiary",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "x1/2 1/2 Pen, +1d6, 1d6/2. 50% fire",
+   "prix": null,
+   "prix_texte": "4x",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Dual-Purpose",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "x1/2 1/2 Pen or 1.5x if unarmored",
+   "prix": null,
+   "prix_texte": "4x",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Frag Flechettes",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "x1/2 [soft] Rare and very illegal",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Electrothermal",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "1.5x Damage (cased)",
+   "prix": null,
+   "prix_texte": "2x",
+   "source": "Chr2"
+  },
+  {
+   "nom": "Rubber Bullets",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "Stun beyond 3m, below that 1/2 real, 1/2 stun 1",
+   "prix": null,
+   "prix_texte": "3x",
+   "source": "BH"
+  },
+  {
+   "nom": "Wasp Flechette",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "1/2 [soft] x1d6/2",
+   "prix": null,
+   "prix_texte": "10x",
+   "source": "UK"
+  },
+  {
+   "nom": "12mm Anti-Personnel",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "1/2 [soft] x2",
+   "prix": null,
+   "prix_texte": "10X",
+   "source": "UK"
+  },
+  {
+   "nom": "Electric Fire",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "Caseless rounds 0",
+   "prix": null,
+   "prix_texte": "9x",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Smart Bullets",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "Rifled +1, smoothbore +2 WA at long+ range",
+   "prix": null,
+   "prix_texte": "10x",
+   "source": "NE"
+  },
+  {
+   "nom": "Silver Bullets",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "-",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "NE"
+  },
+  {
+   "nom": "Safety Rounds",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "x2 3x Pen. Shatter on 10SP/30SDP",
+   "prix": null,
+   "prix_texte": "6x",
+   "source": "DS"
+  },
+  {
+   "nom": "Sky Marshal®",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "Safety Rnds x2 2x Pen.",
+   "prix": 100,
+   "prix_texte": "100€$/50",
+   "source": "GW"
+  },
+  {
+   "nom": "Kill Rounds",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "x2 Damage (explosive)",
+   "prix": null,
+   "prix_texte": "CIA only",
+   "source": "RM"
+  },
+  {
+   "nom": "Capture Rounds",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "1/2 Damage, 2x Stu",
+   "prix": null,
+   "prix_texte": "CIA only",
+   "source": "RM"
+  },
+  {
+   "nom": "Acid",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "1D4x3, ceramic shells shatter on SP4+",
+   "prix": 75,
+   "prix_texte": "75€$/20",
+   "source": "RPI"
+  },
+  {
+   "nom": "Heartbreaker",
+   "type": "Balles modifiées (Bullets SP Mod Damage)",
+   "effet": "Heart attack 1d6 rnds, shatter on SP5+",
+   "prix": 50,
+   "prix_texte": "50€$/each",
+   "source": "RPI"
+  },
+  {
+   "nom": "Target",
+   "type": "Flèches d'arc modifiées (Arrows SP Mod Damage)",
+   "effet": "1/2 normal",
+   "prix": 24,
+   "prix_texte": "24€$/12",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Broadhead",
+   "type": "Flèches d'arc modifiées (Arrows SP Mod Damage)",
+   "effet": "1/2 [soft] 2x Pen",
+   "prix": 40,
+   "prix_texte": "40€$/24",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Stun",
+   "type": "Flèches d'arc modifiées (Arrows SP Mod Damage)",
+   "effet": "damage is Stun",
+   "prix": 20,
+   "prix_texte": "20€$/12",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Spinner",
+   "type": "Flèches d'arc modifiées (Arrows SP Mod Damage)",
+   "effet": "1/2 [soft] 3x Pen",
+   "prix": 80,
+   "prix_texte": "80€$/12",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Warhead",
+   "type": "Flèches d'arc modifiées (Arrows SP Mod Damage)",
+   "effet": "varies 25mm pistol grenade, WA -2",
+   "prix": null,
+   "prix_texte": "varies",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Target",
+   "type": "Carreaux d'arbalète (Crossbow Quarrels SP Mod Damage)",
+   "effet": "1/2 normal",
+   "prix": 30,
+   "prix_texte": "30€$/12",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Broadhead",
+   "type": "Carreaux d'arbalète (Crossbow Quarrels SP Mod Damage)",
+   "effet": "1/2 [soft] 2x Pen",
+   "prix": 50,
+   "prix_texte": "50€$/24",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Stun",
+   "type": "Carreaux d'arbalète (Crossbow Quarrels SP Mod Damage)",
+   "effet": "damage is Stun",
+   "prix": 25,
+   "prix_texte": "25€$/12",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Spinner",
+   "type": "Carreaux d'arbalète (Crossbow Quarrels SP Mod Damage)",
+   "effet": "1/2 [soft] 3x Pen",
+   "prix": 100,
+   "prix_texte": "100€$/12",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Warhead",
+   "type": "Carreaux d'arbalète (Crossbow Quarrels SP Mod Damage)",
+   "effet": "varies 25mm pistol grenade, WA -2",
+   "prix": null,
+   "prix_texte": "varies",
+   "source": "SOF2"
+  },
+  {
+   "nom": "Silver",
+   "type": "Carreaux d'arbalète (Crossbow Quarrels SP Mod Damage)",
+   "effet": "1/2",
+   "prix": null,
+   "prix_texte": "3x",
+   "source": "NE"
+  },
+  {
+   "nom": "Drugged",
+   "type": "Airgun Splatballs (SP Mod Damage)",
+   "effet": "by drug type",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "CP20"
+  },
+  {
+   "nom": "Acid",
+   "type": "Airgun Splatballs (SP Mod Damage)",
+   "effet": "1d6 x 3 turns",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "CP20"
+  },
+  {
+   "nom": "Normal",
+   "type": "Needlegun Loads (SP Mod Damage)",
+   "effet": "1/2 [soft]",
+   "prix": 50,
+   "prix_texte": "50€$/100",
+   "source": "CP20"
+  },
+  {
+   "nom": "Drugged",
+   "type": "Needlegun Loads (SP Mod Damage)",
+   "effet": "1/2 [soft] + drug type",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "CP20"
+  },
+  {
+   "nom": "Anti-Armor",
+   "type": "Needlegun Loads (SP Mod Damage)",
+   "effet": "1/4 [s], 1/2 [h]",
+   "prix": null,
+   "prix_texte": "4x",
+   "source": "WGF"
+  },
+  {
+   "nom": "HE (Impact)",
+   "type": "Needlegun Loads (SP Mod Damage)",
+   "effet": "4d6",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "WGF"
+  },
+  {
+   "nom": "HE (Timer/Liquid)",
+   "type": "Needlegun Loads (SP Mod Damage)",
+   "effet": "1/2 [s] +4d6",
+   "prix": null,
+   "prix_texte": "5x",
+   "source": "WGF"
+  }
+ ]
+}

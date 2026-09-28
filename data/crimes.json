@@ -1,0 +1,319 @@
+{
+ "intro": "Crimes et condamnations. Les crimes sont répartis en quatre catégories de priorité, de la priorité 6 (la plus basse) à la priorité 1 (la plus haute) ; la catégorie détermine les droits de l'accusé et la procédure judiciaire, et chaque crime a sa propre sanction.",
+ "source": "Cyberpunk: New Dawn - Chapitre 2 « Les Légendes de la Rue », Crimes et condamnations, pages 44 à 46.",
+ "folie": "FOLIE : Si le criminel est déclaré fou, il est envoyé au bloc Psyco jusqu'à ce qu'il soit apte à assister son procès pour ses crimes. Cette loi peut être levée si le crime qui a été commis est de Priorité 1.",
+ "note": "Une partie de cette section (noms de crimes et sanctions des priorités 5 à 1) est rédigée en anglais dans le livre ; le texte est conservé tel quel et signalé par \"langue\": \"en\". Les montants sont notés tantôt en €$ tantôt en eb (eurobucks) selon le livre.",
+ "priorites": [
+  {
+   "niveau": "Priorité 5 & 6",
+   "nom": "CRIME DE PRIORITÉ BASSE (PCB)",
+   "sanction": "Les criminels ont droit à deux appels téléphoniques, un avocat de la défense, ( 1500-2000 €$ ), ils ont également le droit de garder le silence. Une enquête préliminaire a lieu dans les 48 heures, où une caution peut être réglée et une date de procès dans les deux semaines sera fixée.",
+   "crimes": [
+    {
+     "nom": "Achat, recèle de biens volés",
+     "peine": "Retourner tout les biens plus 50 €$ + d'amende et/ou 1 mois à 1 an en quartier de basse sécurité.",
+     "priorite": 6
+    },
+    {
+     "nom": "Incivilité",
+     "peine": "Une semaine en quartier de basse sécurité.",
+     "priorite": 6
+    },
+    {
+     "nom": "Piratage informatique",
+     "peine": "50 €$ + d'amende et/ou jusqu'à 5 ans en quartier de basse sécurité.",
+     "priorite": 6
+    },
+    {
+     "nom": "Vol (max 500 $ )",
+     "peine": "Retourner les biens plus 1 à 10 mois en en quartier de basse sécurité.",
+     "priorite": 6
+    },
+    {
+     "nom": "Loi sur l'alcool",
+     "peine": "20 à 100 €$ d'amende.",
+     "priorite": 6
+    },
+    {
+     "nom": "Obstruction à la Justice",
+     "peine": "1 mois - 1 an en en quartier de basse sécurité.",
+     "priorite": 6
+    },
+    {
+     "nom": "Les infractions courantes",
+     "peine": "20 à 1200 €$ d'amende et/ou 3 ans en en quartier de basse sécurité.",
+     "priorite": 6
+    },
+    {
+     "nom": "Vol de voitures",
+     "peine": "1 à 7 ans en quartier de basse sécurité",
+     "priorite": 5
+    },
+    {
+     "nom": "Cambriolage",
+     "peine": "Retour des biens et programme de réadaptation social et/ou 1 à 6 ans dans un quartier de sécurité faible.",
+     "priorite": 5
+    },
+    {
+     "nom": "Fraude",
+     "peine": "Retour des biens et programme de réadaptation social et/ou de 1 à 20 ans dans un quartier de sécurité faible.",
+     "priorite": 5
+    },
+    {
+     "nom": "Voyeurisme de groupe",
+     "peine": "Prison - Amende de 200 à 2000 €$ et/ou 2 mois à 1 an dans un quartier de sécurité faible en plus d'une action civile possible. Audience - Amende 10-100eb et 1-5 jours en basse bloc de sécurité",
+     "priorite": 5
+    },
+    {
+     "nom": "Low Impact Bloodsports",
+     "peine": "proprietors and staff 500- 10,000eb fine and/or 1-5 years in mid security block. Audience 10-200eb fine and/or 1 day to 1 week in low security block. Legal in certain areas.",
+     "priorite": 5,
+     "langue": "en"
+    },
+    {
+     "nom": "Possession of Illegal Cyberware",
+     "peine": "100-500 eb fine and/ or 1 month-1 year in a low security block.",
+     "priorite": 5,
+     "langue": "en"
+    },
+    {
+     "nom": "Prostitution and Non-Commercialized Vice",
+     "peine": "50-2000 eb fine or for pimping - 1 week to 2 years in a low security block.",
+     "priorite": 5,
+     "langue": "en"
+    },
+    {
+     "nom": "Weapons Offenses",
+     "peine": "100-1000 eb fine and/or 1 month-10 years in a low security block.",
+     "priorite": 5,
+     "langue": "en"
+    }
+   ]
+  },
+  {
+   "niveau": "Priorité 3 & 4",
+   "nom": "CRIME DE PRIORITÉ MOYEN (PCM)",
+   "sanction": "Les criminels ont droit à un avocat de la défense ( 3500-4000 €$ ), et ont le droit de garder le silence. Ils peuvent être détenus une semaine avant une audience préliminaire, où la date du procès est fixée. Une caution peut être réglé, mais habituellement le criminel est maintenu en détention jusqu'à ce qu'il y ai des preuves.",
+   "crimes": [
+    {
+     "nom": "Arson",
+     "peine": "personality adjustment and 1-20 years in a mid security block or psychoblock.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Assault",
+     "peine": "1-7 months in a mid security block",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Bribery of an Enforcement Officer",
+     "peine": "1-6 months in a mid security block.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Embezzlement",
+     "peine": "1-20 years in a mid security block.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Grand Larceny",
+     "peine": "1-20 years in a mid security block and personality adjustment.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Pitfights",
+     "peine": "proprietors and staff 100-3000eb fine and/or 1-5 years in low security block. Audience 10-200eb fine and/or 1 week to 1 month in low security block.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Rape",
+     "peine": "exile or 1-15 years in a mid security block, or psychoblock and personality alteration and/or raindance. HiWay dispenses death for sex crimes.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Rioting",
+     "peine": "1 month - 1 year in a mid security block or exile.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Robbery",
+     "peine": "1-20 years in a mid security block and personality adjustment.",
+     "priorite": 4,
+     "langue": "en"
+    },
+    {
+     "nom": "Aggravated Assault",
+     "peine": "1-7 years in mid security block or psychoblock and personality adjustment and/or braindance.",
+     "priorite": 3,
+     "langue": "en"
+    },
+    {
+     "nom": "Armed Robbery",
+     "peine": "4-15 years in mid security block or psychoblock and personality adjustment and/or braindance.",
+     "priorite": 3,
+     "langue": "en"
+    },
+    {
+     "nom": "Cannibalism",
+     "peine": "psycho block, personality adjustment, or death depending on the extent of the meal.",
+     "priorite": 3,
+     "langue": "en"
+    },
+    {
+     "nom": "Extortion",
+     "peine": "1-15 years in mid security block.",
+     "priorite": 3,
+     "langue": "en"
+    },
+    {
+     "nom": "Gambling without Permit",
+     "peine": "500eb+ fine and up to a year in mid security block.",
+     "priorite": 3,
+     "langue": "en"
+    },
+    {
+     "nom": "Hound Tipping",
+     "peine": "2000-10,000eb fine and/or 2-20 years high security block. Plus civil suit in addition to criminal prosecution in Night City.",
+     "priorite": 3,
+     "langue": "en"
+    },
+    {
+     "nom": "Type C Trafficking",
+     "peine": "1-10 years in mid security block.",
+     "priorite": 3,
+     "langue": "en"
+    }
+   ]
+  },
+  {
+   "niveau": "Priorité 2",
+   "nom": "CRIME DE PRIORITÉ HAUTE (PCH)",
+   "sanction": "L'individu accusé renonce à tous les droits, incluant le droit de garder le silence. Ils peuvent être contraints de subir un interrogatoire sous sérum de vérité, détecteur de mensonge, ou une simulation de la réalité. L'accusé a une audience préliminaire dans les deux semaines après avoir été inculpé, où un juge déterminera possibilité de libération sous caution, de fixer une date de procès, et de décider d'autoriser ou non l'accusé d'avoir un avocat ( 7000-8000 €$ ), en fonction de la solidité des preuves présentées.",
+   "crimes": [
+    {
+     "nom": "Counterfeiting",
+     "peine": "6-15 years in hi security block.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Environmental Laws",
+     "peine": "500eb+ fine and up to 3 years in hi security block.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Exotic Pitfights",
+     "peine": "proprietors and staff death. Audience 500-1000eb fine and 5 months to 1 year in low security block or state exile.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "High Impact Bloodsports",
+     "peine": "proprietors and staff 5000- 150,000eb fine and/or 10-30 years in mid security block. Audience 50-1000eb fine and 5 days to 3 years in low security block. Legal in Texas and in certain areas of Mexico and Canada.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Kidnapping",
+     "peine": "5-20 years in hi security block or exile.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Manslaughter",
+     "peine": "0-5 years in hi security block.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Murder 1",
+     "peine": "death",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Murder 2",
+     "peine": "5-20 years in hi security block or psychoblock and personality adjustment and braindance. HiWay dispenses death for this crime.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Persona Appropriation",
+     "peine": "100-5000eb fine and/or 1 day to 10 weeks in low security block and possible civil suits.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Persona Tampering",
+     "peine": "2-20 years in mid security block and possible civil suits and fines.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Type B Trafficking",
+     "peine": "3-12 years in hi security block or exile.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Unauthorized Genetic or Biochemical Manipulation",
+     "peine": "1000-10,000eb fine and 1-20 years in mid security block.",
+     "priorite": 2,
+     "langue": "en"
+    },
+    {
+     "nom": "Use of Illegal Cyberware",
+     "peine": "- removal of cyberware, up to 1 year in hi security block and personality adjustment.",
+     "priorite": 2,
+     "langue": "en"
+    }
+   ]
+  },
+  {
+   "niveau": "Priorité 1",
+   "nom": "CRIME DE PRIORITÉ TRES HAUTE (PCTH)",
+   "sanction": "Le criminal n'a aucun droit, une fois qu'il a été déclaré auteur du crime, l'exécution sera appliquée immédiatement.",
+   "crimes": [
+    {
+     "nom": "Corporate Murder",
+     "peine": "1000eb+ fine, 10-20 years in top security block, or death. HiWay often dispenses death for the willful murder portion of this crime.",
+     "priorite": 1,
+     "langue": "en"
+    },
+    {
+     "nom": "Espionage",
+     "peine": "10-20 years in top security block and braindance, or death",
+     "priorite": 1,
+     "langue": "en"
+    },
+    {
+     "nom": "Mass Murder",
+     "peine": "Mort.",
+     "priorite": 1,
+     "langue": "en"
+    },
+    {
+     "nom": "Terrorism",
+     "peine": "Mort.",
+     "priorite": 1,
+     "langue": "en"
+    },
+    {
+     "nom": "Type A Trafficking",
+     "peine": "15-20 years in top security block and braindance.",
+     "priorite": 1,
+     "langue": "en"
+    }
+   ]
+  }
+ ]
+}

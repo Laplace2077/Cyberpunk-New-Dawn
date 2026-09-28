@@ -29,5 +29,22 @@
 <script src="js/codex.js"></script>
 <script src="js/accueil.js"></script>
 <script src="js/app.js"></script>
+<script>
+/* Filet : si les dossiers du site n'ont pas été mis en ligne avec les pages, les
+   scripts ci-dessus renvoient une erreur 404 et la page reste blanche, sans un mot.
+   On l'explique alors, au lieu de laisser l'écran vide. */
+if (typeof route !== 'function') {
+  document.documentElement.removeAttribute('data-theme');
+  document.body.innerHTML = '<div style="font-family:system-ui,sans-serif;max-width:40em;margin:12vh auto;padding:0 24px;line-height:1.65;color:#1a1a1a">'
+    + '<h1 style="font-size:19px;letter-spacing:.04em;text-transform:uppercase">Les fichiers du site n\u2019ont pas \u00e9t\u00e9 trouv\u00e9s</h1>'
+    + '<p>Cette page s\u2019est bien charg\u00e9e, mais pas les dossiers <code>css/</code>, <code>js/</code> et <code>data/</code> '
+    + 'qui la font fonctionner.</p>'
+    + '<p>Si le site vient d\u2019\u00eatre mis en ligne : ce sont les <b>dossiers eux-m\u00eames</b> qu\u2019il faut d\u00e9poser, '
+    + 'pas seulement les fichiers <code>.html</code>. Pour v\u00e9rifier, ouvre <code>js/core.js</code> \u00e0 la suite de '
+    + 'l\u2019adresse du site : si tu obtiens une erreur 404, le dossier <code>js/</code> manque.</p>'
+    + '<p>Si tu as ouvert cette page par un double-clic depuis ton disque, utilise plut\u00f4t '
+    + '<code>hors-ligne/cyberpunk-new-dawn.html</code>, qui fonctionne seul.</p></div>';
+}
+</script>
 </body>
 </html>

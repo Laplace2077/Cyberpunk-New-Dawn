@@ -1,0 +1,206 @@
+{
+ "titre": "Créez-les vous-mêmes — Fabrication des drogues",
+ "source": "Cyberpunk 2020 — Les Années Noires, p. 113 à 115 (pages imprimées ; PDF p. 117 à 119)",
+ "texte": "La création d'une drogue nécessite la compétence Pharmacologie et la réussite d'un jet supérieur au niveau de difficulté de la drogue. On détermine cette difficulté en choisissant d'abord un ou plusieurs effets dans la Table des effets : l'addition de leurs valeurs donne la difficulté de base. On y ajoute la Puissance (de 1 à 3), on en retranche la valeur des effets secondaires retenus, puis on multiplie le total par le facteur de durée (1, 2 ou 3) pour obtenir la difficulté finale. Le niveau de difficulté ne peut jamais descendre en dessous de 2. Le coût d'une dose vaut la difficulté finale multipliée par 25 euros.",
+ "etapes": [
+  "1. Choisir dans la Table des effets le ou les effets que la drogue produira ; l'addition de leurs valeurs de difficulté donne la difficulté de base.",
+  "2. Choisir la Puissance de la drogue, de 1 à 3, et l'additionner à la difficulté de base. Plus la puissance est élevée, plus les effets sont importants ; le jet de sauvegarde pour résister à la drogue subit un malus égal à la puissance.",
+  "3. Choisir éventuellement des effets secondaires : chacun retranche sa valeur (en points) de la difficulté, ce qui rend la drogue moins chère à concevoir. La difficulté ne peut jamais descendre en dessous de 2.",
+  "4. Choisir la durée d'action et son facteur multiplicateur (x1 pour 1D10+1 tours, x2 pour 1D10+1 minutes, x3 pour 1D10+1 heures).",
+  "5. Multiplier la difficulté totale (base + puissance − effets secondaires) par le facteur de durée : on obtient la difficulté finale pour créer la drogue.",
+  "6. Réussir un jet de Pharmacologie supérieur à cette difficulté finale.",
+  "7. Calculer le coût par dose : difficulté finale × 25 euros. Exemple du livre : le Sidementaphilinine a une difficulté de 25, une dose se vend donc 1250 Eb dans la rue."
+ ],
+ "tables": [
+  {
+   "titre": "Table des effets",
+   "colonnes": [
+    "Diff.",
+    "Effet"
+   ],
+   "lignes": [
+    [
+     "15",
+     "Augmente le REF de la puissance de la drogue"
+    ],
+    [
+     "15",
+     "Augmente l'INT de la puissance de la drogue"
+    ],
+    [
+     "15",
+     "Augmente le SF de la puissance de la drogue"
+    ],
+    [
+     "15",
+     "Augmente la Perception (+ la puissance aux jets de Perception)"
+    ],
+    [
+     "15",
+     "Augmente la rapidité de guérison de 1 point"
+    ],
+    [
+     "15",
+     "Antidote (+1 aux jets de sauvegarde par point de force)"
+    ],
+    [
+     "10",
+     "Supprime les effets de la douleur (+ la puissance aux jets d'étourdissement)"
+    ],
+    [
+     "10",
+     "Hallucinogène (vous fait voir des choses)"
+    ],
+    [
+     "10",
+     "Réduit l'étourdissement (+ la puissance aux jets d'étourdissement)"
+    ],
+    [
+     "10",
+     "Aphrodisiaque (−puissance au niveau de difficulté de séduction)"
+    ],
+    [
+     "10",
+     "Contraceptif (hommes ou femmes)"
+    ],
+    [
+     "10",
+     "Antibiotique (+ puissance aux jets de sauvegarde contre la maladie)"
+    ],
+    [
+     "5",
+     "Dépresseur (−la puissance en perception)"
+    ],
+    [
+     "5",
+     "Euphorisant (vous fait sentir parfaitement bien)"
+    ],
+    [
+     "5",
+     "Soporifique (−puissance aux jets de sauvegarde contre le sommeil)"
+    ]
+   ]
+  },
+  {
+   "titre": "Effets secondaires (réduisent la difficulté)",
+   "colonnes": [
+    "Points",
+    "Effet secondaire",
+    "Description"
+   ],
+   "lignes": [
+    [
+     "-8",
+     "Accoutumance psychologique",
+     "Le personnage doit lancer un jet inférieur à son SF chaque heure suivant la prise de sa dernière dose. En cas d'échec : anxiété extrême, panique, dépression, et une seule obsession — trouver d'autres doses. Se libérer exige un jet d'Endurance très difficile et le temps jugé nécessaire par le MJ."
+    ],
+    [
+     "-10",
+     "Accoutumance physiologique",
+     "Le personnage doit réussir un jet inférieur à sa CON chaque heure suivant la prise de sa dernière dose. En cas d'échec, il souffre horriblement et endure 2D6 points de dégâts jusqu'à s'être libéré (jet d'Endurance très difficile et durée jugée suffisante par le MJ)."
+    ],
+    [
+     "-15",
+     "Mort",
+     "La drogue peut être fatale si elle est absorbée sans précaution particulière. L'utilisateur doit réussir un jet de sauvegarde contre la mort à chaque utilisation."
+    ],
+    [
+     "-5",
+     "Réduit le REF",
+     "La drogue réduit le REF de 1 point par dose durant la période d'efficacité de la dose. Les effets de doses simultanées sont cumulatifs."
+    ],
+    [
+     "-5",
+     "Réduit l'INT",
+     "La drogue réduit l'INT de 1 point par dose. Les effets de doses simultanées sont cumulatifs."
+    ],
+    [
+     "-2",
+     "Tremblements",
+     "Douloureux tremblements des mains et du visage (−2 au REF)."
+    ],
+    [
+     "-5",
+     "Hallucinations",
+     "Couleurs, voix, formes étranges. Le personnage est virtuellement incapable d'agir normalement."
+    ],
+    [
+     "-3",
+     "Paranoïa",
+     "Le personnage est sujet à des illusions paranoïdes, arrête toute action entreprise et se consacre à se prémunir contre « eux »."
+    ],
+    [
+     "-5",
+     "Illusions",
+     "Le personnage est sujet à de puissantes illusions et se consacre entièrement à les entretenir. Leur nature dépend du maître de jeu."
+    ],
+    [
+     "-8",
+     "Stérilité",
+     "La drogue a 3 chances sur 10 de rendre son utilisateur complètement stérile."
+    ],
+    [
+     "-10",
+     "Cancérigène",
+     "3 chances sur 10 de déclencher un cancer. Si le cancer se développe, le personnage subit 1 point de dommages définitif à moins de se soigner (jet de Technique médicale très difficile), sinon il mourra."
+    ],
+    [
+     "-10",
+     "Psychose",
+     "La drogue déclenche une rage psychotique forçant le sujet à attaquer tous les gens à sa portée."
+    ],
+    [
+     "-12",
+     "Tendances agressives",
+     "Le sujet devient irritable et agressif : 5 chances sur 10 qu'il cherche la bagarre avec la personne la plus proche."
+    ],
+    [
+     "-12",
+     "Peur irrationnelle",
+     "Le sujet devient extrêmement sensible à la peur : il cesse toute activité et tombe en catatonie jusqu'à dissipation des effets."
+    ],
+    [
+     "-15",
+     "Dégénérescence nerveuse",
+     "La drogue cause de graves dommages nerveux : perte définitive de 2 points de REF."
+    ]
+   ]
+  },
+  {
+   "titre": "Durée et facteur multiplicateur",
+   "colonnes": [
+    "Durée",
+    "Facteur"
+   ],
+   "lignes": [
+    [
+     "1D10+1 tours",
+     "x1"
+    ],
+    [
+     "1D10+1 minutes",
+     "x2"
+    ],
+    [
+     "1D10+1 heures",
+     "x3"
+    ]
+   ],
+   "note": "Après absorption de la drogue, jetez 1D10+1 pour déterminer la durée totale durant laquelle elle reste active dans le système."
+  },
+  {
+   "titre": "Coût",
+   "colonnes": [
+    "Règle"
+   ],
+   "lignes": [
+    [
+     "Coût par dose = niveau de difficulté final de la drogue × 25 euros."
+    ],
+    [
+     "Exemple du livre : le Sidementaphilinine a une difficulté de 25 ; dans la rue, une dose se vend 1250 Eb."
+    ]
+   ]
+  }
+ ]
+}
