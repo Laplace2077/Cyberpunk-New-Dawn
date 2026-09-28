@@ -7,7 +7,7 @@
   --orn-r-dark:url("../assets/orn-r-dark.png");
   --orn-l-light:url("../assets/orn-l-light.png");
   --orn-r-light:url("../assets/orn-r-light.png");
-  --cover:url("../assets/cover.jpg");
+  --accueil:url("../assets/accueil.jpg");
   --fiche1:url("../assets/fiche1.png");
   --fiche2:url("../assets/fiche2.png");
   --fiche3:url("../assets/fiche3.png");
@@ -326,18 +326,38 @@ label.fl > span.lb{display:block;margin-bottom:3px;font:700 12px/1.1 var(--f-tab
 /* ============================================================
    ACCUEIL
    ============================================================ */
+/* Le seuil : l'illustration du chapitre Netrunner en fond, le titre et l'action
+   du jour par-dessus. Le dégradé garantit le contraste du texte quel que soit
+   l'endroit de l'image qui tombe derrière. */
 .hero{
-  display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;
-  background:#000;color:#fff;padding:20px 24px;margin:-20px -24px 18px;
+  position:relative;isolation:isolate;overflow:hidden;
+  background:#000;color:#fff;padding:34px 24px 30px;margin:-20px -24px 16px;
+  min-height:400px;display:flex;align-items:center;
 }
-.hero .cov{max-height:310px;width:auto;justify-self:end}
+.hero .art{
+  position:absolute;top:0;right:0;bottom:0;left:42%;z-index:-1;
+  background:var(--accueil) 54% 5%/cover no-repeat;
+}
+.hero .art::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,#000 0%,rgba(0,0,0,.82) 22%,rgba(0,0,0,.42) 52%,rgba(0,0,0,.12) 78%,rgba(0,0,0,0) 100%);
+}
+.hero .inner{max-width:none}
 .hero .big{margin:0;font:700 clamp(34px,7vw,60px)/.95 var(--f-disp);letter-spacing:.03em;text-transform:uppercase;color:#fff}
 .hero .big span{display:block}
 .hero .big .l2{font-size:.44em;letter-spacing:.16em;color:#fff;margin-top:6px;opacity:.85}
 .hero .sub{margin:12px 0 0;font:600 13px/1.5 var(--f-tab);letter-spacing:.2em;text-transform:uppercase;color:#bdbdbd}
-.hero .desc{margin:12px 0 0;color:#dcdcdc;max-width:62ch;font-size:16.5px;line-height:1.45}
-.hero .cov{border:3px solid #fff;display:block;height:auto;box-shadow:0 4px 18px rgba(0,0,0,.6)}
+.hero .desc{margin:14px 0 0;color:#dcdcdc;max-width:46ch;font-size:16.5px;line-height:1.45}
+.hero .acts{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.hero .acts .btn{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.hero .acts .btn:hover{background:#fff;color:#000;border-color:#fff}
+.hero .acts .btn.p{background:#fff;color:#000;border-color:#fff}
+.hero .acts .btn.p:hover{background:transparent;color:#fff}
 .hero .glyph{display:none}
+
+/* À propos : replié par défaut, il ne doit plus occuper la moitié de l'accueil */
+.apropos > summary{font-size:18px;padding:9px 12px}
+.apropos > .ct{padding:14px 16px}
 
 .launch{display:grid;grid-template-columns:repeat(auto-fit,minmax(256px,1fr));gap:14px;margin-top:6px}
 .launch a{text-decoration:none;color:inherit;display:block;background:var(--paper);border:1px solid var(--rule);padding:0 0 14px}
@@ -610,8 +630,7 @@ label.fl > span.lb{display:block;margin-bottom:3px;font:700 12px/1.1 var(--f-tab
   .cx-nav{position:static;max-height:none;display:flex;overflow-x:auto;margin-bottom:12px}
   .cx-nav .grp{display:none}
   .cx-nav button{flex:0 0 auto;width:auto;border-bottom:0;border-right:1px solid var(--rule-soft);white-space:nowrap;padding:7px 11px}
-  .hero{grid-template-columns:1fr}
-  .hero .cov{max-width:250px;margin:0 auto}
+  .hero{min-height:250px}
   .axe{grid-template-columns:120px 1fr 34px}
 }
 @media (max-width:720px){
@@ -622,15 +641,18 @@ label.fl > span.lb{display:block;margin-bottom:3px;font:700 12px/1.1 var(--f-tab
   #rail .themer{top:7px;right:8px;padding:4px 7px;font-size:11px}
   #rail nav{justify-content:space-between;border-left:0;border-right:0}
   #rail a{flex:1 1 0;justify-content:center;padding:7px 2px 8px;font-size:11.5px;letter-spacing:0}
-  .hero .cov{max-height:none;max-width:210px;margin:0 auto}
   .hero .sub{letter-spacing:.1em;font-size:12px}
   .hero .big{font-size:clamp(30px,10vw,44px)}
+  .hero .art{left:0;background-position:50% 6%}
+  .hero .art::after{background:linear-gradient(178deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.76) 52%,rgba(0,0,0,.94) 100%)}
+  .hero .acts .btn{flex:1 1 auto;justify-content:center}
   #rail a .ic,#rail a .lg{display:none}
   #rail a .sm{display:block}
   .topbar{padding:4px 2px 3px}
   .topbar h1{font-size:11.5px}
   .g2,.g3,.g4{grid-template-columns:1fr}
-  .hero{margin:-14px -12px 14px;padding:16px 14px}
+  .panel > .panel-h{flex-wrap:wrap;row-gap:5px}
+  .hero{margin:-14px -12px 14px;padding:22px 14px 20px;min-height:0}
   .chapdiv{padding:12px 14px;gap:12px}
   .chapdiv .cw{font-size:15px;letter-spacing:.3em}
   .budget,.wiz-steps,.cx-nav{position:static}

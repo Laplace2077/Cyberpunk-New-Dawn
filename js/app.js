@@ -17,16 +17,6 @@ const DATA_FILES = [
 /** Les pastilles et le logotype sont découpés dans le PDF du livre et posés en variables CSS */
 const orn = rev => h('span.orn' + (rev ? '.rev' : ''), { 'aria-hidden': 'true' });
 
-/** L'image de couverture, lue dans la variable CSS --cover */
-const coverSrc = () => {
-  const v = getComputedStyle(document.documentElement).getPropertyValue('--cover').trim();
-  const m = v.match(/url\(["']?([^"')]+)["']?\)/);
-  if (!m) return '';
-  const u = m[1];
-  // le chemin est relatif à css/style.css : on le ramène à la racine du site
-  return u.startsWith('data:') ? u : u.replace(/^\.\.\//, '');
-};
-
 function setTheme(t) {
   document.documentElement.setAttribute('data-theme', t);
   const b = $('#themeBtn'); if (b) b.textContent = t === 'nuit' ? 'Nuit' : 'Papier';

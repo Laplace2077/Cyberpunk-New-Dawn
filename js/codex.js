@@ -607,7 +607,9 @@ function catalog(src, catField, mapFn) {
   return box;
 }
 
-function cxGo(id) { location.hash = '#/codex/' + id; }
+/* go() connaît les deux formes du site : une page par section en ligne,
+   et le fragment d'adresse dans le fichier unique hors ligne. */
+function cxGo(id) { go('codex/' + id); }
 
 /* ---------- Vue ---------- */
 VIEWS.codex = function (args) {

@@ -6,28 +6,36 @@
 VIEWS.accueil = function () {
   const wrap = h('div');
   const chars = STORE.all();
+  const cur = STORE.current();
 
-  /* ---------- Hero ---------- */
+  /* ---------- Seuil ----------
+     Une image, le titre, et l'action qu'on vient faire neuf fois sur dix :
+     reprendre le personnage en cours. Le reste attend plus bas. */
+  const tirerPerso = () => { const c = genRandom({}); STORE.save(c); toast('Personnage tiré au hasard.', 'ok'); go('fiche'); };
+  const nouveauPerso = () => { STORE.save(RULES.blank()); go('creation'); };
+
+  const actes = h('div.acts');
+  if (cur) {
+    actes.appendChild(h('button.btn.p', { onclick: () => go(cur.termine ? 'fiche' : 'creation') },
+      (cur.termine ? 'Ouvrir' : 'Continuer') + ' « ' + (cur.nom || 'Sans nom') + ' »'));
+    actes.appendChild(h('button.btn', { onclick: nouveauPerso }, 'Nouveau personnage'));
+  } else {
+    actes.appendChild(h('button.btn.p', { onclick: nouveauPerso }, 'Créer un personnage'));
+    actes.appendChild(h('button.btn', { onclick: () => go('quiz') }, 'Je ne sais pas encore qui jouer'));
+  }
+  actes.appendChild(h('button.btn', { onclick: tirerPerso }, 'Tirer au hasard'));
+
   wrap.appendChild(h('div.hero.rise',
-    h('div',
+    h('div.art', { 'aria-hidden': 'true' }),
+    h('div.inner',
       h('h1.big', h('span.l1', 'Cyberpunk'), h('span.l2', 'New Dawn')),
-      h('div.sub', 'Création de personnage · Version du 26.08.2016, mise à jour le 09.07.2025'),
-      h('p.desc', "Le livre en version utilisable : un questionnaire pour cadrer le personnage que tu veux jouer, la création guidée en 9 étapes avec les budgets contrôlés en direct, la fiche complète, la progression, et l'intégralité des tables consultables. Fonctionne hors ligne, sur ordinateur comme sur téléphone.")),
-    h('img.cov', { src: coverSrc(), alt: 'Couverture du livre Cyberpunk : New Dawn', loading: 'lazy' })
-  ));
-
-  /* ---------- Lancement ---------- */
-  const launch = h('div.launch.rise');
-  const card = (num, t, p, go2, cta) => launch.appendChild(h('a', { href: 'javascript:void 0', onclick: go2 },
-    h('div.num', num), h('h3', t), h('p', p), h('div.go', cta + ' →')));
-  card('01 · facultatif', 'Questionnaire', "Dix situations de jeu concrètes, une grille de treize domaines à noter, cinq réglages. En sortie : les dix profils classés — tu choisis celui que tu veux —, cinq propositions de concept rédigées, et une construction chiffrée à appliquer.", () => go('quiz'), 'Répondre');
-  card('02', 'Création assistée', "Les 9 étapes du livre : concept, nature, 60 points de caractéristiques, compétences selon l'âge, événements de vie tirés aux dés, avantages et défauts, argent, achats.", () => { const c = STORE.current(); if (!c) STORE.save(RULES.blank()); go('creation'); }, chars.length ? 'Continuer' : 'Commencer');
-  card('03', 'Personnage aléatoire', "Un personnage complet tiré au sort : profil, caractéristiques, compétences, avantages et défauts, événements de vie, achats et feuille remplie. Un seul, ou huit d'un coup pour peupler une séance de PNJ.", () => go('aleatoire'), 'Tirer');
-  card('04', 'Codex', `${DB.skills.length} compétences, ${DB.advantages.length + DB.defects.length} avantages et défauts, ${DB.weapons.length} armes, ${DB.armor.armures.length} armures, ${DB.cyberware.length} pièces de cybernétique, ${DB.martial_arts.styles.length} styles d'arts martiaux, ${Object.keys(DB.lifepath.tables).length} tables d'événements, et le Livre du Net au complet : ${DB.net_programs.length} programmes, ${DB.net_hardware.consoles.length} cyberconsoles et ${DB.net_rules.sections.length} sections de règles.`, () => go('codex'), 'Consulter');
-  wrap.appendChild(launch);
+      h('p.desc', chars.length
+        ? "Tes personnages, la création guidée, la feuille imprimable et toutes les tables des livres — le tout dans le navigateur, hors ligne si besoin."
+        : "Le livre en version jouable : la création guidée en neuf étapes, la feuille imprimable, le tirage de PNJ et toutes les tables consultables. Rien à installer."),
+      actes)));
 
   /* ---------- Roster ---------- */
-  const rp = h('div.panel.rise', { style: { marginTop: '22px' } },
+  const rp = h('div.panel.rise', { style: { marginTop: '16px' } },
     h('div.panel-h', h('h3', `Personnages (${chars.length})`),
       h('div.sp'),
       h('button.btn.p.sm', { onclick: () => { const c = RULES.blank(); STORE.save(c); go('creation'); } }, 'Nouveau'),
@@ -86,10 +94,28 @@ VIEWS.accueil = function () {
   }
   wrap.appendChild(rp);
 
+  /* ---------- Les quatre entrées ---------- */
+  const launch = h('div.launch.rise', { style: { marginTop: '16px' } });
+  const card = (num, t, p, go2, cta) => launch.appendChild(h('a', { href: 'javascript:void 0', onclick: go2 },
+    h('div.num', num), h('h3', t), h('p', p), h('div.go', cta + ' →')));
+  card('01 · facultatif', 'Questionnaire',
+    "Dix situations de jeu, et en sortie les dix profils classés plus une construction chiffrée à appliquer.",
+    () => go('quiz'), 'Répondre');
+  card('02', 'Création assistée',
+    "Les neuf étapes du livre, budgets de points et d'argent contrôlés en direct.",
+    () => { if (!STORE.current()) STORE.save(RULES.blank()); go('creation'); }, chars.length ? 'Continuer' : 'Commencer');
+  card('03', 'Personnage aléatoire',
+    "Un personnage complet tiré au sort, feuille remplie — ou huit d'un coup pour une séance de PNJ.",
+    () => go('aleatoire'), 'Tirer');
+  card('04', 'Codex',
+    `Toutes les tables des livres : ${DB.skills.length} compétences, ${DB.weapons.length} armes, ${DB.cyberware.length} pièces de cybernétique, et le Livre du Net au complet.`,
+    () => go('codex'), 'Consulter');
+  wrap.appendChild(launch);
+
   /* ---------- À propos ---------- */
-  wrap.appendChild(h('div.panel.rise', { style: { marginTop: '14px' } },
-    h('div.panel-h', h('h3', 'À propos, et les pièges du livre')),
-    h('div.g2',
+  wrap.appendChild(h('details.entry.apropos.rise', { style: { marginTop: '16px' } },
+    h('summary', 'À propos, et les pièges du livre'),
+    h('div.ct.g2',
       h('div.prose', { style: { maxWidth: 'none' } },
         h('h3', 'Source'),
         h('p', "Toutes les données proviennent du PDF ", h('em', 'Cyberpunk : New Dawn'), " (version du 26.08.2016, mise à jour le 09.07.2025), une synthèse francophone de Cyberpunk 2020. Les textes de règles sont reproduits fidèlement, les coquilles de mise en page corrigées."),
@@ -109,7 +135,7 @@ VIEWS.accueil = function () {
           h('li', h('strong', 'Au-delà de 28 ans : '), "la table s'arrête là. L'application prolonge à +1 PC par an, plafond 8 — à valider avec ton MJ.")),
         h('h3', 'Données'),
         h('p', "Tes personnages sont enregistrés dans ce navigateur uniquement. Exporte-les en JSON pour les sauvegarder ou les passer d'un appareil à l'autre. Rien n'est envoyé sur un serveur."))),
-    h('div.row.wrap', { style: { marginTop: '14px' } },
+    h('div.ct.row.wrap', { style: { paddingTop: 0 } },
       h('button.btn.g.sm', { onclick: () => go('codex/exemple') }, "Voir l'exemple du livre"),
       h('button.btn.g.sm', { onclick: () => go('codex/regles-creation') }, 'Lire les règles de création'),
       h('button.btn.g.sm', { onclick: () => STORE.importFile() }, 'Importer un fichier JSON'))
