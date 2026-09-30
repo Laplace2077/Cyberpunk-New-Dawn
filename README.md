@@ -39,7 +39,7 @@ codex.html            Toutes les tables des livres
 css/style.css         Toute la mise en forme du site
 js/                   Le code, découpé par domaine
 data/                 Les tables des livres, en JSON
-assets/               Les images découpées dans les PDF
+assets/               Les images du site (illustration d'accueil, feuille scannée, ornements)
 hors-ligne/           Le site en un seul fichier, pour jouer sans connexion
 build/                Le script qui refabrique ce fichier unique
 ```
@@ -103,7 +103,7 @@ sinon elle reste sur l'ancienne version.
 ## La version hors ligne
 
 `hors-ligne/cyberpunk-new-dawn.html` est le site entier — pages, styles, code, tables et
-images — rassemblé dans un seul fichier de 2 Mo. Il s'ouvre par un double-clic, sans
+images — rassemblé dans un seul fichier de 2,3 Mo. Il s'ouvre par un double-clic, sans
 serveur et sans connexion : c'est la version à emporter à la table de jeu, sur un portable
 ou une tablette.
 

@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page introuvable — Cyberpunk : New Dawn</title>
 <meta name="robots" content="noindex">
+<script>
+/* GitHub sert cette page pour n'importe quelle adresse inconnue, à n'importe quelle
+   profondeur : des liens relatifs y pointeraient à côté. On recalcule donc la racine du
+   site depuis l'adresse — /<depot>/ sur github.io, / sur un domaine propre — et on la
+   déclare en <base> avant tout le reste, pour que la feuille de style et les liens
+   ci-dessous tombent juste. */
+(function () {
+  var seg = location.pathname.split('/').filter(Boolean);
+  var racine = (/\.github\.io$/i.test(location.hostname) && seg.length) ? '/' + seg[0] + '/' : '/';
+  document.write('<base href="' + racine + '">');
+})();
+</script>
 <link rel="icon" href="assets/favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
