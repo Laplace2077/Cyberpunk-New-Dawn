@@ -439,7 +439,7 @@ const QZ = {
 };
 const QZ_LAST = SITUATIONS.length + 1;          // index de la dernière page (réglages) = 11
 
-VIEWS.quiz = function () {
+SOUS.quiz = function () {
   const st = QZ.state;
   if (st.page === 99) return quizResult();
   if (st.page < 0) return quizIntro();

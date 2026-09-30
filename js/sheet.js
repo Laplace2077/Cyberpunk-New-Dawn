@@ -8,7 +8,7 @@
 /* ============================================================
    PROGRESSION
    ============================================================ */
-VIEWS.progression = function () {
+SOUS.progression = function () {
   const ch = STORE.current();
   if (!ch) return needChar("La progression s'applique à un personnage existant.");
   const wrap = h('div');

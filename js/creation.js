@@ -936,7 +936,7 @@ function stepDone(ch, i) {
   return false;
 }
 
-VIEWS.creation = function () {
+SOUS.creation = function () {
   let ch = STORE.current();
   if (!ch) { ch = RULES.blank(); STORE.save(ch); }
   ch.etape = clamp(ch.etape || 0, 0, STEPS.length - 1);

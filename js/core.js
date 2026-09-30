@@ -415,21 +415,44 @@ const STORE = {
    ROUTEUR
    ============================================================ */
 const VIEWS = {};
+/** Les sous-sections : questionnaire, création et tirage forment la section Personnage ;
+    feuille et progression forment la section Fiche. Chaque fichier de js/ pose sa vue ici,
+    et core.js fabrique la section qui les regroupe. */
+const SOUS = {};
 const NAV = [
   { r: 'accueil', ic: '◈', t: 'Accueil', s: 'Accueil' },
-  { r: 'quiz', ic: '◉', t: 'Questionnaire', s: 'Quiz' },
-  { r: 'creation', ic: '⬢', t: 'Création', s: 'Créer' },
-  { r: 'aleatoire', ic: '⚄', t: 'Aléatoire', s: 'Aléa' },
+  { r: 'personnage', ic: '⬢', t: 'Personnage', s: 'Perso' },
   { r: 'fiche', ic: '▤', t: 'Fiche', s: 'Fiche' },
-  { r: 'progression', ic: '▲', t: 'Progression', s: 'Progrès' },
+  { r: 'univers', ic: '◎', t: 'Univers', s: 'Monde' },
   { r: 'codex', ic: '❑', t: 'Codex', s: 'Codex' }
 ];
 /** Le fichier qui porte chaque section du site */
 const PAGES = {
-  accueil: 'index.html', quiz: 'questionnaire.html', creation: 'creation.html',
-  aleatoire: 'aleatoire.html', fiche: 'fiche.html', progression: 'progression.html',
-  codex: 'codex.html'
+  accueil: 'index.html', personnage: 'personnage.html', fiche: 'fiche.html',
+  univers: 'univers.html', codex: 'codex.html'
 };
+/** Les onglets de chaque section à plusieurs volets */
+const ONGLETS = {
+  personnage: [
+    { id: 'creation', t: 'Création assistée', d: 'Les neuf étapes du livre' },
+    { id: 'quiz', t: 'Questionnaire', d: 'Trouver qui jouer' },
+    { id: 'aleatoire', t: 'Aléatoire', d: 'Tirer un personnage complet' }
+  ],
+  fiche: [
+    { id: 'feuille', t: 'Feuille', d: 'Remplir et imprimer' },
+    { id: 'progression', t: 'Progression', d: 'Points, âge, argent, journal' }
+  ]
+};
+/** Anciennes routes, gardées pour que tous les renvois du site continuent de marcher */
+const ALIAS = {
+  quiz: 'personnage/quiz', creation: 'personnage/creation', aleatoire: 'personnage/aleatoire',
+  progression: 'fiche/progression', feuille: 'fiche/feuille'
+};
+function resoudre(r) {
+  const seg = String(r).split('/');
+  const a = ALIAS[seg[0]];
+  return a ? a + (seg.length > 1 ? '/' + seg.slice(1).join('/') : '') : String(r);
+}
 /** Le site existe en deux formes : un vrai site (une page par section) et un fichier
     unique hors ligne, où la navigation se fait par le fragment d'adresse. */
 const MONO = !!(document.body && document.body.dataset.mono === '1');
@@ -438,6 +461,7 @@ const PAGE = MONO ? null : ((document.body && document.body.dataset.page) || 'ac
 
 /** L'adresse d'une route : « codex/armures » → « codex.html#armures » */
 function lien(r) {
+  r = resoudre(r);
   if (MONO) return '#/' + r;
   const seg = String(r).split('/');
   const f = PAGES[seg[0]] || 'index.html';
@@ -445,6 +469,7 @@ function lien(r) {
 }
 /** Aller à une route : on reste dans la page si c'est la même section, sinon on change de page. */
 function go(r) {
+  r = resoudre(r);
   if (MONO) {
     if (location.hash === '#/' + r) route(); else location.hash = '/' + r;
     return;
@@ -457,6 +482,33 @@ function go(r) {
   else if (frag) location.hash = frag;          // hashchange → route()
   else { history.replaceState(null, '', location.pathname + location.search); route(); }
 }
+/* ---------- Sections à onglets ----------
+   « Personnage » réunit le questionnaire, la création et le tirage : c'est le même
+   travail en trois entrées. « Fiche » réunit la feuille et la progression, qui portent
+   sur le même personnage. La barre d'onglets ci-dessous est leur sommaire. */
+function barreOnglets(cle, actif) {
+  return h('div.onglets.no-print', ...ONGLETS[cle].map(o =>
+    h('a' + (o.id === actif ? '.on' : ''), {
+      href: lien(cle + '/' + o.id),
+      onclick: e => { e.preventDefault(); go(cle + '/' + o.id); }
+    }, h('b', o.t), h('span', o.d))));
+}
+function sectionOnglets(cle, defaut) {
+  return function (args) {
+    const dispo = ONGLETS[cle].map(o => o.id);
+    const sous = (args && args[0] && dispo.indexOf(args[0]) >= 0) ? args[0] : defaut;
+    const wrap = h('div');
+    wrap.appendChild(barreOnglets(cle, sous));
+    const titre = $('#topTitle'), onglet = ONGLETS[cle].find(o => o.id === sous);
+    if (titre && onglet) titre.textContent = (NAV.find(n => n.r === cle) || {}).t + ' · ' + onglet.t;
+    const v = SOUS[sous];
+    wrap.appendChild((v && v((args || []).slice(1))) || h('div'));
+    return wrap;
+  };
+}
+VIEWS.personnage = sectionOnglets('personnage', 'creation');
+VIEWS.fiche = sectionOnglets('fiche', 'feuille');
+
 function currentRoute() {
   const frag = (location.hash || '').replace(/^#\/?/, '');
   if (MONO) {

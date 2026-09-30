@@ -541,7 +541,7 @@ function rndOpts() {
   };
 }
 
-VIEWS.aleatoire = function () {
+SOUS.aleatoire = function () {
   const st = RND.st;
   const wrap = h('div');
   wrap.appendChild(sectionTitle('Tirage', 'Personnage aléatoire',

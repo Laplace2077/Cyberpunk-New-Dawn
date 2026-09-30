@@ -11,7 +11,7 @@ const DATA_FILES = [
   'skills', 'rules_skills', 'advantages', 'defects', 'annexes', 'lifepath', 'crimes',
   'weapons', 'armor', 'ammo', 'weapon_accessories', 'equipment', 'cyberware',
   'cyber_rules', 'martial_arts', 'rules', 'fiche_layout', 'drugs_rules',
-  'net_programs', 'net_hardware', 'net_rules'
+  'net_programs', 'net_hardware', 'net_rules', 'univers'
 ];
 
 /** Les pastilles et le logotype sont découpés dans le PDF du livre et posés en variables CSS */

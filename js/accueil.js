@@ -98,15 +98,15 @@ VIEWS.accueil = function () {
   const launch = h('div.launch.rise', { style: { marginTop: '16px' } });
   const card = (num, t, p, go2, cta) => launch.appendChild(h('a', { href: 'javascript:void 0', onclick: go2 },
     h('div.num', num), h('h3', t), h('p', p), h('div.go', cta + ' →')));
-  card('01 · facultatif', 'Questionnaire',
-    "Dix situations de jeu, et en sortie les dix profils classés plus une construction chiffrée à appliquer.",
-    () => go('quiz'), 'Répondre');
-  card('02', 'Création assistée',
-    "Les neuf étapes du livre, budgets de points et d'argent contrôlés en direct.",
-    () => { if (!STORE.current()) STORE.save(RULES.blank()); go('creation'); }, chars.length ? 'Continuer' : 'Commencer');
-  card('03', 'Personnage aléatoire',
-    "Un personnage complet tiré au sort, feuille remplie — ou huit d'un coup pour une séance de PNJ.",
-    () => go('aleatoire'), 'Tirer');
+  card('01', 'Personnage',
+    "Le questionnaire pour trouver qui jouer, la création guidée en neuf étapes, et le tirage complet au hasard pour les PNJ.",
+    () => { if (!STORE.current()) STORE.save(RULES.blank()); go('personnage'); }, chars.length ? 'Continuer' : 'Commencer');
+  card('02', 'Fiche',
+    "La feuille de personnage remplissable et imprimable, et la progression : points gagnés, vieillissement, argent, journal de partie.",
+    () => go('fiche'), 'Ouvrir');
+  card('03', 'Univers',
+    `L'histoire du monde en ${DB.univers.chronologie.length} dates, Night City quartier par quartier, ${DB.univers.corpos.length} mégacorporations, les gangs et les figures de 2020.`,
+    () => go('univers'), 'Explorer');
   card('04', 'Codex',
     `Toutes les tables des livres : ${DB.skills.length} compétences, ${DB.weapons.length} armes, ${DB.cyberware.length} pièces de cybernétique, et le Livre du Net au complet.`,
     () => go('codex'), 'Consulter');

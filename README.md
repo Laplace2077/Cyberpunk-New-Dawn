@@ -1,10 +1,9 @@
 # Cyberpunk : New Dawn — création de personnage
 
-Le livre *Cyberpunk : New Dawn* en version utilisable : un questionnaire pour cadrer
-le personnage qu'on veut jouer, la création guidée en neuf étapes avec les budgets
-contrôlés en direct, la feuille de personnage remplissable et imprimable, un tirage
-aléatoire complet pour les PNJ, et l'intégralité des tables consultables — y compris
-le *Livre du Net*.
+Le livre *Cyberpunk : New Dawn* en version utilisable : la création de personnage
+(questionnaire, création guidée en neuf étapes, tirage complet au hasard), la feuille
+remplissable et imprimable avec sa progression, l'univers de Cyberpunk 2020 de 1990 à
+2020, et l'intégralité des tables consultables — y compris le *Livre du Net*.
 
 Tout fonctionne dans le navigateur, sans compte et sans serveur. Les personnages sont
 enregistrés dans le navigateur de la personne qui joue ; rien n'est envoyé nulle part.
@@ -28,13 +27,15 @@ tels quels, sans passer par son moteur de blog.
 ## Ce qu'il y a dans le dossier
 
 ```
-index.html            Accueil : liste des personnages, présentation, sources
-questionnaire.html    Le questionnaire d'orientation
-creation.html         La création assistée en neuf étapes
-aleatoire.html        Le tirage de personnage au hasard
-fiche.html            La feuille de personnage, remplissable et imprimable
-progression.html      Points de compétence, vieillissement, argent, journal
+index.html            Accueil : personnages enregistrés, les quatre entrées, sources
+personnage.html       Création : questionnaire, création assistée, tirage au hasard
+fiche.html            Feuille remplissable et imprimable, et progression
+univers.html          Chronologie, monde en 2020, villes, puissances, figures
 codex.html            Toutes les tables des livres
+
+questionnaire.html, creation.html, aleatoire.html et progression.html sont conservés :
+ce sont de simples redirections vers les onglets correspondants, pour que les anciens
+favoris continuent de fonctionner.
 
 css/style.css         Toute la mise en forme du site
 js/                   Le code, découpé par domaine
@@ -51,10 +52,11 @@ build/                Le script qui refabrique ce fichier unique
 | `core.js` | Le socle : règles du jeu, stockage, routeur, briques d'affichage |
 | `quiz.js` | Le questionnaire et les dix archétypes |
 | `creation.js` | Les neuf étapes de création et la boutique |
-| `sheet.js` | La page Progression |
+| `sheet.js` | L'onglet Progression |
 | `feuille.js` | La feuille de personnage interactive |
 | `random.js` | Le générateur de personnage aléatoire |
 | `codex.js` | Le codex et ses catalogues |
+| `univers.js` | L'univers : chronologie, monde, villes, puissances, figures |
 | `accueil.js` | La page d'accueil |
 | `app.js` | Le démarrage : ossature commune, chargement des données |
 
@@ -69,6 +71,11 @@ Une table du livre par fichier : `skills.json`, `weapons.json`, `armor.json`,
 `rules.json`, `rules_skills.json`, `annexes.json`, `cyber_rules.json`,
 `drugs_rules.json`, `fiche_layout.json`, et pour le *Livre du Net* :
 `net_programs.json`, `net_hardware.json`, `net_rules.json`.
+
+`univers.json` est à part : ce n'est pas une table de règles mais la matière de la
+section Univers — 276 entrées de chronologie, 11 dossiers thématiques, 13 villes,
+18 corporations, 24 gangs, 9 familles nomades, 8 forces de l'ordre et 24 figures.
+Chaque entrée porte sa source.
 
 `fiche_layout.json` est un cas à part : il contient la position de chacun des 924
 champs de saisie posés sur les quatre pages scannées de la feuille de personnage.
@@ -103,7 +110,7 @@ sinon elle reste sur l'ancienne version.
 ## La version hors ligne
 
 `hors-ligne/cyberpunk-new-dawn.html` est le site entier — pages, styles, code, tables et
-images — rassemblé dans un seul fichier de 2,3 Mo. Il s'ouvre par un double-clic, sans
+images — rassemblé dans un seul fichier de 2,6 Mo. Il s'ouvre par un double-clic, sans
 serveur et sans connexion : c'est la version à emporter à la table de jeu, sur un portable
 ou une tablette.
 
@@ -139,11 +146,17 @@ l'impression des arrière-plans.
 
 ## Sources
 
-Les données proviennent du PDF *Cyberpunk : New Dawn* (version du 26.08.2016, mise à jour
-le 09.07.2025), une synthèse francophone de Cyberpunk 2020. S'y ajoutent le *Livre du Net*
-(version du 25.06.2026) et, pour ce qui manquait à New Dawn, les armures et les drogues de
-*Cyberpunk 2020 : Les Années Noires*. Chaque entrée venue d'un autre livre porte sa source
-dans le codex.
+Les règles et les tables proviennent du PDF *Cyberpunk : New Dawn* (version du 26.08.2016,
+mise à jour le 09.07.2025), une synthèse francophone de Cyberpunk 2020. S'y ajoutent le
+*Livre du Net* (version du 25.06.2026) et, pour ce qui manquait à New Dawn, les armures et
+les drogues de *Cyberpunk 2020 : Les Années Noires*. Chaque entrée venue d'un autre livre
+porte sa source dans le codex.
+
+La section Univers est écrite à partir de la chronologie canonique compilée pour Cyberpunk
+2020, du livre de base français *Les Années Noires*, des trois *Corpbooks* (Arasaka et IEC,
+Lazarus et Militech, Petrochem et SovOil), complétés par les wikis pour ce que ces livres ne
+disent pas. Les textes sont des résumés, pas des reprises. La chronologie s'arrête en 2020,
+présent du jeu : rien de ce qui vient après n'y figure.
 
 Cyberpunk 2020 est une marque de R. Talsorian Games. Ce site est un outil personnel de
 table de jeu, sans but commercial.

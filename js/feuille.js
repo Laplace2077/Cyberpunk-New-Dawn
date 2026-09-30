@@ -136,7 +136,7 @@ function skSet(ch, nom, v) {
 }
 
 /* ---------- Vue ---------- */
-VIEWS.fiche = function () {
+SOUS.feuille = function () {
   const ch = STORE.current();
   if (!ch) return needChar("La feuille s'applique à un personnage.");
   const f = ensureF(ch);

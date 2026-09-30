@@ -21,7 +21,7 @@ SORTIE = os.path.join(RACINE, 'hors-ligne', 'cyberpunk-new-dawn.html')
 
 # L'ordre compte : core.js définit tout ce dont les autres se servent, app.js démarre.
 JS = ['core.js', 'quiz.js', 'creation.js', 'sheet.js', 'feuille.js',
-      'random.js', 'codex.js', 'accueil.js', 'app.js']
+      'random.js', 'codex.js', 'univers.js', 'accueil.js', 'app.js']
 
 MIMES = {'.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
          '.svg': 'image/svg+xml', '.webp': 'image/webp'}
