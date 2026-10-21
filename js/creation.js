@@ -286,6 +286,19 @@ function stepSkills(ch, rr) {
       h('button.btn.g.xs', { onclick: () => { ch.competences = []; ch.specialite = null; STORE.save(ch); rr(); } }, 'Tout effacer')),
     listHost
   ));
+   box.appendChild(h('div.panel.rise', { style: { marginTop: '14px' } },
+    h('div.panel-h', h('h3', 'Étape 4 — Compétences'),
+      h('span.chip.a', `${dv.pcDepense} / ${dv.pcTotal} points`)),
+    h('p', { style: { margin: '0 0 12px', color: 'var(--txt-2)', fontSize: '13.5px' } },
+      "Un point de compétence = un niveau (× le coefficient de la compétence : Neuradrénaline coûte double et plafonne à 2 à la création). Il n'y a plus de compétences de carrière : place-les où tu veux. Rappel : pas de jet possible dans une compétence d'INT où tu n'as investi aucun point."),
+    h('div.sk-filter',
+      h('input', { type: 'search', placeholder: 'Chercher une compétence…', style: { maxWidth: '260px' }, oninput: e => { state.q = e.target.value; renderList(); } }),
+      caracSel,
+      h('span.chip' + (state.only ? '.a' : '') + '.btnlike', { onclick: e => { state.only = !state.only; e.target.classList.toggle('a'); renderList(); } }, 'Mes compétences seulement'),
+      h('div.sp'),
+      h('button.btn.g.xs', { onclick: () => { ch.competences = []; ch.specialite = null; STORE.save(ch); rr(); } }, 'Tout effacer')),
+    listHost
+  ));
   renderList();
   return box;
 }
