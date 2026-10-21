@@ -9,6 +9,15 @@
   "specialisable": false
  },
  {
+  "nom": "NEURADRÉNALINE",
+  "carac": null,
+  "coeff": 2,
+  "desc": "La Neuradrénaline est la capacité de votre personnage à gérer son état de stress afin de s'en servir à son avantage lors des actions de Net, de réflexion, ou pour être plus réactif en initiative.",
+  "notes": "Pour utiliser la Neuradrénaline, vous pouvez dépenser à chaque début de round vos points (dans la limite de la valeur de la compétence utilisable représentée par *) pour la booster pour le round. Tout le monde possède cette compétence, avec un maximum de 2 à la création de personnage, quel que soit votre âge.",
+  "paliers": [],
+  "specialisable": false
+ },
+ {
   "nom": "AÉROTECH",
   "carac": "TECH",
   "coeff": 1,
