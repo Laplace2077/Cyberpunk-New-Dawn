@@ -333,17 +333,23 @@ function rollLifeYear(annee) { return { annee, etapes: rollTable('1A') }; }
 const STORE = {
   KEY: 'cpnd.v1',
   mem: null,
+  /** Le profil connecté, s'il y en a un : ses données vivent dans leur propre
+      tiroir « cpnd.v1:<profil> ». Sans compte, on écrit dans le tiroir commun. */
+  profil: null,
+  cle() { return this.profil ? this.KEY + ':' + this.profil : this.KEY; },
+  /** À la connexion comme à la déconnexion, on repart du tiroir voulu. */
+  changerProfil(id) { this.profil = id || null; this.mem = null; this.warned = 0; },
   _read() {
     if (this.mem) return this.mem;
     let raw = null;
-    try { raw = localStorage.getItem(this.KEY); } catch (e) { }
+    try { raw = localStorage.getItem(this.cle()); } catch (e) { }
     try { this.mem = raw ? JSON.parse(raw) : { chars: [], current: null, prefs: {} }; }
     catch (e) { this.mem = { chars: [], current: null, prefs: {} }; }
     if (!Array.isArray(this.mem.chars)) this.mem.chars = [];
     return this.mem;
   },
   _write() {
-    try { localStorage.setItem(this.KEY, JSON.stringify(this.mem)); return true; }
+    try { localStorage.setItem(this.cle(), JSON.stringify(this.mem)); return true; }
     catch (e) {
       // Mémoire pleine : on le dit à chaque fois, puisque rien n'est enregistré.
       if (/quota|exceed/i.test(String((e && e.name) + ' ' + (e && e.message)))) {
@@ -424,23 +430,27 @@ const NAV = [
   { r: 'personnage', ic: '⬢', t: 'Personnage', s: 'Perso' },
   { r: 'fiche', ic: '▤', t: 'Fiche', s: 'Fiche' },
   { r: 'univers', ic: '◎', t: 'Univers', s: 'Monde' },
-  { r: 'codex', ic: '❑', t: 'Codex', s: 'Codex' }
+  { r: 'net', ic: '⌗', t: 'Carte du Net', s: 'Net' },
+  { r: 'codex', ic: '❑', t: 'Codex', s: 'Codex' },
+  { r: 'compte', ic: '◍', t: 'Compte', s: 'Compte' }
 ];
 /** Le fichier qui porte chaque section du site */
 const PAGES = {
   accueil: 'index.html', personnage: 'personnage.html', fiche: 'fiche.html',
-  univers: 'univers.html', codex: 'codex.html'
+  univers: 'univers.html', net: 'carte-net.html', codex: 'codex.html',
+  compte: 'compte.html'
 };
 /** Les onglets de chaque section à plusieurs volets */
 const ONGLETS = {
   personnage: [
-    { id: 'creation', t: 'Création assistée', d: 'Les neuf étapes du livre' },
-    { id: 'quiz', t: 'Questionnaire', d: 'Trouver qui jouer' },
-    { id: 'aleatoire', t: 'Aléatoire', d: 'Tirer un personnage complet' }
+    { id: 'creation', t: 'Création assistée', c: 'Création', d: 'Les neuf étapes du livre' },
+    { id: 'quiz', t: 'Questionnaire', c: 'Quiz', d: 'Trouver qui jouer' },
+    { id: 'aleatoire', t: 'Aléatoire', c: 'Hasard', d: 'Tirer un personnage complet' }
   ],
   fiche: [
-    { id: 'feuille', t: 'Feuille', d: 'Remplir et imprimer' },
-    { id: 'progression', t: 'Progression', d: 'Points, âge, argent, journal' }
+    { id: 'resume', t: 'Résumé de jeu', c: 'Résumé', d: 'L\'essentiel, lisible au téléphone' },
+    { id: 'feuille', t: 'Feuille', c: 'Feuille', d: 'Remplir et imprimer' },
+    { id: 'progression', t: 'Progression', c: 'Progrès', d: 'Points, âge, argent, journal' }
   ]
 };
 /** Anciennes routes, gardées pour que tous les renvois du site continuent de marcher */
@@ -456,6 +466,8 @@ function resoudre(r) {
 /** Le site existe en deux formes : un vrai site (une page par section) et un fichier
     unique hors ligne, où la navigation se fait par le fragment d'adresse. */
 const MONO = !!(document.body && document.body.dataset.mono === '1');
+/** Vrai sur un écran de téléphone : quelques vues s'y présentent autrement. */
+const AU_POUCE = typeof matchMedia === 'function' && matchMedia('(max-width:720px)').matches;
 /** La section affichée par la page courante, déclarée par <body data-page="…"> */
 const PAGE = MONO ? null : ((document.body && document.body.dataset.page) || 'accueil');
 
@@ -491,7 +503,7 @@ function barreOnglets(cle, actif) {
     h('a' + (o.id === actif ? '.on' : ''), {
       href: lien(cle + '/' + o.id),
       onclick: e => { e.preventDefault(); go(cle + '/' + o.id); }
-    }, h('b', o.t), h('span', o.d))));
+    }, h('b', h('span.long', o.t), h('span.court', o.c || o.t)), h('span', o.d))));
 }
 function sectionOnglets(cle, defaut) {
   return function (args) {
@@ -500,14 +512,15 @@ function sectionOnglets(cle, defaut) {
     const wrap = h('div');
     wrap.appendChild(barreOnglets(cle, sous));
     const titre = $('#topTitle'), onglet = ONGLETS[cle].find(o => o.id === sous);
-    if (titre && onglet) titre.textContent = (NAV.find(n => n.r === cle) || {}).t + ' · ' + onglet.t;
+    if (titre && onglet) titre.textContent = (NAV.find(n => n.r === cle) || {}).t + ' · '
+  + (AU_POUCE ? (onglet.c || onglet.t) : onglet.t);
     const v = SOUS[sous];
     wrap.appendChild((v && v((args || []).slice(1))) || h('div'));
     return wrap;
   };
 }
 VIEWS.personnage = sectionOnglets('personnage', 'creation');
-VIEWS.fiche = sectionOnglets('fiche', 'feuille');
+VIEWS.fiche = sectionOnglets('fiche', AU_POUCE ? 'resume' : 'feuille');
 
 function currentRoute() {
   const frag = (location.hash || '').replace(/^#\/?/, '');
@@ -616,7 +629,7 @@ function panneauPanne(err, r, a) {
       href: 'javascript:void 0',
       onclick: () => confirmer('Tout effacer',
         "Effacer tous les personnages enregistrés dans ce navigateur ? À ne faire qu’après un export.",
-        () => { try { localStorage.removeItem(STORE.KEY); } catch (e) { } STORE.mem = null; route(); })
+        () => { try { localStorage.removeItem(STORE.cle()); } catch (e) { } STORE.mem = null; route(); })
     }, 'tout effacer'), '.'));
   return p;
 }

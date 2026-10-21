@@ -615,6 +615,14 @@ function cxGo(id) { go('codex/' + id); }
 VIEWS.codex = function (args) {
   const id = (args && args[0]) || 'regles-creation';
   const wrap = h('div.view-inner');
+  /* Au pouce, un menu déroulant remplace la colonne de boutons */
+  const choix = h('select', { onchange: e => cxGo(e.target.value) });
+  CX.groups.forEach(g => {
+    const grp = h('optgroup', { label: 'Ch. ' + g.n + ' — ' + g.g });
+    g.items.forEach(it => grp.appendChild(h('option',
+      { value: it.id, selected: it.id === id ? 'selected' : null }, it.t)));
+    choix.appendChild(grp);
+  });
   const nav = h('div.cx-nav');
   CX.groups.forEach(g => {
     nav.appendChild(h('div.grp', h('em', 'Ch. ' + g.n + ' — '), g.g));
@@ -627,6 +635,7 @@ VIEWS.codex = function (args) {
   body.appendChild(sectionTitle('Section', cur.t, null));
   try { body.appendChild((CX_RENDER[id] || CX_RENDER['regles-creation'])()); }
   catch (e) { body.appendChild(h('p.red', 'Erreur d’affichage de cette section : ' + e.message)); }
+  wrap.appendChild(h('div.cx-choix', choix));
   wrap.appendChild(h('div.cx', nav, body));
   const fl = $('#footLabel');
   if (fl) fl.textContent = `Chapitre ${grp.n} — ${grp.g}`;

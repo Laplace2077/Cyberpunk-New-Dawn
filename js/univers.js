@@ -65,7 +65,7 @@ function uvGo(id) { go('univers/' + id); }
 /* ---------- La frise ---------- */
 
 /** État de la frise, conservé le temps de la visite pour ne pas reperdre les filtres */
-const FRISE = { q: '', th: '', d: '' };
+const FRISE = { q: '', th: '', d: '', max: 60 };
 
 function vueChronologie() {
   const box = h('div');
@@ -85,12 +85,14 @@ function vueChronologie() {
       (!q || noAcc(e.t + ' ' + e.d + ' ' + (e.lieu || '')).indexOf(q) >= 0));
     compte.textContent = liste.length + ' événement' + (liste.length > 1 ? 's' : '') +
       ' sur ' + tout.length;
+    const total = liste.length;
+    const vus = liste.slice(0, FRISE.max);
     if (!liste.length) {
       host.appendChild(h('p.muted', 'Aucun événement ne correspond.'));
       return;
     }
     let an = null, bloc = null;
-    liste.forEach(e => {
+    vus.forEach(e => {
       if (e.an !== an) {
         an = e.an;
         const n = h('div.n', String(an));
@@ -107,17 +109,23 @@ function vueChronologie() {
           e.mois ? h('span.muted', { style: { fontSize: '12px' } }, e.mois) : null,
           h('span.muted', { style: { fontSize: '12px' } }, e.src))));
     });
+    /* La frise entière fait trente écrans : on la sert par tranches. */
+    if (total > vus.length) {
+      host.appendChild(h('button.btn.g.wide', { style: { marginTop: '12px' },
+        onclick: () => { FRISE.max += 80; dessine(); } },
+        'Afficher la suite (' + (total - vus.length) + ' événements)'));
+    }
   };
 
   const boutonsTheme = h('div.uv-filtres',
-    h('button.btn.g.xs' + (FRISE.th ? '' : '.on'), { onclick: e => { FRISE.th = ''; majFiltres(); } }, 'Tout'),
+    h('button.btn.g.xs' + (FRISE.th ? '' : '.on'), { onclick: e => { FRISE.th = ''; FRISE.max = 60; majFiltres(); } }, 'Tout'),
     ...(DB.univers.themes || []).map(t =>
-      h('button.btn.g.xs' + (FRISE.th === t.id ? '.on' : ''), { onclick: () => { FRISE.th = t.id; majFiltres(); } }, t.t)));
+      h('button.btn.g.xs' + (FRISE.th === t.id ? '.on' : ''), { onclick: () => { FRISE.th = t.id; FRISE.max = 60; majFiltres(); } }, t.t)));
 
   const boutonsDec = h('div.uv-filtres',
-    h('button.btn.g.xs' + (FRISE.d ? '' : '.on'), { onclick: () => { FRISE.d = ''; majFiltres(); } }, 'Tout'),
+    h('button.btn.g.xs' + (FRISE.d ? '' : '.on'), { onclick: () => { FRISE.d = ''; FRISE.max = 60; majFiltres(); } }, 'Tout'),
     ...decs.map(d => h('button.btn.g.xs' + (FRISE.d === String(d) ? '.on' : ''),
-      { onclick: () => { FRISE.d = String(d); majFiltres(); } }, d + 's')));
+      { onclick: () => { FRISE.d = String(d); FRISE.max = 60; majFiltres(); } }, d + 's')));
 
   function majFiltres() {
     [[boutonsTheme, FRISE.th, ['', ...(DB.univers.themes || []).map(t => t.id)]],
@@ -134,7 +142,7 @@ function vueChronologie() {
     h('input', {
       type: 'search', placeholder: 'Chercher dans la chronologie…', value: FRISE.q,
       style: { maxWidth: '280px' },
-      oninput: e => { FRISE.q = e.target.value; dessine(); }
+      oninput: e => { FRISE.q = e.target.value; FRISE.max = 60; dessine(); }
     }), compte));
   box.appendChild(boutonsTheme);
   box.appendChild(boutonsDec);
@@ -314,6 +322,14 @@ const UV_RENDER = {
 VIEWS.univers = function (args) {
   const id = (args && args[0]) || 'chronologie';
   const wrap = h('div.view-inner');
+  /* Au pouce, un menu déroulant remplace la colonne de boutons */
+  const choix = h('select', { onchange: e => uvGo(e.target.value) });
+  UV.groups.forEach(g => {
+    const grp = h('optgroup', { label: 'Ch. ' + g.n + ' — ' + g.g });
+    g.items.forEach(it => grp.appendChild(h('option',
+      { value: it.id, selected: it.id === id ? 'selected' : null }, it.t)));
+    choix.appendChild(grp);
+  });
   const nav = h('div.cx-nav');
   UV.groups.forEach(g => {
     nav.appendChild(h('div.grp', h('em', 'Ch. ' + g.n + ' — '), g.g));
@@ -327,6 +343,7 @@ VIEWS.univers = function (args) {
   body.appendChild(sectionTitle('Section', cur.t, null));
   try { body.appendChild((UV_RENDER[id] || UV_RENDER.chronologie)()); }
   catch (e) { body.appendChild(h('p.red', 'Erreur d’affichage de cette section : ' + e.message)); }
+  wrap.appendChild(h('div.cx-choix', choix));
   wrap.appendChild(h('div.cx', nav, body));
   const fl = $('#footLabel');
   if (fl) fl.textContent = `Univers — ${grp.g}`;

@@ -20,11 +20,13 @@ RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SORTIE = os.path.join(RACINE, 'hors-ligne', 'cyberpunk-new-dawn.html')
 
 # L'ordre compte : core.js définit tout ce dont les autres se servent, app.js démarre.
-JS = ['core.js', 'quiz.js', 'creation.js', 'sheet.js', 'feuille.js',
-      'random.js', 'codex.js', 'univers.js', 'accueil.js', 'app.js']
+JS = ['core.js', 'quiz.js', 'creation.js', 'sheet.js', 'feuille.js', 'resume.js',
+      'random.js', 'codex.js', 'univers.js', 'netmap.js', 'accueil.js',
+      'nuage.js', 'comptes.js', 'app.js']
 
 MIMES = {'.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
-         '.svg': 'image/svg+xml', '.webp': 'image/webp'}
+         '.svg': 'image/svg+xml', '.webp': 'image/webp',
+         '.woff2': 'font/woff2', '.otf': 'font/otf', '.ttf': 'font/ttf'}
 
 
 def lire(*bouts):
@@ -58,6 +60,7 @@ def main():
         return 'url("%s")' % uri
 
     css = re.sub(r'url\("(\.\./assets/[^"]+)"\)', remplace, css)
+    # les polices suivent le même chemin que les images : incluses en base64
 
     # La règle @import doit rester en tête du <style> : on l'extrait pour la remettre en premier.
     # Attention : l'adresse des polices contient des « ; », on découpe donc par ligne.
@@ -83,7 +86,15 @@ def main():
     # ---- Scripts ----
     morceaux = []
     for f in JS:
-        morceaux.append('/* ==================== %s ==================== */\n%s' % (f, lire('js', f)))
+        src = lire('js', f)
+        if f == 'nuage.js':
+            # Le fichier hors ligne doit marcher seul, sans rien demander au réseau :
+            # on lui retire l'adresse de la base. Les comptes y redeviennent locaux.
+            src = re.sub(r"(?m)^(\s*URL:\s*)'[^']*'", r"\1''", src, count=1)
+            src = re.sub(r"(?m)^(\s*CLE:\s*)'[^']*'", r"\1''", src, count=1)
+            if "URL: ''" not in src or "CLE: ''" not in src:
+                raise SystemExit("build : impossible de neutraliser les clés de nuage.js")
+        morceaux.append('/* ==================== %s ==================== */\n%s' % (f, src))
     js = '\n\n'.join(morceaux)
 
     # ---- Favicon ----
@@ -145,7 +156,7 @@ __JS__
         print('Note : node n’est pas installé ou le JS a une erreur de syntaxe — vérification ignorée.')
 
     print('Écrit : %s' % SORTIE)
-    print('  %.0f Ko au total, dont %.0f Ko d’images et %d tables du livre.'
+    print('  %.0f Ko au total, dont %.0f Ko d’images et de polices et %d tables du livre.'
           % (len(html.encode('utf-8')) / 1024, poids_images * 1.34 / 1024, len(noms)))
 
 
