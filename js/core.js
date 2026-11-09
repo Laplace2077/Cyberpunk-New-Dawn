@@ -545,11 +545,36 @@ function majEntete() {
     ? (ch.nom || 'Sans nom') : 'Cyberpunk : New Dawn';
 }
 
-function route() {
+/* ---------- Où se trouve la page après un redessin ----------
+   La vue entière est reconstruite à chaque changement de route, mais aussi à chaque
+   clic qui modifie son contenu : cocher une compétence, poser une case sur la carte
+   du Net, changer un filtre, supprimer un personnage. Remonter en haut à chacun de
+   ces clics rend le site pénible dès qu'une page est longue.
+   On ne remonte donc qu'en changeant vraiment de route. Sinon on repose la page
+   exactement où elle était. */
+let ROUTE_AFFICHEE = null;
+
+function hauteurDefilement() {
+  return window.pageYOffset
+    || (document.documentElement && document.documentElement.scrollTop)
+    || (document.body && document.body.scrollTop) || 0;
+}
+
+/** Redessine la vue courante.
+    @param forcerHaut  vrai pour remonter en haut même sans changer de route :
+                       à réserver aux endroits qui changent vraiment de page
+                       (la question suivante du questionnaire, par exemple).
+                       Attention : route() sert aussi d'écouteur d'événement,
+                       d'où le test strict — un objet Event ne force rien. */
+function route(forcerHaut) {
   const { r, a } = currentRoute();
   const v = VIEWS[r] || VIEWS.accueil;
   const host = $('#view');
   if (!host) return;
+  const cle = r + '/' + a.join('/');
+  const surPlace = forcerHaut !== true && cle === ROUTE_AFFICHEE;
+  const y = surPlace ? hauteurDefilement() : 0;
+  ROUTE_AFFICHEE = cle;
   clear(host);
   $('#topTitle').textContent = (NAV.find(n => n.r === r) || {}).t || 'Accueil';
   try { majEntete(); } catch (e) { console.error(e); }
@@ -558,7 +583,12 @@ function route() {
   try { contenu = v(a) || h('div'); }
   catch (e) { console.error(e); contenu = panneauPanne(e, r, a); }
   host.appendChild(contenu);
-  window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  const net = 'instant' in window ? 'instant' : 'auto';
+  window.scrollTo({ top: y, behavior: net });
+  /* Les images et les polices finissent de se charger après coup et changent la
+     hauteur de la page : on repose la page une seconde fois à l'image suivante. */
+  if (surPlace && y && typeof requestAnimationFrame === 'function')
+    requestAnimationFrame(() => { if (hauteurDefilement() !== y) window.scrollTo({ top: y, behavior: net }); });
 }
 
 /* ---------- Filet de sécurité ----------

@@ -499,7 +499,7 @@ function cptDeconnecte(wrap) {
     [{
       t: 'Se connecter', cls: '.p', fn: (v, b) => cptOccupe(b, async () => {
         const p = await COMPTES.entrer(v.pseudo, v.mdp);
-        toast('Bonjour ' + p.pseudo + '.', 'ok'); route();
+        toast('Bonjour ' + p.pseudo + '.', 'ok'); route(true);
       }, 'Connexion…')
     }],
     [{ k: 'pseudo', t: 'Identifiant', auto: 'username' },
@@ -542,7 +542,7 @@ function cptConnecte(wrap, moi) {
     h('div.panel-h', h('h3', 'Tes affaires'), h('div.sp'),
       h('button.btn.g.sm', {
         onclick: e => cptOccupe(e.target, async () => {
-          await COMPTES.sortir(); toast('Déconnectée.', 'ok'); route();
+          await COMPTES.sortir(); toast('Déconnectée.', 'ok'); route(true);
         }, 'Sortie…')
       }, 'Se déconnecter')),
     chiffres));

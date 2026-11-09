@@ -86,8 +86,18 @@ const NUAGE = {
       return "Le mot de passe fait au moins " + m.match(/at least (\d+)/i)[1] + " caractères.";
     if (/email.*invalid|invalid.*email/i.test(m))
       return "Cet identifiant ne passe pas : utilise des lettres, des chiffres, un tiret ou un point.";
-    if (/signups? not allowed|disabled/i.test(m))
-      return "Les inscriptions sont fermées sur la base.";
+    /* Deux pannes voisines, deux interrupteurs différents dans le tableau de bord :
+       les confondre fait chercher au mauvais endroit. Le code d'erreur tranche
+       quand il est là ; sinon on lit la phrase. */
+    const code = String((corps && (corps.error_code || corps.code)) || '');
+    const eteint = /disabled|not allowed/i.test(m);
+    if (code === 'email_provider_disabled' || (eteint && /\bemail\b/i.test(m)))
+      return "Le fournisseur « Email » est éteint sur la base — ni inscription ni connexion "
+        + "possibles. Dans Supabase : Authentication → Sign In / Providers → ligne « Email » → "
+        + "allumer l’interrupteur de la ligne elle-même.";
+    if (code === 'signup_disabled' || (eteint && /sign\s?ups?\b/i.test(m)))
+      return "Les inscriptions sont fermées sur la base. Dans Supabase : Authentication → "
+        + "Sign In / Providers → bloc « User Signups » → activer « Allow new users to sign up ».";
     if (/email.*not confirmed|confirm/i.test(m))
       return "La base attend une confirmation par courriel. Dans Supabase : "
         + "Authentication → Sign In / Providers → Email → décocher « Confirm email ».";
@@ -97,7 +107,11 @@ const NUAGE = {
       return "La base refuse cette opération : ce n’est pas ton tiroir.";
     if (/relation .* does not exist/i.test(m))
       return "Les tables ne sont pas créées. Relance le script SQL dans Supabase.";
-    return m || ('La base a répondu ' + (r ? r.status : '?') + '.');
+    /* Erreur inconnue : on rend le texte du serveur tel quel. Mieux vaut une phrase
+       en anglais qu'un message rassurant qui envoie chercher au mauvais endroit. */
+    return m ? ('La base répond : « ' + m + ' » (code ' + (r ? r.status : '?')
+      + (corps && corps.error_code ? ', ' + corps.error_code : '') + ').')
+      : ('La base a répondu ' + (r ? r.status : '?') + ' sans explication.');
   },
 
   async appel(chemin, opts) {

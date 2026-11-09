@@ -478,13 +478,13 @@ function quizIntro() {
       h('p', { style: { margin: '10px 0 0', fontSize: '15px', color: 'var(--ink-3)' } },
         "Rien n'est verrouillé. New Dawn n'a plus de classes de personnage : l'archétype est un repère de lecture, pas une règle.")),
     h('div.row.wrap.rise',
-      h('button.btn.p', { onclick: () => { QZ.state.page = 0; route(); } }, started ? 'Reprendre' : 'Commencer'),
+      h('button.btn.p', { onclick: () => { QZ.state.page = 0; route(true); } }, started ? 'Reprendre' : 'Commencer'),
       h('button.btn.g', { onclick: () => { if (!STORE.current()) STORE.save(RULES.blank()); go('creation'); } }, 'Passer — créer directement'),
-      started ? h('button.btn.g', { onclick: () => { QZ.state.page = 99; route(); } }, 'Voir le résultat') : null,
+      started ? h('button.btn.g', { onclick: () => { QZ.state.page = 99; route(true); } }, 'Voir le résultat') : null,
       started ? h('button.btn.g', {
         onclick: () => {
           QZ.state = { page: -1, sit: new Array(SITUATIONS.length).fill(null), dom: new Array(DOMAINES.length).fill(null), reg: { age: 18, cyber: null, spec: 'normal', evite: null, place: null }, chosen: null, concepts: null };
-          route();
+          route(true);
         }
       }, 'Tout effacer') : null)
   );
@@ -498,17 +498,17 @@ function quizSituation() {
     q.hint ? h('p.qz-hint', q.hint) : null,
     h('div.qz-opts', ...q.o.map((o, oi) =>
       h('button.qz-opt' + (st.sit[i] === oi ? '.on' : ''), {
-        onclick: () => { st.sit[i] = oi; st.page = i + 1; route(); }
+        onclick: () => { st.sit[i] = oi; st.page = i + 1; route(true); }
       }, h('span.kx', 'ABCDEF'[oi]), h('span.tx', h('b', o.t), o.d ? h('i', o.d) : null))))
   );
   return h('div',
     quizProgress(i, QZ_LAST + 1, 'Bloc 1 — situations de jeu'),
     card,
     h('div.wiz-nav',
-      h('button.btn.g', { onclick: () => { st.page = i - 1; route(); } }, '← Précédent'),
-      h('button.btn.g', { onclick: () => { st.page = i + 1; route(); } }, 'Passer'),
+      h('button.btn.g', { onclick: () => { st.page = i - 1; route(true); } }, '← Précédent'),
+      h('button.btn.g', { onclick: () => { st.page = i + 1; route(true); } }, 'Passer'),
       h('div.sp'),
-      h('button.btn.g', { onclick: () => { st.page = SITUATIONS.length; route(); } }, 'Aller aux domaines →')));
+      h('button.btn.g', { onclick: () => { st.page = SITUATIONS.length; route(true); } }, 'Aller aux domaines →')));
 }
 
 function quizDomaines() {
@@ -538,9 +538,9 @@ function quizDomaines() {
         h('button.btn.g.sm', { onclick: () => { st.dom = st.dom.map(() => 1); draw(); } }, 'Tout à « un peu »'),
         h('button.btn.g.sm', { onclick: () => { st.dom = st.dom.map(() => null); draw(); } }, 'Tout effacer'))),
     h('div.wiz-nav',
-      h('button.btn.g', { onclick: () => { st.page = SITUATIONS.length - 1; route(); } }, '← Situations'),
+      h('button.btn.g', { onclick: () => { st.page = SITUATIONS.length - 1; route(true); } }, '← Situations'),
       h('div.sp'),
-      h('button.btn.p', { onclick: () => { st.page = SITUATIONS.length + 1; route(); } }, 'Réglages →')));
+      h('button.btn.p', { onclick: () => { st.page = SITUATIONS.length + 1; route(true); } }, 'Réglages →')));
 }
 
 function quizReglages() {
@@ -563,9 +563,9 @@ function quizReglages() {
     quizProgress(QZ_LAST, QZ_LAST + 1, 'Bloc 3 — réglages'),
     h('div.panel.rise', h('div.qz-sect', 'Bloc 3 · réglages du personnage'), host),
     h('div.wiz-nav',
-      h('button.btn.g', { onclick: () => { st.page = SITUATIONS.length; route(); } }, '← Domaines'),
+      h('button.btn.g', { onclick: () => { st.page = SITUATIONS.length; route(true); } }, '← Domaines'),
       h('div.sp'),
-      h('button.btn.p', { onclick: () => { st.page = 99; st.chosen = null; st.concepts = null; route(); } }, 'Voir le résultat →')));
+      h('button.btn.p', { onclick: () => { st.page = 99; st.chosen = null; st.concepts = null; route(true); } }, 'Voir le résultat →')));
 }
 
 /* ---------- Résultat ---------- */
@@ -686,11 +686,11 @@ function quizResult() {
           STORE.save(ch); toast('Caractéristiques appliquées au personnage actif.', 'ok'); go('creation');
         }
       }, 'Appliquer au personnage actif'),
-      h('button.btn.g', { onclick: () => { st.page = QZ_LAST; route(); } }, 'Revoir mes réponses'),
+      h('button.btn.g', { onclick: () => { st.page = QZ_LAST; route(true); } }, 'Revoir mes réponses'),
       h('button.btn.g', {
         onclick: () => {
           QZ.state = { page: -1, sit: new Array(SITUATIONS.length).fill(null), dom: new Array(DOMAINES.length).fill(null), reg: { age: 18, cyber: null, spec: 'normal', evite: null, place: null }, chosen: null, concepts: null };
-          route();
+          route(true);
         }
       }, 'Refaire'))));
   return wrap;
