@@ -408,6 +408,29 @@ label.fl > span.lb{display:block;margin-bottom:3px;font:700 12px/1.1 var(--f-tab
 .net-leg-n{font-size:13.5px;color:var(--ink-2);margin-top:3px;line-height:1.35}
 .net-leg-n b{display:inline;font:700 12px/1 var(--f-tab);text-transform:none}
 
+/* ---------- Les niveaux d'une forteresse ----------
+   Rangés comme les feuilles d'un tableur : une rangée d'onglets sous la
+   grille, le niveau affiché en noir. */
+.net-ets{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px;padding-top:7px;
+  border-top:1px solid var(--rule)}
+.net-et{display:flex;align-items:center;gap:6px;padding:5px 10px;min-height:32px;
+  background:var(--paper-2);border:1px solid var(--rule);border-bottom-color:transparent;
+  color:var(--ink-2);cursor:pointer;font:600 12.5px/1 var(--f-tab);letter-spacing:.04em;
+  max-width:16em}
+.net-et:hover{background:var(--paper-3);color:var(--ink)}
+.net-et .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.net-et .n{font-size:10.5px;color:var(--ink-3);border:1px solid var(--rule);padding:1px 4px}
+.net-et.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.net-et.on .n{color:var(--paper);border-color:var(--paper)}
+.net-plus{font-size:16px;padding:5px 12px;justify-content:center}
+
+/* Les plans montés le temps d'une impression : invisibles à l'écran. */
+.net-tout{display:none}
+@media print{
+  .net-tout{display:block}
+  .net-ets{display:none!important}
+}
+
 @media (max-width:720px){
   .net-pal{grid-template-columns:repeat(auto-fill,minmax(86px,1fr))}
   .net-o span{font-size:11.5px}
@@ -421,10 +444,11 @@ label.fl > span.lb{display:block;margin-bottom:3px;font:700 12px/1.1 var(--f-tab
   .net-plan{border:1px solid #000;padding:0;overflow:visible;break-inside:avoid;break-after:page}
   .net-grille{min-width:0;width:auto;display:inline-block}
   .net-ligne{display:flex}
-  .net-c{flex:0 0 auto;width:8.4mm;height:8.4mm;aspect-ratio:auto;border-color:#999}
+  .net-c{flex:0 0 auto;width:var(--net-case,8.4mm);height:var(--net-case,8.4mm);
+    aspect-ratio:auto;border-color:#999}
   .net-c.mur{background:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .net-coin,.net-num{flex:0 0 5mm;width:5mm}
-  .net-col{flex:0 0 8.4mm;width:8.4mm;height:4mm;font-size:6.5pt}
+  .net-col{flex:0 0 var(--net-case,8.4mm);width:var(--net-case,8.4mm);height:4mm;font-size:6.5pt}
   .net-num{font-size:6.5pt}
   .net-titre b{font-size:15pt}
   .net-leg-l{grid-template-columns:1fr 1fr}

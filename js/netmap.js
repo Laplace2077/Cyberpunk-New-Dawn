@@ -5,11 +5,28 @@
    leurs mémoires, des murs de données, des grilles codées, des fichiers et
    les programmes de défense ; la légende et la fiche du système se montent
    toutes seules, et le tout s'imprime.
+
+   Une forteresse tient sur plusieurs NIVEAUX — les sous-grilles du livre,
+   celles que relient les ascenseurs. Ils se rangent comme les feuilles d'un
+   tableur : un onglet par niveau sous la grille. Chaque niveau a sa propre
+   taille ; le 20 × 20 du livre n'est plus qu'un point de départ.
    ============================================================ */
 'use strict';
 
+/* La grille du livre, qui reste la taille par défaut d'un niveau neuf. */
 const NET_COLS = 20, NET_LIGNES = 20;
-const colLettre = i => String.fromCharCode(65 + i);      // 0 → A … 19 → T
+/* Les bornes : en dessous il n'y a plus de place, au-dessus la grille ne
+   s'imprime plus et devient illisible à l'écran. */
+const NET_MIN = 4, NET_COLS_MAX = 40, NET_LIGNES_MAX = 60;
+
+/** 0 → A … 25 → Z, 26 → AA : au-delà de la vingt-sixième colonne, on double
+    la lettre comme dans un tableur. */
+function colLettre(i) {
+  let s = '';
+  i = Math.max(0, Math.floor(i));
+  do { s = String.fromCharCode(65 + (i % 26)) + s; i = Math.floor(i / 26) - 1; } while (i >= 0);
+  return s;
+}
 
 /* ---------- La palette ----------
    « g » est le glyphe de la police Netrunner, « k » la touche du clavier qui
@@ -39,10 +56,75 @@ const NET_PAL = [
 ];
 const netType = id => NET_PAL.find(p => p.id === id) || NET_PAL[0];
 
+/* ---------- Les niveaux ---------- */
+
+const netBorne = (v, max) => Math.max(NET_MIN, Math.min(max, Math.round(+v) || 0));
+
+/** Met une carte au format à niveaux. Les cartes dessinées avant cette
+    version rangeaient leurs cases directement sur la forteresse : elles
+    deviennent un premier niveau, sans rien perdre.
+    @return vrai si quelque chose a été changé (donc à réenregistrer). */
+function netMigrer(c) {
+  if (!c || typeof c !== 'object') return false;
+  let change = false;
+  if (!Array.isArray(c.etages) || !c.etages.length) {
+    c.etages = [{
+      id: uid(), nom: 'Niveau 1',
+      cols: NET_COLS, lignes: NET_LIGNES,
+      cases: (c.cases && typeof c.cases === 'object') ? c.cases : {}
+    }];
+    change = true;
+  }
+  if ('cases' in c) { delete c.cases; change = true; }
+  c.etages.forEach((et, i) => {
+    if (!et.id) { et.id = uid(); change = true; }
+    if (!et.nom) { et.nom = 'Niveau ' + (i + 1); change = true; }
+    if (!et.cases || typeof et.cases !== 'object') { et.cases = {}; change = true; }
+    const co = netBorne(et.cols || NET_COLS, NET_COLS_MAX);
+    const li = netBorne(et.lignes || NET_LIGNES, NET_LIGNES_MAX);
+    if (et.cols !== co) { et.cols = co; change = true; }
+    if (et.lignes !== li) { et.lignes = li; change = true; }
+  });
+  if (!c.etages.some(e => e.id === c.etage)) { c.etage = c.etages[0].id; change = true; }
+  return change;
+}
+
+/** Le niveau affiché. */
+function netEtage(c) {
+  return c.etages.find(e => e.id === c.etage) || c.etages[0];
+}
+
+/** Un niveau vierge, à la taille du précédent : on dessine rarement un
+    sous-sol d'une autre dimension que le rez-de-chaussée. */
+function netEtageVierge(c, nom) {
+  const d = c.etages[c.etages.length - 1] || {};
+  return {
+    id: uid(), nom: nom || ('Niveau ' + (c.etages.length + 1)),
+    cols: d.cols || NET_COLS, lignes: d.lignes || NET_LIGNES, cases: {}
+  };
+}
+
+/** Les cases qui tomberaient hors du cadre si on le ramenait à cols × lignes. */
+function netHorsCadre(et, cols, lignes) {
+  return Object.keys(et.cases).filter(k => {
+    const [x, y] = k.split(',').map(Number);
+    return x >= cols || y >= lignes;
+  });
+}
+
 /* ---------- Stockage ----------
    Les cartes vivent à côté des personnages, dans le même entrepôt. */
 const NETS = {
-  all() { const s = STORE._read(); return s.cartes || (s.cartes = []); },
+  all() {
+    const s = STORE._read();
+    const l = s.cartes || (s.cartes = []);
+    /* Les anciennes cartes se convertissent ici, une fois pour toutes, à la
+       première lecture — et nulle part ailleurs : c'est le seul passage obligé. */
+    let change = false;
+    l.forEach(c => { if (netMigrer(c)) change = true; });
+    if (change) STORE._write();
+    return l;
+  },
   get(id) { return this.all().find(c => c.id === id) || null; },
   save(c) {
     const l = this.all(), i = l.findIndex(x => x.id === c.id);
@@ -61,9 +143,11 @@ const NETS = {
     STORE._write();
   },
   vierge(nom) {
+    const e = { id: uid(), nom: 'Niveau 1', cols: NET_COLS, lignes: NET_LIGNES, cases: {} };
     return {
       id: uid(), nom: nom || 'Forteresse sans nom', proprio: '', secu: 2,
-      int: 5, murFor: 0, cout: 0, notes: '', cases: {}, maj: new Date().toISOString()
+      int: 5, murFor: 0, cout: 0, notes: '',
+      etages: [e], etage: e.id, maj: new Date().toISOString()
     };
   }
 };
@@ -76,10 +160,15 @@ const NET_SECU = [
   { n: 4, t: 'Noir — sécurité maximale', d: "Corporations majeures, militaire. Anti-personnel létal autorisé." }
 ];
 
-/** Recalcule ce que le livre fait découler de la carte : INT, coût, mémoire. */
+/** Recalcule ce que le livre fait découler de la carte : INT, coût, mémoire.
+    Le compte porte sur TOUS les niveaux : une CPU posée au sous-sol compte
+    dans l'intelligence du système autant qu'une CPU du rez-de-chaussée. */
 function netBilan(c) {
   const par = {};
-  Object.values(c.cases).forEach(e => { par[e.type] = (par[e.type] || 0) + 1; });
+  let elements = 0;
+  (c.etages || []).forEach(et => Object.values(et.cases).forEach(e => {
+    par[e.type] = (par[e.type] || 0) + 1; elements++;
+  }));
   const cpu = par.cpu || 0, mem = par.memoire || 0;
   return {
     par, cpu, mem,
@@ -88,42 +177,54 @@ function netBilan(c) {
     cout: cpu * 10000,
     um: mem * 10,
     memAttendue: cpu * 4,
-    elements: Object.keys(c.cases).length
+    elements,
+    niveaux: (c.etages || []).length
   };
 }
 
-/** Le système de génération rapide, pas à pas (Livre du Net, p. 85). */
-function netGenerer(c, secu) {
+/** Le système de génération rapide, pas à pas (Livre du Net, p. 85).
+    Ne remplit QUE le niveau visé : les autres niveaux ne bougent pas. */
+function netGenerer(c, secu, et) {
+  et = et || netEtage(c);
+  const COLS = et.cols, LIGNES = et.lignes;
   const d6 = () => 1 + Math.floor(Math.random() * 6);
   c.secu = secu;
-  c.cases = {};
-  const nbCpu = Math.max(1, Math.min(24, d6() * secu));   // 1D6 × niveau, borné par la place
+  et.cases = {};
+  /* La place disponible borne le nombre de CPU : chacune occupe cinq cases
+     avec ses mémoires, et il faut encore de quoi passer autour. */
+  const tient = Math.max(1, Math.floor((COLS - 4) * (LIGNES - 4) / 9));
+  const nbCpu = Math.max(1, Math.min(tient, d6() * secu));
   c.murFor = secu + d6();
 
   /* On répartit les CPU dans la moitié centrale, chacune avec ses quatre mémoires. */
   const pris = {};
-  const libre = (x, y) => x >= 1 && y >= 1 && x < NET_COLS - 1 && y < NET_LIGNES - 1 && !pris[x + ',' + y];
+  const libre = (x, y) => x >= 1 && y >= 1 && x < COLS - 1 && y < LIGNES - 1 && !pris[x + ',' + y];
   const pose = (x, y, type, champs) => {
     pris[x + ',' + y] = 1;
-    c.cases[x + ',' + y] = Object.assign({ type: type, nom: '', notes: '' }, champs || {});
+    et.cases[x + ',' + y] = Object.assign({ type: type, nom: '', notes: '' }, champs || {});
   };
+  const marge = Math.min(3, Math.floor(Math.min(COLS, LIGNES) / 4));
   let places = 0, essais = 0;
   while (places < nbCpu && essais < 600) {
     essais++;
-    const x = 3 + Math.floor(Math.random() * (NET_COLS - 6));
-    const y = 3 + Math.floor(Math.random() * (NET_LIGNES - 6));
+    const x = marge + Math.floor(Math.random() * Math.max(1, COLS - 2 * marge));
+    const y = marge + Math.floor(Math.random() * Math.max(1, LIGNES - 2 * marge));
     const autour = [[x - 1, y], [x + 1, y], [x, y - 1], [x, y + 1]];
     if (!libre(x, y) || !autour.every(([a, b]) => libre(a, b))) continue;
     pose(x, y, 'cpu', { nom: 'CPU ' + (places + 1) });
     autour.forEach(([a, b], i) => pose(a, b, 'memoire', { nom: 'Mém. ' + (places + 1) + '.' + (i + 1), um: 10 }));
     places++;
   }
+  if (!places) {   /* grille minuscule : au moins une CPU au centre */
+    pose(Math.floor(COLS / 2), Math.floor(LIGNES / 2), 'cpu', { nom: 'CPU 1' });
+    places = 1;
+  }
 
   /* Le mur de données ceinture l'ensemble, avec une grille codée par face. */
-  const occ = Object.keys(c.cases).map(k => k.split(',').map(Number));
+  const occ = Object.keys(et.cases).map(k => k.split(',').map(Number));
   const xs = occ.map(p => p[0]), ys = occ.map(p => p[1]);
-  const x0 = Math.max(0, Math.min(...xs) - 2), x1 = Math.min(NET_COLS - 1, Math.max(...xs) + 2);
-  const y0 = Math.max(0, Math.min(...ys) - 2), y1 = Math.min(NET_LIGNES - 1, Math.max(...ys) + 2);
+  const x0 = Math.max(0, Math.min(...xs) - 2), x1 = Math.min(COLS - 1, Math.max(...xs) + 2);
+  const y0 = Math.max(0, Math.min(...ys) - 2), y1 = Math.min(LIGNES - 1, Math.max(...ys) + 2);
   const bord = [];
   for (let x = x0; x <= x1; x++) { bord.push([x, y0]); bord.push([x, y1]); }
   for (let y = y0 + 1; y < y1; y++) { bord.push([x0, y]); bord.push([x1, y]); }
@@ -131,7 +232,7 @@ function netGenerer(c, secu) {
   const portes = [[Math.round((x0 + x1) / 2), y0], [Math.round((x0 + x1) / 2), y1],
   [x0, Math.round((y0 + y1) / 2)], [x1, Math.round((y0 + y1) / 2)]];
   portes.slice(0, 1 + Math.floor(secu / 2)).forEach(([x, y], i) => {
-    c.cases[x + ',' + y] = { type: 'grille', nom: 'Grille codée ' + (i + 1), for: c.murFor, notes: '' };
+    et.cases[x + ',' + y] = { type: 'grille', nom: 'Grille codée ' + (i + 1), for: c.murFor, notes: '' };
   });
 
   /* Les programmes de défense, tirés du Livre du Net selon le niveau :
@@ -162,10 +263,10 @@ function netGenerer(c, secu) {
     do {
       x = x0 + 1 + Math.floor(Math.random() * Math.max(1, x1 - x0 - 1));
       y = y0 + 1 + Math.floor(Math.random() * Math.max(1, y1 - y0 - 1)); t++;
-    } while (c.cases[x + ',' + y] && t < 300);
-    if (c.cases[x + ',' + y]) return;
+    } while (et.cases[x + ',' + y] && t < 300);
+    if (et.cases[x + ',' + y]) return;
     const estDaemon = /daemon|démon/i.test(p.classe || '');
-    c.cases[x + ',' + y] = {
+    et.cases[x + ',' + y] = {
       type: létal(p) ? 'mortel' : (estDaemon ? 'daemon' : 'programme'),
       nom: p.nom || 'Programme',
       for: p.force || secu + 2,
@@ -178,8 +279,8 @@ function netGenerer(c, secu) {
   for (let t = 0; t < 400; t++) {
     const fx = x0 + 1 + Math.floor(Math.random() * Math.max(1, x1 - x0 - 1));
     const fy = y0 + 1 + Math.floor(Math.random() * Math.max(1, y1 - y0 - 1));
-    if (!c.cases[fx + ',' + fy]) {
-      c.cases[fx + ',' + fy] = { type: 'fichier', nom: 'Fichier maître', um: 2 + secu * 2, notes: '', for: 0 };
+    if (!et.cases[fx + ',' + fy]) {
+      et.cases[fx + ',' + fy] = { type: 'fichier', nom: 'Fichier maître', um: 2 + secu * 2, notes: '', for: 0 };
       break;
     }
   }
@@ -191,6 +292,68 @@ function netGenerer(c, secu) {
 /* ---------- Vue ---------- */
 const NETE = { outil: 'cpu', sel: null };   // outil courant, case sélectionnée
 
+/** Dessine la grille d'un niveau.
+    @param clic  appelé avec la clé « x,y » ; absent, la grille est inerte
+                 (c'est la forme qu'on imprime pour les niveaux non affichés). */
+function netGrille(c, et, clic) {
+  const grille = h('div.net-grille');
+  const tete = h('div.net-ligne.net-tete', h('div.net-coin'));
+  for (let x = 0; x < et.cols; x++) tete.appendChild(h('div.net-col', colLettre(x)));
+  grille.appendChild(tete);
+  for (let y = 0; y < et.lignes; y++) {
+    const ligne = h('div.net-ligne', h('div.net-num', String(y + 1)));
+    for (let x = 0; x < et.cols; x++) {
+      const cle = x + ',' + y, e = et.cases[cle];
+      const t = e ? netType(e.type) : null;
+      const classes = '.net-c' + (e ? '.plein' : '') + (t && t.cl ? '.' + t.cl : '')
+        + (clic && NETE.sel === cle ? '.sel' : '');
+      const cel = clic
+        ? h('button' + classes, {
+          title: e ? (e.nom || t.t) : colLettre(x) + (y + 1),
+          onclick: () => clic(cle, e)
+        }, e ? h('i.nf', t.g) : null)
+        : h('div' + classes, e ? h('i.nf', t.g) : null);
+      ligne.appendChild(cel);
+    }
+    grille.appendChild(ligne);
+  }
+  return grille;
+}
+
+/** Le cadre imprimable d'un niveau : le bandeau de titre, puis la grille.
+    La taille des cases à l'impression se calcule ici : avec quarante colonnes,
+    les 8,4 mm du livre déborderaient de la feuille. */
+function netPlan(c, et, grille, bilan) {
+  const plan = h('div.net-plan',
+    h('div.net-titre',
+      h('b', c.nom || 'Forteresse sans nom'),
+      h('span', (c.proprio ? c.proprio + ' · ' : '')
+        + ((c.etages.length > 1) ? et.nom + ' · ' : '')
+        + 'Sécurité ' + c.secu + ' · INT ' + bilan.int
+        + ' · Mur FOR ' + (c.murFor || '—'))),
+    grille);
+  const mm = Math.min(8.4, 175 / et.cols, 235 / et.lignes);
+  plan.style.setProperty('--net-case', mm.toFixed(2) + 'mm');
+  return plan;
+}
+
+/** Imprime tous les niveaux d'un coup : on monte les plans manquants, on
+    imprime, on les retire. Les grilles ajoutées sont inertes. */
+function netImprimerTout(c, bilan) {
+  const et = netEtage(c);
+  const autres = c.etages.filter(x => x.id !== et.id);
+  if (!autres.length) { window.print(); return; }
+  const bac = h('div.net-tout');
+  autres.forEach(x => {
+    bac.appendChild(netPlan(c, x, netGrille(c, x), bilan));
+    bac.appendChild(netLegende(c, x));
+  });
+  document.body.appendChild(bac);
+  const nettoyer = () => { bac.remove(); window.removeEventListener('afterprint', nettoyer); };
+  window.addEventListener('afterprint', nettoyer);
+  setTimeout(() => { window.print(); setTimeout(nettoyer, 2000); }, 60);
+}
+
 VIEWS.net = function () {
   const wrap = h('div.view-inner');
   let c = NETS.courante();
@@ -198,6 +361,7 @@ VIEWS.net = function () {
 
   const redessine = () => route();
   const maj = () => { const b = netBilan(c); c.int = b.int; c.cout = b.cout; NETS.save(c); };
+  const et = netEtage(c);
 
   /* --- Barre du haut : la carte choisie, les actions --- */
   const cartes = NETS.all();
@@ -211,6 +375,10 @@ VIEWS.net = function () {
         x.nom || 'Sans nom'))) : null,
       h('button.btn.p.sm', { onclick: () => { NETS.save(NETS.vierge('Nouvelle forteresse')); redessine(); } }, 'Nouvelle'),
       h('button.btn.g.sm', { onclick: () => window.print() }, 'Imprimer'),
+      c.etages.length > 1 ? h('button.btn.g.sm', {
+        title: 'Une page par niveau, légende comprise',
+        onclick: () => netImprimerTout(c, netBilan(c))
+      }, 'Imprimer tout') : null,
       h('button.btn.g.sm', { onclick: () => netExport(c) }, 'Exporter'),
       h('button.btn.g.sm', { onclick: () => netImport() }, 'Importer'),
       cartes.length > 1 ? h('button.btn.d.sm', {
@@ -249,40 +417,97 @@ VIEWS.net = function () {
     onclick: () => { NETE.outil = 'gomme'; NETE.sel = null; redessine(); }
   }, h('i', '✕'), h('span', 'Effacer')));
 
-  /* --- La grille --- */
-  const grille = h('div.net-grille');
-  const entete0 = h('div.net-ligne.net-tete', h('div.net-coin'));
-  for (let x = 0; x < NET_COLS; x++) entete0.appendChild(h('div.net-col', colLettre(x)));
-  grille.appendChild(entete0);
-  for (let y = 0; y < NET_LIGNES; y++) {
-    const ligne = h('div.net-ligne', h('div.net-num', String(y + 1)));
-    for (let x = 0; x < NET_COLS; x++) {
-      const cle = x + ',' + y, e = c.cases[cle];
-      const t = e ? netType(e.type) : null;
-      const cel = h('button.net-c' + (e ? '.plein' : '') + (t && t.cl ? '.' + t.cl : '')
-        + (NETE.sel === cle ? '.sel' : ''), {
-        title: e ? (e.nom || t.t) : colLettre(x) + (y + 1),
-        onclick: () => {
-          if (NETE.outil === 'gomme') { delete c.cases[cle]; NETE.sel = null; }
-          else if (e && NETE.sel !== cle) { NETE.sel = cle; }
-          else if (e && NETE.sel === cle) { NETE.sel = null; }
-          else { c.cases[cle] = { type: NETE.outil, nom: '', notes: '', for: 0, um: 0 }; NETE.sel = cle; }
-          maj(); redessine();
-        }
-      }, e ? h('i.nf', t.g) : null);
-      ligne.appendChild(cel);
+  /* --- La grille du niveau affiché --- */
+  const grille = netGrille(c, et, (cle, e) => {
+    if (NETE.outil === 'gomme') { delete et.cases[cle]; NETE.sel = null; }
+    else if (e && NETE.sel !== cle) { NETE.sel = cle; }
+    else if (e && NETE.sel === cle) { NETE.sel = null; }
+    else { et.cases[cle] = { type: NETE.outil, nom: '', notes: '', for: 0, um: 0 }; NETE.sel = cle; }
+    maj(); redessine();
+  });
+
+  /* --- Les onglets des niveaux, rangés comme les feuilles d'un tableur --- */
+  const onglets = h('div.net-ets.no-print');
+  c.etages.forEach(x => onglets.appendChild(
+    h('button.net-et' + (x.id === et.id ? '.on' : ''), {
+      title: x.nom + ' — ' + x.cols + ' × ' + x.lignes + ', '
+        + Object.keys(x.cases).length + ' élément(s)',
+      onclick: () => {
+        if (x.id === et.id) return;
+        c.etage = x.id; NETE.sel = null; NETS.save(c); redessine();
+      }
+    }, h('span.t', x.nom), h('span.n', String(Object.keys(x.cases).length)))));
+  onglets.appendChild(h('button.net-et.net-plus', {
+    title: 'Ajouter un niveau',
+    onclick: () => {
+      const n = netEtageVierge(c);
+      c.etages.push(n); c.etage = n.id; NETE.sel = null;
+      maj(); redessine();
     }
-    grille.appendChild(ligne);
-  }
+  }, '+'));
+
+  /* --- Le niveau affiché : son nom, sa taille, et quoi en faire --- */
+  const titreOnglet = onglets.querySelector('.net-et.on .t');
+  const dimC = h('input', { type: 'number', min: NET_MIN, max: NET_COLS_MAX, value: et.cols });
+  const dimL = h('input', { type: 'number', min: NET_MIN, max: NET_LIGNES_MAX, value: et.lignes });
+  const redimensionner = () => {
+    const cols = netBorne(dimC.value, NET_COLS_MAX), lignes = netBorne(dimL.value, NET_LIGNES_MAX);
+    if (cols === et.cols && lignes === et.lignes) { dimC.value = cols; dimL.value = lignes; return; }
+    const poser = () => {
+      netHorsCadre(et, cols, lignes).forEach(k => delete et.cases[k]);
+      et.cols = cols; et.lignes = lignes; NETE.sel = null; maj(); redessine();
+    };
+    const perdus = netHorsCadre(et, cols, lignes);
+    if (perdus.length) confirmer('Rétrécir le niveau',
+      perdus.length + ' élément(s) se trouvent hors du nouveau cadre et seront supprimés. Continuer ?',
+      poser);
+    else poser();
+  };
+
+  const niveaux = h('div.panel.no-print', { style: { marginBottom: '12px' } },
+    h('div.panel-h', h('h3', 'Les niveaux'), h('div.sp'),
+      h('span.chip', et.nom),
+      h('span.chip', et.cols + ' × ' + et.lignes),
+      h('span.chip', Object.keys(et.cases).length + ' élément(s)')),
+    h('div.net-form',
+      champ('Nom du niveau', et.nom, v => {
+        et.nom = v; maj();
+        if (titreOnglet) titreOnglet.textContent = v || 'Sans nom';
+      }),
+      h('label.net-ch', h('span', 'Colonnes (' + NET_MIN + ' à ' + NET_COLS_MAX + ')'), dimC),
+      h('label.net-ch', h('span', 'Lignes (' + NET_MIN + ' à ' + NET_LIGNES_MAX + ')'), dimL),
+      h('label.net-ch', h('span', ' '),
+        h('button.btn.p', { onclick: redimensionner }, 'Appliquer la taille'))),
+    h('div.row.wrap', { style: { marginTop: '12px' } },
+      h('button.btn.g.sm', {
+        onclick: () => {
+          const copie = {
+            id: uid(), nom: et.nom + ' (copie)', cols: et.cols, lignes: et.lignes,
+            cases: JSON.parse(JSON.stringify(et.cases))
+          };
+          c.etages.splice(c.etages.indexOf(et) + 1, 0, copie);
+          c.etage = copie.id; NETE.sel = null; maj(); redessine();
+        }
+      }, 'Dupliquer ce niveau'),
+      h('div.sp'),
+      c.etages.length > 1 ? h('button.btn.d.sm', {
+        onclick: () => confirmer('Supprimer le niveau',
+          'Supprimer « ' + et.nom +' » et ses ' + Object.keys(et.cases).length
+          + ' élément(s) ? Les autres niveaux ne bougent pas.',
+          () => {
+            c.etages = c.etages.filter(x => x.id !== et.id);
+            c.etage = c.etages[0].id; NETE.sel = null; maj(); redessine();
+          })
+      }, 'Supprimer ce niveau') : null));
 
   /* --- Le détail de la case choisie --- */
   const detail = h('div.panel.net-detail');
-  if (NETE.sel && c.cases[NETE.sel]) {
-    const e = c.cases[NETE.sel], t = netType(e.type);
+  if (NETE.sel && et.cases[NETE.sel]) {
+    const e = et.cases[NETE.sel], t = netType(e.type);
     const [x, y] = NETE.sel.split(',').map(Number);
     detail.appendChild(h('div.panel-h', h('h3', t.t + ' — ' + colLettre(x) + (y + 1)),
       h('div.sp'),
-      h('button.btn.d.sm', { onclick: () => { delete c.cases[NETE.sel]; NETE.sel = null; maj(); redessine(); } }, 'Retirer')));
+      h('button.btn.d.sm', { onclick: () => { delete et.cases[NETE.sel]; NETE.sel = null; maj(); redessine(); } }, 'Retirer')));
     detail.appendChild(h('p.muted', { style: { marginTop: 0 } }, t.aide));
     detail.appendChild(h('div.net-form',
       champ('Nom', e.nom, v => { e.nom = v; maj(); }),
@@ -291,6 +516,23 @@ VIEWS.net = function () {
       h('label.net-ch', h('span', 'Type'),
         h('select', { onchange: ev => { e.type = ev.target.value; maj(); redessine(); } },
           ...NET_PAL.map(p => h('option', { value: p.id, selected: p.id === e.type ? 'selected' : null }, p.t))))));
+    /* Un ascenseur mène quelque part : autant le dire, et pouvoir y aller. */
+    if ((e.type === 'ascenseur' || e.type === 'lld') && c.etages.length > 1) {
+      const autres = c.etages.filter(x => x.id !== et.id);
+      detail.appendChild(h('div.net-form', { style: { marginTop: '8px' } },
+        h('label.net-ch', h('span', 'Mène au niveau'),
+          h('select', { onchange: ev => { e.vers = ev.target.value || null; maj(); } },
+            h('option', { value: '', selected: !e.vers ? 'selected' : null }, '— non précisé —'),
+            ...autres.map(x => h('option', { value: x.id, selected: x.id === e.vers ? 'selected' : null }, x.nom)))),
+        h('label.net-ch', h('span', ' '),
+          h('button.btn.g', {
+            disabled: !e.vers ? '' : null,
+            onclick: () => {
+              if (!e.vers) return;
+              c.etage = e.vers; NETE.sel = null; NETS.save(c); redessine();
+            }
+          }, 'Y aller'))));
+    }
     detail.appendChild(h('label.net-ch', { style: { marginTop: '8px' } }, h('span', 'Notes'),
       h('textarea', { rows: 3, oninput: ev => { e.notes = ev.target.value; maj(); } }, e.notes || '')));
   } else {
@@ -301,54 +543,60 @@ VIEWS.net = function () {
         + "Touche un élément déjà posé pour le nommer et le décrire."));
   }
 
-  /* --- La légende, montée depuis la carte --- */
-  const leg = netLegende(c);
+  /* --- La légende, montée depuis le niveau affiché --- */
+  const leg = netLegende(c, et);
 
   wrap.appendChild(h('div.no-print', barre));
   wrap.appendChild(h('div.no-print', entete));
   wrap.appendChild(h('div.panel.no-print', { style: { marginBottom: '12px' } },
     h('div.panel-h', h('h3', 'Génération rapide')),
     h('p.muted', { style: { marginTop: 0 } },
-      "Le système du livre : 1D6 × niveau pour les CPU, quatre mémoires chacune, "
-      + "mur de données à niveau + 1D6, programmes choisis selon le niveau. Remplace la carte en cours."),
+      "Le système du livre : 1D6 × sécurité pour les CPU, quatre mémoires chacune, "
+      + "mur de données à sécurité + 1D6, programmes choisis selon le niveau de sécurité. "
+      + "Ne remplit que le niveau affiché ; les autres ne bougent pas."),
     h('div.row.wrap', ...NET_SECU.map(s => h('button.btn.g.sm', {
-      onclick: () => confirmer('Générer', `Remplacer la carte par une forteresse de niveau ${s.n} ?`, () => {
-        const r = netGenerer(c, s.n);
+      onclick: () => confirmer('Générer', `Remplacer « ${et.nom} » par une forteresse de sécurité ${s.n} ?`, () => {
+        const r = netGenerer(c, s.n, et);
         NETS.save(c); NETE.sel = null;
             toast(`${r.nbCpu} CPU, mur de FOR ${r.murFor}, ${r.programmes} programme(s).`, 'ok');
         redessine();
       })
-    }, 'Niveau ' + s.n)))));
+    }, 'Sécurité ' + s.n)))));
   wrap.appendChild(h('div.panel', { style: { marginBottom: '12px' } },
-    h('div.panel-h', h('h3', 'Le système')), chiffres));
+    h('div.panel-h', h('h3', 'Le système'), h('div.sp'),
+      c.etages.length > 1 ? h('span.chip', c.etages.length + ' niveaux') : null),
+    chiffres));
   wrap.appendChild(h('div.no-print', pal));
-  wrap.appendChild(h('div.net-plan', h('div.net-titre',
-    h('b', c.nom || 'Forteresse sans nom'),
-    h('span', (c.proprio ? c.proprio + ' · ' : '') + 'Niveau ' + c.secu
-      + ' · INT ' + bilan.int + ' · Mur FOR ' + (c.murFor || '—'))), grille));
+  const plan = netPlan(c, et, grille, bilan);
+  plan.appendChild(onglets);
+  wrap.appendChild(plan);
+  wrap.appendChild(niveaux);
   wrap.appendChild(h('div.no-print', detail));
   wrap.appendChild(leg);
   return wrap;
 };
 
-/** La légende : un bloc par famille, avec les éléments nommés et leurs cases. */
-function netLegende(c) {
+/** La légende d'un niveau : un bloc par famille, avec les éléments nommés
+    et leurs cases. */
+function netLegende(c, et) {
+  et = et || netEtage(c);
   const box = h('div.panel.net-leg', { style: { marginTop: '12px' } },
-    h('div.panel-h', h('h3', 'Légende')));
+    h('div.panel-h', h('h3', c.etages.length > 1 ? 'Légende — ' + et.nom : 'Légende')));
   const parType = {};
-  Object.entries(c.cases).forEach(([cle, e]) => (parType[e.type] || (parType[e.type] = [])).push([cle, e]));
+  Object.entries(et.cases).forEach(([cle, e]) => (parType[e.type] || (parType[e.type] = [])).push([cle, e]));
   const ordre = NET_PAL.map(p => p.id).filter(id => parType[id]);
   if (!ordre.length) {
-    box.appendChild(h('p.muted', { style: { margin: 0 } }, 'Carte vide.'));
+    box.appendChild(h('p.muted', { style: { margin: 0 } }, 'Niveau vide.'));
     return box;
   }
+  const nomNiveau = id => (c.etages.find(x => x.id === id) || {}).nom;
   const liste = h('div.net-leg-l');
   ordre.forEach(id => {
     const t = netType(id), els = parType[id];
     const cases = els.map(([cle]) => { const [x, y] = cle.split(',').map(Number); return colLettre(x) + (y + 1); });
     /* Les mémoires et les murs se comptent, ils ne se détaillent pas : quarante-huit
        lignes « 10 UM » identiques n'apprennent rien à personne. */
-    const nommes = t.bref ? [] : els.filter(([, e]) => e.nom || e.notes || e.for || e.um);
+    const nommes = t.bref ? [] : els.filter(([, e]) => e.nom || e.notes || e.for || e.um || e.vers);
     const resume = t.bref === 1 ? (els.length * 10) + ' UM au total'
       : t.bref === 2 ? 'FOR ' + (els[0][1].for || c.murFor || '—') : null;
     liste.appendChild(h('div.net-leg-i',
@@ -360,7 +608,9 @@ function netLegende(c) {
           : h('span.cases', cases.slice(0, 24).join(', ') + (cases.length > 24 ? '…' : '')),
         ...nommes.map(([cle, e]) => {
           const [x, y] = cle.split(',').map(Number);
-          const bouts = [e.for ? 'FOR ' + e.for : null, e.um ? e.um + ' UM' : null].filter(Boolean).join(' · ');
+          const vers = e.vers ? nomNiveau(e.vers) : null;
+          const bouts = [e.for ? 'FOR ' + e.for : null, e.um ? e.um + ' UM' : null,
+          vers ? '→ ' + vers : null].filter(Boolean).join(' · ');
           return h('div.net-leg-n', h('b', colLettre(x) + (y + 1)), ' ',
             e.nom || t.t, bouts ? ' — ' + bouts : '', e.notes ? ' — ' + e.notes : '');
         }))));
@@ -371,7 +621,7 @@ function netLegende(c) {
 }
 
 function netExport(c) {
-  const blob = new Blob([JSON.stringify({ app: 'cyberpunk-new-dawn', type: 'carte-net', v: 1, carte: c }, null, 2)],
+  const blob = new Blob([JSON.stringify({ app: 'cyberpunk-new-dawn', type: 'carte-net', v: 2, carte: c }, null, 2)],
     { type: 'application/json' });
   const a = h('a', { href: URL.createObjectURL(blob), download: (c.nom || 'carte').replace(/[^\w\-]+/g, '_') + '.json' });
   document.body.appendChild(a); a.click(); a.remove();
@@ -386,10 +636,14 @@ function netImport() {
       try {
         const o = JSON.parse(fr.result);
         const c = o.carte || o;
-        if (!c || !c.cases) throw new Error('pas une carte');
+        /* Les fichiers d'avant les niveaux n'ont qu'un « cases » à la racine ;
+           netMigrer en fait un premier niveau, et rien n'est perdu. */
+        if (!c || typeof c !== 'object' || (!c.cases && !Array.isArray(c.etages)))
+          throw new Error('pas une carte');
+        netMigrer(c);
         c.id = uid();
         NETS.save(c);
-        toast('Carte importée.', 'ok');
+        toast('Carte importée — ' + c.etages.length + ' niveau(x).', 'ok');
         route();
       } catch (e) { toast('Fichier illisible.', 'no'); }
     };
