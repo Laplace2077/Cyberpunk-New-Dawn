@@ -19,6 +19,17 @@ const NET_COLS = 20, NET_LIGNES = 20;
    s'imprime plus et devient illisible à l'écran. */
 const NET_MIN = 4, NET_COLS_MAX = 40, NET_LIGNES_MAX = 60;
 
+/* L'intelligence du système.
+   Le livre écrit « Chaque CPU ajoute 3 à l'INT de base du système (INT de
+   base = 5) » — net_rules.json, « Système de génération rapide de forteresse »,
+   étape 3. Sandrine tranche autrement pour sa table : une forteresse part de 0
+   et ne doit son intelligence qu'à ses CPU. C'est sa règle qui s'applique ici ;
+   remettre 5 ci-dessous suffirait à revenir au livre.
+   Conséquence : le seuil d'Intelligence Artificielle (INT 12) est atteint à
+   quatre CPU au lieu de trois. */
+const NET_INT_BASE = 0;
+const NET_INT_IA = 12;
+
 /** 0 → A … 25 → Z, 26 → AA : au-delà de la vingt-sixième colonne, on double
     la lettre comme dans un tableur. */
 function colLettre(i) {
@@ -31,30 +42,155 @@ function colLettre(i) {
 /* ---------- La palette ----------
    « g » est le glyphe de la police Netrunner, « k » la touche du clavier qui
    la produit. Le livre impose le cercle barré d'une croix pour la CPU ; le
-   reste suit l'usage des plans de forteresse. */
+   reste suit l'usage des plans de forteresse.
+
+   « champs » dit ce qu'on peut noter sur CET objet-là, et rien d'autre : un
+   terminal n'a ni FOR ni UM, une grille codée a un code, un drone un armement.
+   Chaque champ : k la clé enregistrée, t son libellé, f sa forme —
+   texte, nombre, zone (plusieurs lignes), choix (liste), niveau (un autre
+   niveau de la forteresse). « nom » et « notes » sont communs à tout et ne
+   figurent pas ici. */
 const NET_PAL = [
-  { id: 'cpu', t: 'CPU', g: 'c', cl: 'maitre', aide: 'Unité centrale. +3 INT au système, 10 000 €$, quatre mémoires adjacentes.' },
-  { id: 'memoire', t: 'Mémoire', g: 'm', bref: 1, aide: '10 unités mémoire. Se place dans une case adjacente à sa CPU.' },
-  { id: 'mur', t: 'Mur de données', g: 'b', cl: 'mur', bref: 2, aide: 'Blindage du système. Note sa FOR ; il faut le percer ou le contourner.' },
-  { id: 'grille', t: 'Grille codée', g: 'v', aide: 'Porte de code : le passage prévu, pour qui a le mot de passe.' },
-  { id: 'fichier', t: 'Fichier', g: 'p', aide: 'Données stockées. Note son volume en UM et ce qu’il contient.' },
-  { id: 'programme', t: 'Programme', g: 'l', cl: 'ice', aide: 'ICE en patrouille ou en garde. Note sa FOR et son nom.' },
-  { id: 'mortel', t: 'Programme mortel', g: 's', cl: 'danger', aide: 'Anti-personnel létal. Niveau 4 seulement, en principe.' },
-  { id: 'daemon', t: 'Daemon', g: 'n', aide: 'Programme autonome attaché à une tâche du système.' },
-  { id: 'terminal', t: 'Terminal', g: 't', aide: 'Poste de travail physique : une entrée possible depuis le monde réel.' },
-  { id: 'lld', t: 'Liaison longue distance', g: 'K', cl: 'lien', aide: 'Sortie vers une autre grille de ville. Note son niveau de pistage.' },
-  { id: 'ascenseur', t: 'Ascenseur', g: 'h', cl: 'lien', aide: 'Passage vers une autre sous-grille du même système.' },
-  { id: 'reseau', t: 'Nœud de réseau', g: 'Z', aide: 'Concentrateur reliant plusieurs sous-systèmes.' },
-  { id: 'serveur', t: 'Serveur', g: 'S', aide: 'Baie physique : paye, archives, production.' },
-  { id: 'bdd', t: 'Base de données', g: 'M', aide: 'Gros volume de données, souvent la cible du run.' },
-  { id: 'camera', t: 'Caméra', g: 'C', aide: 'Surveillance physique pilotée depuis le système.' },
-  { id: 'drone', t: 'Drone', g: 'D', aide: 'Appareil contrôlé par le système. Dangereux côté réel.' },
-  { id: 'antenne', t: 'Antenne', g: 'W', aide: 'Liaison sans fil : une porte d’entrée pour qui s’approche.' },
-  { id: 'robot', t: 'Robot', g: 'R', aide: 'Machine de manutention ou de sécurité sous contrôle du système.' },
-  { id: 'satellite', t: 'Satellite', g: 'G', aide: 'Relais orbital. Niveau de sécurité élevé par nature.' },
-  { id: 'note', t: 'Repère', g: 'a', aide: 'Point d’intérêt libre : ce que tu veux y mettre.' }
+  {
+    id: 'cpu', t: 'CPU', g: 'c', cl: 'maitre',
+    aide: 'Unité centrale. +3 INT au système, 10 000 €$, quatre mémoires adjacentes.',
+    champs: []
+  },
+  {
+    id: 'memoire', t: 'Mémoire', g: 'm', bref: 1,
+    aide: '10 unités mémoire. Se place dans une case adjacente à sa CPU.',
+    champs: [{ k: 'um', t: 'Capacité (UM)', f: 'nombre', d: 10 }]
+  },
+  {
+    id: 'mur', t: 'Mur de données', g: 'b', cl: 'mur', bref: 2,
+    aide: 'Blindage du système. Note sa FOR ; il faut le percer ou le contourner.',
+    champs: [{ k: 'for', t: 'FOR du mur', f: 'nombre' }]
+  },
+  {
+    id: 'grille', t: 'Grille codée', g: 'v',
+    aide: 'Porte de code : le passage prévu, pour qui a le mot de passe.',
+    champs: [
+      { k: 'for', t: 'FOR', f: 'nombre' },
+      { k: 'code', t: 'Code ou mot de passe', f: 'texte' }
+    ]
+  },
+  {
+    id: 'fichier', t: 'Fichier', g: 'p',
+    aide: 'Données stockées. Note son volume en UM et ce qu’il contient.',
+    champs: [
+      { k: 'um', t: 'Volume (UM)', f: 'nombre' },
+      { k: 'protection', t: 'Protection', f: 'choix', opt: ['', 'Aucune', 'Chiffré', 'Piégé', 'Chiffré et piégé'] }
+    ]
+  },
+  {
+    id: 'programme', t: 'Programme', g: 'l', cl: 'ice', livre: 1,
+    aide: 'ICE en patrouille ou en garde. Note sa FOR et son nom.',
+    champs: [
+      { k: 'for', t: 'FOR', f: 'nombre' },
+      { k: 'um', t: 'UM', f: 'nombre' },
+      { k: 'classe', t: 'Classe', f: 'texte' }
+    ]
+  },
+  {
+    id: 'mortel', t: 'Programme mortel', g: 's', cl: 'danger', livre: 1,
+    aide: 'Anti-personnel létal. Niveau 4 seulement, en principe.',
+    champs: [
+      { k: 'for', t: 'FOR', f: 'nombre' },
+      { k: 'um', t: 'UM', f: 'nombre' },
+      { k: 'classe', t: 'Classe', f: 'texte' }
+    ]
+  },
+  {
+    id: 'daemon', t: 'Daemon', g: 'n', livre: 1,
+    aide: 'Programme autonome attaché à une tâche du système.',
+    champs: [
+      { k: 'for', t: 'FOR', f: 'nombre' },
+      { k: 'um', t: 'UM', f: 'nombre' },
+      { k: 'tache', t: 'Tâche confiée', f: 'texte' }
+    ]
+  },
+  {
+    id: 'terminal', t: 'Terminal', g: 't',
+    aide: 'Poste de travail physique : une entrée possible depuis le monde réel.',
+    champs: [
+      { k: 'lieu', t: 'Où il se trouve', f: 'texte' },
+      { k: 'acces', t: 'Accès', f: 'choix', opt: ['', 'Libre', 'Badge', 'Mot de passe', 'Biométrie', 'Condamné'] }
+    ]
+  },
+  {
+    id: 'lld', t: 'Liaison longue distance', g: 'K', cl: 'lien',
+    aide: 'Sortie vers une autre grille de ville. Note son niveau de pistage.',
+    champs: [
+      { k: 'destination', t: 'Mène à', f: 'texte' },
+      { k: 'pistage', t: 'Niveau de pistage', f: 'nombre' }
+    ]
+  },
+  {
+    id: 'ascenseur', t: 'Ascenseur', g: 'h', cl: 'lien',
+    aide: 'Passage vers une autre sous-grille du même système.',
+    champs: [{ k: 'vers', t: 'Mène au niveau', f: 'niveau' }]
+  },
+  {
+    id: 'reseau', t: 'Nœud de réseau', g: 'Z',
+    aide: 'Concentrateur reliant plusieurs sous-systèmes.',
+    champs: [{ k: 'relie', t: 'Sous-systèmes reliés', f: 'texte' }]
+  },
+  {
+    id: 'serveur', t: 'Serveur', g: 'S',
+    aide: 'Baie physique : paye, archives, production.',
+    champs: [
+      { k: 'role', t: 'À quoi il sert', f: 'texte' },
+      { k: 'um', t: 'Volume (UM)', f: 'nombre' }
+    ]
+  },
+  {
+    id: 'bdd', t: 'Base de données', g: 'M',
+    aide: 'Gros volume de données, souvent la cible du run.',
+    champs: [
+      { k: 'um', t: 'Volume (UM)', f: 'nombre' },
+      { k: 'protection', t: 'Protection', f: 'choix', opt: ['', 'Aucune', 'Chiffrée', 'Piégée', 'Chiffrée et piégée'] }
+    ]
+  },
+  {
+    id: 'camera', t: 'Caméra', g: 'C',
+    aide: 'Surveillance physique pilotée depuis le système.',
+    champs: [{ k: 'champ', t: 'Ce qu’elle couvre', f: 'texte' }]
+  },
+  {
+    id: 'drone', t: 'Drone', g: 'D',
+    aide: 'Appareil contrôlé par le système. Dangereux côté réel.',
+    champs: [
+      { k: 'modele', t: 'Modèle', f: 'texte' },
+      { k: 'armement', t: 'Armement', f: 'texte' }
+    ]
+  },
+  {
+    id: 'antenne', t: 'Antenne', g: 'W',
+    aide: 'Liaison sans fil : une porte d’entrée pour qui s’approche.',
+    champs: [{ k: 'portee', t: 'Portée', f: 'texte' }]
+  },
+  {
+    id: 'robot', t: 'Robot', g: 'R',
+    aide: 'Machine de manutention ou de sécurité sous contrôle du système.',
+    champs: [
+      { k: 'modele', t: 'Modèle', f: 'texte' },
+      { k: 'armement', t: 'Armement', f: 'texte' }
+    ]
+  },
+  {
+    id: 'satellite', t: 'Satellite', g: 'G',
+    aide: 'Relais orbital. Niveau de sécurité élevé par nature.',
+    champs: [{ k: 'destination', t: 'Relaie vers', f: 'texte' }]
+  },
+  {
+    id: 'note', t: 'Repère', g: 'a',
+    aide: 'Point d’intérêt libre : ce que tu veux y mettre.',
+    champs: []
+  }
 ];
 const netType = id => NET_PAL.find(p => p.id === id) || NET_PAL[0];
+/** Les clés que ce type sait montrer, « nom » et « notes » compris. */
+const netCles = id => ['nom', 'notes'].concat((netType(id).champs || []).map(x => x.k));
 
 /* ---------- Les niveaux ---------- */
 
@@ -146,7 +282,7 @@ const NETS = {
     const e = { id: uid(), nom: 'Niveau 1', cols: NET_COLS, lignes: NET_LIGNES, cases: {} };
     return {
       id: uid(), nom: nom || 'Forteresse sans nom', proprio: '', secu: 2,
-      int: 5, murFor: 0, cout: 0, notes: '',
+      int: NET_INT_BASE, murFor: 0, cout: 0, notes: '',
       etages: [e], etage: e.id, maj: new Date().toISOString()
     };
   }
@@ -172,8 +308,8 @@ function netBilan(c) {
   const cpu = par.cpu || 0, mem = par.memoire || 0;
   return {
     par, cpu, mem,
-    int: 5 + 3 * cpu,
-    ia: 5 + 3 * cpu >= 12,
+    int: NET_INT_BASE + 3 * cpu,
+    ia: NET_INT_BASE + 3 * cpu >= NET_INT_IA,
     cout: cpu * 10000,
     um: mem * 10,
     memAttendue: cpu * 4,
@@ -289,14 +425,67 @@ function netGenerer(c, secu, et) {
   return { nbCpu: places, murFor: c.murFor, programmes: choisis.length };
 }
 
-/* ---------- Vue ---------- */
-const NETE = { outil: 'cpu', sel: null };   // outil courant, case sélectionnée
+/* ---------- Vue ----------
+   outil   : ce que pose le pinceau, ou 'gomme', ou 'main' (déplacer)
+   forme   : 'libre' on peint case par case en glissant ; 'cadre' trace le
+             pourtour d'un rectangle ; 'plein' le remplit
+   sel     : la case dont on montre la fiche */
+const NETE = { outil: 'cpu', forme: 'libre', sel: null, joueur: false };
+
+/* ---------- Annuler / rétablir ----------
+   On garde des photographies complètes des niveaux. Une forteresse pèse
+   quelques dizaines de kilo-octets : à trente photographies, c'est sans
+   commune mesure avec le confort que ça donne quand un glissé de travers
+   vient d'effacer douze cases. */
+const NETH = {
+  MAX: 30,
+  carte: null, pile: [], pos: -1,
+
+  _photo(c) { return JSON.stringify({ etages: c.etages, etage: c.etage }); },
+
+  /** Repart de zéro quand on change de carte. */
+  caler(c) {
+    if (this.carte === c.id) return;
+    this.carte = c.id; this.pile = [this._photo(c)]; this.pos = 0;
+  },
+  /** À appeler AVANT de modifier quoi que ce soit. */
+  avant(c) {
+    this.caler(c);
+    const p = this._photo(c);
+    if (this.pile[this.pos] === p) return;
+    this.pile = this.pile.slice(0, this.pos + 1);
+    this.pile.push(p);
+    if (this.pile.length > this.MAX) this.pile.shift();
+    this.pos = this.pile.length - 1;
+  },
+  /** À appeler APRÈS, pour que la dernière photographie soit l'état courant. */
+  apres(c) {
+    this.caler(c);
+    const p = this._photo(c);
+    if (this.pile[this.pos] === p) return;
+    this.pile = this.pile.slice(0, this.pos + 1);
+    this.pile.push(p);
+    if (this.pile.length > this.MAX) this.pile.shift();
+    this.pos = this.pile.length - 1;
+  },
+  peutAnnuler() { return this.pos > 0; },
+  peutRetablir() { return this.pos >= 0 && this.pos < this.pile.length - 1; },
+  _poser(c, i) {
+    const o = JSON.parse(this.pile[i]);
+    c.etages = o.etages; c.etage = o.etage;
+    this.pos = i;
+    netMigrer(c);
+    return c;
+  },
+  annuler(c) { return this.peutAnnuler() ? this._poser(c, this.pos - 1) : null; },
+  retablir(c) { return this.peutRetablir() ? this._poser(c, this.pos + 1) : null; }
+};
 
 /** Dessine la grille d'un niveau.
-    @param clic  appelé avec la clé « x,y » ; absent, la grille est inerte
-                 (c'est la forme qu'on imprime pour les niveaux non affichés). */
-function netGrille(c, et, clic) {
-  const grille = h('div.net-grille');
+    @param vivante  objet { clic, peindre } ; absent, la grille est inerte
+                    (c'est la forme qu'on imprime pour les niveaux non affichés). */
+function netGrille(c, et, vivante) {
+  const grille = h('div.net-grille' + (vivante ? '.net-vive' : ''));
   const tete = h('div.net-ligne.net-tete', h('div.net-coin'));
   for (let x = 0; x < et.cols; x++) tete.appendChild(h('div.net-col', colLettre(x)));
   grille.appendChild(tete);
@@ -306,18 +495,118 @@ function netGrille(c, et, clic) {
       const cle = x + ',' + y, e = et.cases[cle];
       const t = e ? netType(e.type) : null;
       const classes = '.net-c' + (e ? '.plein' : '') + (t && t.cl ? '.' + t.cl : '')
-        + (clic && NETE.sel === cle ? '.sel' : '');
-      const cel = clic
+        + (vivante && NETE.sel === cle ? '.sel' : '');
+      const cel = vivante
         ? h('button' + classes, {
-          title: e ? (e.nom || t.t) : colLettre(x) + (y + 1),
-          onclick: () => clic(cle, e)
+          dataset: { cle: cle },
+          title: e ? (e.nom || t.t) : colLettre(x) + (y + 1)
         }, e ? h('i.nf', t.g) : null)
         : h('div' + classes, e ? h('i.nf', t.g) : null);
       ligne.appendChild(cel);
     }
     grille.appendChild(ligne);
   }
+  if (vivante) netPinceau(grille, c, et, vivante);
   return grille;
+}
+
+/** Remet une case à jour dans le DOM sans tout redessiner : pendant qu'on
+    glisse, reconstruire la grille ferait perdre le pointeur. */
+function netRafraichirCase(grille, et, cle) {
+  const cel = grille.querySelector('.net-c[data-cle="' + cle + '"]');
+  if (!cel) return;
+  const e = et.cases[cle], t = e ? netType(e.type) : null;
+  const [x, y] = cle.split(',').map(Number);
+  cel.className = 'net-c' + (e ? ' plein' : '') + (t && t.cl ? ' ' + t.cl : '')
+    + (NETE.sel === cle ? ' sel' : '');
+  clear(cel);
+  if (e) cel.appendChild(h('i.nf', t.g));
+  cel.title = e ? (e.nom || t.t) : colLettre(x) + (y + 1);
+}
+
+/** Les cases du pourtour (ou de l'intérieur) du rectangle a → b. */
+function netRectangle(a, b, plein) {
+  const [ax, ay] = a.split(',').map(Number), [bx, by] = b.split(',').map(Number);
+  const x0 = Math.min(ax, bx), x1 = Math.max(ax, bx);
+  const y0 = Math.min(ay, by), y1 = Math.max(ay, by);
+  const out = [];
+  for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) {
+    if (plein || x === x0 || x === x1 || y === y0 || y === y1) out.push(x + ',' + y);
+  }
+  return out;
+}
+
+/** Le pinceau : maintenir et glisser pose (ou efface) une suite de cases,
+    au lieu de cliquer vingt fois pour ceinturer une forteresse.
+    Un clic sans déplacement garde son ancien sens : il ouvre la fiche. */
+function netPinceau(grille, c, et, vivante) {
+  let actif = null;   // { depart, bouge, mode }
+
+  const caseSous = ev => {
+    const el = document.elementFromPoint(ev.clientX, ev.clientY);
+    const cel = el && el.closest ? el.closest('.net-c[data-cle]') : null;
+    return cel && grille.contains(cel) ? cel.dataset.cle : null;
+  };
+  const apercu = cles => {
+    grille.querySelectorAll('.net-c.apercu').forEach(x => x.classList.remove('apercu'));
+    (cles || []).forEach(k => {
+      const el = grille.querySelector('.net-c[data-cle="' + k + '"]');
+      if (el) el.classList.add('apercu');
+    });
+  };
+
+  grille.addEventListener('pointerdown', ev => {
+    if (ev.button !== undefined && ev.button !== 0) return;
+    const cle = caseSous(ev);
+    if (cle === null) return;
+    /* Le tactile capture le pointeur sur la case de départ : sans ça, aucune
+       autre case ne verrait passer le doigt. */
+    if (ev.target.releasePointerCapture && ev.target.hasPointerCapture
+      && ev.target.hasPointerCapture(ev.pointerId)) {
+      try { ev.target.releasePointerCapture(ev.pointerId); } catch (e) { }
+    }
+    actif = { depart: cle, bouge: false, mode: NETE.outil };
+    if (NETE.outil === 'main') actif.pris = et.cases[cle] ? cle : null;
+  });
+
+  grille.addEventListener('pointermove', ev => {
+    if (!actif) return;
+    const cle = caseSous(ev);
+    if (cle === null || cle === actif.depart && !actif.bouge) return;
+    if (cle === actif.dernier) return;
+    actif.dernier = cle;
+    if (!actif.bouge) { actif.bouge = true; ev.preventDefault(); }
+
+    if (NETE.outil === 'main') { apercu(actif.pris ? [cle] : []); return; }
+    if (NETE.forme !== 'libre') { apercu(netRectangle(actif.depart, cle, NETE.forme === 'plein')); return; }
+    /* Tracé libre : on peint au fil du doigt, DOM seulement, et on
+       n'enregistre qu'au relâchement. */
+    if (!actif.commence) { actif.commence = 1; NETH.avant(c); vivante.poser(actif.depart); netRafraichirCase(grille, et, actif.depart); }
+    vivante.poser(cle);
+    netRafraichirCase(grille, et, cle);
+  });
+
+  const finir = ev => {
+    if (!actif) return;
+    const a = actif; actif = null;
+    apercu([]);
+    if (!a.bouge) { vivante.clic(a.depart); return; }          // simple clic : la fiche
+    const cle = (ev && caseSous(ev)) || a.dernier || a.depart;
+    if (NETE.outil === 'main') {
+      if (a.pris && cle !== a.pris) vivante.deplacer(a.pris, cle);
+      else vivante.redessiner();
+      return;
+    }
+    if (NETE.forme !== 'libre') {
+      NETH.avant(c);
+      netRectangle(a.depart, cle, NETE.forme === 'plein').forEach(k => vivante.poser(k));
+    }
+    vivante.terminer();
+  };
+  grille.addEventListener('pointerup', finir);
+  grille.addEventListener('pointercancel', () => { actif = null; apercu([]); });
+  /* Relâcher hors de la grille ne doit pas laisser le pinceau collé. */
+  grille.addEventListener('pointerleave', ev => { if (actif && actif.bouge) finir(ev); });
 }
 
 /** Le cadre imprimable d'un niveau : le bandeau de titre, puis la grille.
@@ -328,8 +617,8 @@ function netPlan(c, et, grille, bilan) {
     h('div.net-titre',
       h('b', c.nom || 'Forteresse sans nom'),
       h('span', (c.proprio ? c.proprio + ' · ' : '')
-        + ((c.etages.length > 1) ? et.nom + ' · ' : '')
-        + 'Sécurité ' + c.secu + ' · INT ' + bilan.int
+        + ((c.etages.length > 1) ? et.nom : '')),
+      h('span.mj', 'Sécurité ' + c.secu + ' · INT ' + bilan.int
         + ' · Mur FOR ' + (c.murFor || '—'))),
     grille);
   const mm = Math.min(8.4, 175 / et.cols, 235 / et.lignes);
@@ -337,21 +626,290 @@ function netPlan(c, et, grille, bilan) {
   return plan;
 }
 
-/** Imprime tous les niveaux d'un coup : on monte les plans manquants, on
-    imprime, on les retire. Les grilles ajoutées sont inertes. */
-function netImprimerTout(c, bilan) {
+/** Imprime la carte.
+    @param tous    tous les niveaux au lieu du seul niveau affiché
+    @param joueur  sans les FOR, les notes ni les chiffres du système : la
+                   copie qu'on pose sur la table devant les joueurs. */
+function netImprimer(c, bilan, opts) {
+  opts = opts || {};
   const et = netEtage(c);
-  const autres = c.etages.filter(x => x.id !== et.id);
-  if (!autres.length) { window.print(); return; }
-  const bac = h('div.net-tout');
-  autres.forEach(x => {
-    bac.appendChild(netPlan(c, x, netGrille(c, x), bilan));
-    bac.appendChild(netLegende(c, x));
-  });
-  document.body.appendChild(bac);
-  const nettoyer = () => { bac.remove(); window.removeEventListener('afterprint', nettoyer); };
+  const autres = opts.tous ? c.etages.filter(x => x.id !== et.id) : [];
+  const bac = autres.length ? h('div.net-tout') : null;
+  if (bac) {
+    autres.forEach(x => {
+      bac.appendChild(netPlan(c, x, netGrille(c, x), bilan));
+      bac.appendChild(netLegende(c, x));
+    });
+    document.body.appendChild(bac);
+  }
+  if (opts.joueur) document.body.classList.add('net-joueur');
+  const nettoyer = () => {
+    if (bac) bac.remove();
+    document.body.classList.remove('net-joueur');
+    window.removeEventListener('afterprint', nettoyer);
+  };
   window.addEventListener('afterprint', nettoyer);
   setTimeout(() => { window.print(); setTimeout(nettoyer, 2000); }, 60);
+}
+
+/** Un élément neuf, avec les seuls champs que son type connaît. */
+function netNeuf(type) {
+  const e = { type: type, nom: '', notes: '' };
+  (netType(type).champs || []).forEach(f => {
+    e[f.k] = f.d !== undefined ? f.d : (f.f === 'nombre' ? 0 : '');
+  });
+  return e;
+}
+
+/** Les valeurs enregistrées sur un élément qui ne veulent plus rien dire pour
+    son type — une FOR restée sur un terminal après un changement de type.
+    On ne les efface pas en douce : on les montre et on propose de les retirer. */
+function netOrphelins(e) {
+  const connues = netCles(e.type).concat(['type']);
+  return Object.keys(e).filter(k => connues.indexOf(k) < 0
+    && e[k] !== '' && e[k] !== 0 && e[k] !== null && e[k] !== undefined);
+}
+
+/** La liste des programmes du livre, pour en piocher un sur un ICE. */
+function netChoisirProgramme(e, apres) {
+  const prog = (DB.net_programs || []);
+  if (!prog.length) { toast('Les programmes du livre ne sont pas chargés.', 'no'); return; }
+  const liste = h('div.rz-comp.net-prog');
+  const recherche = h('input', { type: 'search', placeholder: 'Chercher un programme…', style: { width: '100%', marginBottom: '10px' } });
+  let m;
+
+  const remplir = () => {
+    clear(liste);
+    const f = noAcc(recherche.value || '');
+    let vus = 0;
+    prog.forEach(p => {
+      if (f && noAcc((p.nom || '') + ' ' + (p.classe || '') + ' ' + (p.fonction || '')).indexOf(f) < 0) return;
+      if (++vus > 120) return;
+      liste.appendChild(h('div.rz-l.tb-clic', {
+        onclick: () => {
+          e.nom = p.nom || e.nom;
+          if ('for' in e) e.for = p.force || 0;
+          if ('um' in e) e.um = p.um || 0;
+          if ('classe' in e) e.classe = p.classe || '';
+          const d = (p.fonction || p.desc || '').trim();
+          e.notes = d ? d : e.notes;
+          if (m) m.close();
+          apres();
+        }
+      },
+        h('span.n', p.nom || '—'),
+        h('span.chip', p.classe || '—'),
+        h('i', 'FOR ' + (p.force || '—') + ' · ' + (p.um || '—') + ' UM')));
+    });
+    if (!vus) liste.appendChild(h('p.muted', { style: { margin: 0 } }, 'Rien ne correspond.'));
+    else if (vus > 120) liste.appendChild(h('p.muted', { style: { margin: '6px 0 0' } },
+      'Les 120 premiers seulement — affine la recherche.'));
+  };
+  recherche.addEventListener('input', remplir);
+  remplir();
+
+  m = modal({
+    wide: true, title: 'Programmes du livre (' + prog.length + ')',
+    body: h('div', recherche, liste),
+    actions: [{ label: 'Annuler' }]
+  });
+  setTimeout(() => recherche.focus(), 50);
+}
+
+/** La fiche d'un élément : seulement ce que son type sait porter. */
+function netFiche(c, et, maj, redessine) {
+  const box = h('div.panel.net-detail');
+  const cle = NETE.sel, e = cle ? et.cases[cle] : null;
+
+  if (!e) {
+    box.appendChild(h('p.muted', { style: { margin: 0 } },
+      NETE.outil === 'gomme'
+        ? "Touche une case pour la vider. Maintiens et glisse pour en effacer plusieurs d’un geste."
+        : NETE.outil === 'main'
+          ? "Attrape un élément posé et glisse-le sur une case libre pour le déplacer avec son nom et ses notes."
+          : "Choisis un symbole dans la palette, puis touche une case pour le poser. "
+          + "Maintiens et glisse pour en poser plusieurs ; en mode « Cadre », glisse d’un coin à "
+          + "l’autre pour tracer un pourtour. Touche un élément déjà posé pour le décrire."));
+    return box;
+  }
+
+  const t = netType(e.type);
+  const [x, y] = cle.split(',').map(Number);
+  const ecrire = () => { maj(); NETH.apres(c); };
+
+  box.appendChild(h('div.panel-h', h('h3', t.t + ' — ' + colLettre(x) + (y + 1)),
+    h('div.sp'),
+    t.livre ? h('button.btn.g.sm', {
+      onclick: () => netChoisirProgramme(e, () => { maj(); NETH.apres(c); redessine(); })
+    }, 'Choisir dans le livre') : null,
+    h('button.btn.d.sm', {
+      onclick: () => { NETH.avant(c); delete et.cases[cle]; NETE.sel = null; maj(); NETH.apres(c); redessine(); }
+    }, 'Retirer')));
+  box.appendChild(h('p.muted', { style: { marginTop: 0 } }, t.aide));
+
+  /* Le nom et le type, communs à tout ; puis les champs du type, et rien d'autre. */
+  const grille = h('div.net-form');
+  grille.appendChild(h('label.net-ch', h('span', 'Nom'),
+    h('input', { type: 'text', value: e.nom || '', oninput: ev => { e.nom = ev.target.value; ecrire(); } })));
+  grille.appendChild(h('label.net-ch', h('span', 'Type'),
+    h('select', {
+      onchange: ev => {
+        NETH.avant(c);
+        const neuf = netNeuf(ev.target.value);
+        /* On garde le nom, les notes, et les valeurs que le nouveau type
+           connaît aussi : changer un programme en daemon ne doit pas effacer
+           sa FOR. Le reste est signalé plus bas, pas supprimé. */
+        neuf.nom = e.nom; neuf.notes = e.notes;
+        Object.keys(e).forEach(k => {
+          if (k !== 'type' && k in neuf && e[k] !== '' && e[k] !== 0) neuf[k] = e[k];
+          else if (k !== 'type' && !(k in neuf)) neuf[k] = e[k];
+        });
+        et.cases[cle] = neuf;
+        maj(); NETH.apres(c); redessine();
+      }
+    }, ...NET_PAL.map(p => h('option', { value: p.id, selected: p.id === e.type ? 'selected' : null }, p.t)))));
+
+  (t.champs || []).forEach(f => {
+    if (f.f === 'niveau') {
+      const autres = c.etages.filter(z => z.id !== et.id);
+      if (!autres.length) {
+        grille.appendChild(h('label.net-ch', h('span', f.t),
+          h('p.muted', { style: { margin: '4px 0 0', fontSize: '13px' } },
+            'Cette forteresse n’a qu’un niveau. Ajoute-en un pour y mener.')));
+        return;
+      }
+      grille.appendChild(h('label.net-ch', h('span', f.t),
+        h('select', { onchange: ev => { e[f.k] = ev.target.value || ''; ecrire(); } },
+          h('option', { value: '', selected: !e[f.k] ? 'selected' : null }, '— non précisé —'),
+          ...autres.map(z => h('option', { value: z.id, selected: z.id === e[f.k] ? 'selected' : null }, z.nom)))));
+      grille.appendChild(h('label.net-ch', h('span', ' '),
+        h('button.btn.g', {
+          disabled: e[f.k] ? null : '',
+          onclick: () => { if (!e[f.k]) return; c.etage = e[f.k]; NETE.sel = null; NETS.save(c); redessine(); }
+        }, 'Y aller')));
+      return;
+    }
+    if (f.f === 'choix') {
+      grille.appendChild(h('label.net-ch', h('span', f.t),
+        h('select', { onchange: ev => { e[f.k] = ev.target.value; ecrire(); } },
+          ...f.opt.map(o => h('option', { value: o, selected: (e[f.k] || '') === o ? 'selected' : null },
+            o || '— non précisé —')))));
+      return;
+    }
+    if (f.f === 'zone') {
+      const z = h('textarea', { rows: 3, oninput: ev => { e[f.k] = ev.target.value; ecrire(); } });
+      z.value = e[f.k] || '';
+      grille.appendChild(h('label.net-ch.net-large', h('span', f.t), z));
+      return;
+    }
+    grille.appendChild(h('label.net-ch', h('span', f.t),
+      h('input', f.f === 'nombre'
+        ? { type: 'number', min: 0, value: e[f.k] || 0, oninput: ev => { e[f.k] = +ev.target.value || 0; ecrire(); } }
+        : { type: 'text', value: e[f.k] || '', oninput: ev => { e[f.k] = ev.target.value; ecrire(); } })));
+  });
+  box.appendChild(grille);
+
+  const notes = h('textarea', { rows: 3, oninput: ev => { e.notes = ev.target.value; ecrire(); } });
+  notes.value = e.notes || '';
+  box.appendChild(h('label.net-ch', { style: { marginTop: '8px' } }, h('span', 'Notes'), notes));
+
+  /* Ce qui traîne d'un ancien type. */
+  const orph = netOrphelins(e);
+  if (orph.length) {
+    box.appendChild(h('div.row.wrap.net-orph', { style: { marginTop: '10px' } },
+      h('span.tag', 'Sans emploi ici'),
+      ...orph.map(k => h('span.chip', k + ' : ' + e[k])),
+      h('div.sp'),
+      h('button.btn.g.xs', {
+        onclick: () => { NETH.avant(c); orph.forEach(k => delete e[k]); maj(); NETH.apres(c); redessine(); }
+      }, 'Retirer ces valeurs')));
+  }
+  return box;
+}
+
+/* ---------- Les contrôles du livre ----------
+   Jamais bloquants : on signale, on n'empêche rien. */
+
+/** Les quatre voisines orthogonales d'une case. */
+const netAutour = cle => {
+  const [x, y] = cle.split(',').map(Number);
+  return [(x - 1) + ',' + y, (x + 1) + ',' + y, x + ',' + (y - 1), x + ',' + (y + 1)];
+};
+
+function netControles(c, et) {
+  const ennuis = [];
+  const nom = cle => { const [x, y] = cle.split(',').map(Number); return colLettre(x) + (y + 1); };
+
+  /* « Quatre mémoires adjacentes » par CPU (Livre du Net). */
+  const cpuSeules = [], memOrphelines = [];
+  Object.entries(et.cases).forEach(([cle, e]) => {
+    if (e.type === 'cpu') {
+      const n = netAutour(cle).filter(k => et.cases[k] && et.cases[k].type === 'memoire').length;
+      if (n < 4) cpuSeules.push(nom(cle) + ' (' + n + '/4)');
+    }
+    if (e.type === 'memoire') {
+      if (!netAutour(cle).some(k => et.cases[k] && et.cases[k].type === 'cpu')) memOrphelines.push(nom(cle));
+    }
+  });
+  if (cpuSeules.length) ennuis.push({
+    t: 'CPU sans ses quatre mémoires',
+    d: cpuSeules.slice(0, 12).join(', ') + (cpuSeules.length > 12 ? '…' : '')
+  });
+  if (memOrphelines.length) ennuis.push({
+    t: 'Mémoires sans CPU voisine',
+    d: memOrphelines.slice(0, 12).join(', ') + (memOrphelines.length > 12 ? '…' : '')
+  });
+
+  /* Le mur ferme-t-il ? On entre par les bords et on se promène : tout ce
+     qu'on atteint sans traverser un mur ou une grille est à découvert. */
+  const dur = k => { const e = et.cases[k]; return e && (e.type === 'mur' || e.type === 'grille'); };
+  const dedans = ['cpu', 'memoire', 'fichier', 'programme', 'mortel', 'daemon', 'bdd', 'serveur'];
+  const vus = {}, file = [];
+  for (let x = 0; x < et.cols; x++) { file.push(x + ',0'); file.push(x + ',' + (et.lignes - 1)); }
+  for (let y = 0; y < et.lignes; y++) { file.push('0,' + y); file.push((et.cols - 1) + ',' + y); }
+  const expose = [];
+  while (file.length) {
+    const k = file.pop();
+    if (vus[k]) continue;
+    const [x, y] = k.split(',').map(Number);
+    if (x < 0 || y < 0 || x >= et.cols || y >= et.lignes) continue;
+    vus[k] = 1;
+    if (dur(k)) continue;
+    const e = et.cases[k];
+    if (e && dedans.indexOf(e.type) >= 0) expose.push(nom(k));
+    netAutour(k).forEach(v => { if (!vus[v]) file.push(v); });
+  }
+  const murs = Object.values(et.cases).filter(e => e.type === 'mur').length;
+  if (murs && expose.length) ennuis.push({
+    t: 'Le mur de données ne ferme pas',
+    d: 'On atteint depuis l’extérieur, sans percer : '
+      + expose.slice(0, 10).join(', ') + (expose.length > 10 ? '…' : '')
+  });
+
+  /* L'anti-personnel létal : niveau 4 seulement, en principe. */
+  const mortels = Object.keys(et.cases).filter(k => et.cases[k].type === 'mortel');
+  if (mortels.length && c.secu < 4) ennuis.push({
+    t: 'Programme mortel sous le niveau 4',
+    d: 'Le livre réserve l’anti-personnel létal à la sécurité 4. Ici : '
+      + mortels.map(nom).slice(0, 10).join(', ')
+  });
+
+  return ennuis;
+}
+
+function netPanneauControles(c, et) {
+  const ennuis = netControles(c, et);
+  if (!ennuis.length) return null;
+  const box = h('div.panel.no-print.net-ctrl', { style: { marginTop: '12px' } },
+    h('div.panel-h', h('h3', 'À vérifier'), h('div.sp'),
+      h('span.chip', ennuis.length + (ennuis.length > 1 ? ' remarques' : ' remarque'))));
+  box.appendChild(h('p.muted', { style: { marginTop: 0 } },
+    'Ce que le livre attend et qui manque ici. Rien n’est bloqué : une forteresse '
+    + 'peut très bien être irrégulière si c’est voulu.'));
+  const l = h('div.rz-comp');
+  ennuis.forEach(x => l.appendChild(h('div.rz-l', h('span.n', x.t), h('i', x.d))));
+  box.appendChild(l);
+  return box;
 }
 
 VIEWS.net = function () {
@@ -374,11 +932,19 @@ VIEWS.net = function () {
       }, ...cartes.map(x => h('option', { value: x.id, selected: x.id === c.id ? 'selected' : null },
         x.nom || 'Sans nom'))) : null,
       h('button.btn.p.sm', { onclick: () => { NETS.save(NETS.vierge('Nouvelle forteresse')); redessine(); } }, 'Nouvelle'),
-      h('button.btn.g.sm', { onclick: () => window.print() }, 'Imprimer'),
+      h('button.btn.g.sm', {
+        title: 'Le niveau affiché' + (NETE.joueur ? ', sans tes notes ni les FOR' : ''),
+        onclick: () => netImprimer(c, netBilan(c), { joueur: NETE.joueur })
+      }, 'Imprimer'),
       c.etages.length > 1 ? h('button.btn.g.sm', {
         title: 'Une page par niveau, légende comprise',
-        onclick: () => netImprimerTout(c, netBilan(c))
+        onclick: () => netImprimer(c, netBilan(c), { tous: true, joueur: NETE.joueur })
       }, 'Imprimer tout') : null,
+      h('button.btn.g.sm' + (NETE.joueur ? '.on' : ''), {
+        title: 'Quand c’est allumé, les impressions sortent sans les FOR, '
+          + 'tes notes ni les chiffres du système : la copie pour les joueurs.',
+        onclick: () => { NETE.joueur = !NETE.joueur; redessine(); }
+      }, NETE.joueur ? '👤 Version joueur' : 'Version joueur'),
       h('button.btn.g.sm', { onclick: () => netExport(c) }, 'Exporter'),
       h('button.btn.g.sm', { onclick: () => netImport() }, 'Importer'),
       cartes.length > 1 ? h('button.btn.d.sm', {
@@ -402,7 +968,7 @@ VIEWS.net = function () {
     h('p.muted', { style: { margin: '8px 0 0' } }, (NET_SECU.find(s => s.n === c.secu) || {}).d));
 
   /* --- Le bilan, calculé --- */
-  const chiffres = h('div.rz-grid',
+  const chiffres = h('div.rz-grid.mj',
     tuile('CPU', bilan.cpu), tuile('INT', bilan.int, bilan.ia ? 'Intelligence artificielle' : null),
     tuile('Mémoires', bilan.mem + ' / ' + bilan.memAttendue), tuile('Capacité', bilan.um + ' UM'),
     tuile('Mur', c.murFor || '—', 'FOR'), tuile('Coût', eb(bilan.cout)));
@@ -414,16 +980,66 @@ VIEWS.net = function () {
     onclick: () => { NETE.outil = p.id; NETE.sel = null; redessine(); }
   }, h('i.nf' + (p.cl ? '.' + p.cl : ''), p.g), h('span', p.t))));
   pal.appendChild(h('button.net-o' + (NETE.outil === 'gomme' ? '.on' : '') + '.gomme', {
+    title: 'Vider des cases. Maintiens et glisse pour en effacer plusieurs.',
     onclick: () => { NETE.outil = 'gomme'; NETE.sel = null; redessine(); }
   }, h('i', '✕'), h('span', 'Effacer')));
+  pal.appendChild(h('button.net-o' + (NETE.outil === 'main' ? '.on' : '') + '.net-main', {
+    title: 'Attraper un élément et le reposer ailleurs, avec son nom et ses notes.',
+    onclick: () => { NETE.outil = 'main'; NETE.sel = null; redessine(); }
+  }, h('i', '✥'), h('span', 'Déplacer')));
+
+  /* --- Comment on trace, et de quoi revenir en arrière --- */
+  const FORMES = [
+    { id: 'libre', t: 'Libre', aide: 'Glisse pour peindre case par case.' },
+    { id: 'cadre', t: 'Cadre', aide: 'Glisse d’un coin à l’autre : seul le pourtour se pose. De quoi ceinturer une forteresse d’un geste.' },
+    { id: 'plein', t: 'Rempli', aide: 'Glisse d’un coin à l’autre : tout le rectangle se remplit.' }
+  ];
+  const tracer = h('div.row.wrap.net-tracer.no-print',
+    h('span.tag', 'Tracé'),
+    ...FORMES.map(f => h('button.btn.g.xs' + (NETE.forme === f.id ? '.on' : ''), {
+      title: f.aide,
+      onclick: () => { NETE.forme = f.id; redessine(); }
+    }, f.t)),
+    h('div.sp'),
+    h('button.btn.g.xs', {
+      disabled: NETH.peutAnnuler() ? null : '',
+      title: 'Ctrl+Z',
+      onclick: () => { if (NETH.annuler(c)) { NETE.sel = null; NETS.save(c); maj(); redessine(); } }
+    }, '↶ Annuler'),
+    h('button.btn.g.xs', {
+      disabled: NETH.peutRetablir() ? null : '',
+      title: 'Ctrl+Y',
+      onclick: () => { if (NETH.retablir(c)) { NETE.sel = null; NETS.save(c); maj(); redessine(); } }
+    }, '↷ Rétablir'));
 
   /* --- La grille du niveau affiché --- */
-  const grille = netGrille(c, et, (cle, e) => {
-    if (NETE.outil === 'gomme') { delete et.cases[cle]; NETE.sel = null; }
-    else if (e && NETE.sel !== cle) { NETE.sel = cle; }
-    else if (e && NETE.sel === cle) { NETE.sel = null; }
-    else { et.cases[cle] = { type: NETE.outil, nom: '', notes: '', for: 0, um: 0 }; NETE.sel = cle; }
-    maj(); redessine();
+  NETH.caler(c);
+  const grille = netGrille(c, et, {
+    /* Un clic simple : la fiche de l'élément, ou on en pose un. */
+    clic: cle => {
+      const e = et.cases[cle];
+      if (NETE.outil === 'gomme') { if (!e) return; NETH.avant(c); delete et.cases[cle]; NETE.sel = null; }
+      else if (NETE.outil === 'main') { NETE.sel = e ? cle : null; }
+      else if (e && NETE.sel !== cle) { NETE.sel = cle; }
+      else if (e && NETE.sel === cle) { NETE.sel = null; }
+      else { NETH.avant(c); et.cases[cle] = netNeuf(NETE.outil); NETE.sel = cle; }
+      maj(); NETH.apres(c); redessine();
+    },
+    /* Pendant un glissé : on écrit dans les données, le DOM suit case par case. */
+    poser: cle => {
+      if (NETE.outil === 'gomme') delete et.cases[cle];
+      else if (!et.cases[cle]) et.cases[cle] = netNeuf(NETE.outil);
+      else et.cases[cle].type = NETE.outil;
+    },
+    deplacer: (de, vers) => {
+      NETH.avant(c);
+      const e = et.cases[de];
+      if (et.cases[vers]) { toast('La case d’arrivée est déjà prise.', 'no'); redessine(); return; }
+      delete et.cases[de]; et.cases[vers] = e;
+      NETE.sel = vers; maj(); NETH.apres(c); redessine();
+    },
+    terminer: () => { NETE.sel = null; maj(); NETH.apres(c); redessine(); },
+    redessiner: () => redessine()
   });
 
   /* --- Les onglets des niveaux, rangés comme les feuilles d'un tableur --- */
@@ -500,48 +1116,8 @@ VIEWS.net = function () {
           })
       }, 'Supprimer ce niveau') : null));
 
-  /* --- Le détail de la case choisie --- */
-  const detail = h('div.panel.net-detail');
-  if (NETE.sel && et.cases[NETE.sel]) {
-    const e = et.cases[NETE.sel], t = netType(e.type);
-    const [x, y] = NETE.sel.split(',').map(Number);
-    detail.appendChild(h('div.panel-h', h('h3', t.t + ' — ' + colLettre(x) + (y + 1)),
-      h('div.sp'),
-      h('button.btn.d.sm', { onclick: () => { delete et.cases[NETE.sel]; NETE.sel = null; maj(); redessine(); } }, 'Retirer')));
-    detail.appendChild(h('p.muted', { style: { marginTop: 0 } }, t.aide));
-    detail.appendChild(h('div.net-form',
-      champ('Nom', e.nom, v => { e.nom = v; maj(); }),
-      champ('FOR', e.for || 0, v => { e.for = +v || 0; maj(); }, { type: 'number', min: 0 }),
-      champ('UM', e.um || 0, v => { e.um = +v || 0; maj(); }, { type: 'number', min: 0 }),
-      h('label.net-ch', h('span', 'Type'),
-        h('select', { onchange: ev => { e.type = ev.target.value; maj(); redessine(); } },
-          ...NET_PAL.map(p => h('option', { value: p.id, selected: p.id === e.type ? 'selected' : null }, p.t))))));
-    /* Un ascenseur mène quelque part : autant le dire, et pouvoir y aller. */
-    if ((e.type === 'ascenseur' || e.type === 'lld') && c.etages.length > 1) {
-      const autres = c.etages.filter(x => x.id !== et.id);
-      detail.appendChild(h('div.net-form', { style: { marginTop: '8px' } },
-        h('label.net-ch', h('span', 'Mène au niveau'),
-          h('select', { onchange: ev => { e.vers = ev.target.value || null; maj(); } },
-            h('option', { value: '', selected: !e.vers ? 'selected' : null }, '— non précisé —'),
-            ...autres.map(x => h('option', { value: x.id, selected: x.id === e.vers ? 'selected' : null }, x.nom)))),
-        h('label.net-ch', h('span', ' '),
-          h('button.btn.g', {
-            disabled: !e.vers ? '' : null,
-            onclick: () => {
-              if (!e.vers) return;
-              c.etage = e.vers; NETE.sel = null; NETS.save(c); redessine();
-            }
-          }, 'Y aller'))));
-    }
-    detail.appendChild(h('label.net-ch', { style: { marginTop: '8px' } }, h('span', 'Notes'),
-      h('textarea', { rows: 3, oninput: ev => { e.notes = ev.target.value; maj(); } }, e.notes || '')));
-  } else {
-    detail.appendChild(h('p.muted', { style: { margin: 0 } },
-      NETE.outil === 'gomme'
-        ? "Touche une case pour la vider."
-        : "Choisis un symbole dans la palette, puis touche une case pour le poser. "
-        + "Touche un élément déjà posé pour le nommer et le décrire."));
-  }
+  /* --- La fiche de la case choisie, taillée pour SON type --- */
+  const detail = netFiche(c, et, maj, redessine);
 
   /* --- La légende, montée depuis le niveau affiché --- */
   const leg = netLegende(c, et);
@@ -556,8 +1132,9 @@ VIEWS.net = function () {
       + "Ne remplit que le niveau affiché ; les autres ne bougent pas."),
     h('div.row.wrap', ...NET_SECU.map(s => h('button.btn.g.sm', {
       onclick: () => confirmer('Générer', `Remplacer « ${et.nom} » par une forteresse de sécurité ${s.n} ?`, () => {
+        NETH.avant(c);
         const r = netGenerer(c, s.n, et);
-        NETS.save(c); NETE.sel = null;
+        NETS.save(c); NETE.sel = null; NETH.apres(c);
             toast(`${r.nbCpu} CPU, mur de FOR ${r.murFor}, ${r.programmes} programme(s).`, 'ok');
         redessine();
       })
@@ -567,14 +1144,41 @@ VIEWS.net = function () {
       c.etages.length > 1 ? h('span.chip', c.etages.length + ' niveaux') : null),
     chiffres));
   wrap.appendChild(h('div.no-print', pal));
+  wrap.appendChild(tracer);
   const plan = netPlan(c, et, grille, bilan);
   plan.appendChild(onglets);
   wrap.appendChild(plan);
   wrap.appendChild(niveaux);
   wrap.appendChild(h('div.no-print', detail));
+  const ctrl = netPanneauControles(c, et);
+  if (ctrl) wrap.appendChild(ctrl);
   wrap.appendChild(leg);
+
+  /* Ctrl+Z et Ctrl+Y, tant que la carte est à l'écran. */
+  netRaccourcis(c, maj, redessine);
   return wrap;
 };
+
+/** Les raccourcis clavier de la carte. Un seul écouteur, posé sur le document
+    et remplacé à chaque rendu : sans ça, ils s'empileraient à chaque redessin. */
+let NET_TOUCHES = null;
+function netRaccourcis(c, maj, redessine) {
+  if (NET_TOUCHES) document.removeEventListener('keydown', NET_TOUCHES);
+  NET_TOUCHES = ev => {
+    if (!(ev.ctrlKey || ev.metaKey) || ev.altKey) return;
+    const dans = ev.target && ev.target.tagName;
+    if (dans === 'INPUT' || dans === 'TEXTAREA' || dans === 'SELECT') return;
+    const k = (ev.key || '').toLowerCase();
+    if (k === 'z' && !ev.shiftKey) {
+      if (!NETH.annuler(c)) return;
+    } else if (k === 'y' || (k === 'z' && ev.shiftKey)) {
+      if (!NETH.retablir(c)) return;
+    } else return;
+    ev.preventDefault();
+    NETE.sel = null; NETS.save(c); maj(); redessine();
+  };
+  document.addEventListener('keydown', NET_TOUCHES);
+}
 
 /** La légende d'un niveau : un bloc par famille, avec les éléments nommés
     et leurs cases. */
@@ -599,11 +1203,12 @@ function netLegende(c, et) {
     const nommes = t.bref ? [] : els.filter(([, e]) => e.nom || e.notes || e.for || e.um || e.vers);
     const resume = t.bref === 1 ? (els.length * 10) + ' UM au total'
       : t.bref === 2 ? 'FOR ' + (els[0][1].for || c.murFor || '—') : null;
+    const resumeMj = t.bref === 2;
     liste.appendChild(h('div.net-leg-i',
       h('i.nf' + (t.cl ? '.' + t.cl : ''), t.g),
       h('div',
         h('b', t.t + ' (' + els.length + ')'),
-        resume ? h('span.cases', resume) : null,
+        resume ? h('span.cases' + (resumeMj ? '.mj' : ''), resume) : null,
         t.bref === 2 ? null
           : h('span.cases', cases.slice(0, 24).join(', ') + (cases.length > 24 ? '…' : '')),
         ...nommes.map(([cle, e]) => {
@@ -612,11 +1217,13 @@ function netLegende(c, et) {
           const bouts = [e.for ? 'FOR ' + e.for : null, e.um ? e.um + ' UM' : null,
           vers ? '→ ' + vers : null].filter(Boolean).join(' · ');
           return h('div.net-leg-n', h('b', colLettre(x) + (y + 1)), ' ',
-            e.nom || t.t, bouts ? ' — ' + bouts : '', e.notes ? ' — ' + e.notes : '');
+            e.nom || t.t,
+            bouts ? h('span.mj', ' — ' + bouts) : null,
+            e.notes ? h('span.mj', ' — ' + e.notes) : null);
         }))));
   });
   box.appendChild(liste);
-  if (c.notes) box.appendChild(h('p', { style: { marginBottom: 0 } }, c.notes));
+  if (c.notes) box.appendChild(h('p.mj', { style: { marginBottom: 0 } }, c.notes));
   return box;
 }
 

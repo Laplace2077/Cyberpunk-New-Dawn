@@ -982,3 +982,21 @@ span.pvb.on:hover{background:#333}
   .feuille-wrap .panel{display:none}
 }
 
+
+/* ---------- Carte du Net : tracé, fiches, contrôles ---------- */
+.net-tracer{align-items:center;gap:6px;margin:0 0 12px}
+.net-tracer .btn.xs.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.net-c.apercu{background:var(--info,#2c6ea8);opacity:.45}
+.net-vive .net-c{touch-action:manipulation}
+.net-main i{font-style:normal;font-size:17px}
+.net-ch.net-large{grid-column:1/-1}
+.net-orph{align-items:center;gap:6px}
+.net-orph .chip{font-size:11.5px}
+.net-prog .rz-l{cursor:pointer}
+.net-prog .rz-l:hover{background:var(--paper-2)}
+.net-ctrl .rz-l i{white-space:normal}
+
+/* Version joueur : ce qui est réservé au MJ disparaît de la feuille. */
+@media print{
+  body.net-joueur .mj{display:none!important}
+}
